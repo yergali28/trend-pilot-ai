@@ -15,7 +15,7 @@ SaaS для селлеров маркетплейсов (Kaspi, Ozon, Wildberrie
 - `fixtures/`: записанные ответы источников, `calc-golden-cases.json`
 
 ## Команды
-`pnpm setup`, `pnpm db:start`, `pnpm db:reset`, `pnpm dev`, `pnpm test`, `pnpm test:e2e`, `pnpm lint`, `pnpm typecheck`, `pnpm build`. Задача не завершена, пока `lint`, `typecheck` и `test` не прошли, а их вывод не показан в разговоре.
+`pnpm run setup`, `pnpm db:start`, `pnpm db:reset`, `pnpm dev`, `pnpm test`, `pnpm test:e2e`, `pnpm lint`, `pnpm typecheck`, `pnpm build`. Задача не завершена, пока `lint`, `typecheck` и `test` не прошли, а их вывод не показан в разговоре.
 
 ## Жёсткие правила
 1. **Только реальные данные.** Не придумывай числа: ни цен, ни комиссий, ни тарифов, ни продаж. Нет данных значит статус `no_data`. Статусы значений: `verified`, `estimated`, `no_data`.
