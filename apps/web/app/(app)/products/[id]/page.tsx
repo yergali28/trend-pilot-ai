@@ -1,4 +1,4 @@
-import { DataTable, StatusTag, type Column } from "@tp/ui";
+import { ArrowLeftIcon, DataTable, StatusTag, type Column } from "@tp/ui";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { valueKit } from "../../../../components/values";
@@ -60,7 +60,8 @@ export default async function ProductPage({ params, searchParams }: { params: Pr
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div>
           {category ? (
-            <Link href={`/results/${category.id}?${query}`} className="text-sm font-medium text-action-soft-ink underline-offset-2 hover:underline">
+            <Link href={`/results/${category.id}?${query}`} className="inline-flex items-center gap-1 text-sm font-medium text-action-soft-ink underline-offset-2 hover:underline">
+              <ArrowLeftIcon className="size-3.5" />
               {t("product.back", { category: category.name })}
             </Link>
           ) : null}

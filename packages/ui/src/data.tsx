@@ -137,7 +137,7 @@ const cellClass = <Row,>(c: Column<Row>) => `${c.from ? visibleFrom[c.from] : ""
 // Первая колонка (название) остаётся на месте при горизонтальной прокрутке.
 const stickyCell = "sticky left-0 z-10 bg-surface";
 
-/** Таблица сравнения: числа справа, табличные цифры, сортируемые заголовки — кнопки. */
+/** Таблица сравнения: числа справа, табличные цифры; текущая сортировка — иконка и aria-sort. */
 export function DataTable<Row>({ columns, rows, rowKey, caption }: { columns: Column<Row>[]; rows: Row[]; rowKey: (r: Row) => string; caption: string }) {
   return (
     <div className="relative overflow-x-auto rounded-panel border border-line bg-surface">

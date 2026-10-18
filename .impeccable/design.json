@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T12:39:39+00:00",
+  "generatedAt": "2026-10-18T18:57:07.145043+00:00",
   "title": "Design System: Trend Pilot AI",
   "extensions": {
     "colorMeta": {
@@ -1283,32 +1283,44 @@
           "#b2c1f9",
           "#e9eefe"
         ]
+      },
+      "warning-line": {
+        "role": "tertiary",
+        "displayName": "Amber Rule",
+        "canonical": "#e0a236",
+        "theme": "light"
+      },
+      "warning-line-dark": {
+        "role": "tertiary",
+        "displayName": "Amber Rule",
+        "canonical": "#a87418",
+        "theme": "dark"
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "Screen title."
+        "purpose": "Screen title (h1) on every app screen."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Section title."
+        "purpose": "Section title (h2); auth card title."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Card title."
+        "purpose": "UI-kit product card title only."
       },
       "figure": {
         "displayName": "Figure",
-        "purpose": "Key figures in cards and scenario ranges, tabular."
+        "purpose": "Key figures, sub-section headings, empty-state title, wordmark; tabular."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Running text, table cells, field values."
+        "purpose": "Running text, leads, table cells, field values, nav items, chips."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Field labels, column headers, hints, captions, badges, nav."
+        "purpose": "Field labels, column headers, hints, captions, badges, back links, prefs."
       }
     },
     "themes": {
@@ -1341,7 +1353,7 @@
       {
         "name": "color-transition",
         "value": "150ms (Tailwind default easing) on background/text color",
-        "purpose": "Button state changes."
+        "purpose": "Button, nav and chip state changes."
       },
       {
         "name": "spinner",
@@ -1360,7 +1372,8 @@
       },
       {
         "name": "lg",
-        "value": "1024px"
+        "value": "1024px",
+        "purpose": "Two-pane 3:2 split opens; product editor turns sticky."
       },
       {
         "name": "xl",
@@ -1415,12 +1428,12 @@
       "css": ".ds-chips { display:flex; flex-wrap:wrap; gap:8px; font-family:var(--tp-font-sans, \"Golos Text\"), ui-sans-serif, system-ui, sans-serif; } .ds-chip { display:flex; align-items:center; gap:8px; height:36px; padding:0 12px; border:1px solid var(--tp-line-strong); border-radius:6px; background:var(--tp-surface); color:var(--tp-text); font-size:0.875rem; cursor:pointer; } .ds-chip:hover { background:var(--tp-surface-sunken); } .ds-chip:focus-within { outline:2px solid var(--tp-focus); outline-offset:2px; } .ds-chip-on, .ds-chip-on:hover { border-color:var(--tp-action); background:var(--tp-action-soft); color:var(--tp-action-soft-text); } .ds-chip-off, .ds-chip-off:hover { border-style:dashed; background:var(--tp-offline-soft); color:var(--tp-offline); cursor:not-allowed; } .ds-chip-reason { font-size:0.8125rem; } .ds-box { display:flex; align-items:center; justify-content:center; width:16px; height:16px; border:1px solid var(--tp-line-strong); border-radius:4px; } .ds-box-on { border-color:var(--tp-action); background:var(--tp-action); color:var(--tp-action-text); }"
     },
     {
-      "name": "Section Nav",
-      "kind": "nav",
-      "refersTo": "nav-item",
-      "description": "Sticky white nav bar; current item in Blue Wash.",
-      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-item\" href=\"#\" aria-current=\"location\">Палитра</a><a class=\"ds-nav-item\" href=\"#\">Типографика</a><a class=\"ds-nav-item\" href=\"#\">Таблица</a></nav>",
-      "css": ".ds-nav { display:flex; gap:4px; padding:8px; background:var(--tp-surface); border-bottom:1px solid var(--tp-line); font-family:var(--tp-font-sans, \"Golos Text\"), ui-sans-serif, system-ui, sans-serif; font-size:0.8125rem; } .ds-nav-item { padding:6px 10px; border-radius:6px; color:var(--tp-text-muted); text-decoration:none; } .ds-nav-item:hover { background:var(--tp-surface-sunken); color:var(--tp-text); } .ds-nav-item:focus-visible { outline: 2px solid var(--tp-focus); outline-offset: 2px; } .ds-nav-item[aria-current] { background:var(--tp-action-soft); color:var(--tp-action-soft-text); font-weight:500; }"
+      "name": "Choice Chips",
+      "kind": "chip",
+      "refersTo": "chip-choice",
+      "description": "Wizard single-choice (target multiple, metric): hidden radio + bordered label; checked in Blue Wash.",
+      "html": "<div class=\"ds-choice\"><label><input type=\"radio\" name=\"x\"><span>2x</span></label><label><input type=\"radio\" name=\"x\" checked><span>3x</span></label><label><input type=\"radio\" name=\"x\"><span>5x</span></label><label><input type=\"radio\" name=\"x\"><span>10x</span></label></div>",
+      "css": ".ds-choice { display:flex; flex-wrap:wrap; gap:8px; font-family:var(--tp-font-sans, \"Golos Text\"), ui-sans-serif, system-ui, sans-serif; } .ds-choice input { position:absolute; opacity:0; width:1px; height:1px; } .ds-choice span { display:flex; align-items:center; height:36px; padding:0 12px; border:1px solid var(--tp-line-strong); border-radius:6px; background:var(--tp-surface); color:var(--tp-text); font-size:0.875rem; cursor:pointer; transition:background-color 150ms, color 150ms; } .ds-choice input:checked + span { border-color:var(--tp-action); background:var(--tp-action-soft); color:var(--tp-action-soft-text); } .ds-choice input:focus-visible + span { outline:2px solid var(--tp-focus); outline-offset:2px; }"
     },
     {
       "name": "Multiple Badges",
@@ -1439,44 +1452,66 @@
       "css": ".ds-tags { display:flex; flex-wrap:wrap; gap:8px; font-family:var(--tp-font-sans, \"Golos Text\"), ui-sans-serif, system-ui, sans-serif; } .ds-tag { display:inline-flex; align-items:center; gap:4px; padding:2px 6px; border-radius:6px; font-size:0.8125rem; line-height:1.25rem; font-weight:500; } .ds-tag-risk { background:var(--tp-risk-soft); color:var(--tp-risk); } .ds-tag-warning { background:var(--tp-warning-soft); color:var(--tp-warning); } .ds-tag-nodata { background:var(--tp-nodata-soft); color:var(--tp-nodata); }"
     },
     {
+      "name": "App Header",
+      "kind": "nav",
+      "refersTo": "app-header",
+      "description": "White band with hairline: wordmark, main nav, then demo tag, language, theme, email and sign-out pushed right; wraps on phones.",
+      "html": "<header class=\"ds-hdr\"><a class=\"ds-hdr-mark\" href=\"#\">Trend Pilot AI</a><nav class=\"ds-hdr-nav\"><a href=\"#\" aria-current=\"page\">Подбор</a><a href=\"#\">Админка</a></nav><div class=\"ds-hdr-end\"><nav class=\"ds-pref\"><a href=\"#\" aria-current=\"true\">RU</a><a href=\"#\">EN</a><a href=\"#\">KK</a></nav><nav class=\"ds-pref\"><a href=\"#\" aria-current=\"true\">Светлая</a><a href=\"#\">Тёмная</a></nav><button class=\"ds-hdr-out\">Выйти</button></div></header>",
+      "css": ".ds-hdr { display:flex; flex-wrap:wrap; align-items:center; gap:8px 24px; padding:12px 32px; background:var(--tp-surface); border-bottom:1px solid var(--tp-line); font-family:var(--tp-font-sans, \"Golos Text\"), ui-sans-serif, system-ui, sans-serif; } .ds-hdr-mark { font-size:1rem; font-weight:600; color:var(--tp-text); text-decoration:none; } .ds-hdr-nav, .ds-pref { display:flex; align-items:center; gap:4px; } .ds-hdr-nav a { padding:6px 10px; border-radius:6px; font-size:0.875rem; color:var(--tp-text-muted); text-decoration:none; } .ds-hdr-nav a:hover { background:var(--tp-surface-sunken); color:var(--tp-text); } .ds-hdr-end { margin-left:auto; display:flex; flex-wrap:wrap; align-items:center; gap:12px; } .ds-pref { gap:2px; } .ds-pref a { padding:4px 8px; border-radius:6px; font-size:0.8125rem; color:var(--tp-text-muted); text-decoration:none; text-transform:none; } .ds-pref a:hover { color:var(--tp-text); } .ds-hdr-nav a[aria-current], .ds-pref a[aria-current] { background:var(--tp-action-soft); color:var(--tp-action-soft-text); font-weight:500; } .ds-hdr a:focus-visible, .ds-hdr-out:focus-visible { outline:2px solid var(--tp-focus); outline-offset:2px; } .ds-hdr-out { padding:4px 8px; border:0; border-radius:6px; background:none; font:inherit; font-size:0.8125rem; color:var(--tp-action-soft-text); cursor:pointer; } .ds-hdr-out:hover { background:var(--tp-action-soft); }"
+    },
+    {
       "name": "Comparison Table",
       "kind": "card",
       "refersTo": "table-cell",
-      "description": "Panel-framed table; muted headers, right-aligned tabular figures, loss in risk with icon.",
-      "html": "<div class=\"ds-table-wrap\"><table class=\"ds-table\"><thead><tr><th>Товар</th><th class=\"ds-num\">Себестоимость</th><th class=\"ds-num\">Прибыль</th></tr></thead><tbody><tr><td>Термокружка 500 мл</td><td class=\"ds-num\">2 140 ₸</td><td class=\"ds-num\">1 380 ₸</td></tr><tr><td>Органайзер для проводов</td><td class=\"ds-num\">1 760 ₸</td><td class=\"ds-num ds-loss\">−449 ₸</td></tr></tbody></table></div>",
-      "css": ".ds-table-wrap { overflow-x:auto; border:1px solid var(--tp-line); border-radius:8px; background:var(--tp-surface); font-family:var(--tp-font-sans, \"Golos Text\"), ui-sans-serif, system-ui, sans-serif; } .ds-table { width:100%; border-collapse:collapse; font-size:0.875rem; line-height:1.375rem; color:var(--tp-text); } .ds-table th { padding:10px 12px; text-align:left; font-size:0.8125rem; font-weight:500; color:var(--tp-text-muted); border-bottom:1px solid var(--tp-line); white-space:nowrap; } .ds-table td { padding:10px 12px; border-bottom:1px solid var(--tp-line); white-space:nowrap; font-variant-numeric:tabular-nums; } .ds-table tr:last-child td { border-bottom:0; } .ds-table tbody tr:hover { background:var(--tp-surface-sunken); } .ds-table .ds-num { text-align:right; } .ds-loss { color:var(--tp-risk); font-weight:500; }"
+      "description": "Panel-framed table; muted headers, right-aligned tabular figures, sticky first column, secondary columns shed by breakpoint, loss in risk with icon.",
+      "html": "<div class=\"ds-table-wrap\"><table class=\"ds-table\"><thead><tr><th>Товар</th><th class=\"ds-num ds-md\">Цена продажи</th><th class=\"ds-num\">Прибыль / ед.</th><th class=\"ds-num ds-sorted\" aria-sort=\"descending\">Кратность</th></tr></thead><tbody><tr><td><a href=\"#\">Органайзер для кабеля</a></td><td class=\"ds-num ds-md\">7 900 ₸</td><td class=\"ds-num\">≈3 895 ₸</td><td class=\"ds-num\">3,9x</td></tr><tr><td><a href=\"#\">Подставка для телефона</a></td><td class=\"ds-num ds-md\">4 500 ₸</td><td class=\"ds-num ds-loss\">−449 ₸</td><td class=\"ds-num\">1,8x</td></tr></tbody></table></div>",
+      "css": ".ds-table-wrap { position:relative; overflow-x:auto; border:1px solid var(--tp-line); border-radius:8px; background:var(--tp-surface); font-family:var(--tp-font-sans, \"Golos Text\"), ui-sans-serif, system-ui, sans-serif; } .ds-table { width:100%; border-collapse:collapse; font-size:0.875rem; line-height:1.375rem; color:var(--tp-text); } .ds-table th { padding:10px 12px; text-align:left; font-size:0.8125rem; font-weight:500; color:var(--tp-text-muted); border-bottom:1px solid var(--tp-line); white-space:nowrap; } .ds-table th.ds-sorted { color:var(--tp-text); } .ds-table td { padding:10px 12px; border-bottom:1px solid var(--tp-line); white-space:nowrap; font-variant-numeric:tabular-nums; } .ds-table th:first-child, .ds-table td:first-child { position:sticky; left:0; z-index:1; background:var(--tp-surface); white-space:normal; min-width:160px; } .ds-table tr:last-child td { border-bottom:0; } .ds-table tbody tr:hover td { background:var(--tp-surface-sunken); } .ds-table .ds-num { text-align:right; } .ds-table a { color:var(--tp-action-soft-text); font-weight:500; text-underline-offset:2px; text-decoration:none; } .ds-table a:hover { text-decoration:underline; } .ds-table a:focus-visible { outline:2px solid var(--tp-focus); outline-offset:2px; } .ds-loss { color:var(--tp-risk); font-weight:500; } @media (max-width:767px) { .ds-md { display:none; } }"
+    },
+    {
+      "name": "Empty State",
+      "kind": "card",
+      "refersTo": "empty-state",
+      "description": "Dashed panel: what happened and what to do next.",
+      "html": "<div class=\"ds-empty\"><p class=\"ds-empty-t\">Нет подходящих товаров</p><p class=\"ds-empty-x\">Снизьте целевую кратность или выберите больше площадок.</p></div>",
+      "css": ".ds-empty { display:flex; flex-direction:column; align-items:flex-start; gap:8px; padding:32px 24px; border:1px dashed var(--tp-line-strong); border-radius:8px; font-family:var(--tp-font-sans, \"Golos Text\"), ui-sans-serif, system-ui, sans-serif; } .ds-empty-t { margin:0; font-size:1rem; line-height:1.5rem; font-weight:600; color:var(--tp-text); } .ds-empty-x { margin:0; max-width:60ch; font-size:0.875rem; line-height:1.375rem; color:var(--tp-text-muted); }"
     }
   ],
   "narrative": {
     "northStar": "The Honest Ledger",
-    "overview": "**Creative North Star: \"The Honest Ledger\"**\n\nA working analytics screen for marketplace sellers in the category standard, finished to the level of Stripe Dashboard and MPStats. The figure is the protagonist: tabular digits, right-aligned to the place value, currency beside the number, and an explicit word where a value is missing. Everything else steps back: a cool light-grey page, white surfaces, hairlines instead of shadows, one blue for action.\n\nColor is semantic, never decorative. There are exactly three colored vocabularies: action (blue), the multiple scale 2x to 10x (green, deepening with value), and status (risk red, warning amber, no-data grey with a dashed underline, source-offline grey with an unplug icon). Every colored state is duplicated by a word or a shape. Light theme is the default; dark is the second theme, set by `data-theme=\"dark\"` on the page wrapper (which also darkens the document root via `:has`).\n\nDensity is moderate and even: 36px controls, 14px body, 4px spacing step, compact inside a group and generous between groups. Motion is functional only (the loading spinner, color transitions of 150ms), and respects `prefers-reduced-motion`.",
+    "overview": "A working analytics tool for marketplace sellers, in the category standard and finished to the level of Stripe Dashboard and MPStats. The figure is the protagonist: tabular digits, right-aligned to the place value, currency beside the number, and an explicit word where a value is missing. Everything else steps back: a cool light-grey page, white surfaces, hairlines instead of shadows, one blue for action.\n\nColor is semantic, never decorative. There are exactly three colored vocabularies: action (blue), the multiple scale 2x to 10x (green, deepening with value), and status (risk red, warning amber, no-data grey with a dashed underline, source-offline grey with an unplug icon). Every colored state is duplicated by a word or a shape. Light theme is the default; dark is the second theme, chosen in the header and set as `data-theme` on `<html>` (the token file also accepts it on a page wrapper and darkens the root via `:has`).\n\nDensity is moderate and even: 36px controls, 14px body, a 4px spacing step, tight inside a group and generous between groups. Screens are read top to bottom as a ledger: a title with a one-line lead, then sections each headed by a plain heading and holding one framed table, list, or form. Motion is functional only (150ms color transitions, the loading spinner) and respects `prefers-reduced-motion`.",
     "keyCharacteristics": [
       "Numbers read first: `tabular-nums` everywhere a figure appears, right-aligned in tables.",
       "One action blue; data visualization stays neutral grey unless it carries profit or loss.",
-      "Flat surfaces separated by 1px lines and tonal steps; shadow reserved for floating layers.",
+      "Flat surfaces separated by 1px lines and tonal steps; no shipped surface carries a shadow.",
       "Status by color + icon/shape + word; \"no data\" is a word, never a number.",
+      "Tables shed secondary columns on narrow screens instead of becoming cards.",
       "Golos Text across all roles, Cyrillic-first with Kazakh coverage."
     ],
     "rules": [
       {
         "name": "The One Blue Rule",
-        "body": "Blue means \"you can act here\" (button, link, focus, selected filter). Data, charts and badges never use it.",
+        "body": "Blue means \"you can act here\" (button, link, focus, selected filter, current location). Data, charts and badges never use it.",
         "section": "colors"
       },
       {
         "name": "The Said-Twice Rule",
-        "body": "No state is carried by color alone: risk has a crossed circle, warning a triangle, no-data a dashed underline and the word, offline an unplug icon and a reason, ok a filled dot, multiple a printed value.",
+        "body": "No state is carried by color alone: risk has a crossed circle, warning a triangle, no-data a dashed underline and the word, offline an unplug icon and a reason, pending a hollow ring, ok a filled dot, multiple a printed value, loss a crossed circle plus a screen-reader \"loss\" word.",
         "section": "colors"
       },
       {
         "name": "The Honest Gap Rule",
-        "body": "A missing value renders the localized \"no data\" word in `nodata` with a dashed `nodata-line` underline. Never a zero, dash or average in its place. Estimated values carry a leading \"≈\".",
+        "body": "A missing value renders the localized \"no data\" word in `nodata` with a dashed `nodata-line` underline. Never a zero, dash or average in its place. Estimated values carry a leading \"≈\" (an `abbr` with its meaning).",
         "section": "colors"
       },
       {
         "name": "The Tabular Rule",
-        "body": "Every figure uses `tabular-nums`; table number columns align right; currency and unit sit beside the value (`10 000 ₸`, `3,6x`), formatted per locale with `Intl.NumberFormat` and the narrow currency symbol.",
+        "body": "Every figure uses `tabular-nums`; table number columns align right; currency and unit sit beside the value (`7 900 ₸`, `3,9x`, `191 %`), formatted per locale with `Intl.NumberFormat` and the narrow currency symbol. Numeric inputs right-align their value with the unit inside the field.",
         "section": "typography"
+      },
+      {
+        "name": "The Shed-Columns Rule",
+        "body": "Tables never turn into cards on mobile. Each column declares the breakpoint it appears from (`sm`/`md`/`lg`/`xl`); the name column and the decisive figures (profit, multiple) are always visible, and the frame scrolls horizontally with a sticky first column if what remains still overflows.",
+        "section": "layout"
       },
       {
         "name": "The Lines-Not-Shadows Rule",
@@ -1488,15 +1523,18 @@
       "**Do** take every value from the `--tp-*` variables in `packages/ui/tokens.css` (or their Tailwind aliases); never hard-code a hex in a component.",
       "**Do** render figures with `tabular-nums`, right-aligned in tables, with the unit or narrow currency symbol beside the value.",
       "**Do** pair every status color with its icon or shape and a word.",
-      "**Do** show an unavailable source greyed with its reason instead of hiding it.",
-      "**Do** keep controls at 36px (44px on coarse pointers) and use the 2px `focus` outline at 2px offset for keyboard focus."
+      "**Do** show an unavailable source greyed with its reason instead of hiding it, and list uncalculable products with what is missing.",
+      "**Do** keep controls at 36px (44px on coarse pointers) and use the 2px `focus` outline at 2px offset for keyboard focus.",
+      "**Do** let tables shed secondary columns by breakpoint and keep the first column sticky, instead of reflowing rows into cards.",
+      "**Do** mark the current location (nav item, admin tab, language, theme) with Blue Wash and `aria-current`."
     ],
     "donts": [
       "**Don't** use blue for data, charts or badges; it belongs to action.",
       "**Don't** put a number, zero or average where data is missing; use the no-data word.",
-      "**Don't** add shadows to resting panels or cards; separate with a hairline or tonal step.",
-      "**Don't** use gradients, emoji in place of icons, or decorative animation.",
-      "**Don't** nest panels inside panels."
+      "**Don't** add shadows to resting panels, cards or sticky elements; separate with a hairline or tonal step.",
+      "**Don't** use gradients, emoji or text glyphs in place of icons, or decorative animation.",
+      "**Don't** nest panels inside panels.",
+      "**Don't** put a kicker or eyebrow label above a heading; the only lines allowed there are a back link on app screens and the wordmark on auth screens."
     ]
   }
 }

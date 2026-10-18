@@ -1,4 +1,4 @@
-import { CoverageBadge, DataTable, EmptyState, StatusTag, type Column } from "@tp/ui";
+import { ArrowLeftIcon, CoverageBadge, DataTable, EmptyState, StatusTag, type Column } from "@tp/ui";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { missingLabel, valueKit } from "../../../../components/values";
@@ -51,7 +51,8 @@ export default async function CategoryPage({ params, searchParams }: { params: P
     <div className="flex flex-col gap-8">
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div>
-          <Link href={`/results?${query}`} className="text-sm font-medium text-action-soft-ink underline-offset-2 hover:underline">
+          <Link href={`/results?${query}`} className="inline-flex items-center gap-1 text-sm font-medium text-action-soft-ink underline-offset-2 hover:underline">
+            <ArrowLeftIcon className="size-3.5" />
             {t("category.back")}
           </Link>
           <h1 className="mt-2 text-2xl font-semibold">{cat.name}</h1>
