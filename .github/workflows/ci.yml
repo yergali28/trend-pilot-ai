@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TURBO_TELEMETRY_DISABLED: "1"
+      NEXT_TELEMETRY_DISABLED: "1"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      # Версия pnpm берётся из packageManager в package.json.
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - uses: supabase/setup-cli@45a513f8c64c0bc8e0e3dfe572b5c95be85f6359 # v3.0.1
+        with:
+          version: 2.121.0
+
+      # Секретов в CI нет: только ключи локального стенда, которые CLI выдаёт при запуске.
+      # Вывод start содержит эти ключи, поэтому он идёт в файл, а ключи маскируются в логах.
+      - name: Start local Supabase
+        run: |
+          if ! supabase start --workdir packages/db -x studio,imgproxy,storage-api,realtime,edge-runtime,logflare,vector,supavisor,mailpit > "$RUNNER_TEMP/supabase-start.log" 2>&1; then
+            grep -viE 'key|secret|jwt|token' "$RUNNER_TEMP/supabase-start.log" | tail -50
+            exit 1
+          fi
+          supabase status --workdir packages/db -o json 2>/dev/null \
+            | node -e 'const s=JSON.parse(require("fs").readFileSync(0,"utf8").replace(/^[^{]*/,""));for(const [k,v] of Object.entries(s))if(/KEY|SECRET|JWT/.test(k)&&v)console.log("::add-mask::"+v)'
+          echo "Supabase started"
+
+      # Тесты базы, воркера и API идут после запуска Supabase.
+      - run: pnpm lint
+      - run: pnpm typecheck
+      - run: pnpm test
+      - run: pnpm build
+
+      - name: Stop local Supabase
+        if: always()
+        run: supabase stop --workdir packages/db --no-backup > /dev/null 2>&1 || true

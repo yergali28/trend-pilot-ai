@@ -12,3 +12,6 @@ dist/
 .codex/
 .impeccable/
 .turbo/
+
+# Генерируется next dev/build, путь меняется между режимами
+next-env.d.ts
