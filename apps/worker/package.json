@@ -1,0 +1,11 @@
+{
+  "name": "@tp/worker",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": { "@tp/calc": "workspace:*" }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "trend-pilot-ai",
+  "private": true,
+  "packageManager": "pnpm@12.14.0",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "setup": "pnpm install && node -e \"const f=require('fs');if(!f.existsSync('.env.local'))f.copyFileSync('.env.example','.env.local')\"",
+    "db:start": "supabase start --workdir packages/db",
+    "db:reset": "supabase db reset --workdir packages/db",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "test:e2e": "turbo run test:e2e",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "build": "turbo run build"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "26.6.5",
+    "eslint": "10.13.0",
+    "turbo": "2.11.9",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.71.2",
+    "vitest": "5.0.5",
+    "@vitest/coverage-v8": "5.0.5"
+  }
+}
