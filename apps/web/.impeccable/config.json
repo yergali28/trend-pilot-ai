@@ -1,0 +1,32 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-font",
+        "value": "pt sans",
+        "createdAt": "2026-10-18T16:35:44.217Z",
+        "reason": "build thread: archived decision-round sketch of an alternative world (.impeccable/mocks/decision), exempt per finish review"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "pt mono",
+        "createdAt": "2026-10-18T16:35:44.235Z",
+        "reason": "build thread: archived decision-round sketch of an alternative world (.impeccable/mocks/decision), exempt per finish review"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "roboto condensed",
+        "createdAt": "2026-10-18T16:35:44.290Z",
+        "reason": "build thread: archived decision-round sketch of an alternative world (.impeccable/mocks/decision), exempt per finish review"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "inter",
+        "createdAt": "2026-10-18T16:35:44.328Z",
+        "reason": "build thread: archived decision-round sketch of an alternative world (.impeccable/mocks/decision), exempt per finish review"
+      }
+    ]
+  }
+}

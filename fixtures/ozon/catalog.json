@@ -1,0 +1,59 @@
+{
+  "recordedAt": "2026-10-18T00:00:00Z",
+  "synthetic": true,
+  "note": "Синтетическая запись в предполагаемом формате источника для демо-режима UI. Не рыночные данные.",
+  "body": {
+    "result": {
+      "items": [
+        {
+          "product_id": 9000,
+          "name": "Органайзер для кабеля, 3 шт.",
+          "price": "1490",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 9001,
+          "name": "Чехол для ноутбука 14″",
+          "price": "1490",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 9002,
+          "name": "Подставка для телефона складная",
+          "price": "590",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 9003,
+          "name": "USB-хаб на 4 порта",
+          "price": "990",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 9005,
+          "name": "Набор щёток для чистки, 5 шт.",
+          "price": "1290",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 9006,
+          "name": "Органайзер для ящика, 6 секций",
+          "price": "690",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 9007,
+          "name": "Резинки для фитнеса, 5 шт.",
+          "price": "1890",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 9008,
+          "name": "Бутылка для воды 750 мл",
+          "price": "650",
+          "currency_code": "RUB"
+        }
+      ]
+    }
+  }
+}

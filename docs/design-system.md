@@ -1,11 +1,11 @@
 # Дизайн-система Trend Pilot AI
 
-Статус: **на согласовании у владельца**. Экраны продукта не верстаются, пока палитра и UI-kit не утверждены.
+Статус: **утверждено владельцем 18.10.2026**; экраны продукта собраны на этой системе.
 
 - Единственный файл токенов: [`packages/ui/tokens.css`](../packages/ui/tokens.css). Значения в коде берутся только оттуда, через утилиты Tailwind (`bg-surface`, `text-muted`, `border-line`, …) или CSS-переменные `--tp-*`.
 - Компоненты: [`packages/ui/src`](../packages/ui/src). Тексты в компоненты приходят через props из i18n приложения (`apps/web/messages/{ru,en,kk}.json`).
 - Живой UI-kit: страница `/design` в `apps/web` (`?theme=dark`, `?lang=en|kk`). Скриншоты: [`docs/ui-kit/`](ui-kit/) (`design-light-1440.png`, `design-dark-1440.png`, `design-light-390.png`, `design-dark-390.png`).
-- Машиночитаемая версия для Impeccable: `apps/web/DESIGN.md` и `apps/web/.impeccable/design.json`.
+- Машиночитаемая версия для Impeccable: `DESIGN.md` и `.impeccable/design.json` в корне репозитория (рядом с PRODUCT.md).
 
 ## Направление
 

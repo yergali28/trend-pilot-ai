@@ -10,7 +10,8 @@ dist/
 .cursor/
 .gemini/
 .codex/
-/.impeccable/
+/.impeccable/*
+!/.impeccable/design.json
 apps/web/.impeccable/review/
 apps/web/.impeccable/live/
 apps/web/.impeccable/questions/
@@ -18,3 +19,4 @@ apps/web/.impeccable/questions/
 
 # Генерируется next dev/build, путь меняется между режимами
 next-env.d.ts
+.vitest/

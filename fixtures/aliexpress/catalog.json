@@ -1,0 +1,79 @@
+{
+  "recordedAt": "2026-10-18T00:00:00Z",
+  "synthetic": true,
+  "note": "Синтетическая запись в предполагаемом формате источника для демо-режима UI. Не рыночные данные.",
+  "body": {
+    "products": [
+      {
+        "product_id": "a-org",
+        "product_title": "Органайзер для кабеля, 3 шт.",
+        "target_sale_price": "2.10",
+        "target_sale_price_currency": "USD",
+        "package_weight": 0.12
+      },
+      {
+        "product_id": "a-sleeve",
+        "product_title": "Чехол для ноутбука 14″",
+        "target_sale_price": "4.80",
+        "target_sale_price_currency": "USD",
+        "package_weight": 0.35
+      },
+      {
+        "product_id": "a-stand",
+        "product_title": "Подставка для телефона складная",
+        "target_sale_price": "1.30",
+        "target_sale_price_currency": "USD",
+        "package_weight": 0.09
+      },
+      {
+        "product_id": "a-hub",
+        "product_title": "USB-хаб на 4 порта",
+        "target_sale_price": "3.90",
+        "target_sale_price_currency": "USD",
+        "package_weight": 0.08
+      },
+      {
+        "product_id": "a-lamp",
+        "product_title": "Настольная лампа складная",
+        "target_sale_price": "7.50",
+        "target_sale_price_currency": "USD",
+        "package_weight": 0.65
+      },
+      {
+        "product_id": "a-brush",
+        "product_title": "Набор щёток для чистки, 5 шт.",
+        "target_sale_price": "1.10",
+        "target_sale_price_currency": "USD",
+        "package_weight": 0.2
+      },
+      {
+        "product_id": "a-box",
+        "product_title": "Органайзер для ящика, 6 секций",
+        "target_sale_price": "2.60",
+        "target_sale_price_currency": "USD",
+        "package_weight": 0.45
+      },
+      {
+        "product_id": "a-band",
+        "product_title": "Резинки для фитнеса, 5 шт.",
+        "target_sale_price": "1.80",
+        "target_sale_price_currency": "USD",
+        "package_weight": 0.25
+      },
+      {
+        "product_id": "a-bottle",
+        "product_title": "Бутылка для воды 750 мл",
+        "target_sale_price": "2.40",
+        "target_sale_price_currency": "USD",
+        "package_weight": 0.3
+      },
+      {
+        "product_id": "a-mat",
+        "product_title": "Коврик для йоги 6 мм",
+        "target_sale_price": "6.20",
+        "target_sale_price_currency": "USD",
+        "package_weight": 1.1
+      }
+    ]
+  }
+}

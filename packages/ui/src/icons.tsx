@@ -34,3 +34,6 @@ export const DotIcon = (p: P) => (
 export const RingIcon = (p: P) => (
   <svg {...base} {...p}><circle cx="8" cy="8" r="3.5" strokeDasharray="2 1.6" /></svg>
 );
+export const ArrowLeftIcon = (p: P) => (
+  <svg {...base} {...p}><path d="M12.5 8h-9M7 4.5L3.5 8 7 11.5" /></svg>
+);

@@ -8,13 +8,17 @@
   "scripts": {
     "setup": "pnpm install && node -e \"const f=require('fs');if(!f.existsSync('.env.local'))f.copyFileSync('.env.example','.env.local')\"",
     "db:start": "supabase start --workdir packages/db",
-    "db:reset": "supabase db reset --workdir packages/db",
+    "db:reset": "supabase db reset --workdir packages/db && pnpm demo:load",
     "dev": "turbo run dev",
     "test": "turbo run test",
     "test:e2e": "turbo run test:e2e",
     "lint": "turbo run lint",
     "typecheck": "turbo run typecheck",
-    "build": "turbo run build"
+    "build": "turbo run build",
+    "demo:load": "pnpm --filter @tp/worker demo:load",
+    "env:local": "node scripts/env-local.mjs",
+    "i18n:check": "pnpm --filter @tp/web i18n:check",
+    "demo:load:mock": "pnpm --filter @tp/worker demo:load --mock"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",

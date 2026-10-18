@@ -4,6 +4,8 @@ import type pg from "pg";
 export interface IngestJob {
   sourceId: string;
   request: FetchRequest;
+  /** Локальное переопределение режима реестра для демо: только replay или mock, никогда live. */
+  mode?: "replay" | "mock";
 }
 
 export interface IngestResult {
@@ -29,14 +31,15 @@ export async function ingest(db: pg.Pool, job: IngestJob, fixturesDir?: string):
     throw new Error(`Источник ${job.sourceId} не активен: ${source.status}`);
   }
 
+  const mode: Mode = job.mode ?? source.mode;
   const run = await db.query<{ id: string }>(
     "insert into public.adapter_runs (source_id, mode) values ($1, $2) returning id",
-    [job.sourceId, source.mode],
+    [job.sourceId, mode],
   );
   const runId = run.rows[0]!.id;
 
   try {
-    const raw = await adapter.fetch(job.request, { mode: source.mode, ...(fixturesDir ? { fixturesDir } : {}) });
+    const raw = await adapter.fetch(job.request, { mode, ...(fixturesDir ? { fixturesDir } : {}) });
     const saved = await db.query<{ id: string }>(
       "insert into public.raw_responses (source_id, adapter_run_id, mode, request, body, fetched_at, synthetic) values ($1, $2, $3, $4, $5, $6, $7) returning id",
       [raw.sourceId, runId, raw.mode, raw.request, JSON.stringify(raw.body), raw.fetchedAt, raw.synthetic],
