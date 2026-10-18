@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+body{width:1440px;height:900px;overflow:hidden;font-family:"Golos Text",system-ui,sans-serif;background:#F3F4F1;color:#16211E;display:grid;grid-template-columns:72px 1fr 440px;font-size:14px}
+.rail{background:#16211E;display:flex;flex-direction:column;align-items:center;padding:20px 0;gap:22px}
+.rail i{width:24px;height:24px;border:2px solid #8FA39B;border-radius:50%;display:block}
+.rail i.on{border-color:#B5441A;background:#B5441A}
+.main{padding:28px 32px;display:flex;flex-direction:column;gap:20px}
+h1{font-size:22px;font-weight:600}
+.demo{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#5F6763;border:1px solid #C9CEC9;padding:2px 6px;margin-left:10px;vertical-align:middle}
+.filters{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.chip{border:1px solid #C9CEC9;background:#fff;padding:7px 12px;font-weight:500}
+.chip.sel{border-color:#B5441A;color:#B5441A;box-shadow:inset 0 0 0 1px #B5441A}
+.chip.off{color:#5F6763;border-style:dashed}
+.lbl{color:#5F6763;font-size:12px;margin-right:4px}
+table{width:100%;border-collapse:collapse;background:#fff}
+th{font-size:12px;font-weight:500;color:#5F6763;text-align:left;padding:10px 12px;border-bottom:1px solid #DCE0DC}
+td{padding:11px 12px;border-bottom:1px solid #ECEEEB;font-variant-numeric:tabular-nums}
+td.n,th.n{text-align:right}
+tr.focus td{background:#FBF1EC}
+.x{display:inline-block;min-width:48px;text-align:center;font-weight:600;padding:2px 6px;color:#fff}
+.x2{background:#BFDCCD;color:#16211E}.x3{background:#7DB89D;color:#16211E}.x5{background:#2F7D5B}.x10{background:#174D37}
+.nd{color:#5F6763;font-style:italic}
+.cov{font-size:12px;color:#4A5450}
+.cov b{display:inline-block;width:10px;height:10px;border-radius:50%;background:#2F7D5B;margin-right:2px}
+.cov b.o{background:none;border:1.5px dashed #8A918D}
+.side{background:#fff;border-left:1px solid #DCE0DC;padding:28px;display:flex;flex-direction:column;gap:18px}
+.side h2{font-size:18px;font-weight:600}
+.meta{color:#5F6763;font-size:12px}
+.route{position:relative;padding-left:28px}
+.route:before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:4px;background:#B5441A}
+.st{position:relative;display:flex;justify-content:space-between;padding:7px 0;font-variant-numeric:tabular-nums}
+.st:before{content:"";position:absolute;left:-25px;top:10px;width:10px;height:10px;border-radius:50%;background:#fff;border:3px solid #B5441A}
+.st.end{font-weight:700;font-size:18px}
+.st.end:before{background:#B5441A}
+.st.gap:before{border-color:#8A918D;border-style:dashed}
+.st span:last-child{min-width:110px;text-align:right}
+.minus{color:#4A5450}
+.range{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#DCE0DC;border:1px solid #DCE0DC}
+.range div{background:#F3F4F1;padding:8px 10px;font-variant-numeric:tabular-nums}
+.range small{display:block;color:#5F6763;font-size:12px}
+.btn{background:#B5441A;color:#fff;border:0;padding:10px 16px;font:600 14px "Golos Text";align-self:flex-start}
+</style></head><body>
+<nav class="rail"><i class="on"></i><i></i><i></i><i></i><i></i></nav>
+<section class="main">
+  <h1>Подбор товаров <span class="demo">Демо · синтетические данные</span></h1>
+  <div class="filters">
+    <span class="lbl">Продажа</span><span class="chip sel">Все · 2 из 3</span><span class="chip">Kaspi</span><span class="chip">Ozon</span><span class="chip off">Wildberries · нет токена</span>
+    <span class="lbl" style="margin-left:14px">Закупка</span><span class="chip sel">AliExpress</span>
+    <span class="lbl" style="margin-left:14px">Бюджет</span><span class="chip">1 500 000 ₸</span>
+    <span class="lbl" style="margin-left:14px">Кратность</span><span class="chip">2x</span><span class="chip sel">3x</span><span class="chip">5x</span><span class="chip">10x</span>
+  </div>
+  <table>
+    <thead><tr><th>Товар</th><th class="n">Закупка</th><th class="n">Landed cost</th><th class="n">Цена продажи</th><th class="n">Прибыль / ед.</th><th class="n">Кратность</th><th class="n">ROI</th><th>Покрытие</th></tr></thead>
+    <tbody>
+      <tr><td>Органайзер для кабеля, 3 шт.</td><td class="n">2 000 ₸</td><td class="n">4 119 ₸</td><td class="n">10 000 ₸</td><td class="n">3 751 ₸</td><td class="n"><span class="x x3">2.4x</span></td><td class="n">91%</td><td class="cov"><b></b><b></b><b class="o"></b> 2 из 3</td></tr>
+      <tr class="focus"><td>Настольная лампа складная</td><td class="n">2 800 ₸</td><td class="n">8 584 ₸</td><td class="n">15 000 ₸</td><td class="n">3 571 ₸</td><td class="n"><span class="x x2">1.7x</span></td><td class="n">42%</td><td class="cov"><b></b><b></b><b class="o"></b> 2 из 3</td></tr>
+      <tr><td>Чехол для ноутбука 14″</td><td class="n">1 600 ₸</td><td class="n">2 950 ₸</td><td class="n">16 500 ₸</td><td class="n">9 870 ₸</td><td class="n"><span class="x x5">5.6x</span></td><td class="n">335%</td><td class="cov"><b></b><b class="o"></b><b class="o"></b> 1 из 3</td></tr>
+      <tr><td>Набор щёток для чистки</td><td class="n">900 ₸</td><td class="n">1 210 ₸</td><td class="n">13 000 ₸</td><td class="n">8 940 ₸</td><td class="n"><span class="x x10">10.7x</span></td><td class="n">739%</td><td class="cov"><b></b><b></b><b class="o"></b> 2 из 3</td></tr>
+      <tr><td>Подставка для телефона</td><td class="n">1 100 ₸</td><td class="n nd">нет данных</td><td class="n">6 900 ₸</td><td class="n nd">нет данных</td><td class="n nd">—</td><td class="n nd">—</td><td class="cov"><b></b><b class="o"></b><b class="o"></b> 1 из 3</td></tr>
+    </tbody>
+  </table>
+</section>
+<aside class="side">
+  <div><h2>Настольная лампа складная</h2><p class="meta">Kaspi · цена от 18.10.2026 · Демо</p></div>
+  <div class="route">
+    <div class="st"><span>Цена продажи</span><span>15 000 ₸</span></div>
+    <div class="st"><span class="minus">Закупка и доставка из Китая</span><span>− 7 100 ₸</span></div>
+    <div class="st"><span class="minus">Пошлина и НДС</span><span>− 1 250 ₸</span></div>
+    <div class="st"><span class="minus">Упаковка, агент</span><span>− 234 ₸</span></div>
+    <div class="st"><span class="minus">Комиссия и логистика площадки</span><span>− 2 600 ₸</span></div>
+    <div class="st gap"><span class="minus">Налог · выключен</span><span>0 ₸</span></div>
+    <div class="st"><span class="minus">Возвраты 5%</span><span>− 245 ₸</span></div>
+    <div class="st end"><span>Чистая прибыль</span><span>3 571 ₸</span></div>
+  </div>
+  <div class="range"><div><small>Пессимистично</small>2 664 ₸</div><div><small>Реалистично</small><b>3 571 ₸</b></div><div><small>Оптимистично</small>4 837 ₸</div></div>
+  <button class="btn">Почему так?</button>
+</aside>
+</body></html>

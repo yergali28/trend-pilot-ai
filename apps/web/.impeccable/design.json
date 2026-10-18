@@ -1,0 +1,1502 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-18T12:39:39+00:00",
+  "title": "Design System: Trend Pilot AI",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "role": "neutral",
+        "displayName": "Cool Paper",
+        "canonical": "#f6f7f9",
+        "theme": "light",
+        "tonalRamp": [
+          "#0b0b0c",
+          "#232425",
+          "#3f4041",
+          "#5d5e5f",
+          "#7c7d7f",
+          "#9d9ea0",
+          "#c3c4c6",
+          "#edeef0"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "White Sheet",
+        "canonical": "#ffffff",
+        "theme": "light",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#7d7d7d",
+          "#9e9e9e",
+          "#c4c4c4",
+          "#eeeeee"
+        ]
+      },
+      "surface-sunken": {
+        "role": "neutral",
+        "displayName": "Recessed Grey",
+        "canonical": "#eff1f4",
+        "theme": "light",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232426",
+          "#3e4042",
+          "#5c5e60",
+          "#7c7d80",
+          "#9d9ea1",
+          "#c2c4c7",
+          "#edeff2"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#e2e5ea",
+        "theme": "light",
+        "tonalRamp": [
+          "#090b0e",
+          "#222428",
+          "#3d4044",
+          "#5b5e62",
+          "#7b7d82",
+          "#9c9ea3",
+          "#c1c4c9",
+          "#eceff4"
+        ]
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Strong Hairline",
+        "canonical": "#cbd0d8",
+        "theme": "light",
+        "tonalRamp": [
+          "#080b10",
+          "#21242a",
+          "#3c4046",
+          "#5a5e65",
+          "#797e85",
+          "#9a9fa6",
+          "#bfc4cc",
+          "#eaeff7"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#111722",
+        "theme": "light",
+        "tonalRamp": [
+          "#060b15",
+          "#1e2430",
+          "#39404d",
+          "#565e6c",
+          "#767e8c",
+          "#969fae",
+          "#bcc5d4",
+          "#e7effe"
+        ]
+      },
+      "text-muted": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "canonical": "#4a5361",
+        "theme": "light",
+        "tonalRamp": [
+          "#050b16",
+          "#1d2431",
+          "#38404e",
+          "#555e6d",
+          "#747e8d",
+          "#959faf",
+          "#bac5d5",
+          "#e5efff"
+        ]
+      },
+      "text-subtle": {
+        "role": "neutral",
+        "displayName": "Slate",
+        "canonical": "#5f6876",
+        "theme": "light",
+        "tonalRamp": [
+          "#050b16",
+          "#1d2430",
+          "#38404d",
+          "#555e6c",
+          "#757e8c",
+          "#959fae",
+          "#bbc5d5",
+          "#e6effe"
+        ]
+      },
+      "action": {
+        "role": "primary",
+        "displayName": "Ledger Blue",
+        "canonical": "#3346c7",
+        "theme": "light",
+        "tonalRamp": [
+          "#030132",
+          "#0f0670",
+          "#2024a6",
+          "#364acc",
+          "#516ef2",
+          "#7b98f9",
+          "#aec2fd",
+          "#e9eefe"
+        ]
+      },
+      "action-hover": {
+        "role": "primary",
+        "displayName": "Ledger Blue Hover",
+        "canonical": "#2a3aa6",
+        "theme": "light",
+        "tonalRamp": [
+          "#030131",
+          "#100a6d",
+          "#222d99",
+          "#3a50bd",
+          "#5772e3",
+          "#7997ff",
+          "#afc2fb",
+          "#e8eeff"
+        ]
+      },
+      "action-text": {
+        "role": "primary",
+        "displayName": "On Ledger Blue",
+        "canonical": "#ffffff",
+        "theme": "light",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#7d7d7d",
+          "#9e9e9e",
+          "#c4c4c4",
+          "#eeeeee"
+        ]
+      },
+      "action-soft": {
+        "role": "primary",
+        "displayName": "Blue Wash",
+        "canonical": "#eceffc",
+        "theme": "light",
+        "tonalRamp": [
+          "#090b13",
+          "#21232d",
+          "#3d3f49",
+          "#5b5d68",
+          "#7a7d88",
+          "#9b9eaa",
+          "#c1c3d0",
+          "#ebeefb"
+        ]
+      },
+      "action-soft-text": {
+        "role": "primary",
+        "displayName": "Blue Wash Ink",
+        "canonical": "#2a3aa6",
+        "theme": "light",
+        "tonalRamp": [
+          "#030131",
+          "#100a6d",
+          "#222d99",
+          "#3a50bd",
+          "#5772e3",
+          "#7997ff",
+          "#afc2fb",
+          "#e8eeff"
+        ]
+      },
+      "focus": {
+        "role": "primary",
+        "displayName": "Focus Blue",
+        "canonical": "#3346c7",
+        "theme": "light",
+        "tonalRamp": [
+          "#030132",
+          "#0f0670",
+          "#2024a6",
+          "#364acc",
+          "#516ef2",
+          "#7b98f9",
+          "#aec2fd",
+          "#e9eefe"
+        ]
+      },
+      "x-below-bg": {
+        "role": "secondary",
+        "displayName": "X Below Bg",
+        "canonical": "#eef0f3",
+        "theme": "light",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232426",
+          "#3e4042",
+          "#5c5e60",
+          "#7c7d80",
+          "#9d9ea1",
+          "#c2c4c7",
+          "#edeff2"
+        ]
+      },
+      "x-below-text": {
+        "role": "secondary",
+        "displayName": "X Below Text",
+        "canonical": "#4a5361",
+        "theme": "light",
+        "tonalRamp": [
+          "#050b16",
+          "#1d2431",
+          "#38404e",
+          "#555e6d",
+          "#747e8d",
+          "#959faf",
+          "#bac5d5",
+          "#e5efff"
+        ]
+      },
+      "x2-bg": {
+        "role": "secondary",
+        "displayName": "X2 Bg",
+        "canonical": "#dcf1e4",
+        "theme": "light",
+        "tonalRamp": [
+          "#020f07",
+          "#18281f",
+          "#33443a",
+          "#516358",
+          "#708377",
+          "#90a498",
+          "#b6cabd",
+          "#e0f5e8"
+        ]
+      },
+      "x2-text": {
+        "role": "secondary",
+        "displayName": "X2 Text",
+        "canonical": "#1a5e3c",
+        "theme": "light",
+        "tonalRamp": [
+          "#000f06",
+          "#032c18",
+          "#0f4c2e",
+          "#2b6c49",
+          "#4d8d68",
+          "#6eaf89",
+          "#93d6ae",
+          "#c8fedc"
+        ]
+      },
+      "x3-bg": {
+        "role": "secondary",
+        "displayName": "X3 Bg",
+        "canonical": "#a8dcbf",
+        "theme": "light",
+        "tonalRamp": [
+          "#010f07",
+          "#042c1b",
+          "#194a33",
+          "#396951",
+          "#598a70",
+          "#79ac90",
+          "#9ed2b5",
+          "#c8fddf"
+        ]
+      },
+      "x3-text": {
+        "role": "secondary",
+        "displayName": "X3 Text",
+        "canonical": "#0f4a2d",
+        "theme": "light",
+        "tonalRamp": [
+          "#010f06",
+          "#052c18",
+          "#114c2f",
+          "#346b4c",
+          "#548b6b",
+          "#75ad8b",
+          "#9ad4b0",
+          "#c4ffda"
+        ]
+      },
+      "x5-bg": {
+        "role": "secondary",
+        "displayName": "X5 Bg",
+        "canonical": "#21804e",
+        "theme": "light",
+        "tonalRamp": [
+          "#000f05",
+          "#012c16",
+          "#0a4d2b",
+          "#03703f",
+          "#37915e",
+          "#5bb47e",
+          "#82dba3",
+          "#c6ffd9"
+        ]
+      },
+      "x5-text": {
+        "role": "secondary",
+        "displayName": "X5 Text",
+        "canonical": "#ffffff",
+        "theme": "light",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#7d7d7d",
+          "#9e9e9e",
+          "#c4c4c4",
+          "#eeeeee"
+        ]
+      },
+      "x10-bg": {
+        "role": "secondary",
+        "displayName": "X10 Bg",
+        "canonical": "#0e5132",
+        "theme": "light",
+        "tonalRamp": [
+          "#000f06",
+          "#002c18",
+          "#064d2e",
+          "#2e6c4b",
+          "#4f8c6a",
+          "#71ae8a",
+          "#96d5af",
+          "#c5ffdb"
+        ]
+      },
+      "x10-text": {
+        "role": "secondary",
+        "displayName": "X10 Text",
+        "canonical": "#ffffff",
+        "theme": "light",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#7d7d7d",
+          "#9e9e9e",
+          "#c4c4c4",
+          "#eeeeee"
+        ]
+      },
+      "risk": {
+        "role": "tertiary",
+        "displayName": "Risk",
+        "canonical": "#b42318",
+        "theme": "light",
+        "tonalRamp": [
+          "#1e0100",
+          "#480603",
+          "#7b0602",
+          "#ad1a10",
+          "#d44536",
+          "#fb6957",
+          "#fdada0",
+          "#ffe9e5"
+        ]
+      },
+      "risk-soft": {
+        "role": "tertiary",
+        "displayName": "Risk Soft",
+        "canonical": "#fdeceb",
+        "theme": "light",
+        "tonalRamp": [
+          "#120808",
+          "#2c2120",
+          "#493c3b",
+          "#685a59",
+          "#887978",
+          "#aa9a99",
+          "#d0c0bf",
+          "#fbeae9"
+        ]
+      },
+      "warning": {
+        "role": "tertiary",
+        "displayName": "Warning",
+        "canonical": "#8f5300",
+        "theme": "light",
+        "tonalRamp": [
+          "#140800",
+          "#361e03",
+          "#5d3502",
+          "#854f0f",
+          "#ab6d2a",
+          "#cf8e4e",
+          "#f7b473",
+          "#feebd9"
+        ]
+      },
+      "warning-soft": {
+        "role": "tertiary",
+        "displayName": "Warning Soft",
+        "canonical": "#fff3dc",
+        "theme": "light",
+        "tonalRamp": [
+          "#110a00",
+          "#2c2311",
+          "#483e2c",
+          "#675c49",
+          "#877c67",
+          "#a89d88",
+          "#cec3ad",
+          "#f9edd6"
+        ]
+      },
+      "nodata": {
+        "role": "tertiary",
+        "displayName": "Nodata",
+        "canonical": "#5f6876",
+        "theme": "light",
+        "tonalRamp": [
+          "#050b16",
+          "#1d2430",
+          "#38404d",
+          "#555e6c",
+          "#757e8c",
+          "#959fae",
+          "#bbc5d5",
+          "#e6effe"
+        ]
+      },
+      "nodata-soft": {
+        "role": "tertiary",
+        "displayName": "Nodata Soft",
+        "canonical": "#f1f2f4",
+        "theme": "light",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#232425",
+          "#3f4041",
+          "#5d5e5f",
+          "#7c7d7f",
+          "#9d9ea0",
+          "#c3c4c6",
+          "#edeef0"
+        ]
+      },
+      "nodata-line": {
+        "role": "tertiary",
+        "displayName": "Nodata Line",
+        "canonical": "#9aa2ae",
+        "theme": "light",
+        "tonalRamp": [
+          "#060b13",
+          "#1e242e",
+          "#39404a",
+          "#575e69",
+          "#767e89",
+          "#979fab",
+          "#bcc5d1",
+          "#e7effc"
+        ]
+      },
+      "offline": {
+        "role": "tertiary",
+        "displayName": "Offline",
+        "canonical": "#5f6876",
+        "theme": "light",
+        "tonalRamp": [
+          "#050b16",
+          "#1d2430",
+          "#38404d",
+          "#555e6c",
+          "#757e8c",
+          "#959fae",
+          "#bbc5d5",
+          "#e6effe"
+        ]
+      },
+      "offline-soft": {
+        "role": "tertiary",
+        "displayName": "Offline Soft",
+        "canonical": "#eceef1",
+        "theme": "light",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232426",
+          "#3e4042",
+          "#5c5e60",
+          "#7c7d80",
+          "#9d9ea1",
+          "#c2c4c7",
+          "#edeff2"
+        ]
+      },
+      "ok": {
+        "role": "tertiary",
+        "displayName": "Ok",
+        "canonical": "#1a7f4b",
+        "theme": "light",
+        "tonalRamp": [
+          "#001005",
+          "#002d15",
+          "#064d2a",
+          "#176f41",
+          "#33925d",
+          "#59b47d",
+          "#80dba2",
+          "#c9fdda"
+        ]
+      },
+      "chart-line": {
+        "role": "tertiary",
+        "displayName": "Chart Line",
+        "canonical": "#4a5361",
+        "theme": "light",
+        "tonalRamp": [
+          "#050b16",
+          "#1d2431",
+          "#38404e",
+          "#555e6d",
+          "#747e8d",
+          "#959faf",
+          "#bac5d5",
+          "#e5efff"
+        ]
+      },
+      "chart-total": {
+        "role": "tertiary",
+        "displayName": "Chart Total",
+        "canonical": "#4a5361",
+        "theme": "light",
+        "tonalRamp": [
+          "#050b16",
+          "#1d2431",
+          "#38404e",
+          "#555e6d",
+          "#747e8d",
+          "#959faf",
+          "#bac5d5",
+          "#e5efff"
+        ]
+      },
+      "chart-decrease": {
+        "role": "tertiary",
+        "displayName": "Chart Decrease",
+        "canonical": "#c9ced6",
+        "theme": "light",
+        "tonalRamp": [
+          "#080b10",
+          "#21242a",
+          "#3c4046",
+          "#5a5e65",
+          "#797e85",
+          "#9a9fa6",
+          "#bfc4cc",
+          "#eaeff7"
+        ]
+      },
+      "chart-result": {
+        "role": "tertiary",
+        "displayName": "Chart Result",
+        "canonical": "#21804e",
+        "theme": "light",
+        "tonalRamp": [
+          "#000f05",
+          "#012c16",
+          "#0a4d2b",
+          "#03703f",
+          "#37915e",
+          "#5bb47e",
+          "#82dba3",
+          "#c6ffd9"
+        ]
+      },
+      "chart-loss": {
+        "role": "tertiary",
+        "displayName": "Chart Loss",
+        "canonical": "#b42318",
+        "theme": "light",
+        "tonalRamp": [
+          "#1e0100",
+          "#480603",
+          "#7b0602",
+          "#ad1a10",
+          "#d44536",
+          "#fb6957",
+          "#fdada0",
+          "#ffe9e5"
+        ]
+      },
+      "selection": {
+        "role": "neutral",
+        "displayName": "Selection",
+        "canonical": "#d7dcfa",
+        "theme": "light",
+        "tonalRamp": [
+          "#08091c",
+          "#1f2238",
+          "#3a3e56",
+          "#585c75",
+          "#777b96",
+          "#989cb9",
+          "#bdc2df",
+          "#ebedfe"
+        ]
+      },
+      "bg-dark": {
+        "role": "neutral",
+        "displayName": "Cool Paper (dark)",
+        "canonical": "#0d1015",
+        "theme": "dark",
+        "tonalRamp": [
+          "#080b10",
+          "#21242a",
+          "#3c4046",
+          "#5a5e64",
+          "#797d84",
+          "#9a9fa6",
+          "#c0c4cc",
+          "#eaeff6"
+        ]
+      },
+      "surface-dark": {
+        "role": "neutral",
+        "displayName": "White Sheet (dark)",
+        "canonical": "#151a21",
+        "theme": "dark",
+        "tonalRamp": [
+          "#070b12",
+          "#1f242c",
+          "#3a4048",
+          "#585e67",
+          "#777e87",
+          "#989fa8",
+          "#bec5cf",
+          "#e8eff9"
+        ]
+      },
+      "surface-sunken-dark": {
+        "role": "neutral",
+        "displayName": "Recessed Grey (dark)",
+        "canonical": "#1b2129",
+        "theme": "dark",
+        "tonalRamp": [
+          "#070b13",
+          "#1e252d",
+          "#3a4049",
+          "#575e68",
+          "#767e88",
+          "#979faa",
+          "#bdc5d0",
+          "#e7effb"
+        ]
+      },
+      "line-dark": {
+        "role": "neutral",
+        "displayName": "Hairline (dark)",
+        "canonical": "#29303a",
+        "theme": "dark",
+        "tonalRamp": [
+          "#060b14",
+          "#1e242e",
+          "#39404b",
+          "#565e69",
+          "#767e8a",
+          "#979fab",
+          "#bcc5d2",
+          "#e6effd"
+        ]
+      },
+      "line-strong-dark": {
+        "role": "neutral",
+        "displayName": "Strong Hairline (dark)",
+        "canonical": "#3a4350",
+        "theme": "dark",
+        "tonalRamp": [
+          "#050b16",
+          "#1c2430",
+          "#37404d",
+          "#555e6c",
+          "#747e8d",
+          "#959fae",
+          "#bac5d5",
+          "#e5effe"
+        ]
+      },
+      "text-dark": {
+        "role": "neutral",
+        "displayName": "Ink (dark)",
+        "canonical": "#e8ebf0",
+        "theme": "dark",
+        "tonalRamp": [
+          "#090b0e",
+          "#222428",
+          "#3d4044",
+          "#5b5e62",
+          "#7b7d82",
+          "#9c9ea3",
+          "#c1c4c9",
+          "#eceff4"
+        ]
+      },
+      "text-muted-dark": {
+        "role": "neutral",
+        "displayName": "Graphite (dark)",
+        "canonical": "#b3bac5",
+        "theme": "dark",
+        "tonalRamp": [
+          "#070b13",
+          "#1f242d",
+          "#3a4049",
+          "#585e68",
+          "#777e88",
+          "#989faa",
+          "#bec5d0",
+          "#e8effb"
+        ]
+      },
+      "text-subtle-dark": {
+        "role": "neutral",
+        "displayName": "Slate (dark)",
+        "canonical": "#9aa2ae",
+        "theme": "dark",
+        "tonalRamp": [
+          "#060b13",
+          "#1e242e",
+          "#39404a",
+          "#575e69",
+          "#767e89",
+          "#979fab",
+          "#bcc5d1",
+          "#e7effc"
+        ]
+      },
+      "action-dark": {
+        "role": "primary",
+        "displayName": "Ledger Blue (dark)",
+        "canonical": "#7f92ff",
+        "theme": "dark",
+        "tonalRamp": [
+          "#050032",
+          "#17036f",
+          "#2b2e92",
+          "#4550b6",
+          "#6271db",
+          "#8396f7",
+          "#b3c1fc",
+          "#eaeefe"
+        ]
+      },
+      "action-hover-dark": {
+        "role": "primary",
+        "displayName": "Ledger Blue Hover (dark)",
+        "canonical": "#9eacff",
+        "theme": "dark",
+        "tonalRamp": [
+          "#06012f",
+          "#19165c",
+          "#31367d",
+          "#4c55a0",
+          "#6a76c4",
+          "#8a97e9",
+          "#b4c0fd",
+          "#eaeefe"
+        ]
+      },
+      "action-text-dark": {
+        "role": "primary",
+        "displayName": "On Ledger Blue (dark)",
+        "canonical": "#0d1015",
+        "theme": "dark",
+        "tonalRamp": [
+          "#080b10",
+          "#21242a",
+          "#3c4046",
+          "#5a5e64",
+          "#797d84",
+          "#9a9fa6",
+          "#c0c4cc",
+          "#eaeff6"
+        ]
+      },
+      "action-soft-dark": {
+        "role": "primary",
+        "displayName": "Blue Wash (dark)",
+        "canonical": "#1f2645",
+        "theme": "dark",
+        "tonalRamp": [
+          "#050723",
+          "#1b2140",
+          "#353e5f",
+          "#525c7f",
+          "#717ba0",
+          "#929dc3",
+          "#b7c2eb",
+          "#e9eefe"
+        ]
+      },
+      "action-soft-text-dark": {
+        "role": "primary",
+        "displayName": "Blue Wash Ink (dark)",
+        "canonical": "#b4c0ff",
+        "theme": "dark",
+        "tonalRamp": [
+          "#060130",
+          "#1a1d4e",
+          "#333a6e",
+          "#505890",
+          "#6f78b3",
+          "#8f9ad6",
+          "#b4c0ff",
+          "#eaeefe"
+        ]
+      },
+      "focus-dark": {
+        "role": "primary",
+        "displayName": "Focus Blue (dark)",
+        "canonical": "#9eacff",
+        "theme": "dark",
+        "tonalRamp": [
+          "#06012f",
+          "#19165c",
+          "#31367d",
+          "#4c55a0",
+          "#6a76c4",
+          "#8a97e9",
+          "#b4c0fd",
+          "#eaeefe"
+        ]
+      },
+      "x-below-bg-dark": {
+        "role": "secondary",
+        "displayName": "X Below Bg (dark)",
+        "canonical": "#232a33",
+        "theme": "dark",
+        "tonalRamp": [
+          "#060c13",
+          "#1e252d",
+          "#39404a",
+          "#565e69",
+          "#767e89",
+          "#979fab",
+          "#bcc5d1",
+          "#e6effc"
+        ]
+      },
+      "x-below-text-dark": {
+        "role": "secondary",
+        "displayName": "X Below Text (dark)",
+        "canonical": "#b3bac5",
+        "theme": "dark",
+        "tonalRamp": [
+          "#070b13",
+          "#1f242d",
+          "#3a4049",
+          "#585e68",
+          "#777e88",
+          "#989faa",
+          "#bec5d0",
+          "#e8effb"
+        ]
+      },
+      "x2-bg-dark": {
+        "role": "secondary",
+        "displayName": "X2 Bg (dark)",
+        "canonical": "#16352a",
+        "theme": "dark",
+        "tonalRamp": [
+          "#000f09",
+          "#0b2b20",
+          "#28473b",
+          "#466659",
+          "#658678",
+          "#85a799",
+          "#abcdbf",
+          "#d4f8e9"
+        ]
+      },
+      "x2-text-dark": {
+        "role": "secondary",
+        "displayName": "X2 Text (dark)",
+        "canonical": "#9fe3bf",
+        "theme": "dark",
+        "tonalRamp": [
+          "#000f07",
+          "#022c1b",
+          "#0c4c32",
+          "#296c4e",
+          "#4b8d6d",
+          "#6daf8d",
+          "#92d6b2",
+          "#c7fedf"
+        ]
+      },
+      "x3-bg-dark": {
+        "role": "secondary",
+        "displayName": "X3 Bg (dark)",
+        "canonical": "#1f5a40",
+        "theme": "dark",
+        "tonalRamp": [
+          "#000f07",
+          "#022c1b",
+          "#0c4c33",
+          "#316b50",
+          "#528b6f",
+          "#73ad8f",
+          "#98d4b5",
+          "#c2ffdf"
+        ]
+      },
+      "x3-text-dark": {
+        "role": "secondary",
+        "displayName": "X3 Text (dark)",
+        "canonical": "#d2f5e2",
+        "theme": "dark",
+        "tonalRamp": [
+          "#000f07",
+          "#0c2b1d",
+          "#294738",
+          "#476656",
+          "#668675",
+          "#86a796",
+          "#accebb",
+          "#d5f8e5"
+        ]
+      },
+      "x5-bg-dark": {
+        "role": "secondary",
+        "displayName": "X5 Bg (dark)",
+        "canonical": "#3fb57a",
+        "theme": "dark",
+        "tonalRamp": [
+          "#000f06",
+          "#022c18",
+          "#0b4c2e",
+          "#067044",
+          "#08955c",
+          "#42b87c",
+          "#6ddfa1",
+          "#c6fedc"
+        ]
+      },
+      "x5-text-dark": {
+        "role": "secondary",
+        "displayName": "X5 Text (dark)",
+        "canonical": "#06140d",
+        "theme": "dark",
+        "tonalRamp": [
+          "#030e08",
+          "#192820",
+          "#34443b",
+          "#516259",
+          "#718278",
+          "#91a499",
+          "#b7c9bf",
+          "#e1f4e9"
+        ]
+      },
+      "x10-bg-dark": {
+        "role": "secondary",
+        "displayName": "X10 Bg (dark)",
+        "canonical": "#8ee0b5",
+        "theme": "dark",
+        "tonalRamp": [
+          "#010f07",
+          "#042c1b",
+          "#034d31",
+          "#136f4a",
+          "#3d9069",
+          "#61b289",
+          "#87d9ae",
+          "#c4ffde"
+        ]
+      },
+      "x10-text-dark": {
+        "role": "secondary",
+        "displayName": "X10 Text (dark)",
+        "canonical": "#06140d",
+        "theme": "dark",
+        "tonalRamp": [
+          "#030e08",
+          "#192820",
+          "#34443b",
+          "#516259",
+          "#718278",
+          "#91a499",
+          "#b7c9bf",
+          "#e1f4e9"
+        ]
+      },
+      "risk-dark": {
+        "role": "tertiary",
+        "displayName": "Risk (dark)",
+        "canonical": "#ff8f84",
+        "theme": "dark",
+        "tonalRamp": [
+          "#1e0001",
+          "#490406",
+          "#781012",
+          "#9c3631",
+          "#c15850",
+          "#e77a70",
+          "#ffaba2",
+          "#fee9e6"
+        ]
+      },
+      "risk-soft-dark": {
+        "role": "tertiary",
+        "displayName": "Risk Soft (dark)",
+        "canonical": "#3a1714",
+        "theme": "dark",
+        "tonalRamp": [
+          "#1d0101",
+          "#3b1815",
+          "#5a3430",
+          "#7a514d",
+          "#9c716b",
+          "#bf928c",
+          "#e7b7b1",
+          "#ffe9e6"
+        ]
+      },
+      "warning-dark": {
+        "role": "tertiary",
+        "displayName": "Warning (dark)",
+        "canonical": "#f4b955",
+        "theme": "dark",
+        "tonalRamp": [
+          "#120900",
+          "#322002",
+          "#543a09",
+          "#7b5506",
+          "#a47308",
+          "#cc9326",
+          "#f4b954",
+          "#feecd0"
+        ]
+      },
+      "warning-soft-dark": {
+        "role": "tertiary",
+        "displayName": "Warning Soft (dark)",
+        "canonical": "#33250c",
+        "theme": "dark",
+        "tonalRamp": [
+          "#120900",
+          "#2f2108",
+          "#4c3d24",
+          "#6b5b41",
+          "#8b7b60",
+          "#ad9c80",
+          "#d3c2a5",
+          "#feecce"
+        ]
+      },
+      "nodata-dark": {
+        "role": "tertiary",
+        "displayName": "Nodata (dark)",
+        "canonical": "#9aa2ae",
+        "theme": "dark",
+        "tonalRamp": [
+          "#060b13",
+          "#1e242e",
+          "#39404a",
+          "#575e69",
+          "#767e89",
+          "#979fab",
+          "#bcc5d1",
+          "#e7effc"
+        ]
+      },
+      "nodata-soft-dark": {
+        "role": "tertiary",
+        "displayName": "Nodata Soft (dark)",
+        "canonical": "#1b2129",
+        "theme": "dark",
+        "tonalRamp": [
+          "#070b13",
+          "#1e252d",
+          "#3a4049",
+          "#575e68",
+          "#767e88",
+          "#979faa",
+          "#bdc5d0",
+          "#e7effb"
+        ]
+      },
+      "nodata-line-dark": {
+        "role": "tertiary",
+        "displayName": "Nodata Line (dark)",
+        "canonical": "#4a5361",
+        "theme": "dark",
+        "tonalRamp": [
+          "#050b16",
+          "#1d2431",
+          "#38404e",
+          "#555e6d",
+          "#747e8d",
+          "#959faf",
+          "#bac5d5",
+          "#e5efff"
+        ]
+      },
+      "offline-dark": {
+        "role": "tertiary",
+        "displayName": "Offline (dark)",
+        "canonical": "#9aa2ae",
+        "theme": "dark",
+        "tonalRamp": [
+          "#060b13",
+          "#1e242e",
+          "#39404a",
+          "#575e69",
+          "#767e89",
+          "#979fab",
+          "#bcc5d1",
+          "#e7effc"
+        ]
+      },
+      "offline-soft-dark": {
+        "role": "tertiary",
+        "displayName": "Offline Soft (dark)",
+        "canonical": "#1f252d",
+        "theme": "dark",
+        "tonalRamp": [
+          "#070b12",
+          "#1f252c",
+          "#3a4049",
+          "#575e68",
+          "#777e88",
+          "#979fa9",
+          "#bdc5d0",
+          "#e7effa"
+        ]
+      },
+      "ok-dark": {
+        "role": "tertiary",
+        "displayName": "Ok (dark)",
+        "canonical": "#5fd197",
+        "theme": "dark",
+        "tonalRamp": [
+          "#000f06",
+          "#022c19",
+          "#0b4c30",
+          "#067046",
+          "#08955f",
+          "#42b77f",
+          "#6ddfa4",
+          "#c6fedd"
+        ]
+      },
+      "chart-line-dark": {
+        "role": "tertiary",
+        "displayName": "Chart Line (dark)",
+        "canonical": "#b3bac5",
+        "theme": "dark",
+        "tonalRamp": [
+          "#070b13",
+          "#1f242d",
+          "#3a4049",
+          "#585e68",
+          "#777e88",
+          "#989faa",
+          "#bec5d0",
+          "#e8effb"
+        ]
+      },
+      "chart-total-dark": {
+        "role": "tertiary",
+        "displayName": "Chart Total (dark)",
+        "canonical": "#b3bac5",
+        "theme": "dark",
+        "tonalRamp": [
+          "#070b13",
+          "#1f242d",
+          "#3a4049",
+          "#585e68",
+          "#777e88",
+          "#989faa",
+          "#bec5d0",
+          "#e8effb"
+        ]
+      },
+      "chart-decrease-dark": {
+        "role": "tertiary",
+        "displayName": "Chart Decrease (dark)",
+        "canonical": "#3a4350",
+        "theme": "dark",
+        "tonalRamp": [
+          "#050b16",
+          "#1c2430",
+          "#37404d",
+          "#555e6c",
+          "#747e8d",
+          "#959fae",
+          "#bac5d5",
+          "#e5effe"
+        ]
+      },
+      "chart-result-dark": {
+        "role": "tertiary",
+        "displayName": "Chart Result (dark)",
+        "canonical": "#3fb57a",
+        "theme": "dark",
+        "tonalRamp": [
+          "#000f06",
+          "#022c18",
+          "#0b4c2e",
+          "#067044",
+          "#08955c",
+          "#42b87c",
+          "#6ddfa1",
+          "#c6fedc"
+        ]
+      },
+      "chart-loss-dark": {
+        "role": "tertiary",
+        "displayName": "Chart Loss (dark)",
+        "canonical": "#ff8f84",
+        "theme": "dark",
+        "tonalRamp": [
+          "#1e0001",
+          "#490406",
+          "#781012",
+          "#9c3631",
+          "#c15850",
+          "#e77a70",
+          "#ffaba2",
+          "#fee9e6"
+        ]
+      },
+      "selection-dark": {
+        "role": "neutral",
+        "displayName": "Selection (dark)",
+        "canonical": "#2c3670",
+        "theme": "dark",
+        "tonalRamp": [
+          "#050130",
+          "#161c53",
+          "#2f3a74",
+          "#4b5896",
+          "#6a79b9",
+          "#8a9add",
+          "#b2c1f9",
+          "#e9eefe"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Screen title."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section title."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Card title."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Key figures in cards and scenario ranges, tabular."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, table cells, field values."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field labels, column headers, hints, captions, badges, nav."
+      }
+    },
+    "themes": {
+      "light": {
+        "selector": ":root",
+        "default": true
+      },
+      "dark": {
+        "selector": "[data-theme=\"dark\"], :root:has([data-theme=\"dark\"])",
+        "tokenSuffix": "-dark"
+      }
+    },
+    "shadows": [
+      {
+        "name": "overlay",
+        "value": "0 8px 24px rgb(17 23 34 / 0.12), 0 1px 3px rgb(17 23 34 / 0.08)",
+        "purpose": "Floating layers only (popover, menu, dialog). Defined, no shipped consumer yet."
+      },
+      {
+        "name": "overlay-dark",
+        "value": "0 8px 24px rgb(0 0 0 / 0.45), 0 1px 3px rgb(0 0 0 / 0.4)",
+        "purpose": "Overlay in the dark theme."
+      }
+    ],
+    "focus": {
+      "value": "outline: 2px solid var(--tp-focus); outline-offset: 2px",
+      "trigger": ":focus-visible"
+    },
+    "motion": [
+      {
+        "name": "color-transition",
+        "value": "150ms (Tailwind default easing) on background/text color",
+        "purpose": "Button state changes."
+      },
+      {
+        "name": "spinner",
+        "value": "Tailwind animate-spin; static dotted ring under prefers-reduced-motion",
+        "purpose": "Button loading state."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      },
+      {
+        "name": "pointer-coarse",
+        "value": "(pointer: coarse)",
+        "purpose": "Controls grow to 44px."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single action-blue call to action.",
+      "html": "<button class=\"ds-btn-primary\">Подобрать товары</button>",
+      "css": ".ds-btn-primary { display:inline-flex; align-items:center; justify-content:center; gap:8px; height:36px; padding:0 16px; border-radius:6px; font-family:var(--tp-font-sans, \"Golos Text\"), ui-sans-serif, system-ui, sans-serif; font-size:0.875rem; line-height:1.375rem; font-weight:500; border:1px solid transparent; cursor:pointer; transition:background-color 150ms, color 150ms; background:var(--tp-action); color:var(--tp-action-text); } .ds-btn-primary:hover { background:var(--tp-action-hover); } .ds-btn-primary:focus-visible { outline: 2px solid var(--tp-focus); outline-offset: 2px; } .ds-btn-primary:disabled { opacity:.5; cursor:not-allowed; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Neutral action on a white surface with a strong hairline.",
+      "html": "<button class=\"ds-btn-secondary\">Сохранить подборку</button>",
+      "css": ".ds-btn-secondary { display:inline-flex; align-items:center; justify-content:center; gap:8px; height:36px; padding:0 16px; border-radius:6px; font-family:var(--tp-font-sans, \"Golos Text\"), ui-sans-serif, system-ui, sans-serif; font-size:0.875rem; line-height:1.375rem; font-weight:500; border:1px solid transparent; cursor:pointer; transition:background-color 150ms, color 150ms; background:var(--tp-surface); color:var(--tp-text); border-color:var(--tp-line-strong); } .ds-btn-secondary:hover { background:var(--tp-surface-sunken); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--tp-focus); outline-offset: 2px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Low-emphasis text action; Blue Wash on hover.",
+      "html": "<button class=\"ds-btn-ghost\">Сбросить фильтры</button>",
+      "css": ".ds-btn-ghost { display:inline-flex; align-items:center; justify-content:center; gap:8px; height:36px; padding:0 16px; border-radius:6px; font-family:var(--tp-font-sans, \"Golos Text\"), ui-sans-serif, system-ui, sans-serif; font-size:0.875rem; line-height:1.375rem; font-weight:500; border:1px solid transparent; cursor:pointer; transition:background-color 150ms, color 150ms; background:transparent; color:var(--tp-action-soft-text); } .ds-btn-ghost:hover { background:var(--tp-action-soft); } .ds-btn-ghost:focus-visible { outline: 2px solid var(--tp-focus); outline-offset: 2px; }"
+    },
+    {
+      "name": "Money Field",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "Labeled field with hint and a right-aligned tabular value plus currency suffix.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-field-label\" for=\"ds-budget\">Бюджет закупки</label><div class=\"ds-field-wrap\"><input id=\"ds-budget\" class=\"ds-input\" value=\"1 500 000\" inputmode=\"numeric\"><span class=\"ds-field-suffix\">₸</span></div><p class=\"ds-field-hint\">Сумма на одну партию</p></div>",
+      "css": ".ds-field { display:flex; flex-direction:column; gap:6px; font-family:var(--tp-font-sans, \"Golos Text\"), ui-sans-serif, system-ui, sans-serif; } .ds-field-label { font-size:0.8125rem; line-height:1.25rem; font-weight:500; color:var(--tp-text); } .ds-field-wrap { position:relative; } .ds-input { width:100%; height:36px; padding:0 40px 0 12px; border:1px solid var(--tp-line-strong); border-radius:6px; background:var(--tp-surface); color:var(--tp-text); font:inherit; font-size:0.875rem; text-align:right; font-variant-numeric:tabular-nums; } .ds-input:focus-visible { outline: 2px solid var(--tp-focus); outline-offset: 2px; } .ds-input:disabled { background:var(--tp-surface-sunken); color:var(--tp-text-subtle); } .ds-field-suffix { position:absolute; top:0; bottom:0; right:12px; display:flex; align-items:center; font-size:0.875rem; color:var(--tp-text-subtle); pointer-events:none; } .ds-field-hint { margin:0; font-size:0.8125rem; line-height:1.25rem; color:var(--tp-text-subtle); }"
+    },
+    {
+      "name": "Marketplace Chips",
+      "kind": "chip",
+      "refersTo": "chip-marketplace",
+      "description": "Multi-select with an All chip; offline sources stay visible, dashed, with a reason.",
+      "html": "<div class=\"ds-chips\"><label class=\"ds-chip ds-chip-on\"><span class=\"ds-box ds-box-on\"><svg width=\"12\" height=\"12\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3.5 8.5l3 3 6-7\"/></svg></span>Kaspi</label><label class=\"ds-chip\"><span class=\"ds-box\"></span>Ozon</label><label class=\"ds-chip ds-chip-off\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 2.5v2.5M10 2.5v2.5M4.5 5h7v2.5a3.5 3.5 0 01-7 0V5zM8 11v2.5M2.5 2.5l11 11\"/></svg>Wildberries <span class=\"ds-chip-reason\">· нет токена</span></label></div>",
+      "css": ".ds-chips { display:flex; flex-wrap:wrap; gap:8px; font-family:var(--tp-font-sans, \"Golos Text\"), ui-sans-serif, system-ui, sans-serif; } .ds-chip { display:flex; align-items:center; gap:8px; height:36px; padding:0 12px; border:1px solid var(--tp-line-strong); border-radius:6px; background:var(--tp-surface); color:var(--tp-text); font-size:0.875rem; cursor:pointer; } .ds-chip:hover { background:var(--tp-surface-sunken); } .ds-chip:focus-within { outline:2px solid var(--tp-focus); outline-offset:2px; } .ds-chip-on, .ds-chip-on:hover { border-color:var(--tp-action); background:var(--tp-action-soft); color:var(--tp-action-soft-text); } .ds-chip-off, .ds-chip-off:hover { border-style:dashed; background:var(--tp-offline-soft); color:var(--tp-offline); cursor:not-allowed; } .ds-chip-reason { font-size:0.8125rem; } .ds-box { display:flex; align-items:center; justify-content:center; width:16px; height:16px; border:1px solid var(--tp-line-strong); border-radius:4px; } .ds-box-on { border-color:var(--tp-action); background:var(--tp-action); color:var(--tp-action-text); }"
+    },
+    {
+      "name": "Section Nav",
+      "kind": "nav",
+      "refersTo": "nav-item",
+      "description": "Sticky white nav bar; current item in Blue Wash.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-item\" href=\"#\" aria-current=\"location\">Палитра</a><a class=\"ds-nav-item\" href=\"#\">Типографика</a><a class=\"ds-nav-item\" href=\"#\">Таблица</a></nav>",
+      "css": ".ds-nav { display:flex; gap:4px; padding:8px; background:var(--tp-surface); border-bottom:1px solid var(--tp-line); font-family:var(--tp-font-sans, \"Golos Text\"), ui-sans-serif, system-ui, sans-serif; font-size:0.8125rem; } .ds-nav-item { padding:6px 10px; border-radius:6px; color:var(--tp-text-muted); text-decoration:none; } .ds-nav-item:hover { background:var(--tp-surface-sunken); color:var(--tp-text); } .ds-nav-item:focus-visible { outline: 2px solid var(--tp-focus); outline-offset: 2px; } .ds-nav-item[aria-current] { background:var(--tp-action-soft); color:var(--tp-action-soft-text); font-weight:500; }"
+    },
+    {
+      "name": "Multiple Badges",
+      "kind": "custom",
+      "refersTo": "badge-multiple-x5",
+      "description": "Green multiple scale from below-2x to 10x; value always printed; missing value is the no-data word.",
+      "html": "<div class=\"ds-badges\"><span class=\"ds-mx ds-mx-below\">1,7x</span><span class=\"ds-mx ds-mx-2\">2,4x</span><span class=\"ds-mx ds-mx-3\">3,6x</span><span class=\"ds-mx ds-mx-5\">5,6x</span><span class=\"ds-mx ds-mx-10\">10,7x</span><span class=\"ds-nodata\">нет данных</span></div>",
+      "css": ".ds-badges { display:flex; flex-wrap:wrap; gap:8px; align-items:center; font-family:var(--tp-font-sans, \"Golos Text\"), ui-sans-serif, system-ui, sans-serif; } .ds-mx { display:inline-flex; justify-content:center; min-width:48px; padding:2px 6px; border-radius:6px; font-size:0.8125rem; line-height:1.25rem; font-weight:600; font-variant-numeric:tabular-nums; } .ds-mx-below { background:var(--tp-x-below-bg); color:var(--tp-x-below-text); } .ds-mx-2 { background:var(--tp-x2-bg); color:var(--tp-x2-text); } .ds-mx-3 { background:var(--tp-x3-bg); color:var(--tp-x3-text); } .ds-mx-5 { background:var(--tp-x5-bg); color:var(--tp-x5-text); } .ds-mx-10 { background:var(--tp-x10-bg); color:var(--tp-x10-text); } .ds-nodata { color:var(--tp-nodata); border-bottom:1px dashed var(--tp-nodata-line); font-size:0.875rem; }"
+    },
+    {
+      "name": "Status Tags",
+      "kind": "chip",
+      "refersTo": "status-tag-risk",
+      "description": "Icon + word on the soft tint of its tone; color only repeats the meaning.",
+      "html": "<div class=\"ds-tags\"><span class=\"ds-tag ds-tag-risk\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"><circle cx=\"8\" cy=\"8\" r=\"6\"/><path d=\"M5.75 5.75l4.5 4.5M10.25 5.75l-4.5 4.5\"/></svg>Убыток</span><span class=\"ds-tag ds-tag-warning\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 2.5l6 10.5H2L8 2.5z\"/><path d=\"M8 6.5v3M8 11.25v.01\"/></svg>Мало продаж</span><span class=\"ds-tag ds-tag-nodata\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\"><path d=\"M4 8h8\"/></svg>Нет данных</span></div>",
+      "css": ".ds-tags { display:flex; flex-wrap:wrap; gap:8px; font-family:var(--tp-font-sans, \"Golos Text\"), ui-sans-serif, system-ui, sans-serif; } .ds-tag { display:inline-flex; align-items:center; gap:4px; padding:2px 6px; border-radius:6px; font-size:0.8125rem; line-height:1.25rem; font-weight:500; } .ds-tag-risk { background:var(--tp-risk-soft); color:var(--tp-risk); } .ds-tag-warning { background:var(--tp-warning-soft); color:var(--tp-warning); } .ds-tag-nodata { background:var(--tp-nodata-soft); color:var(--tp-nodata); }"
+    },
+    {
+      "name": "Comparison Table",
+      "kind": "card",
+      "refersTo": "table-cell",
+      "description": "Panel-framed table; muted headers, right-aligned tabular figures, loss in risk with icon.",
+      "html": "<div class=\"ds-table-wrap\"><table class=\"ds-table\"><thead><tr><th>Товар</th><th class=\"ds-num\">Себестоимость</th><th class=\"ds-num\">Прибыль</th></tr></thead><tbody><tr><td>Термокружка 500 мл</td><td class=\"ds-num\">2 140 ₸</td><td class=\"ds-num\">1 380 ₸</td></tr><tr><td>Органайзер для проводов</td><td class=\"ds-num\">1 760 ₸</td><td class=\"ds-num ds-loss\">−449 ₸</td></tr></tbody></table></div>",
+      "css": ".ds-table-wrap { overflow-x:auto; border:1px solid var(--tp-line); border-radius:8px; background:var(--tp-surface); font-family:var(--tp-font-sans, \"Golos Text\"), ui-sans-serif, system-ui, sans-serif; } .ds-table { width:100%; border-collapse:collapse; font-size:0.875rem; line-height:1.375rem; color:var(--tp-text); } .ds-table th { padding:10px 12px; text-align:left; font-size:0.8125rem; font-weight:500; color:var(--tp-text-muted); border-bottom:1px solid var(--tp-line); white-space:nowrap; } .ds-table td { padding:10px 12px; border-bottom:1px solid var(--tp-line); white-space:nowrap; font-variant-numeric:tabular-nums; } .ds-table tr:last-child td { border-bottom:0; } .ds-table tbody tr:hover { background:var(--tp-surface-sunken); } .ds-table .ds-num { text-align:right; } .ds-loss { color:var(--tp-risk); font-weight:500; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Honest Ledger",
+    "overview": "**Creative North Star: \"The Honest Ledger\"**\n\nA working analytics screen for marketplace sellers in the category standard, finished to the level of Stripe Dashboard and MPStats. The figure is the protagonist: tabular digits, right-aligned to the place value, currency beside the number, and an explicit word where a value is missing. Everything else steps back: a cool light-grey page, white surfaces, hairlines instead of shadows, one blue for action.\n\nColor is semantic, never decorative. There are exactly three colored vocabularies: action (blue), the multiple scale 2x to 10x (green, deepening with value), and status (risk red, warning amber, no-data grey with a dashed underline, source-offline grey with an unplug icon). Every colored state is duplicated by a word or a shape. Light theme is the default; dark is the second theme, set by `data-theme=\"dark\"` on the page wrapper (which also darkens the document root via `:has`).\n\nDensity is moderate and even: 36px controls, 14px body, 4px spacing step, compact inside a group and generous between groups. Motion is functional only (the loading spinner, color transitions of 150ms), and respects `prefers-reduced-motion`.",
+    "keyCharacteristics": [
+      "Numbers read first: `tabular-nums` everywhere a figure appears, right-aligned in tables.",
+      "One action blue; data visualization stays neutral grey unless it carries profit or loss.",
+      "Flat surfaces separated by 1px lines and tonal steps; shadow reserved for floating layers.",
+      "Status by color + icon/shape + word; \"no data\" is a word, never a number.",
+      "Golos Text across all roles, Cyrillic-first with Kazakh coverage."
+    ],
+    "rules": [
+      {
+        "name": "The One Blue Rule",
+        "body": "Blue means \"you can act here\" (button, link, focus, selected filter). Data, charts and badges never use it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Said-Twice Rule",
+        "body": "No state is carried by color alone: risk has a crossed circle, warning a triangle, no-data a dashed underline and the word, offline an unplug icon and a reason, ok a filled dot, multiple a printed value.",
+        "section": "colors"
+      },
+      {
+        "name": "The Honest Gap Rule",
+        "body": "A missing value renders the localized \"no data\" word in `nodata` with a dashed `nodata-line` underline. Never a zero, dash or average in its place. Estimated values carry a leading \"≈\".",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "Every figure uses `tabular-nums`; table number columns align right; currency and unit sit beside the value (`10 000 ₸`, `3,6x`), formatted per locale with `Intl.NumberFormat` and the narrow currency symbol.",
+        "section": "typography"
+      },
+      {
+        "name": "The Lines-Not-Shadows Rule",
+        "body": "Separation is a hairline or a tonal step. A shadow appears only on a layer that floats above the page.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** take every value from the `--tp-*` variables in `packages/ui/tokens.css` (or their Tailwind aliases); never hard-code a hex in a component.",
+      "**Do** render figures with `tabular-nums`, right-aligned in tables, with the unit or narrow currency symbol beside the value.",
+      "**Do** pair every status color with its icon or shape and a word.",
+      "**Do** show an unavailable source greyed with its reason instead of hiding it.",
+      "**Do** keep controls at 36px (44px on coarse pointers) and use the 2px `focus` outline at 2px offset for keyboard focus."
+    ],
+    "donts": [
+      "**Don't** use blue for data, charts or badges; it belongs to action.",
+      "**Don't** put a number, zero or average where data is missing; use the no-data word.",
+      "**Don't** add shadows to resting panels or cards; separate with a hairline or tonal step.",
+      "**Don't** use gradients, emoji in place of icons, or decorative animation.",
+      "**Don't** nest panels inside panels."
+    ]
+  }
+}
