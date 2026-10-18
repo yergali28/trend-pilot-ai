@@ -1,0 +1,13 @@
+.env*
+!.env.example
+node_modules/
+.next/
+coverage/
+dist/
+.DS_Store
+
+# Impeccable install output (machine-specific, regenerate with `npx impeccable install`)
+.cursor/
+.gemini/
+.codex/
+.impeccable/
