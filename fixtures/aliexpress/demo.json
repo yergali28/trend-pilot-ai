@@ -1,0 +1,11 @@
+{
+  "recordedAt": "2026-10-18T00:00:00Z",
+  "synthetic": true,
+  "note": "Синтетическая запись в предполагаемом формате источника. Не рыночные данные; заменить реальной записью командой record с тестовым токеном.",
+  "body": {
+    "products": [
+      { "product_id": "syn-a-1", "product_title": "Synthetic item A1", "target_sale_price": "4.50", "target_sale_price_currency": "USD" },
+      { "product_id": "syn-a-2", "product_title": "Synthetic item A2", "target_sale_price": null }
+    ]
+  }
+}
