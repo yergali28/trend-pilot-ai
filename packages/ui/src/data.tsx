@@ -124,8 +124,15 @@ export interface Column<Row> {
   align?: "start" | "end";
   /** Текущая сортировка столбца; само переключение подключает экран, где есть данные. */
   sort?: "ascending" | "descending" | "none";
+  /** С какой ширины столбец показывается: второстепенные данные уходят на узких экранах. */
+  from?: "sm" | "md" | "lg" | "xl";
+  /** Разрешить перенос текста (длинные названия). */
+  wrap?: boolean;
   render: (row: Row) => ReactNode;
 }
+
+const visibleFrom = { sm: "hidden sm:table-cell", md: "hidden md:table-cell", lg: "hidden lg:table-cell", xl: "hidden xl:table-cell" } as const;
+const cellClass = <Row,>(c: Column<Row>) => `${c.from ? visibleFrom[c.from] : ""} ${c.wrap ? "min-w-28 whitespace-normal sm:min-w-40" : "whitespace-nowrap"}`;
 
 // Первая колонка (название) остаётся на месте при горизонтальной прокрутке.
 const stickyCell = "sticky left-0 z-10 bg-surface";
@@ -139,7 +146,7 @@ export function DataTable<Row>({ columns, rows, rowKey, caption }: { columns: Co
         <thead>
           <tr className="border-b border-line">
             {columns.map((c, i) => (
-              <th key={c.key} scope="col" aria-sort={c.sort} className={`whitespace-nowrap px-3 py-2.5 text-sm font-medium text-muted ${c.align === "end" ? "text-right" : "text-left"} ${i === 0 ? stickyCell : ""}`}>
+              <th key={c.key} scope="col" aria-sort={c.sort} className={`${cellClass(c)} px-3 py-2.5 text-sm font-medium text-muted ${c.align === "end" ? "text-right" : "text-left"} ${i === 0 ? stickyCell : ""}`}>
                 <span className={`inline-flex items-center gap-1 ${c.sort && c.sort !== "none" ? "text-ink" : ""}`}>
                   {c.header}
                   {c.sort && c.sort !== "none" ? <SortIcon className="size-3.5" /> : null}
@@ -152,7 +159,7 @@ export function DataTable<Row>({ columns, rows, rowKey, caption }: { columns: Co
           {rows.map((r) => (
             <tr key={rowKey(r)} className="group border-b border-line last:border-0 hover:bg-sunken">
               {columns.map((c, i) => (
-                <td key={c.key} className={`whitespace-nowrap px-3 py-2.5 tabular-nums ${c.align === "end" ? "text-right" : "text-left"} ${i === 0 ? `${stickyCell} group-hover:bg-sunken` : ""}`}>
+                <td key={c.key} className={`${cellClass(c)} px-3 py-2.5 tabular-nums ${c.align === "end" ? "text-right" : "text-left"} ${i === 0 ? `${stickyCell} group-hover:bg-sunken` : ""}`}>
                   {c.render(r)}
                 </td>
               ))}

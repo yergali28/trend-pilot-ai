@@ -9,18 +9,23 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc -p tsconfig.json",
-    "test": "vitest run"
+    "test": "vitest run",
+    "i18n:check": "node scripts/i18n-check.mjs",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
+    "@supabase/ssr": "0.12.7",
     "@supabase/supabase-js": "2.118.0",
     "@tp/calc": "workspace:*",
+    "@tp/ui": "workspace:*",
     "next": "16.4.2",
     "react": "19.3.1",
-    "react-dom": "19.3.1",
-    "@tp/ui": "workspace:*"
+    "react-dom": "19.3.1"
   },
   "devDependencies": {
+    "@playwright/test": "1.64.1",
     "@tailwindcss/postcss": "4.3.3",
+    "@tp/adapters": "workspace:*",
     "@tp/db": "workspace:*",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",

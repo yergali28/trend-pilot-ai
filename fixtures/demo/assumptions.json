@@ -1,0 +1,109 @@
+{
+  "synthetic": true,
+  "note": "Демо-допущения для расчёта в режиме replay/mock. Синтетика: не курсы ЦБ, не тарифы карго и не комиссии площадок. В справочники не попадают; в интерфейсе помечены как демо.",
+  "fetchedAt": "2026-10-18T00:00:00Z",
+  "countries": {
+    "KZ": {
+      "currency": "KZT",
+      "fxRates": {
+        "USD": 480,
+        "RUB": 5.3,
+        "CNY": 66
+      },
+      "chinaDelivery": {
+        "value": 0.5,
+        "currency": "USD"
+      },
+      "cargoTariff": {
+        "value": 4.5,
+        "currency": "USD",
+        "basis": "kg"
+      },
+      "customsDutyRate": 0.1,
+      "importVatRate": 0.12,
+      "agentCommissionRate": 0.03,
+      "packaging": {
+        "value": 150,
+        "currency": "KZT"
+      },
+      "certification": {
+        "value": 0,
+        "currency": "KZT"
+      },
+      "marketplaces": {
+        "kaspi": {
+          "marketplaceCommissionRate": 0.12,
+          "marketplaceLogistics": {
+            "value": 600,
+            "currency": "KZT"
+          },
+          "acquiringRate": 0,
+          "adRate": 0.05,
+          "returnRate": 0.05,
+          "reverseLogistics": {
+            "value": 500,
+            "currency": "KZT"
+          }
+        },
+        "ozon": {
+          "marketplaceCommissionRate": 0.15,
+          "marketplaceLogistics": {
+            "value": 700,
+            "currency": "KZT"
+          },
+          "acquiringRate": 0,
+          "adRate": 0.06,
+          "returnRate": 0.08,
+          "reverseLogistics": {
+            "value": 600,
+            "currency": "KZT"
+          }
+        }
+      }
+    },
+    "RU": {
+      "currency": "RUB",
+      "fxRates": {
+        "USD": 90,
+        "KZT": 0.19,
+        "CNY": 12.5
+      },
+      "chinaDelivery": {
+        "value": 0.5,
+        "currency": "USD"
+      },
+      "cargoTariff": {
+        "value": 4.0,
+        "currency": "USD",
+        "basis": "kg"
+      },
+      "customsDutyRate": 0.1,
+      "importVatRate": 0.2,
+      "agentCommissionRate": 0.03,
+      "packaging": {
+        "value": 30,
+        "currency": "RUB"
+      },
+      "certification": {
+        "value": 0,
+        "currency": "RUB"
+      },
+      "marketplaces": {
+        "ozon": {
+          "marketplaceCommissionRate": 0.15,
+          "marketplaceLogistics": {
+            "value": 120,
+            "currency": "RUB"
+          },
+          "acquiringRate": 0,
+          "adRate": 0.06,
+          "returnRate": 0.08,
+          "reverseLogistics": {
+            "value": 100,
+            "currency": "RUB"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,326 @@
+{
+  "synthetic": true,
+  "note": "Демо-каталог: категории и сопоставления товаров для режима replay/mock. Синтетика, не рыночные данные. Записи mock-* соответствуют ответам адаптеров в режиме mock.",
+  "categories": [
+    {
+      "id": "electronics",
+      "name": "Аксессуары для электроники"
+    },
+    {
+      "id": "home",
+      "name": "Дом и хранение"
+    },
+    {
+      "id": "sport",
+      "name": "Спорт и фитнес"
+    }
+  ],
+  "productCategories": [
+    {
+      "source": [
+        "aliexpress",
+        "a-org"
+      ],
+      "category": "electronics"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-sleeve"
+      ],
+      "category": "electronics"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-stand"
+      ],
+      "category": "electronics"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-hub"
+      ],
+      "category": "electronics"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-lamp"
+      ],
+      "category": "home"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-brush"
+      ],
+      "category": "home"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-box"
+      ],
+      "category": "home"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-band"
+      ],
+      "category": "sport"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-bottle"
+      ],
+      "category": "sport"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-mat"
+      ],
+      "category": "sport"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "mock-1"
+      ],
+      "category": "electronics"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "mock-2"
+      ],
+      "category": "home"
+    }
+  ],
+  "matches": [
+    {
+      "source": [
+        "aliexpress",
+        "a-org"
+      ],
+      "listing": [
+        "kaspi",
+        "k-org"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-org"
+      ],
+      "listing": [
+        "ozon",
+        "9000"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-sleeve"
+      ],
+      "listing": [
+        "kaspi",
+        "k-sleeve"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-sleeve"
+      ],
+      "listing": [
+        "ozon",
+        "9001"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-stand"
+      ],
+      "listing": [
+        "kaspi",
+        "k-stand"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-stand"
+      ],
+      "listing": [
+        "ozon",
+        "9002"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-hub"
+      ],
+      "listing": [
+        "kaspi",
+        "k-hub"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-hub"
+      ],
+      "listing": [
+        "ozon",
+        "9003"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-lamp"
+      ],
+      "listing": [
+        "kaspi",
+        "k-lamp"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-brush"
+      ],
+      "listing": [
+        "kaspi",
+        "k-brush"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-brush"
+      ],
+      "listing": [
+        "ozon",
+        "9005"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-box"
+      ],
+      "listing": [
+        "ozon",
+        "9006"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-band"
+      ],
+      "listing": [
+        "kaspi",
+        "k-band"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-band"
+      ],
+      "listing": [
+        "ozon",
+        "9007"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-bottle"
+      ],
+      "listing": [
+        "kaspi",
+        "k-bottle"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-bottle"
+      ],
+      "listing": [
+        "ozon",
+        "9008"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "source": [
+        "aliexpress",
+        "mock-1"
+      ],
+      "listing": [
+        "kaspi",
+        "mock-1"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "mock-1"
+      ],
+      "listing": [
+        "ozon",
+        "1"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "mock-2"
+      ],
+      "listing": [
+        "kaspi",
+        "mock-2"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "mock-2"
+      ],
+      "listing": [
+        "ozon",
+        "2"
+      ],
+      "confidence": 0.8
+    }
+  ]
+}

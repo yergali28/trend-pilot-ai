@@ -1,0 +1,73 @@
+{
+  "recordedAt": "2026-10-18T00:00:00Z",
+  "synthetic": true,
+  "note": "Синтетическая запись в предполагаемом формате источника для демо-режима UI. Не рыночные данные.",
+  "body": {
+    "data": [
+      {
+        "id": "k-org",
+        "attributes": {
+          "name": "Органайзер для кабеля, 3 шт.",
+          "price": 7900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-sleeve",
+        "attributes": {
+          "name": "Чехол для ноутбука 14″",
+          "price": 8900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-stand",
+        "attributes": {
+          "name": "Подставка для телефона складная",
+          "price": 5900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-hub",
+        "attributes": {
+          "name": "USB-хаб на 4 порта",
+          "price": 6900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-lamp",
+        "attributes": {
+          "name": "Настольная лампа складная",
+          "price": 12900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-brush",
+        "attributes": {
+          "name": "Набор щёток для чистки, 5 шт.",
+          "price": 6900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-band",
+        "attributes": {
+          "name": "Резинки для фитнеса, 5 шт.",
+          "price": 9900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-bottle",
+        "attributes": {
+          "name": "Бутылка для воды 750 мл",
+          "price": 4500,
+          "currency": "KZT"
+        }
+      }
+    ]
+  }
+}

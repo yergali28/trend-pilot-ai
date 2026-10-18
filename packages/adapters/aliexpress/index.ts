@@ -10,6 +10,8 @@ const Body = z.object({
       target_sale_price: z.string().nullable().optional(),
       target_sale_price_currency: z.string().nullable().optional(),
       product_detail_url: z.string().optional(),
+      /** Вес упаковки, кг. */
+      package_weight: z.number().nonnegative().optional(),
     }),
   ),
 });
@@ -38,6 +40,7 @@ export const aliexpress = defineAdapter({
             price,
             currency: p.target_sale_price_currency,
             ...(p.product_detail_url ? { url: p.product_detail_url } : {}),
+            ...(p.package_weight === undefined ? {} : { weightKg: p.package_weight }),
             method: "api" as const,
             ...ctx,
           };

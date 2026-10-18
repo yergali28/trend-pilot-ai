@@ -4,7 +4,8 @@
  * Импортируется в Tailwind-вход приложения (apps/web/app/globals.css).
  */
 
-:root {
+:root,
+[data-theme="light"] {
   color-scheme: light;
 
   /* Нейтральная база */

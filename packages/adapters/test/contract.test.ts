@@ -29,6 +29,14 @@ describe.each(Object.values(adapters))("$sourceId adapter", (adapter) => {
     expect(rejected[0]?.reason).toBeTruthy();
   });
 
+  it.runIf(["kaspi", "ozon", "aliexpress", "analytics"].includes(adapter.sourceId))("demo catalog recording matches the contract", async () => {
+    const raw = await adapter.fetch({ query: "catalog" }, { mode: "replay" });
+    expect(adapter.rawSchema.safeParse(raw.body).success).toBe(true);
+    const { records } = adapter.normalize(raw);
+    expect(records.length).toBeGreaterThan(0);
+    for (const r of records) expect(r.synthetic).toBe(true);
+  });
+
   it("mock returns only synthetic records", async () => {
     const raw = await adapter.fetch({ query: "anything" }, { mode: "mock" });
     const { records } = adapter.normalize(raw);

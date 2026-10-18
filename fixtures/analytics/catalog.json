@@ -1,0 +1,137 @@
+{
+  "recordedAt": "2026-10-18T00:00:00Z",
+  "synthetic": true,
+  "note": "Синтетическая запись в предполагаемом формате источника для демо-режима UI. Не рыночные данные.",
+  "body": {
+    "items": [
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-org",
+        "title": "Органайзер для кабеля, 3 шт.",
+        "sales_per_month": 120,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "9000",
+        "title": "Органайзер для кабеля, 3 шт.",
+        "sales_per_month": 85,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-sleeve",
+        "title": "Чехол для ноутбука 14″",
+        "sales_per_month": 64,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "9001",
+        "title": "Чехол для ноутбука 14″",
+        "sales_per_month": 40,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-stand",
+        "title": "Подставка для телефона складная",
+        "sales_per_month": 210,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "9002",
+        "title": "Подставка для телефона складная",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-hub",
+        "title": "USB-хаб на 4 порта",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "9003",
+        "title": "USB-хаб на 4 порта",
+        "sales_per_month": 33,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-lamp",
+        "title": "Настольная лампа складная",
+        "sales_per_month": 38,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-brush",
+        "title": "Набор щёток для чистки, 5 шт.",
+        "sales_per_month": 150,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "9005",
+        "title": "Набор щёток для чистки, 5 шт.",
+        "sales_per_month": 120,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "9006",
+        "title": "Органайзер для ящика, 6 секций",
+        "sales_per_month": 22,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-band",
+        "title": "Резинки для фитнеса, 5 шт.",
+        "sales_per_month": 95,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "9007",
+        "title": "Резинки для фитнеса, 5 шт.",
+        "sales_per_month": 140,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-bottle",
+        "title": "Бутылка для воды 750 мл",
+        "sales_per_month": 70,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "9008",
+        "title": "Бутылка для воды 750 мл",
+        "sales_per_month": 58,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      }
+    ]
+  }
+}

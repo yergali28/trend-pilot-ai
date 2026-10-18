@@ -14,7 +14,8 @@ SaaS для селлеров маркетплейсов: подбор товар
 ```bash
 pnpm run setup     # зависимости и .env.local из .env.example
 pnpm db:start      # локальный Supabase в Docker (первый раз скачивает образы)
-pnpm db:reset      # применить миграции и seed на чистой базе
+pnpm env:local     # apps/web/.env.local из `supabase status` (ключи локального стенда)
+pnpm db:reset      # миграции, seed и демо-каталог (pnpm demo:load)
 pnpm dev           # apps/web на http://localhost:3000
 ```
 
@@ -35,6 +36,23 @@ pnpm build
 Ключи локального стенда тесты берут из `supabase status` сами, вводить их не нужно. Это ключи локального Docker-стенда, не боевые.
 
 Остановить стенд: `supabase stop --workdir packages/db`.
+
+## Демо-данные
+
+Локально экраны работают на записанных синтетических ответах источников (`fixtures/*/catalog.json`, режим replay) и на синтетике адаптеров (`pnpm demo:load:mock`, режим mock). Допущения расчёта для демо (курсы, карго, комиссии) лежат в `fixtures/demo/assumptions.json` и включаются только при `TP_DEMO_DATA=1`; в интерфейсе всё это помечено «Демо · синтетические данные». Справочники админки содержат только официальные значения и перекрывают демо-допущения.
+
+## Сквозные тесты и проверки интерфейса
+
+```bash
+pnpm --filter @tp/web exec playwright install chromium   # один раз
+pnpm test:e2e                                            # сквозные тесты (dev-сервер поднимется сам)
+pnpm i18n:check                                          # ru/en/kk: пропущенные ключи и строки без ключа
+SCREENSHOTS=1 pnpm test:e2e                              # скриншоты экранов в docs/screens/
+```
+
+Детектор Impeccable на экранах за входом: запустите `impeccable live-server --background`, затем `DETECT=1 pnpm --filter @tp/web exec playwright test e2e/detect.spec.ts`.
+
+Для входа нужен пользователь: e2e создаёт тестовую организацию и администратора сам; вручную — приглашение из `/admin` или `auth.admin.createUser` в локальном стенде.
 
 ## CI
 

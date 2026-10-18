@@ -17,16 +17,21 @@ export interface MarketplacePickerProps {
   /** Шаблон из i18n с подстановками {selected} и {available}. */
   summary: string;
   options: MarketplaceOption[];
+  /** Имя поля формы: значение «all» или список id через запятую. */
+  name?: string;
+  /** Начальный выбор: «all» (по умолчанию) или список id. */
+  initial?: "all" | string[];
 }
 
 /**
  * Мультивыбор площадок с режимом «Все»: «Все» включает только активные источники.
  * Неактивная площадка видна серой с причиной и не выбирается.
  */
-export function MarketplacePicker({ legend, allLabel, summary, options }: MarketplacePickerProps) {
+export function MarketplacePicker({ legend, allLabel, summary, options, name, initial = "all" }: MarketplacePickerProps) {
   const activeIds = options.filter((o) => o.active).map((o) => o.id);
-  const [all, setAll] = useState(true);
-  const [picked, setPicked] = useState<Set<string>>(new Set(activeIds));
+  const startIds = initial === "all" ? activeIds : activeIds.filter((id) => initial.includes(id));
+  const [all, setAll] = useState(initial === "all" || startIds.length === activeIds.length);
+  const [picked, setPicked] = useState<Set<string>>(new Set(startIds));
   const selected = all ? new Set(activeIds) : picked;
 
   const toggle = (id: string) => {
@@ -40,6 +45,7 @@ export function MarketplacePicker({ legend, allLabel, summary, options }: Market
   const box = "flex size-4 shrink-0 items-center justify-center rounded-[4px] border";
   return (
     <fieldset className="flex flex-col gap-2">
+      {name ? <input type="hidden" name={name} value={all ? "all" : [...selected].join(",")} /> : null}
       <legend className="mb-1 text-sm font-medium text-ink">{legend}</legend>
       <div className="flex flex-wrap gap-2">
         <label className={`flex h-9 pointer-coarse:h-11 cursor-pointer items-center gap-2 rounded-control border px-3 text-base has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-focus ${all ? "border-action bg-action-soft text-action-soft-ink" : "border-line-strong bg-surface text-ink"}`}>
