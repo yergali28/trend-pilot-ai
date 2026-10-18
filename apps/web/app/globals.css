@@ -1,1 +1,26 @@
 @import "tailwindcss";
+@import "@tp/ui/tokens.css";
+
+@source "../../../packages/ui/src";
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    background: var(--tp-bg);
+    color: var(--tp-text);
+    caret-color: var(--tp-action);
+  }
+  ::selection {
+    background: var(--tp-selection);
+    color: var(--tp-text);
+  }
+  * {
+    scrollbar-color: var(--tp-line-strong) transparent;
+  }
+  a {
+    text-underline-offset: 3px;
+  }
+}

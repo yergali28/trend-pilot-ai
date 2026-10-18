@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+body{width:1440px;height:900px;overflow:hidden;font-family:"PT Sans",sans-serif;background:#ECEDEA;color:#2B2F36;display:grid;grid-template-rows:56px 1fr}
+header{background:#2B2F36;color:#FAFAF7;display:flex;align-items:center;gap:28px;padding:0 28px;font-weight:700}
+header span{font-weight:400;opacity:.7}
+.wrap{display:grid;grid-template-columns:1fr 380px;gap:28px;padding:28px}
+.panel{background:#FAFAF7;padding:20px}
+.filters{display:flex;gap:8px;margin-bottom:16px}
+.f{border:1px solid #9AA0A8;padding:6px 10px;font-size:14px}
+.f.s{background:#2B2F36;color:#FAFAF7}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;color:#5A6472;font-weight:400;border-bottom:1px solid #2B2F36;padding:8px}
+td{padding:9px 8px;border-bottom:1px dotted #9AA0A8;font-family:"PT Mono",monospace}
+td:first-child{font-family:"PT Sans"}
+.r{text-align:right}
+.receipt{background:#fff;padding:24px 22px;font-family:"PT Mono",monospace;font-size:14px;line-height:1.9;border-top:6px dotted #ECEDEA;border-bottom:6px dotted #ECEDEA}
+.receipt h3{font-family:"PT Sans";text-align:center;margin-bottom:8px}
+.l{display:flex}.l span:nth-child(2){flex:1;border-bottom:1px dotted #9AA0A8;margin:0 6px 7px}
+.tot{font-size:20px;font-weight:700;color:#1F6F4A;border-top:1px dashed #2B2F36;margin-top:10px;padding-top:8px}
+.demo{text-align:center;color:#5A6472;font-size:12px}
+</style></head><body>
+<header>Trend Pilot AI <span>Подбор · Категории · Подборки</span></header>
+<div class="wrap">
+  <div class="panel">
+    <div class="filters"><span class="f s">Все площадки</span><span class="f">Kaspi</span><span class="f">Ozon</span><span class="f s">3x</span><span class="f">1 500 000 ₸</span></div>
+    <table>
+      <tr><th>Товар</th><th class="r">Landed</th><th class="r">Цена</th><th class="r">Прибыль</th><th class="r">x</th></tr>
+      <tr><td>Органайзер для кабеля</td><td class="r">4 119</td><td class="r">10 000</td><td class="r">3 751</td><td class="r">2.4x</td></tr>
+      <tr><td>Настольная лампа</td><td class="r">8 584</td><td class="r">15 000</td><td class="r">3 571</td><td class="r">1.7x</td></tr>
+      <tr><td>Чехол для ноутбука</td><td class="r">2 950</td><td class="r">16 500</td><td class="r">9 870</td><td class="r">5.6x</td></tr>
+      <tr><td>Набор щёток</td><td class="r">1 210</td><td class="r">13 000</td><td class="r">8 940</td><td class="r">10.7x</td></tr>
+      <tr><td>Подставка для телефона</td><td class="r">нет данных</td><td class="r">6 900</td><td class="r">—</td><td class="r">—</td></tr>
+    </table>
+  </div>
+  <div class="receipt">
+    <h3>Настольная лампа</h3>
+    <div class="l"><span>Цена продажи</span><span></span><span>15 000</span></div>
+    <div class="l"><span>Закупка+доставка</span><span></span><span>−7 100</span></div>
+    <div class="l"><span>Пошлина, НДС</span><span></span><span>−1 250</span></div>
+    <div class="l"><span>Упаковка, агент</span><span></span><span>−234</span></div>
+    <div class="l"><span>Площадка</span><span></span><span>−2 600</span></div>
+    <div class="l"><span>Возвраты</span><span></span><span>−245</span></div>
+    <div class="l"><span>Налог (выкл.)</span><span></span><span>0</span></div>
+    <div class="l tot"><span>ИТОГО прибыль</span><span></span><span>3 571 ₸</span></div>
+    <p class="demo">ДЕМО · синтетические данные</p>
+  </div>
+</div>
+</body></html>

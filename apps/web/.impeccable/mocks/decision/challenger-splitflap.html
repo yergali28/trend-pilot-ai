@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+body{width:1440px;height:900px;overflow:hidden;font-family:"Roboto Condensed",sans-serif;background:#F2F2EE;color:#1C1C1C;padding:28px 36px}
+.top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:18px}
+h1{font-size:28px;text-transform:uppercase;letter-spacing:.04em}
+.demo{font-size:12px;color:#6B6B66}
+.filters{display:flex;gap:8px;margin-bottom:18px}
+.f{border:2px solid #1C1C1C;padding:6px 12px;text-transform:uppercase;font-weight:700;font-size:13px}
+.f.s{background:#1C1C1C;color:#fff}
+.board{background:#1C1C1C;padding:6px}
+.row{display:grid;grid-template-columns:2.6fr 1fr 1fr 1fr 1fr .8fr 1.2fr;gap:4px;margin-bottom:4px}
+.c{background:#2A2A2A;color:#fff;padding:12px 10px;font-size:18px;text-transform:uppercase;font-variant-numeric:tabular-nums;border-top:1px solid #000;position:relative}
+.c:after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:#111}
+.h .c{background:#1C1C1C;color:#BDBDB5;font-size:12px}
+.h .c:after{display:none}
+.amb{color:#E0A100}.red{color:#E36B5E}
+.r{text-align:right}
+</style></head><body>
+<div class="top"><h1>Trend Pilot AI · табло подбора</h1><span class="demo">ДЕМО · синтетические данные</span></div>
+<div class="filters"><span class="f s">Все площадки</span><span class="f">Kaspi</span><span class="f">Ozon</span><span class="f">WB · нет токена</span><span class="f s">3x</span><span class="f">1 500 000 ₸</span></div>
+<div class="board">
+  <div class="row h"><div class="c">Товар</div><div class="c r">Landed</div><div class="c r">Цена</div><div class="c r">Прибыль</div><div class="c r">ROI</div><div class="c r">X</div><div class="c">Статус</div></div>
+  <div class="row"><div class="c">Набор щёток</div><div class="c r">1 210</div><div class="c r">13 000</div><div class="c r">8 940</div><div class="c r">739%</div><div class="c r">10.7</div><div class="c">2 из 3</div></div>
+  <div class="row"><div class="c">Чехол для ноутбука</div><div class="c r">2 950</div><div class="c r">16 500</div><div class="c r">9 870</div><div class="c r">335%</div><div class="c r">5.6</div><div class="c">1 из 3</div></div>
+  <div class="row"><div class="c">Органайзер кабеля</div><div class="c r">4 119</div><div class="c r">10 000</div><div class="c r">3 751</div><div class="c r">91%</div><div class="c r">2.4</div><div class="c">2 из 3</div></div>
+  <div class="row"><div class="c">Настольная лампа</div><div class="c r">8 584</div><div class="c r">15 000</div><div class="c r">3 571</div><div class="c r">42%</div><div class="c r">1.7</div><div class="c">2 из 3</div></div>
+  <div class="row"><div class="c">Подставка телефона</div><div class="c r amb">НЕТ ДАННЫХ</div><div class="c r">6 900</div><div class="c r amb">—</div><div class="c r amb">—</div><div class="c r amb">—</div><div class="c amb">ЗАДЕРЖКА</div></div>
+  <div class="row"><div class="c">Wildberries</div><div class="c r red">—</div><div class="c r red">—</div><div class="c r red">—</div><div class="c r red">—</div><div class="c r red">—</div><div class="c red">ОТМЕНЁН</div></div>
+</div>
+</body></html>

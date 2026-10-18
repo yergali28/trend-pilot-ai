@@ -1,0 +1,169 @@
+/*
+ * Дизайн-токены Trend Pilot AI — единственный источник значений палитры, типографики и отступов.
+ * Светлая тема по умолчанию, тёмная через [data-theme="dark"]. Документация: docs/design-system.md.
+ * Импортируется в Tailwind-вход приложения (apps/web/app/globals.css).
+ */
+
+:root {
+  color-scheme: light;
+
+  /* Нейтральная база */
+  --tp-bg: #f6f7f9;
+  --tp-surface: #ffffff;
+  --tp-surface-sunken: #eff1f4;
+  --tp-line: #e2e5ea;
+  --tp-line-strong: #cbd0d8;
+  --tp-text: #111722;
+  --tp-text-muted: #4a5361;
+  --tp-text-subtle: #5f6876;
+
+  /* Действие: кнопки, ссылки, выбранные фильтры, фокус */
+  --tp-action: #3346c7;
+  --tp-action-hover: #2a3aa6;
+  --tp-action-text: #ffffff;
+  --tp-action-soft: #eceffc;
+  --tp-action-soft-text: #2a3aa6;
+  --tp-focus: #3346c7;
+
+  /* Шкала кратности 2x → 10x (больше — насыщеннее), всегда с подписью значения */
+  --tp-x-below-bg: #eef0f3;
+  --tp-x-below-text: #4a5361;
+  --tp-x2-bg: #dcf1e4;
+  --tp-x2-text: #1a5e3c;
+  --tp-x3-bg: #a8dcbf;
+  --tp-x3-text: #0f4a2d;
+  --tp-x5-bg: #21804e;
+  --tp-x5-text: #ffffff;
+  --tp-x10-bg: #0e5132;
+  --tp-x10-text: #ffffff;
+
+  /* Статусы */
+  --tp-risk: #b42318;
+  --tp-risk-soft: #fdeceb;
+  --tp-warning: #8f5300;
+  --tp-warning-soft: #fff3dc;
+  --tp-warning-line: #e0a236;
+  --tp-nodata: #5f6876;
+  --tp-nodata-soft: #f1f2f4;
+  --tp-nodata-line: #9aa2ae;
+  --tp-offline: #5f6876;
+  --tp-offline-soft: #eceef1;
+  --tp-ok: #1a7f4b;
+
+  /* Данные: нейтральные, синий остаётся только за действием */
+  --tp-chart-line: #4a5361;
+  --tp-chart-total: #4a5361;
+  --tp-chart-decrease: #c9ced6;
+  --tp-chart-result: #21804e;
+  --tp-chart-loss: #b42318;
+
+  --tp-selection: #d7dcfa;
+  --tp-overlay-shadow: 0 8px 24px rgb(17 23 34 / 0.12), 0 1px 3px rgb(17 23 34 / 0.08);
+}
+
+/* Тёмная тема: на обёртке страницы и на корне документа, чтобы фон за краем прокрутки тоже был тёмным */
+[data-theme="dark"],
+:root:has([data-theme="dark"]) {
+  color-scheme: dark;
+
+  --tp-bg: #0d1015;
+  --tp-surface: #151a21;
+  --tp-surface-sunken: #1b2129;
+  --tp-line: #29303a;
+  --tp-line-strong: #3a4350;
+  --tp-text: #e8ebf0;
+  --tp-text-muted: #b3bac5;
+  --tp-text-subtle: #9aa2ae;
+
+  --tp-action: #7f92ff;
+  --tp-action-hover: #9eacff;
+  --tp-action-text: #0d1015;
+  --tp-action-soft: #1f2645;
+  --tp-action-soft-text: #b4c0ff;
+  --tp-focus: #9eacff;
+
+  --tp-x-below-bg: #232a33;
+  --tp-x-below-text: #b3bac5;
+  --tp-x2-bg: #16352a;
+  --tp-x2-text: #9fe3bf;
+  --tp-x3-bg: #1f5a40;
+  --tp-x3-text: #d2f5e2;
+  --tp-x5-bg: #3fb57a;
+  --tp-x5-text: #06140d;
+  --tp-x10-bg: #8ee0b5;
+  --tp-x10-text: #06140d;
+
+  --tp-risk: #ff8f84;
+  --tp-risk-soft: #3a1714;
+  --tp-warning: #f4b955;
+  --tp-warning-soft: #33250c;
+  --tp-warning-line: #a87418;
+  --tp-nodata: #9aa2ae;
+  --tp-nodata-soft: #1b2129;
+  --tp-nodata-line: #4a5361;
+  --tp-offline: #9aa2ae;
+  --tp-offline-soft: #1f252d;
+  --tp-ok: #5fd197;
+
+  --tp-chart-line: #b3bac5;
+  --tp-chart-total: #b3bac5;
+  --tp-chart-decrease: #3a4350;
+  --tp-chart-result: #3fb57a;
+  --tp-chart-loss: #ff8f84;
+
+  --tp-selection: #2c3670;
+  --tp-overlay-shadow: 0 8px 24px rgb(0 0 0 / 0.45), 0 1px 3px rgb(0 0 0 / 0.4);
+}
+
+/* Привязка к утилитам Tailwind 4: bg-surface, text-muted, border-line, rounded-control, … */
+@theme inline {
+  --color-bg: var(--tp-bg);
+  --color-surface: var(--tp-surface);
+  --color-sunken: var(--tp-surface-sunken);
+  --color-line: var(--tp-line);
+  --color-line-strong: var(--tp-line-strong);
+  --color-ink: var(--tp-text);
+  --color-muted: var(--tp-text-muted);
+  --color-subtle: var(--tp-text-subtle);
+  --color-action: var(--tp-action);
+  --color-action-hover: var(--tp-action-hover);
+  --color-on-action: var(--tp-action-text);
+  --color-action-soft: var(--tp-action-soft);
+  --color-action-soft-ink: var(--tp-action-soft-text);
+  --color-focus: var(--tp-focus);
+  --color-risk: var(--tp-risk);
+  --color-risk-soft: var(--tp-risk-soft);
+  --color-warning: var(--tp-warning);
+  --color-warning-soft: var(--tp-warning-soft);
+  --color-warning-line: var(--tp-warning-line);
+  --color-nodata: var(--tp-nodata);
+  --color-nodata-soft: var(--tp-nodata-soft);
+  --color-nodata-line: var(--tp-nodata-line);
+  --color-offline: var(--tp-offline);
+  --color-offline-soft: var(--tp-offline-soft);
+  --color-ok: var(--tp-ok);
+
+  /* Типографика: Golos Text (Latin, Cyrillic, Cyrillic Ext для казахского), цифры табличные */
+  --font-sans: var(--tp-font-sans, "Golos Text"), ui-sans-serif, system-ui, sans-serif;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1rem;
+  --text-sm: 0.8125rem;
+  --text-sm--line-height: 1.25rem;
+  --text-base: 0.875rem;
+  --text-base--line-height: 1.375rem;
+  --text-md: 1rem;
+  --text-md--line-height: 1.5rem;
+  --text-lg: 1.25rem;
+  --text-lg--line-height: 1.75rem;
+  --text-xl: 1.5rem;
+  --text-xl--line-height: 2rem;
+  --text-2xl: 2rem;
+  --text-2xl--line-height: 2.5rem;
+
+  /* Отступы: шаг 4px (p-1 = 4px, p-2 = 8px, … p-16 = 64px) */
+  --spacing: 0.25rem;
+
+  --radius-control: 6px;
+  --radius-panel: 8px;
+  --shadow-overlay: var(--tp-overlay-shadow);
+}
