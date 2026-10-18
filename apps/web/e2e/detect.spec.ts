@@ -8,6 +8,7 @@ test.skip(!process.env.DETECT, "DETECT=1 и impeccable live-server на :8400");
 const Q = "sell=all&buy=all&country=KZ&cur=KZT&budget=1500000&x=3&metric=priceToCost";
 
 test("детектор Impeccable: ноль находок на экранах", async ({ page }) => {
+  test.setTimeout(10 * 60_000); // 7 экранов × 2 темы × 2 ширины
   const db = service();
   const { data: product } = await db.from("products").select("id").eq("source_id", "aliexpress").eq("external_id", "a-org").single();
   const { data: cat } = await db.from("categories").select("id").eq("external_id", "demo:electronics").single();
@@ -23,8 +24,10 @@ test("детектор Impeccable: ноль находок на экранах",
         page.on("console", onLog);
         await page.goto(url);
         await page.waitForLoadState("networkidle");
+        const verdictLogged = page.waitForEvent("console", { predicate: (m) => m.text().includes("[impeccable]"), timeout: 30_000 });
         await page.addScriptTag({ url: "http://localhost:8400/detect.js" });
-        await page.waitForTimeout(2500);
+        await verdictLogged;
+        await page.waitForTimeout(300); // подробности находок идут следом в группе консоли
         page.off("console", onLog);
         const at = logs.findIndex((l) => l.includes("[impeccable]"));
         const verdict = at < 0 ? "" : logs.slice(at, at + 6).join(" | ").replace(/%c|color:[^;|]*;|font-weight: bold/g, "");
