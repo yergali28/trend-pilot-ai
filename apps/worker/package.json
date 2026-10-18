@@ -4,8 +4,15 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "test": "vitest run",
     "lint": "eslint .",
     "typecheck": "tsc -p tsconfig.json"
   },
-  "dependencies": { "@tp/calc": "workspace:*" }
+  "dependencies": {
+    "@tp/adapters": "workspace:*",
+    "@tp/calc": "workspace:*",
+    "@tp/db": "workspace:*",
+    "pg": "8.23.1",
+    "pg-boss": "12.38.0"
+  }
 }
