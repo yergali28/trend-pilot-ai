@@ -359,5 +359,8 @@
   "ref.opt.verified": "получено из источника",
   "ref.opt.estimated": "оценка",
   "ref.opt.revenue": "с выручки",
-  "ref.opt.profit": "с прибыли"
+  "ref.opt.profit": "с прибыли",
+  "admin.sources.checked": "Документация проверена {date}",
+  "admin.sources.provides": "Даёт: {text}",
+  "admin.sources.limitations": "Ограничения: {text}"
 }

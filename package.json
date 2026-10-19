@@ -18,7 +18,9 @@
     "demo:load": "pnpm --filter @tp/worker demo:load",
     "env:local": "node scripts/env-local.mjs",
     "i18n:check": "pnpm --filter @tp/web i18n:check",
-    "demo:load:mock": "pnpm --filter @tp/worker demo:load --mock"
+    "demo:load:mock": "pnpm --filter @tp/worker demo:load --mock",
+    "record": "pnpm --filter @tp/worker record",
+    "record:check": "node scripts/check-fixtures.mjs"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",

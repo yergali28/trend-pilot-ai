@@ -4,8 +4,8 @@ import type pg from "pg";
 export interface IngestJob {
   sourceId: string;
   request: FetchRequest;
-  /** Локальное переопределение режима реестра для демо: только replay или mock, никогда live. */
-  mode?: "replay" | "mock";
+  /** Переопределение режима реестра для разового запуска (ingest:once, демо). */
+  mode?: Mode;
 }
 
 export interface IngestResult {
@@ -26,12 +26,12 @@ export async function ingest(db: pg.Pool, job: IngestJob, fixturesDir?: string):
   const src = await db.query<{ mode: Mode; status: string }>("select mode, status from public.data_sources where id = $1", [job.sourceId]);
   const source = src.rows[0];
   if (!source) throw new Error(`Источник ${job.sourceId} не зарегистрирован в data_sources`);
+  const mode: Mode = job.mode ?? source.mode;
   // Живые запросы только у включённых источников; replay и mock работают без регистрации (local).
-  if (source.mode === "live" && source.status !== "active") {
+  if (mode === "live" && source.status !== "active") {
     throw new Error(`Источник ${job.sourceId} не активен: ${source.status}`);
   }
 
-  const mode: Mode = job.mode ?? source.mode;
   const run = await db.query<{ id: string }>(
     "insert into public.adapter_runs (source_id, mode) values ($1, $2) returning id",
     [job.sourceId, mode],

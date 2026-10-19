@@ -9,7 +9,7 @@ describe.each(Object.values(adapters))("$sourceId adapter", (adapter) => {
     expect((err as Error).message).toContain("Токен не настроен");
   });
 
-  it("live with a token is still explicitly not implemented", async () => {
+  it.runIf(!adapter.hasLive)("live with a token is still explicitly not implemented", async () => {
     const env = { [adapter.tokenEnv]: "placeholder" };
     await expect(adapter.fetch({ query: "demo" }, { mode: "live", env })).rejects.toMatchObject({ code: "not_implemented" });
   });
@@ -52,5 +52,17 @@ describe.each(Object.values(adapters))("$sourceId adapter", (adapter) => {
   it("body that breaks the contract is rejected", () => {
     const raw = { sourceId: adapter.sourceId, mode: "replay" as const, request: { query: "x" }, fetchedAt: "2026-10-18T00:00:00Z", body: { unexpected: true }, synthetic: true };
     expect(() => adapter.normalize(raw)).toThrow(expect.objectContaining({ code: "contract_violation" }));
+  });
+});
+
+describe("wildberries: записанный живой ответ (replay)", () => {
+  it("seller.json — реальная запись по контракту, не синтетика", async () => {
+    const { wildberries } = await import("../wildberries");
+    const raw = await wildberries.fetch({ query: "seller" }, { mode: "replay" });
+    expect(raw.synthetic).toBe(false);
+    expect(wildberries.rawSchema.safeParse(raw.body).success).toBe(true);
+    const { records } = wildberries.normalize(raw);
+    // Источник даёт только предложения своего магазина: спроса и рыночных данных нет — они остаются no_data.
+    expect(records.every((r) => r.type === "offer" && r.kind === "listing")).toBe(true);
   });
 });

@@ -76,12 +76,15 @@ export interface Source {
   statusReason: string | null;
   mode: string;
   lastSuccessAt: string | null;
+  checkedAt: string | null;
+  provides: string | null;
+  limitations: string | null;
 }
 
 export async function loadSources(db: SupabaseClient): Promise<Source[]> {
   const { data, error } = await db
     .from("data_sources")
-    .select("id, role, status, status_reason, mode, last_success_at, marketplaces(name)")
+    .select("id, role, status, status_reason, mode, last_success_at, checked_at, provides, limitations, marketplaces(name)")
     .order("id");
   if (error) throw error;
   return (data ?? []).map((r) => ({
@@ -92,6 +95,9 @@ export async function loadSources(db: SupabaseClient): Promise<Source[]> {
     statusReason: r.status_reason,
     mode: r.mode,
     lastSuccessAt: r.last_success_at,
+    checkedAt: r.checked_at,
+    provides: r.provides,
+    limitations: r.limitations,
   }));
 }
 

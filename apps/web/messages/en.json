@@ -359,5 +359,8 @@
   "ref.opt.verified": "from the source",
   "ref.opt.estimated": "estimate",
   "ref.opt.revenue": "on revenue",
-  "ref.opt.profit": "on profit"
+  "ref.opt.profit": "on profit",
+  "admin.sources.checked": "Docs checked {date}",
+  "admin.sources.provides": "Provides: {text}",
+  "admin.sources.limitations": "Limitations: {text}"
 }

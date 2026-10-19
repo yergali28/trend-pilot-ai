@@ -7,7 +7,9 @@
     "test": "vitest run",
     "lint": "eslint .",
     "typecheck": "tsc -p tsconfig.json",
-    "demo:load": "tsx src/demo-load.ts"
+    "demo:load": "tsx src/demo-load.ts",
+    "record": "node --env-file=.env.local --import tsx src/record.ts",
+    "ingest:once": "node --env-file-if-exists=.env.local --import tsx src/ingest-once.ts"
   },
   "dependencies": {
     "@tp/adapters": "workspace:*",

@@ -1,11 +1,38 @@
 {
   "recordedAt": "2026-10-18T00:00:00Z",
   "synthetic": true,
-  "note": "Синтетическая запись в предполагаемом формате источника. Не рыночные данные; заменить реальной записью командой record с тестовым токеном.",
+  "note": "Синтетическая запись в формате WB API (карточки + цены, docs/sources/wildberries.md). Не рыночные данные.",
   "body": {
     "cards": [
-      { "nmID": 101, "title": "Синтетический товар W1", "price": 990, "currency": "RUB" },
-      { "nmID": 102, "title": "Синтетический товар W2", "price": null }
+      {
+        "nmID": 101,
+        "title": "Синтетический товар W1",
+        "subjectName": "Органайзеры",
+        "dimensions": {
+          "weightBrutto": 0.3
+        }
+      },
+      {
+        "nmID": 102,
+        "title": "Синтетический товар W2"
+      }
+    ],
+    "goods": [
+      {
+        "nmID": 101,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 1290,
+            "discountedPrice": 990
+          }
+        ]
+      },
+      {
+        "nmID": 102,
+        "currencyIsoCode4217": "RUB",
+        "sizes": []
+      }
     ]
   }
 }

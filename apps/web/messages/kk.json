@@ -359,5 +359,8 @@
   "ref.opt.verified": "дереккөзден алынған",
   "ref.opt.estimated": "бағалау",
   "ref.opt.revenue": "түсімнен",
-  "ref.opt.profit": "пайдадан"
+  "ref.opt.profit": "пайдадан",
+  "admin.sources.checked": "Құжаттама тексерілді {date}",
+  "admin.sources.provides": "Береді: {text}",
+  "admin.sources.limitations": "Шектеулер: {text}"
 }
