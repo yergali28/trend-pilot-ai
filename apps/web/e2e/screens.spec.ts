@@ -30,6 +30,9 @@ test("экраны приложения", async ({ page }) => {
   await shoot(page, "admin-orgs", "/admin", () => expect(page.getByRole("heading", { name: "Организации" })).toBeVisible());
   await shoot(page, "admin-sources", "/admin/sources", () => expect(page.getByRole("heading", { name: "Реестр источников" })).toBeVisible());
   await shoot(page, "admin-references", "/admin/references", () => expect(page.getByRole("heading", { name: "Справочники", level: 2 })).toBeVisible());
+  // Справочники с загруженными комиссиями и тарифами WB (refs:load в global-setup).
+  await shoot(page, "admin-references-fee-wb", "/admin/references?table=fee_rules", () => expect(page.getByRole("link", { name: "common-api.wildberries.ru" }).first()).toBeVisible());
+  await shoot(page, "admin-references-logistics-wb", "/admin/references?table=logistics_rates", () => expect(page.getByRole("link", { name: "common-api.wildberries.ru" }).first()).toBeVisible());
 });
 
 test("экраны входа", async ({ browser }) => {

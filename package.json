@@ -8,7 +8,7 @@
   "scripts": {
     "setup": "pnpm install && node -e \"const f=require('fs');if(!f.existsSync('.env.local'))f.copyFileSync('.env.example','.env.local')\"",
     "db:start": "supabase start --workdir packages/db",
-    "db:reset": "supabase db reset --workdir packages/db && pnpm demo:load",
+    "db:reset": "supabase db reset --workdir packages/db && pnpm demo:load && pnpm --filter @tp/worker refs:load",
     "dev": "turbo run dev",
     "test": "turbo run test",
     "test:e2e": "turbo run test:e2e",

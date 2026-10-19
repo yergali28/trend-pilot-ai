@@ -309,7 +309,7 @@
   "ref.field.source_url": "Ссылка на источник",
   "ref.field.fetched_at": "Дата получения",
   "ref.field.status": "Статус",
-  "ref.field.scheme": "Схема",
+  "ref.field.scheme": "Модель продаж",
   "ref.field.rate_type": "Вид тарифа",
   "ref.field.amount": "Сумма",
   "ref.field.carrier": "Перевозчик",
@@ -362,5 +362,10 @@
   "ref.opt.profit": "с прибыли",
   "admin.sources.checked": "Документация проверена {date}",
   "admin.sources.provides": "Даёт: {text}",
-  "admin.sources.limitations": "Ограничения: {text}"
+  "admin.sources.limitations": "Ограничения: {text}",
+  "ref.field.external_category_name": "Категория площадки",
+  "ref.field.external_parent_name": "Родительская категория",
+  "ref.field.size_rule": "Склад, единица",
+  "ref.unit.first_liter": "первый литр",
+  "ref.unit.extra_liter": "доп. литр"
 }

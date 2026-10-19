@@ -1,5 +1,5 @@
 import { writeFile } from "node:fs/promises";
-import { adapters, defaultFixturesDir } from "@tp/adapters";
+import { adapters, defaultFixturesDir, fetchWbTariffs } from "@tp/adapters";
 
 // Запись живого ответа источника в fixtures/<источник>/<имя>.json для режима replay.
 // Токен берётся из apps/worker/.env.local и никуда не выводится. В запись попадают только поля из белого списка.
@@ -30,6 +30,17 @@ const sanitizers: Record<string, (body: Json) => Json> = {
 };
 
 const [sourceId = "", name = "seller"] = process.argv.slice(2);
+
+// Тарифы WB — справочные данные (комиссии, логистика), без персональных данных; схема уже отбрасывает лишние поля.
+if (sourceId === "wildberries" && name === "tariffs") {
+  const snap = await fetchWbTariffs({ mode: "live" });
+  const file = `${defaultFixturesDir}/wildberries/tariffs.json`;
+  const fixture = { recordedAt: snap.fetchedAt, synthetic: false, note: "Живой ответ WB API «Тарифы» (комиссии и тарифы коробов), записан командой record.", body: snap.body };
+  await writeFile(file, `${JSON.stringify(fixture, null, 2)}\n`);
+  const wh = snap.body.box.response.data.warehouseList;
+  console.log(`записано: fixtures/wildberries/tariffs.json; предметов с комиссиями ${snap.body.commission.report.length}, складов ${wh.length}, тариф на ${snap.body.boxDate}`);
+  process.exit(0);
+}
 const adapter = adapters[sourceId];
 const sanitize = sanitizers[sourceId];
 if (!adapter || !sanitize) throw new Error(`Запись не настроена для источника: ${sourceId || "(не указан)"}`);

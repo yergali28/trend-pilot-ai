@@ -7,5 +7,6 @@ import { wildberries } from "./wildberries";
 
 export * from "./core";
 export * from "./core/http";
+export * from "./wildberries/tariffs";
 
 export const adapters: Record<string, Adapter> = { kaspi, wildberries, ozon, aliexpress, analytics };

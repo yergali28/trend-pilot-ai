@@ -24,9 +24,24 @@
 |---|---|---|---|---|
 | `POST /content/v2/get/cards/list` | `content-api.wildberries.ru` | Контент или Продвижение | Контент: 100 запросов / 1 мин, интервал 600 мс, всплеск 5 | Карточки: `nmID`, `title`, `subjectID`, `subjectName`, `brand`, `vendorCode`, габариты и вес с упаковкой (`dimensions.weightBrutto`, кг). Пагинация курсором `updatedAt` + `nmID`, `limit` ≤ 100 |
 | `GET /api/v2/list/goods/filter` | `discounts-prices-api.wildberries.ru` | Цены и скидки | 10 запросов / 6 сек, интервал 600 мс, всплеск 5 | Цены по размерам: `price`, `discountedPrice` (со скидкой продавца), `clubDiscountedPrice`, `currencyIsoCode4217`, `discount`. `limit` ≤ 1000, `offset` |
-| `GET /api/v1/tariffs/commission` | `common-api.wildberries.ru` | (категория в спецификации не указана) | 1 запрос / 1 мин, всплеск 2 | Комиссии WB по предметам (`subjectID`) и моделям: `paidStorageKgvp` (FBW), `kgvpMarketplace` (FBS), `kgvpSupplier` (DBS/DBW) и др., % |
+| `GET /api/v1/tariffs/commission`, `GET /api/v1/tariffs/box` | `common-api.wildberries.ru` | любая | см. раздел «Тарифы» | Комиссии по предметам и тарифы логистики коробов |
 
 Ответ `401` — токен недействителен или категория не совпадает с сервисом; `403` — нет доступа; `429` — превышен лимит.
+
+## Тарифы: комиссии и логистика (проверено 19.10.2026)
+
+Спецификация: https://dev.wildberries.ru/openapi/wb-tariffs · YAML: https://dev.wildberries.ru/api/swagger/yaml/ru/10-tariffs.yaml. Домен `common-api.wildberries.ru`; методы раздела «Тарифы» доступны с токеном **любой категории** (release notes: https://dev.wildberries.ru/en/release-notes?id=321).
+
+| Метод | Лимит | Параметры | Ответ |
+|---|---|---|---|
+| `GET /api/v1/tariffs/commission` | 1 запрос / 1 мин, всплеск 2 | `locale`: `ru`, `en`, `zh` — язык `parentName` и `subjectName` | `report[]`: `parentID`, `parentName`, `subjectID`, `subjectName`, комиссии в %: `paidStorageKgvp` (FBW), `kgvpMarketplace` (FBS), `kgvpSupplier` (DBS, DBW), `kgvpSupplierExpress` (EDBS), `kgvpPickup` (C&C), `kgvpBooking` (бронирование) |
+| `GET /api/v1/tariffs/box` | персональный и сервисный: 60 запросов / 1 мин, интервал 1 с, всплеск 5; базовый: 1 запрос / 1 ч | `date` (ГГГГ-ММ-ДД), обязательный | `response.data`: `currency` (в реальном ответе `RUB`; в русской спецификации суммы в ₽), `dtNextBox`, `dtTillMax`, `warehouseList[]`: `warehouseName`, `geoName` («страна, для РФ — округ»), `boxDeliveryBase` / `boxDeliveryLiter` (логистика FBO, первый / доп. литр), `boxDeliveryMarketplaceBase` / `…Liter` (FBS), `boxStorageBase` / `…Liter` (хранение в день), коэффициенты `…CoefExpr` в % (уже учтены в тарифах). Суммы — строки с запятой; «-» — тарифа нет |
+
+Страны и языки: у комиссий страна в ответе и спецификации **не указана** (в `fee_rules.country` остаётся пусто). У тарифов коробов `geoName` в реальном ответе 19.10.2026: «Россия» (4 склада) и «СНГ» (20 складов); «Россия» → `RU`, «СНГ» — группа стран, страна остаётся пустой. Языки названий категорий: `ru`, `en`, `zh`.
+
+Реальный ответ сверен со схемой (`pnpm --filter @tp/worker schema:diff` выводит только имена полей): поля совпадают со спецификацией, дополнительно есть `currency` в данных коробов (описано в английской спецификации).
+
+Загрузка в справочники: `pnpm --filter @tp/worker refs:load [--live]` (входит в `pnpm db:reset`, по умолчанию из записи `fixtures/wildberries/tariffs.json`). Каждая строка: источник — URL метода, `fetched_at` — время ответа, `valid_from` — дата актуальности (день запроса), статус `verified`. Пустые и «-» значения строк не получают; ничего не усредняется. Комиссии привязаны к предметам WB (`external_category_id`), поэтому в расчёт товаров пока не попадают: нет сопоставления наших категорий с предметами WB.
 
 ## Лимиты и повторы
 
@@ -39,7 +54,7 @@
 
 ## Что источник даёт и чего не даёт
 
-Даёт (по своему магазину продавца): карточки товаров, вес и габариты, цены и скидки, комиссии WB по предметам.
+Даёт (по своему магазину продавца): карточки товаров, вес и габариты, цены и скидки. Справочно: комиссии WB по предметам и тарифы логистики и хранения коробов по складам.
 
 Не даёт (по документации и правилам ТЗ 5.2, 5.7):
 - данных о рынке в целом: цены и продажи чужих товаров, число продавцов, концентрация — `no_data`;

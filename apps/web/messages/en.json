@@ -309,7 +309,7 @@
   "ref.field.source_url": "Source link",
   "ref.field.fetched_at": "Retrieved at",
   "ref.field.status": "Status",
-  "ref.field.scheme": "Scheme",
+  "ref.field.scheme": "Sales model",
   "ref.field.rate_type": "Rate type",
   "ref.field.amount": "Amount",
   "ref.field.carrier": "Carrier",
@@ -362,5 +362,10 @@
   "ref.opt.profit": "on profit",
   "admin.sources.checked": "Docs checked {date}",
   "admin.sources.provides": "Provides: {text}",
-  "admin.sources.limitations": "Limitations: {text}"
+  "admin.sources.limitations": "Limitations: {text}",
+  "ref.field.external_category_name": "Marketplace category",
+  "ref.field.external_parent_name": "Parent category",
+  "ref.field.size_rule": "Warehouse, unit",
+  "ref.unit.first_liter": "first liter",
+  "ref.unit.extra_liter": "extra liter"
 }

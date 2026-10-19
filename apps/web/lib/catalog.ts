@@ -202,7 +202,8 @@ export async function loadCatalog(db: SupabaseClient): Promise<Catalog> {
     db.from("categories").select("id, name, synthetic"),
     db.from("fx_rates").select("base_currency, quote_currency, rate, rate_date, fetched_at").order("rate_date", { ascending: false }),
     db.from("cargo_rates").select("basis, rate, currency, fetched_at, status").order("fetched_at", { ascending: false }),
-    db.from("fee_rules").select("marketplace_id, country, fee_type, rate, valid_from, fetched_at, status").order("valid_from", { ascending: false }),
+    // Комиссии по категориям площадки (например, предметы WB) не применяются, пока товар не привязан к категории.
+    db.from("fee_rules").select("marketplace_id, country, fee_type, rate, valid_from, fetched_at, status").is("external_category_id", null).order("valid_from", { ascending: false }),
   ]);
   for (const r of [products, offers, demand, matches, categories, fx, cargo, fees]) if (r.error) throw r.error;
   const listingsBySource = new Map<string, string[]>();

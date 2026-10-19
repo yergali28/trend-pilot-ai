@@ -309,7 +309,7 @@
   "ref.field.source_url": "Дереккөз сілтемесі",
   "ref.field.fetched_at": "Алынған күні",
   "ref.field.status": "Мәртебе",
-  "ref.field.scheme": "Схема",
+  "ref.field.scheme": "Сату моделі",
   "ref.field.rate_type": "Тариф түрі",
   "ref.field.amount": "Сома",
   "ref.field.carrier": "Тасымалдаушы",
@@ -362,5 +362,10 @@
   "ref.opt.profit": "пайдадан",
   "admin.sources.checked": "Құжаттама тексерілді {date}",
   "admin.sources.provides": "Береді: {text}",
-  "admin.sources.limitations": "Шектеулер: {text}"
+  "admin.sources.limitations": "Шектеулер: {text}",
+  "ref.field.external_category_name": "Алаң санаты",
+  "ref.field.external_parent_name": "Ата-ана санат",
+  "ref.field.size_rule": "Қойма, бірлік",
+  "ref.unit.first_liter": "бірінші литр",
+  "ref.unit.extra_liter": "қосымша литр"
 }
