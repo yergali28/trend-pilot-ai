@@ -264,6 +264,9 @@ importers:
 
   packages/adapters:
     dependencies:
+      '@tp/calc':
+        specifier: workspace:*
+        version: link:../calc
       zod:
         specifier: 4.6.7
         version: 4.6.7

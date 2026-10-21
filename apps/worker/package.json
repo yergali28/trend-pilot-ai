@@ -11,7 +11,8 @@
     "record": "node --env-file=.env.local --import tsx src/record.ts",
     "ingest:once": "node --env-file-if-exists=.env.local --import tsx src/ingest-once.ts",
     "schema:diff": "node --env-file=.env.local --import tsx src/schema-diff.ts",
-    "refs:load": "node --env-file-if-exists=.env.local --import tsx src/refs-load.ts"
+    "refs:load": "node --env-file-if-exists=.env.local --import tsx src/refs-load.ts",
+    "sourcing": "node --env-file-if-exists=.env.local --import tsx src/sourcing.ts"
   },
   "dependencies": {
     "@tp/adapters": "workspace:*",
