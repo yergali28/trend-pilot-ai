@@ -77,6 +77,11 @@ describe("маппинг ответов провайдеров в Product", () =
     expect(empty).toBeNull();
   });
 
+  it("Onebound: поиск Taobao в формате реального ответа (21.10.2026) — без продаж и продавца, area = провинция и город", () => {
+    const r = { title: "适用于苹果17promax手机壳18高级", pic_url: "https://img.test/5.jpg", promotion_price: "48.00", orginal_price: "98.00", price: "48.00", num_iid: "1038418587864", area: "广东 东莞", detail_url: "https://item.taobao.com/item.htm?id=1038418587864" };
+    expect(mapOneboundSearchItem("taobao", r)).toMatchObject({ marketplace: "taobao", itemId: "1038418587864", priceCny: 48, salesCount: null, supplierName: null, province: "广东", city: "东莞" });
+  });
+
   it("Onebound: карточка — MOQ, провинция и город, магазин", () => {
     expect(mapOneboundItem("1688", oneboundItem.item)).toMatchObject({ itemId: "610947572360", priceCny: 799, minOrderQty: 2, supplierId: "2206619673102", supplierName: "深圳市多亲科技有限公司", province: "广东省", city: "深圳市" });
   });
@@ -121,8 +126,16 @@ describe("Onebound: запросы, ошибки и повторы", () => {
     expect(limited).toHaveBeenCalledTimes(4);
   });
 
+  it("4005 «интерфейс не подключён» — ProviderAuthError; Taobao сортируется у нас, если Onebound не отсортировал", async () => {
+    const denied = vi.fn().mockResolvedValue(res(200, { error: "1688无权访问,请开通接口", reason: "1688无权访问", error_code: "4005", success: 0 }));
+    await expect(oneboundProvider({ ONEBOUND_API_KEY: KEY }, { fetchImpl: denied, ...clock() }).search("1688", "x")).rejects.toBeInstanceOf(ProviderAuthError);
+    const unsorted = { error_code: "0000", items: { item: [{ num_iid: "a", title: "a", price: "48.00", area: "广东 东莞" }, { num_iid: "b", title: "b", price: "23.80" }] } };
+    const out = await oneboundProvider({ ONEBOUND_API_KEY: KEY }, { fetchImpl: vi.fn().mockResolvedValue(res(200, unsorted)), ...clock() }).search("taobao", "x", { sort: "price_asc" });
+    expect(out.map((p) => p.itemId)).toEqual(["b", "a"]);
+  });
+
   it("ошибка в теле ответа — ProviderUnavailable; item-not-found — null", async () => {
-    const bad = vi.fn().mockResolvedValue(res(200, { error: "key-invalid", reason: "错误", error_code: "4005" }));
+    const bad = vi.fn().mockResolvedValue(res(200, { error: "server-error", reason: "错误", error_code: "5000" }));
     await expect(oneboundProvider({ ONEBOUND_API_KEY: KEY }, { fetchImpl: bad, ...clock() }).search("1688", "x")).rejects.toBeInstanceOf(ProviderUnavailable);
     const missing = vi.fn().mockResolvedValue(res(200, { error: "item-not-found", reason: "商品没找到", error_code: "2000" }));
     expect(await oneboundProvider({ ONEBOUND_API_KEY: KEY }, { fetchImpl: missing, ...clock() }).getItem("1688", "1")).toBeNull();

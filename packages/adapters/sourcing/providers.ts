@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 import { z } from "zod";
 import { AdapterError, defaultFixturesDir } from "../core";
 import { requestJson, type RateOptions } from "../core/http";
-import { int, num, Product, ProviderUnavailable, str, toProviderError, type Marketplace, type SearchOptions, type SourcingProvider, type SortOrder } from "./model";
+import { int, num, Product, ProviderAuthError, ProviderUnavailable, str, toProviderError, type Marketplace, type SearchOptions, type SourcingProvider, type SortOrder } from "./model";
 
 type Http = Pick<RateOptions, "fetchImpl" | "sleep" | "random" | "now"> & { minIntervalMs?: number };
 type Env = Record<string, string | undefined>;
@@ -29,12 +29,12 @@ const compact = (xs: (Product | null)[]) => xs.filter((x): x is Product => x !==
 // Документация: https://open.onebound.cn/help/api/1688.item_search.html (и …item_get, taobao.*) — только после входа
 // в кабинет Onebound; без аккаунта не читается (проверено 21.10.2026). Формат ниже взят из примеров, которые
 // публикует сам Onebound (juejin.cn, автор «万邦Noah», 2022): packages/adapters/sourcing/README.md.
-// TODO(onebound): сверить с документацией в кабинете и с первым реальным ответом:
-//   - нужен ли `secret` вместе с `key` (в примерах обязателен) — отсюда ONEBOUND_API_SECRET;
-//   - пути и поля `taobao/item_search`, `taobao/item_get` (подтверждены только 1688; для Taobao — та же схема по аналогии);
-//   - значения `sort` для Taobao (для 1688: bid, _bid, _sale, _credit) и параметр `page_size`;
-//   - коды ошибок ключа и квоты (сейчас любой код, кроме 0000 и item-not-found, → ProviderUnavailable);
-//   - лимиты: в ответе есть `api_info: "today:19 max:10000"` (суточная квота), QPS не опубликован.
+// Сверено с реальными ответами 21.10.2026 (пробный ключ): `taobao/item_search` — поля items.item[]: num_iid, title,
+// price, promotion_price, orginal_price, pic_url, area («广东 东莞»), detail_url; продаж и продавца в выдаче нет;
+// `page_size` и `sort=bid` Taobao не учёл (33 товара, без порядка) — сортируем у себя. Код 4005 — «интерфейс
+// не подключён для ключа» (так ответил 1688). Квота в `api_info`: «today:… max:10 …;expires:…».
+// TODO(onebound): по-прежнему не сверены `1688/item_search` и `item_get` (1688 у ключа не подключён), значения
+//   `sort` для Taobao, коды ошибок неверного ключа и исчерпанной квоты (сейчас → ProviderUnavailable).
 const ONEBOUND = "https://api-gw.onebound.cn";
 const OneboundBody = z.looseObject({
   error_code: z.union([z.string(), z.number()]).optional(),
@@ -44,6 +44,12 @@ const OneboundBody = z.looseObject({
   item: z.looseObject({}).optional(),
 });
 const ONEBOUND_SORT: Record<SortOrder, string> = { relevance: "", price_asc: "bid", price_desc: "_bid", sales_desc: "_sale" };
+
+/** area: «广州市» (1688) или «广东 东莞» (Taobao: провинция и город через пробел). */
+const place = (v: unknown) => {
+  const parts = (str(v) ?? "").trim().split(/\s+/).filter(Boolean);
+  return parts.length > 1 ? { province: parts[0]!, city: parts.slice(1).join(" ") } : { province: null, city: parts[0] ?? null };
+};
 
 export const mapOneboundSearchItem = (marketplace: Marketplace, r: Row) =>
   toProduct({
@@ -56,8 +62,7 @@ export const mapOneboundSearchItem = (marketplace: Marketplace, r: Row) =>
     salesCount: int(r.sales, 0),
     supplierId: null,
     supplierName: str(r.seller_nick),
-    city: str(r.area),
-    province: null,
+    ...place(r.area),
     imageUrl: str(r.pic_url),
     url: str(r.detail_url),
     raw: r,
@@ -101,6 +106,7 @@ export function oneboundProvider(env: Env, http: Http = {}): SourcingProvider {
     }
     const code = body.error_code === undefined ? "0000" : String(body.error_code);
     if (body.error === "item-not-found") return null;
+    if (code === "4005") throw new ProviderAuthError(`onebound ${marketplace}/${api}: интерфейс не подключён для ключа (4005)`);
     if (code !== "0000") throw new ProviderUnavailable(`onebound ${marketplace}/${api}: ${code} ${body.reason ?? body.error ?? ""}`.trim());
     return body;
   }
@@ -110,7 +116,8 @@ export function oneboundProvider(env: Env, http: Http = {}): SourcingProvider {
     async search(marketplace, keyword, opts) {
       const p = page(opts);
       const body = await call(marketplace, "item_search", { q: keyword, page: String(p.page), page_size: String(p.pageSize), sort: ONEBOUND_SORT[p.sort] });
-      return compact((body?.items?.item ?? []).map((r) => mapOneboundSearchItem(marketplace, r)));
+      // Размер страницы задаёт Onebound (page_size Taobao не учитывает); сортировка — в пределах полученной страницы.
+      return sortProducts(compact((body?.items?.item ?? []).map((r) => mapOneboundSearchItem(marketplace, r))), p.sort);
     },
     async getItem(marketplace, itemId) {
       const body = await call(marketplace, "item_get", { num_iid: itemId });
