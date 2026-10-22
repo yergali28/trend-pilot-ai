@@ -14,6 +14,8 @@ export interface MarketItem {
   categoryId: string | null;
   synthetic: boolean;
   sourceId: string;
+  /** Площадка продажи (wildberries, ozon, kaspi). */
+  marketplace: string;
   price: number | null;
   currency: string | null;
   sales: number | null;
@@ -33,10 +35,12 @@ export interface MarketItem {
 export interface Niche {
   id: string;
   name: string;
+  marketplace: string;
   synthetic: boolean;
   items: number;
   revenue: number;
   sales: number;
+  reviews: number;
   medianPrice: number | null;
   avgRating: number | null;
   /** Доля выручки трёх крупнейших товаров ниши: чем выше, тем сильнее концентрация. */
@@ -51,13 +55,34 @@ const median = (xs: number[]) => {
   return s.length % 2 ? s[m]! : (s[m - 1]! + s[m]!) / 2;
 };
 
+/** Площадки продажи с рыночными данными, в порядке вкладок. */
+export const MARKETS = ["wildberries", "ozon", "kaspi"] as const;
+export type Market = (typeof MARKETS)[number];
+export const asMarket = (v: string | undefined): Market => (MARKETS as readonly string[]).includes(v ?? "") ? (v as Market) : "wildberries";
+
+export const MARKET_NAMES: Record<Market, string> = { wildberries: "Wildberries", ozon: "Ozon", kaspi: "Kaspi.kz" };
+
+/** Подпись источника рыночных данных: MPSTATS (WB, Ozon), Apify (Kaspi) или общий «провайдер аналитики». */
+export function sourceLabel(sourceId: string, t: (key: "market.source.mpstats" | "market.source.apify" | "market.source.other") => string) {
+  if (sourceId.startsWith("mpstats")) return t("market.source.mpstats");
+  if (sourceId.startsWith("apify")) return t("market.source.apify");
+  return t("market.source.other");
+}
+
 // ponytail: читается вся таблица (сотни товаров); на реальных объёмах — представление с последним снимком и пагинация.
-export async function loadMarket(db: SupabaseClient, marketplace = "wildberries") {
+/** Рынок одной площадки или, без `marketplace`, всех сразу (страницы ниши и товара находят своё по id). */
+export async function loadMarket(db: SupabaseClient, marketplace?: Market) {
   const all = selectAll;
   const [stats, products, categories, matches] = await Promise.all([
     all((a, b) => db.from("listing_stats").select("product_id, source_id, period_start, period_end, price, currency, sales, revenue, rating, reviews, stock, seller, daily, fetched_at, synthetic").order("fetched_at", { ascending: false }).range(a, b)),
-    all((a, b) => db.from("products").select("id, external_id, title, url, image_url, brand, category_id, synthetic").eq("source_id", marketplace).eq("kind", "listing").order("id").range(a, b)),
-    all((a, b) => db.from("categories").select("id, name, synthetic").eq("marketplace_id", marketplace).order("id").range(a, b)),
+    all((a, b) => {
+      const q = db.from("products").select("id, source_id, external_id, title, url, image_url, brand, category_id, synthetic").eq("kind", "listing");
+      return (marketplace ? q.eq("source_id", marketplace) : q.in("source_id", [...MARKETS])).order("id").range(a, b);
+    }),
+    all((a, b) => {
+      const q = db.from("categories").select("id, name, marketplace_id, synthetic");
+      return (marketplace ? q.eq("marketplace_id", marketplace) : q.in("marketplace_id", [...MARKETS])).order("id").range(a, b);
+    }),
     all((a, b) => db.from("matches").select("source_product_id, listing_product_id").order("listing_product_id").range(a, b)),
   ]);
 
@@ -79,6 +104,7 @@ export async function loadMarket(db: SupabaseClient, marketplace = "wildberries"
       categoryId: p.category_id,
       synthetic: p.synthetic || s.synthetic,
       sourceId: s.source_id,
+      marketplace: p.source_id,
       price: num(s.price),
       currency: s.currency,
       sales: num(s.sales),
@@ -94,10 +120,11 @@ export async function loadMarket(db: SupabaseClient, marketplace = "wildberries"
       sourceProductId: sourceOf.get(p.id) ?? null,
     });
   }
-  items.sort((a, b) => (b.revenue ?? -1) - (a.revenue ?? -1));
-  // Реальные данные провайдера и демо-синтетика не смешиваются: при наличии реальных синтетика скрыта.
-  const real = items.filter((i) => !i.synthetic);
-  if (real.length > 0) items.splice(0, items.length, ...real);
+  // Без выручки (Kaspi не показывает продажи) порядок — по числу отзывов.
+  items.sort((a, b) => (b.revenue ?? -1) - (a.revenue ?? -1) || (b.reviews ?? -1) - (a.reviews ?? -1));
+  // Реальные данные провайдера и демо-синтетика не смешиваются: на площадке с реальными данными синтетика скрыта.
+  const realOn = new Set(items.filter((i) => !i.synthetic).map((i) => i.marketplace));
+  items.splice(0, items.length, ...items.filter((i) => !i.synthetic || !realOn.has(i.marketplace)));
 
   const niches: Niche[] = categories
     .map((c) => {
@@ -108,19 +135,23 @@ export async function loadMarket(db: SupabaseClient, marketplace = "wildberries"
       return {
         id: c.id,
         name: c.name,
+        marketplace: c.marketplace_id,
         synthetic: Boolean(c.synthetic),
         items: its.length,
         revenue,
         sales: its.reduce((s, i) => s + (i.sales ?? 0), 0),
+        reviews: its.reduce((s, i) => s + (i.reviews ?? 0), 0),
         medianPrice: median(its.flatMap((i) => (i.price === null ? [] : [i.price]))),
         avgRating: ratings.length ? ratings.reduce((a, b) => a + b, 0) / ratings.length : null,
         top3Share: revenue > 0 ? top3 / revenue : null,
       };
     })
     .filter((n) => n.items > 0)
-    .sort((a, b) => b.revenue - a.revenue);
+    .sort((a, b) => b.revenue - a.revenue || b.reviews - a.reviews);
 
-  return { items, niches };
+  /** Мера ниш и лидеров: выручка, а если её нет ни у одного товара (Kaspi) — число отзывов. */
+  const measure: "revenue" | "reviews" = items.some((i) => i.revenue !== null) ? "revenue" : "reviews";
+  return { items, niches, measure };
 }
 
 /** Даты периода по дням (ГГГГ-ММ-ДД) для дневных рядов, начиная с periodStart. */

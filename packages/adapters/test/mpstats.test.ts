@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { resetRateState } from "../core/http";
-import { mpstats } from "../mpstats";
+import { mpstats, mpstatsOzon } from "../mpstats";
 
 afterEach(() => {
   resetRateState();
@@ -33,5 +33,27 @@ describe("mpstats live: товары категории по документа�
     expect(records).toEqual([
       expect.objectContaining({ type: "listing", listingSourceId: "wildberries", externalId: "7", price: 568, salesPerMonth: 300, revenue: 170400, category: { externalId: "wb-subject:1526", name: "Маски тканевые" }, imageUrl: "https://basket-01.wbbasket.ru/7/1.webp", daily: { sales: [1, 2], price: [568, 570], stock: [] }, synthetic: false }),
     ]);
+  });
+});
+
+describe("mpstats-ozon: товары категории Ozon (формат сверен с ответом 22.10.2026)", () => {
+  it("тот же метод с сегментом oz, ниша из niche_id, листинг Ozon без комиссии и габаритов", async () => {
+    const calls: string[] = [];
+    vi.stubGlobal("fetch", async (url: string) => {
+      calls.push(url);
+      return new Response(
+        JSON.stringify({
+          total: 1,
+          data: [{ id: 522297197, name: "Одеяло Евро 200x220", url: "https://www.ozon.ru/context/detail/id/522297197/", thumb_middle: "https://ir.ozone.ru/s3/multimedia-1-m/d250/20517241270.jpg", niche_id: 15081, niche: "Дом и сад/Текстиль/Одеяла", brand: "GALTEX", seller: "GALTEX", final_price: 1574, sales: 4883, revenue: 7679576, rating: 4.9, comments: 138257, balance: 313, graph: [54, 153], price_graph: [1364, 1347], stocks_graph: [646, 330] }],
+        }),
+      );
+    });
+    const raw = await mpstatsOzon.fetch({ query: "Дом и сад/Текстиль" }, { mode: "live", env: { MPSTATS_TOKEN: "test-token" } });
+    expect(new URL(calls[0]!).pathname).toBe("/api/analytics/v1/oz/category/items");
+    const { records } = mpstatsOzon.normalize(raw);
+    expect(records).toEqual([
+      expect.objectContaining({ sourceId: "mpstats-ozon", listingSourceId: "ozon", externalId: "522297197", price: 1574, salesPerMonth: 4883, category: { externalId: "oz-niche:15081", name: "Одеяла" }, daily: { sales: [54, 153], price: [1364, 1347], stock: [646, 330] } }),
+    ]);
+    expect(records[0]).not.toHaveProperty("commissionPct", expect.anything());
   });
 });

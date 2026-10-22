@@ -18,6 +18,8 @@ insert into public.data_sources (id, marketplace_id, role, layer, method, status
   ('alibaba', 'alibaba', 'buy', 'C', 'provider', 'pending_registration', 'Провайдер данных ещё не выбран', 'replay'),
   ('analytics', null, 'analytics', 'C', 'provider', 'active', 'Работает на записанных ответах источника', 'replay'),
   ('mpstats', 'wildberries', 'analytics', 'C', 'provider', 'active', 'Без токена MPSTATS: демо-запись в формате провайдера', 'replay'),
+  ('mpstats-ozon', 'ozon', 'analytics', 'C', 'provider', 'active', 'Рынок Ozon через MPSTATS (тот же токен, что для WB)', 'replay'),
+  ('apify-kaspi', 'kaspi', 'analytics', 'C', 'public_page', 'active', 'Рынок Kaspi через Apify (сбор публичных страниц, решение владельца 22.10.2026)', 'replay'),
   ('1688', '1688', 'buy', 'C', 'provider', 'active', 'Поиск 1688 через Apify (сбор публичных страниц, решение владельца 22.10.2026)', 'live');
 
 -- Wildberries: данные проверены по официальной документации 19.10.2026 (docs/sources/wildberries.md).
@@ -55,3 +57,20 @@ update public.data_sources set
   provides = 'Предложения 1688 по ключевому слову: цена от (¥, нижняя ступень), поставщик, провинция и город, число заказов, ссылка и фото.',
   limitations = 'Сбор публичных страниц через Apify, платно за результат. MOQ в поиске не приходит. Совпадение с товаром WB — аналог по запросу, требует проверки.'
 where id = '1688';
+
+-- MPSTATS, Ozon: тот же метод category/items с сегментом oz, сверен с реальным ответом 22.10.2026.
+update public.data_sources set
+  checked_at = '2026-10-22',
+  docs_url = 'https://mpstats.io/integrations/analytics-wb/',
+  provides = 'Рынок Ozon: товары категорий с ценой (и ценой по карте Ozon), продажами и выручкой за 30 дней, рейтингом, отзывами, остатками, фото и дневными рядами продаж, цен и остатков.',
+  limitations = 'Комиссий Ozon и габаритов упаковки в ответе нет. Период — последние 30 дней. Закупочной цены провайдер не даёт.'
+where id = 'mpstats-ozon';
+
+-- Kaspi через Apify (актор piotrv1001/kaspi-listings-scraper): решение владельца по правилу 7 от 22.10.2026 —
+-- «давай теперь использовать mpstats для ozon и apify для kaspi» (после вопроса о сборе Kaspi под свою ответственность).
+update public.data_sources set
+  checked_at = '2026-10-22',
+  docs_url = 'https://apify.com/piotrv1001/kaspi-listings-scraper',
+  provides = 'Рынок Kaspi.kz (Алматы): товары категории или поиска — цена в KZT, бренд, рейтинг, число отзывов, наличие, категория, фото и ссылка.',
+  limitations = 'Kaspi не показывает продажи: продаж и выручки нет (no_data), спрос — только косвенно по отзывам. Сбор публичных страниц через Apify, 0,001 $ за товар. Снимок на дату сбора, без дневных рядов.'
+where id = 'apify-kaspi';
