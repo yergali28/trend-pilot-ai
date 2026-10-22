@@ -44,3 +44,14 @@ export async function requestClient(req: Request) {
 }
 
 export const json = (status: number, body: unknown) => Response.json(body, { status });
+
+/** Все строки запроса страницами: PostgREST отдаёт не больше 1000 строк за раз. Запрос должен быть упорядочен. */
+export async function selectAll<R>(page: (from: number, to: number) => PromiseLike<{ data: R[] | null; error: unknown }>): Promise<R[]> {
+  const out: R[] = [];
+  for (let from = 0; ; from += 1000) {
+    const { data, error } = await page(from, from + 999);
+    if (error) throw error;
+    out.push(...(data ?? []));
+    if (!data || data.length < 1000) return out;
+  }
+}

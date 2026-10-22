@@ -42,3 +42,24 @@ export function sourcingMargin(purchaseCny: number, wbPriceRub: number, c: Margi
   const profitRub = wbPriceRub - costRub;
   return { purchaseRub, commissionRub, costRub, profitRub, marginPct: wbPriceRub > 0 ? (profitRub / wbPriceRub) * 100 : null };
 }
+
+/**
+ * Объёмный вес, кг: длина × ширина × высота (см) ÷ делитель. Делитель 6000 — распространённая норма перевозчиков;
+ * у карго бывает 5000 или расчёт по плотности, поэтому делитель — параметр.
+ */
+export function volumetricWeightKg(cm: { length: number; width: number; height: number }, divisor = 6000): number {
+  const { length, width, height } = cm;
+  if (![length, width, height, divisor].every((v) => Number.isFinite(v) && v > 0)) throw new RangeError("Габариты и делитель должны быть больше нуля");
+  return (length * width * height) / divisor;
+}
+
+/**
+ * Логистика WB до покупателя по тарифу коробов: первый литр по базовой ставке, каждый следующий (в том числе
+ * неполный) — по ставке за литр. Литраж — объём упаковки в литрах (см³ ÷ 1000).
+ */
+export function wbBoxLogistics(cm: { length: number; width: number; height: number }, firstLiter: number, extraLiter: number): number {
+  if (![firstLiter, extraLiter].every((v) => Number.isFinite(v) && v >= 0)) throw new RangeError("Тарифы должны быть неотрицательными");
+  const liters = (cm.length * cm.width * cm.height) / 1000;
+  if (!(liters > 0)) throw new RangeError("Габариты должны быть больше нуля");
+  return firstLiter + Math.max(0, Math.ceil(liters - 1)) * extraLiter;
+}

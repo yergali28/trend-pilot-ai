@@ -7,8 +7,8 @@ function catalog(refs: Catalog["refs"]): Catalog {
   return {
     refs,
     products: new Map([
-      ["s", { id: "s", source_id: "aliexpress", kind: "source", external_id: "s", title: "S", weight_kg: 1, synthetic: true, category_id: null }],
-      ["l", { id: "l", source_id: "kaspi", kind: "listing", external_id: "l", title: "L", weight_kg: null, synthetic: true, category_id: null }],
+      ["s", { id: "s", source_id: "aliexpress", kind: "source", external_id: "s", title: "S", url: null, weight_kg: 1, dimensions_cm: null, synthetic: true, category_id: null }],
+      ["l", { id: "l", source_id: "kaspi", kind: "listing", external_id: "l", title: "L", url: null, weight_kg: null, dimensions_cm: null, synthetic: true, category_id: null }],
     ]),
     offers: new Map([
       ["s", { product_id: "s", source_id: "aliexpress", method: "api", price: 2, currency: "USD", moq: null, fetched_at: at, synthetic: true }],
@@ -16,6 +16,7 @@ function catalog(refs: Catalog["refs"]): Catalog {
     ]),
     demand: new Map(),
     listingsBySource: new Map([["s", ["l"]]]),
+    listingCommission: new Map(),
     categories: new Map(),
   };
 }
@@ -66,7 +67,7 @@ describe("Wildberries: метрики, которых источник не да
     const { calculate, evaluate } = await import("@tp/calc");
     const c = catalog(refs);
     // Объявление WB есть (только цена своего магазина), спроса от провайдера нет.
-    c.products.set("w", { id: "w", source_id: "wildberries", kind: "listing", external_id: "7", title: "W", weight_kg: 0.5, synthetic: false, category_id: null });
+    c.products.set("w", { id: "w", source_id: "wildberries", kind: "listing", external_id: "7", title: "W", url: null, weight_kg: 0.5, dimensions_cm: null, synthetic: false, category_id: null });
     c.offers.set("w", { product_id: "w", source_id: "wildberries", method: "api", price: 900, currency: "RUB", moq: null, fetched_at: at, synthetic: false });
     c.listingsBySource.set("s", ["l", "w"]);
     const { input, listingId } = buildInput(c, "s", "wildberries", "KZ");
@@ -80,3 +81,15 @@ describe("Wildberries: метрики, которых источник не да
     expect(buildInput(c, "s", "wildberries", "KZ").input.salePrice).toBeUndefined();
   });
 });
+
+describe("реальная пара 1688 → WB: вес по габаритам и комиссия карточки", () => {
+  it("без веса — объёмный вес по габаритам (оценка); комиссия провайдера перекрывает справочник", () => {
+    const c = catalog(refs);
+    c.products.set("s", { ...c.products.get("s")!, weight_kg: null, dimensions_cm: { length: 30, width: 20, height: 10 } });
+    c.listingCommission.set("l", { pct: 25.5, source_id: "mpstats", fetched_at: at });
+    const { input } = buildInput(c, "s", "kaspi", "KZ");
+    expect(input.shippingQuantity).toMatchObject({ value: 1, status: "estimated" });
+    expect(input.marketplaceCommissionRate).toMatchObject({ value: 0.255, status: "verified", source: { sourceId: "mpstats", method: "provider" } });
+  });
+});
+

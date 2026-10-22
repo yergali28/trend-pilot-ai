@@ -1,0 +1,12 @@
+{
+  "note": "Параметры продавца по умолчанию — решение владельца 22.10.2026 (не данные источника). В карточке товара каждое значение можно изменить.",
+  "decidedAt": "2026-10-22T00:00:00Z",
+  "marketplaces": {
+    "wildberries": {
+      "adRate": 0,
+      "returnRate": 0.05,
+      "acquiringRate": 0,
+      "reverseLogistics": "same_as_delivery"
+    }
+  }
+}

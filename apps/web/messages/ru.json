@@ -420,5 +420,9 @@
   "market.showAll": "Показать все ниши ({n})",
   "market.showTop": "Показать топ-30",
   "market.card.sales": "Продажи",
-  "market.card.revenue": "Выручка"
+  "market.card.revenue": "Выручка",
+  "source.ownerDefaults": "Настройки продавца (решение владельца)",
+  "product.openSource": "Предложение на {source}",
+  "product.openListing": "Карточка на {marketplace}",
+  "product.analogNote": "Товар закупки — аналог, найденный по запросу, а не тот же товар: сверьте фото, материал и комплектацию по ссылкам, прежде чем закупать."
 }

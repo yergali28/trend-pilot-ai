@@ -420,5 +420,9 @@
   "market.showAll": "Show all niches ({n})",
   "market.showTop": "Show top 30",
   "market.card.sales": "Sales",
-  "market.card.revenue": "Revenue"
+  "market.card.revenue": "Revenue",
+  "source.ownerDefaults": "Seller settings (owner decision)",
+  "product.openSource": "Offer on {source}",
+  "product.openListing": "Listing on {marketplace}",
+  "product.analogNote": "The purchase item is an analog found by search, not the same product: check photos, material and contents via the links before buying."
 }
