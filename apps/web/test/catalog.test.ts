@@ -60,3 +60,23 @@ describe("buildInput: приоритет источников", () => {
     expect(buildInput(catalog(refs), "s", "kaspi", "RU").input.fxRates).toBeUndefined();
   });
 });
+
+describe("Wildberries: метрики, которых источник не даёт, остаются no_data", () => {
+  it("без объявления WB нет цены продажи, без провайдера аналитики нет спроса", async () => {
+    const { calculate, evaluate } = await import("@tp/calc");
+    const c = catalog(refs);
+    // Объявление WB есть (только цена своего магазина), спроса от провайдера нет.
+    c.products.set("w", { id: "w", source_id: "wildberries", kind: "listing", external_id: "7", title: "W", weight_kg: 0.5, synthetic: false, category_id: null });
+    c.offers.set("w", { product_id: "w", source_id: "wildberries", method: "api", price: 900, currency: "RUB", moq: null, fetched_at: at, synthetic: false });
+    c.listingsBySource.set("s", ["l", "w"]);
+    const { input, listingId } = buildInput(c, "s", "wildberries", "KZ");
+    expect(listingId).toBe("w");
+    expect(input.salePrice).toMatchObject({ value: 900, currency: "RUB", source: { sourceId: "wildberries", method: "api" } });
+    const e = evaluate(calculate(input), { metric: "priceToCost", target: 1, budget: null, moq: 1, salesPerMonth: c.demand.get("w")?.sales_per_month ?? null });
+    expect(e.verdict).toBe("insufficient");
+    expect(e.missing).toContain("demand");
+    // Без объявления на WB цена продажи — нет данных.
+    c.listingsBySource.set("s", ["l"]);
+    expect(buildInput(c, "s", "wildberries", "KZ").input.salePrice).toBeUndefined();
+  });
+});

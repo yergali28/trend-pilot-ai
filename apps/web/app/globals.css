@@ -13,6 +13,13 @@
     color: var(--tp-text);
     caret-color: var(--tp-action);
   }
+  /* Без одиноких слов в последней строке абзаца; заголовки — ровными строками. */
+  p, li, dd, dt, td, th, figcaption, label {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+  }
   ::selection {
     background: var(--tp-selection);
     color: var(--tp-text);

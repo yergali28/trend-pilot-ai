@@ -26,6 +26,9 @@ export default async function AdminSourcesPage() {
               <p className="pl-6 text-sm text-subtle">
                 {t(`role.source.${s.role}`)} · {t(`mode.${s.mode as "replay"}`)} · {s.lastSuccessAt ? t("admin.sources.lastSuccess", { date: date.format(new Date(s.lastSuccessAt)) }) : t("admin.sources.never")}
               </p>
+              {s.checkedAt ? <p className="pl-6 text-sm text-subtle">{t("admin.sources.checked", { date: new Intl.DateTimeFormat(locale === "kk" ? "kk-KZ" : locale === "en" ? "en-GB" : "ru-RU", { dateStyle: "medium" }).format(new Date(s.checkedAt)) })}</p> : null}
+              {s.provides ? <p className="max-w-[65ch] pl-6 text-sm text-muted">{t("admin.sources.provides", { text: s.provides })}</p> : null}
+              {s.limitations ? <p className="max-w-[65ch] pl-6 text-sm text-muted">{t("admin.sources.limitations", { text: s.limitations })}</p> : null}
             </div>
             <SourceRow locale={locale} id={s.id} status={s.status} reason={s.statusReason} />
           </li>

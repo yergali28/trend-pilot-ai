@@ -33,21 +33,24 @@ test.describe("сквозной путь мастера подбора", () => {
 
   test("режим «Все»: недоступная площадка серым с причиной, покрытие N из M", async ({ page }) => {
     await page.goto("/");
-    const wb = page.locator("label", { hasText: "Wildberries" });
-    await expect(wb).toContainText("Нет токена Seller API");
-    await expect(wb.locator("input[type=checkbox]")).toBeDisabled();
+    const alibaba = page.locator("label", { hasText: "Alibaba.com" });
+    await expect(alibaba).toContainText("Провайдер данных ещё не выбран");
+    await expect(alibaba.locator("input[type=checkbox]")).toBeDisabled();
 
     await page.getByRole("button", { name: "Подобрать товары" }).click();
     await expect(page).toHaveURL(/sell=all/);
-    await expect(page.getByText("Данные с 2 из 2 площадок")).toBeVisible();
+    // Kaspi, Ozon и Wildberries активны; у Wildberries (живой источник, магазин без товаров) данных нет.
+    await expect(page.getByText("Данные с 2 из 3 площадок")).toBeVisible();
     const unavailable = page.getByRole("region", { name: "Недоступные площадки" });
-    await expect(unavailable).toContainText("Wildberries");
+    await expect(unavailable).toContainText("Alibaba.com");
     await expect(unavailable).toContainText("ожидает регистрации");
-    await expect(unavailable).toContainText("Нет токена Seller API");
+    await expect(unavailable).not.toContainText("Wildberries");
 
     // Мультивыбор: только Kaspi.
     await page.goto("/");
-    await page.getByRole("group", { name: "Площадки продажи" }).locator("label", { hasText: "Ozon" }).click();
+    const sell = page.getByRole("group", { name: "Площадки продажи" });
+    await sell.locator("label", { hasText: "Ozon" }).click();
+    await sell.locator("label", { hasText: "Wildberries" }).click();
     await page.getByRole("button", { name: "Подобрать товары" }).click();
     await expect(page).toHaveURL(/sell=kaspi(&|$)/);
     await expect(page.getByText("Данные с 1 из 1 площадок")).toBeVisible();

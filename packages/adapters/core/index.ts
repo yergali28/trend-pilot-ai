@@ -73,12 +73,14 @@ export interface FetchOptions {
 export interface Adapter {
   sourceId: string;
   tokenEnv: string;
+  /** Реализован ли режим live по документации источника. */
+  hasLive: boolean;
   rawSchema: z.ZodType;
   fetch(req: FetchRequest, opts: FetchOptions): Promise<RawResponse>;
   normalize(raw: RawResponse): NormalizeResult;
 }
 
-export type AdapterErrorCode = "token_not_configured" | "not_implemented" | "fixture_not_found" | "contract_violation";
+export type AdapterErrorCode = "token_not_configured" | "not_implemented" | "fixture_not_found" | "contract_violation" | "http_error" | "rate_limited";
 
 export class AdapterError extends Error {
   constructor(
@@ -104,6 +106,8 @@ interface Definition<Body extends z.ZodType> {
   rawSchema: Body;
   /** Синтетический ответ в формате источника для режима mock. */
   mock(req: FetchRequest): z.infer<Body>;
+  /** Живой запрос к источнику по документации; без него live явно «не реализован». */
+  live?(req: FetchRequest, token: string): Promise<z.infer<Body>>;
   toRecords(body: z.infer<Body>, ctx: { fetchedAt: string; synthetic: boolean }): Mapped<unknown>[];
 }
 
@@ -111,6 +115,7 @@ export function defineAdapter<Body extends z.ZodType>(def: Definition<Body>): Ad
   return {
     sourceId: def.sourceId,
     tokenEnv: def.tokenEnv,
+    hasLive: Boolean(def.live),
     rawSchema: def.rawSchema,
 
     async fetch(req, opts) {
@@ -118,7 +123,8 @@ export function defineAdapter<Body extends z.ZodType>(def: Definition<Body>): Ad
       if (opts.mode === "live") {
         const token = (opts.env ?? process.env)[def.tokenEnv];
         if (!token) throw new AdapterError("token_not_configured", `Токен не настроен: ${def.tokenEnv} (${def.sourceId})`);
-        throw new AdapterError("not_implemented", `Режим live для ${def.sourceId} ещё не реализован`);
+        if (!def.live) throw new AdapterError("not_implemented", `Режим live для ${def.sourceId} ещё не реализован`);
+        return { ...envelope, fetchedAt: new Date().toISOString(), body: await def.live(req, token), synthetic: false };
       }
       if (opts.mode === "mock") {
         return { ...envelope, fetchedAt: new Date().toISOString(), body: def.mock(req), synthetic: true };

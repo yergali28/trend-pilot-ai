@@ -8,6 +8,7 @@ import { STATE, service } from "./env";
 export default async function globalSetup() {
   execFileSync("pnpm", ["demo:load"], { cwd: "../..", stdio: "ignore" });
   execFileSync("pnpm", ["demo:load:mock"], { cwd: "../..", stdio: "ignore" });
+execFileSync("pnpm", ["--filter", "@tp/worker", "refs:load"], { cwd: "../..", stdio: "ignore" });
 
   const db = service();
   const run = randomUUID().slice(0, 8);

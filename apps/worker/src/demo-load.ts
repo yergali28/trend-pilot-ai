@@ -19,7 +19,14 @@ export async function loadDemo(dbUrl: string, mode: "replay" | "mock" = "replay"
   try {
     const sources = await db.query<{ id: string }>("select id from public.data_sources where status = 'active' and mode in ('replay', 'mock') order by role desc, id");
     const runs = [];
-    for (const { id } of sources.rows) runs.push({ source: id, ...(await ingest(db, { sourceId: id, request: { query: "catalog" }, mode })) });
+    for (const { id } of sources.rows) {
+      try {
+        runs.push({ source: id, ...(await ingest(db, { sourceId: id, request: { query: "catalog" }, mode })) });
+      } catch (e) {
+        // У источника нет демо-каталога (например, есть только живая запись): пропускаем, а не придумываем данные.
+        if ((e as { code?: string }).code !== "fixture_not_found") throw e;
+      }
+    }
 
     const catalog = JSON.parse(await readFile(`${defaultFixturesDir}/demo/catalog.json`, "utf8")) as DemoCatalog;
     if (catalog.synthetic !== true) throw new Error("Демо-каталог должен быть помечен synthetic: true");

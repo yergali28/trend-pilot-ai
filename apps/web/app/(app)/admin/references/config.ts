@@ -23,13 +23,15 @@ export const REFERENCES = {
       { name: "marketplace_id", type: "select", required: true, options: ["kaspi", "ozon", "wildberries"] },
       { name: "country", type: "select", required: true, options: ["KZ", "RU"] },
       { name: "fee_type", type: "select", required: true, options: ["commission", "acquiring", "other"] },
+      { name: "scheme", type: "text", required: false },
+      { name: "external_category_name", type: "text", required: false },
       { name: "rate", type: "rate", required: false },
       { name: "fixed_amount", type: "number", required: false },
       { name: "currency", type: "text", required: false },
       ...provenance,
       status,
     ],
-    columns: ["marketplace_id", "country", "fee_type", "rate", "fixed_amount", "valid_from", "status"],
+    columns: ["marketplace_id", "external_category_name", "scheme", "country", "rate", "valid_from"],
   },
   logistics_rates: {
     fields: [
@@ -42,7 +44,7 @@ export const REFERENCES = {
       ...provenance,
       status,
     ],
-    columns: ["marketplace_id", "country", "scheme", "rate_type", "amount", "currency", "status"],
+    columns: ["marketplace_id", "size_rule", "scheme", "rate_type", "country", "amount", "currency", "valid_from"],
   },
   cargo_rates: {
     fields: [
