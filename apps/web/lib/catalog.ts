@@ -358,6 +358,8 @@ export interface CategorySummary {
   mean: number | null;
   median: number | null;
   covered: number;
+  /** Продаж в месяц по подходящим товарам (на лучшей площадке каждого); null — ни у одного нет спроса. */
+  demand: number | null;
 }
 
 export function summarizeCategories(c: Catalog, outcomes: ProductOutcome[], sellCount: number): CategorySummary[] {
@@ -378,6 +380,7 @@ export function summarizeCategories(c: Catalog, outcomes: ProductOutcome[], sell
         mean: s.mean,
         median: s.median,
         covered: Math.min(coveredMarkets.size, sellCount),
+        demand: eligible.some((o) => o.best!.salesPerMonth !== null) ? eligible.reduce((sum, o) => sum + (o.best!.salesPerMonth ?? 0), 0) : null,
       };
     })
     .sort((a, b) => b.eligible - a.eligible || (b.median ?? 0) - (a.median ?? 0));

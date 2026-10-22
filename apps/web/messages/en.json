@@ -367,5 +367,13 @@
   "ref.field.external_parent_name": "Parent category",
   "ref.field.size_rule": "Warehouse, unit",
   "ref.unit.first_liter": "first liter",
-  "ref.unit.extra_liter": "extra liter"
+  "ref.unit.extra_liter": "extra liter",
+  "map.products.title": "Opportunity map: demand vs {metric}",
+  "map.categories.title": "Niche map: demand vs {metric}",
+  "map.x.products": "Sales per month (log scale)",
+  "map.x.categories": "Sales per month of matching products (log scale)",
+  "map.hot": "Sells well, metric above target",
+  "map.point.product": "{title}: {sales} sales/mo, {metric}",
+  "map.point.category": "{title}: {sales} sales/mo, median {metric}, products {n}",
+  "map.legend": "Dashed lines: target {target} and median demand. Niche dot size is the number of matching products. Dots are links."
 }

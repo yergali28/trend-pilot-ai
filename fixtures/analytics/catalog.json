@@ -131,6 +131,2550 @@
         "sales_per_month": 58,
         "period_start": "2026-09-01",
         "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20001",
+        "title": "Силиконовые лопатки, 5 шт.",
+        "sales_per_month": 120,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300001",
+        "title": "Силиконовые лопатки, 5 шт.",
+        "sales_per_month": 191,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g001",
+        "title": "Силиконовые лопатки, 5 шт.",
+        "sales_per_month": 40,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300002",
+        "title": "Контейнеры для еды, 10 шт.",
+        "sales_per_month": 75,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g002",
+        "title": "Контейнеры для еды, 10 шт.",
+        "sales_per_month": 30,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20003",
+        "title": "Тёрка многофункциональная",
+        "sales_per_month": 256,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300003",
+        "title": "Тёрка многофункциональная",
+        "sales_per_month": 844,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g003",
+        "title": "Тёрка многофункциональная",
+        "sales_per_month": 144,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20004",
+        "title": "Органайзер для специй",
+        "sales_per_month": 437,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300004",
+        "title": "Органайзер для специй",
+        "sales_per_month": 887,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g004",
+        "title": "Органайзер для специй",
+        "sales_per_month": 255,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g005",
+        "title": "Коврик для сушки посуды",
+        "sales_per_month": 145,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20006",
+        "title": "Формы для льда силиконовые",
+        "sales_per_month": 18,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300006",
+        "title": "Формы для льда силиконовые",
+        "sales_per_month": 59,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g006",
+        "title": "Формы для льда силиконовые",
+        "sales_per_month": 17,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20007",
+        "title": "Нож для овощей спиральный",
+        "sales_per_month": 458,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300007",
+        "title": "Нож для овощей спиральный",
+        "sales_per_month": 717,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20008",
+        "title": "Мерные ложки, набор",
+        "sales_per_month": 118,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300008",
+        "title": "Мерные ложки, набор",
+        "sales_per_month": 176,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g008",
+        "title": "Мерные ложки, набор",
+        "sales_per_month": 65,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20009",
+        "title": "Массажёр для лица роликовый",
+        "sales_per_month": 318,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300009",
+        "title": "Массажёр для лица роликовый",
+        "sales_per_month": 580,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g009",
+        "title": "Массажёр для лица роликовый",
+        "sales_per_month": 102,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20010",
+        "title": "Набор кистей для макияжа, 12 шт.",
+        "sales_per_month": 66,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300010",
+        "title": "Набор кистей для макияжа, 12 шт.",
+        "sales_per_month": 116,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g010",
+        "title": "Набор кистей для макияжа, 12 шт.",
+        "sales_per_month": 36,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20011",
+        "title": "Зеркало с подсветкой настольное",
+        "sales_per_month": 235,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300011",
+        "title": "Зеркало с подсветкой настольное",
+        "sales_per_month": 403,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g011",
+        "title": "Зеркало с подсветкой настольное",
+        "sales_per_month": 175,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20012",
+        "title": "Щётка для умывания силиконовая",
+        "sales_per_month": 261,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300012",
+        "title": "Щётка для умывания силиконовая",
+        "sales_per_month": 270,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g012",
+        "title": "Щётка для умывания силиконовая",
+        "sales_per_month": 132,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20013",
+        "title": "Бигуди мягкие, 20 шт.",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300013",
+        "title": "Бигуди мягкие, 20 шт.",
+        "sales_per_month": 31,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g013",
+        "title": "Бигуди мягкие, 20 шт.",
+        "sales_per_month": 19,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20014",
+        "title": "Органайзер для косметики",
+        "sales_per_month": 74,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300014",
+        "title": "Органайзер для косметики",
+        "sales_per_month": 117,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g014",
+        "title": "Органайзер для косметики",
+        "sales_per_month": 25,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20015",
+        "title": "Пилка электрическая для ногтей",
+        "sales_per_month": 33,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300015",
+        "title": "Пилка электрическая для ногтей",
+        "sales_per_month": 39,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g015",
+        "title": "Пилка электрическая для ногтей",
+        "sales_per_month": 15,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20016",
+        "title": "Повязка на голову для умывания",
+        "sales_per_month": 161,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300016",
+        "title": "Повязка на голову для умывания",
+        "sales_per_month": 319,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g016",
+        "title": "Повязка на голову для умывания",
+        "sales_per_month": 74,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20017",
+        "title": "Лежанка для кошки круглая",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300017",
+        "title": "Лежанка для кошки круглая",
+        "sales_per_month": 617,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g017",
+        "title": "Лежанка для кошки круглая",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20018",
+        "title": "Когтеточка-столбик",
+        "sales_per_month": 354,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g018",
+        "title": "Когтеточка-столбик",
+        "sales_per_month": 180,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300019",
+        "title": "Миска двойная на подставке",
+        "sales_per_month": 90,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g019",
+        "title": "Миска двойная на подставке",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20020",
+        "title": "Игрушка-мышь интерактивная",
+        "sales_per_month": 251,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300020",
+        "title": "Игрушка-мышь интерактивная",
+        "sales_per_month": 802,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g020",
+        "title": "Игрушка-мышь интерактивная",
+        "sales_per_month": 202,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20021",
+        "title": "Перчатка для вычёсывания шерсти",
+        "sales_per_month": 87,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300021",
+        "title": "Перчатка для вычёсывания шерсти",
+        "sales_per_month": 187,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20022",
+        "title": "Шлейка для собак светоотражающая",
+        "sales_per_month": 364,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300022",
+        "title": "Шлейка для собак светоотражающая",
+        "sales_per_month": 540,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g022",
+        "title": "Шлейка для собак светоотражающая",
+        "sales_per_month": 115,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20023",
+        "title": "Поилка-фонтан для кошек",
+        "sales_per_month": 344,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300023",
+        "title": "Поилка-фонтан для кошек",
+        "sales_per_month": 595,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g023",
+        "title": "Поилка-фонтан для кошек",
+        "sales_per_month": 87,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20024",
+        "title": "Пакеты для выгула, 300 шт.",
+        "sales_per_month": 20,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300024",
+        "title": "Пакеты для выгула, 300 шт.",
+        "sales_per_month": 39,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g024",
+        "title": "Пакеты для выгула, 300 шт.",
+        "sales_per_month": 14,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20025",
+        "title": "Конструктор магнитный, 64 детали",
+        "sales_per_month": 332,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300025",
+        "title": "Конструктор магнитный, 64 детали",
+        "sales_per_month": 377,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g025",
+        "title": "Конструктор магнитный, 64 детали",
+        "sales_per_month": 107,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20026",
+        "title": "Пазл деревянный для малышей",
+        "sales_per_month": 320,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300026",
+        "title": "Пазл деревянный для малышей",
+        "sales_per_month": 482,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20027",
+        "title": "Мыльные пузыри, генератор",
+        "sales_per_month": 42,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300027",
+        "title": "Мыльные пузыри, генератор",
+        "sales_per_month": 126,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20028",
+        "title": "Кинетический песок, 1 кг",
+        "sales_per_month": 410,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300028",
+        "title": "Кинетический песок, 1 кг",
+        "sales_per_month": 528,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20029",
+        "title": "Набор для рисования в чемоданчике",
+        "sales_per_month": 90,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300029",
+        "title": "Набор для рисования в чемоданчике",
+        "sales_per_month": 151,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g029",
+        "title": "Набор для рисования в чемоданчике",
+        "sales_per_month": 77,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20030",
+        "title": "Игрушка-антистресс поп-ит",
+        "sales_per_month": 153,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g030",
+        "title": "Игрушка-антистресс поп-ит",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20031",
+        "title": "Машинка инерционная",
+        "sales_per_month": 34,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300031",
+        "title": "Машинка инерционная",
+        "sales_per_month": 62,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g031",
+        "title": "Машинка инерционная",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20032",
+        "title": "Доска для рисования LCD",
+        "sales_per_month": 22,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300032",
+        "title": "Доска для рисования LCD",
+        "sales_per_month": 47,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g032",
+        "title": "Доска для рисования LCD",
+        "sales_per_month": 18,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20033",
+        "title": "Держатель телефона в дефлектор",
+        "sales_per_month": 419,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300033",
+        "title": "Держатель телефона в дефлектор",
+        "sales_per_month": 999,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g033",
+        "title": "Держатель телефона в дефлектор",
+        "sales_per_month": 193,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20034",
+        "title": "Органайзер в багажник",
+        "sales_per_month": 148,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300034",
+        "title": "Органайзер в багажник",
+        "sales_per_month": 459,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g034",
+        "title": "Органайзер в багажник",
+        "sales_per_month": 142,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20035",
+        "title": "Зарядка в прикуриватель 2 USB",
+        "sales_per_month": 22,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g035",
+        "title": "Зарядка в прикуриватель 2 USB",
+        "sales_per_month": 15,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20036",
+        "title": "Щётка для снега телескопическая",
+        "sales_per_month": 36,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300036",
+        "title": "Щётка для снега телескопическая",
+        "sales_per_month": 62,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g036",
+        "title": "Щётка для снега телескопическая",
+        "sales_per_month": 19,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20037",
+        "title": "Чехол на руль",
+        "sales_per_month": 535,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300037",
+        "title": "Чехол на руль",
+        "sales_per_month": 747,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g037",
+        "title": "Чехол на руль",
+        "sales_per_month": 170,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20038",
+        "title": "Ароматизатор в дефлектор",
+        "sales_per_month": 98,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300038",
+        "title": "Ароматизатор в дефлектор",
+        "sales_per_month": 118,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g038",
+        "title": "Ароматизатор в дефлектор",
+        "sales_per_month": 27,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20039",
+        "title": "Компрессор автомобильный мини",
+        "sales_per_month": 338,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300039",
+        "title": "Компрессор автомобильный мини",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g039",
+        "title": "Компрессор автомобильный мини",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g040",
+        "title": "Коврик противоскользящий на панель",
+        "sales_per_month": 53,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20041",
+        "title": "Перчатки садовые с когтями",
+        "sales_per_month": 198,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300041",
+        "title": "Перчатки садовые с когтями",
+        "sales_per_month": 341,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g041",
+        "title": "Перчатки садовые с когтями",
+        "sales_per_month": 70,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20042",
+        "title": "Опрыскиватель ручной 2 л",
+        "sales_per_month": 104,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300042",
+        "title": "Опрыскиватель ручной 2 л",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g042",
+        "title": "Опрыскиватель ручной 2 л",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20043",
+        "title": "Секатор садовый",
+        "sales_per_month": 181,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300043",
+        "title": "Секатор садовый",
+        "sales_per_month": 691,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20044",
+        "title": "Светильник садовый на солнечной батарее",
+        "sales_per_month": 292,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300044",
+        "title": "Светильник садовый на солнечной батарее",
+        "sales_per_month": 472,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g044",
+        "title": "Светильник садовый на солнечной батарее",
+        "sales_per_month": 201,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20045",
+        "title": "Капельный полив, набор",
+        "sales_per_month": 412,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300045",
+        "title": "Капельный полив, набор",
+        "sales_per_month": 620,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g045",
+        "title": "Капельный полив, набор",
+        "sales_per_month": 217,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20046",
+        "title": "Подвязки для растений, 100 шт.",
+        "sales_per_month": 17,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300046",
+        "title": "Подвязки для растений, 100 шт.",
+        "sales_per_month": 44,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g046",
+        "title": "Подвязки для растений, 100 шт.",
+        "sales_per_month": 12,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20047",
+        "title": "Кашпо подвесное",
+        "sales_per_month": 70,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300047",
+        "title": "Кашпо подвесное",
+        "sales_per_month": 187,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g047",
+        "title": "Кашпо подвесное",
+        "sales_per_month": 30,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20048",
+        "title": "Семена газона, 1 кг",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300048",
+        "title": "Семена газона, 1 кг",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g048",
+        "title": "Семена газона, 1 кг",
+        "sales_per_month": 17,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20049",
+        "title": "Ручки гелевые, 12 цветов",
+        "sales_per_month": 399,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300049",
+        "title": "Ручки гелевые, 12 цветов",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g049",
+        "title": "Ручки гелевые, 12 цветов",
+        "sales_per_month": 187,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20050",
+        "title": "Стикеры-закладки, набор",
+        "sales_per_month": 183,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300050",
+        "title": "Стикеры-закладки, набор",
+        "sales_per_month": 160,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g050",
+        "title": "Стикеры-закладки, набор",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20051",
+        "title": "Органайзер настольный",
+        "sales_per_month": 33,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300051",
+        "title": "Органайзер настольный",
+        "sales_per_month": 50,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g051",
+        "title": "Органайзер настольный",
+        "sales_per_month": 24,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20052",
+        "title": "Блокнот на кольцах A5",
+        "sales_per_month": 28,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300052",
+        "title": "Блокнот на кольцах A5",
+        "sales_per_month": 43,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g052",
+        "title": "Блокнот на кольцах A5",
+        "sales_per_month": 13,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20053",
+        "title": "Маркеры для скетчинга, 24 шт.",
+        "sales_per_month": 127,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300053",
+        "title": "Маркеры для скетчинга, 24 шт.",
+        "sales_per_month": 156,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g053",
+        "title": "Маркеры для скетчинга, 24 шт.",
+        "sales_per_month": 49,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300054",
+        "title": "Подставка для ноутбука",
+        "sales_per_month": 1146,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g054",
+        "title": "Подставка для ноутбука",
+        "sales_per_month": 222,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20055",
+        "title": "Степлер с скобами",
+        "sales_per_month": 179,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300055",
+        "title": "Степлер с скобами",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g055",
+        "title": "Степлер с скобами",
+        "sales_per_month": 155,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g056",
+        "title": "Папка-конверт, 10 шт.",
+        "sales_per_month": 202,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20057",
+        "title": "Лента светодиодная 5 м",
+        "sales_per_month": 69,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g057",
+        "title": "Лента светодиодная 5 м",
+        "sales_per_month": 25,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20058",
+        "title": "Ночник с датчиком движения",
+        "sales_per_month": 319,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300058",
+        "title": "Ночник с датчиком движения",
+        "sales_per_month": 372,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g058",
+        "title": "Ночник с датчиком движения",
+        "sales_per_month": 135,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20059",
+        "title": "Гирлянда-шторка 3×3 м",
+        "sales_per_month": 165,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300059",
+        "title": "Гирлянда-шторка 3×3 м",
+        "sales_per_month": 246,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g059",
+        "title": "Гирлянда-шторка 3×3 м",
+        "sales_per_month": 51,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20060",
+        "title": "Лампа-прищепка для чтения",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g060",
+        "title": "Лампа-прищепка для чтения",
+        "sales_per_month": 16,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20061",
+        "title": "Светильник-проектор звёздное небо",
+        "sales_per_month": 206,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300061",
+        "title": "Светильник-проектор звёздное небо",
+        "sales_per_month": 195,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g061",
+        "title": "Светильник-проектор звёздное небо",
+        "sales_per_month": 84,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20062",
+        "title": "Фонарик налобный",
+        "sales_per_month": 596,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300062",
+        "title": "Фонарик налобный",
+        "sales_per_month": 915,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g062",
+        "title": "Фонарик налобный",
+        "sales_per_month": 289,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g063",
+        "title": "Свечи светодиодные, 6 шт.",
+        "sales_per_month": 56,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20064",
+        "title": "Лампа для селфи кольцевая",
+        "sales_per_month": 207,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300064",
+        "title": "Лампа для селфи кольцевая",
+        "sales_per_month": 479,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g064",
+        "title": "Лампа для селфи кольцевая",
+        "sales_per_month": 94,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20065",
+        "title": "Держатель для зубных щёток",
+        "sales_per_month": 382,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300065",
+        "title": "Держатель для зубных щёток",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g065",
+        "title": "Держатель для зубных щёток",
+        "sales_per_month": 265,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20066",
+        "title": "Коврик для ванной противоскользящий",
+        "sales_per_month": 225,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300066",
+        "title": "Коврик для ванной противоскользящий",
+        "sales_per_month": 321,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g066",
+        "title": "Коврик для ванной противоскользящий",
+        "sales_per_month": 53,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20067",
+        "title": "Дозатор для мыла сенсорный",
+        "sales_per_month": 516,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g067",
+        "title": "Дозатор для мыла сенсорный",
+        "sales_per_month": 280,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20068",
+        "title": "Полка угловая без сверления",
+        "sales_per_month": 43,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300068",
+        "title": "Полка угловая без сверления",
+        "sales_per_month": 70,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g068",
+        "title": "Полка угловая без сверления",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20069",
+        "title": "Шапочка для душа, 3 шт.",
+        "sales_per_month": 379,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300069",
+        "title": "Шапочка для душа, 3 шт.",
+        "sales_per_month": 672,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g069",
+        "title": "Шапочка для душа, 3 шт.",
+        "sales_per_month": 91,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20070",
+        "title": "Органайзер для душа подвесной",
+        "sales_per_month": 33,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300070",
+        "title": "Органайзер для душа подвесной",
+        "sales_per_month": 56,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20071",
+        "title": "Лейка для душа с фильтром",
+        "sales_per_month": 35,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300071",
+        "title": "Лейка для душа с фильтром",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g071",
+        "title": "Лейка для душа с фильтром",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20072",
+        "title": "Крючки самоклеящиеся, 10 шт.",
+        "sales_per_month": 31,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300072",
+        "title": "Крючки самоклеящиеся, 10 шт.",
+        "sales_per_month": 63,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g072",
+        "title": "Крючки самоклеящиеся, 10 шт.",
+        "sales_per_month": 9,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20073",
+        "title": "Коврик туристический самонадувающийся",
+        "sales_per_month": 100,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300073",
+        "title": "Коврик туристический самонадувающийся",
+        "sales_per_month": 157,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g073",
+        "title": "Коврик туристический самонадувающийся",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20074",
+        "title": "Фонарь кемпинговый",
+        "sales_per_month": 33,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300074",
+        "title": "Фонарь кемпинговый",
+        "sales_per_month": 75,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g074",
+        "title": "Фонарь кемпинговый",
+        "sales_per_month": 14,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20075",
+        "title": "Термокружка 500 мл",
+        "sales_per_month": 90,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300075",
+        "title": "Термокружка 500 мл",
+        "sales_per_month": 173,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20076",
+        "title": "Гамак с москитной сеткой",
+        "sales_per_month": 51,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300076",
+        "title": "Гамак с москитной сеткой",
+        "sales_per_month": 90,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g076",
+        "title": "Гамак с москитной сеткой",
+        "sales_per_month": 19,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20077",
+        "title": "Набор посуды походный",
+        "sales_per_month": 234,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300077",
+        "title": "Набор посуды походный",
+        "sales_per_month": 264,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g077",
+        "title": "Набор посуды походный",
+        "sales_per_month": 76,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20078",
+        "title": "Компас-брелок",
+        "sales_per_month": 43,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300078",
+        "title": "Компас-брелок",
+        "sales_per_month": 68,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g078",
+        "title": "Компас-брелок",
+        "sales_per_month": 9,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20079",
+        "title": "Сидушка туристическая",
+        "sales_per_month": 107,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300079",
+        "title": "Сидушка туристическая",
+        "sales_per_month": 215,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g079",
+        "title": "Сидушка туристическая",
+        "sales_per_month": 62,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20080",
+        "title": "Мультитул складной",
+        "sales_per_month": 162,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300080",
+        "title": "Мультитул складной",
+        "sales_per_month": 398,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g080",
+        "title": "Мультитул складной",
+        "sales_per_month": 107,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20081",
+        "title": "Защитное стекло, 3 шт.",
+        "sales_per_month": 205,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300081",
+        "title": "Защитное стекло, 3 шт.",
+        "sales_per_month": 228,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g081",
+        "title": "Защитное стекло, 3 шт.",
+        "sales_per_month": 45,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20082",
+        "title": "Кабель USB-C 2 м плетёный",
+        "sales_per_month": 645,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300082",
+        "title": "Кабель USB-C 2 м плетёный",
+        "sales_per_month": 818,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g082",
+        "title": "Кабель USB-C 2 м плетёный",
+        "sales_per_month": 373,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300083",
+        "title": "Кольцо-держатель для телефона",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g083",
+        "title": "Кольцо-держатель для телефона",
+        "sales_per_month": 262,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20084",
+        "title": "Подставка для планшета",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300084",
+        "title": "Подставка для планшета",
+        "sales_per_month": 59,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g084",
+        "title": "Подставка для планшета",
+        "sales_per_month": 15,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20085",
+        "title": "Беспроводная зарядка 15 Вт",
+        "sales_per_month": 162,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300085",
+        "title": "Беспроводная зарядка 15 Вт",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g085",
+        "title": "Беспроводная зарядка 15 Вт",
+        "sales_per_month": 141,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20086",
+        "title": "Чехол-кошелёк для телефона",
+        "sales_per_month": 45,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300086",
+        "title": "Чехол-кошелёк для телефона",
+        "sales_per_month": 51,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g086",
+        "title": "Чехол-кошелёк для телефона",
+        "sales_per_month": 11,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20087",
+        "title": "Стилус для экрана",
+        "sales_per_month": 71,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300087",
+        "title": "Стилус для экрана",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g087",
+        "title": "Стилус для экрана",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20088",
+        "title": "Монопод для селфи с пультом",
+        "sales_per_month": 267,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300088",
+        "title": "Монопод для селфи с пультом",
+        "sales_per_month": 590,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g088",
+        "title": "Монопод для селфи с пультом",
+        "sales_per_month": 185,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300089",
+        "title": "Коврик для мыши XXL",
+        "sales_per_month": 70,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g089",
+        "title": "Коврик для мыши XXL",
+        "sales_per_month": 16,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20090",
+        "title": "Подставка под монитор",
+        "sales_per_month": 759,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300090",
+        "title": "Подставка под монитор",
+        "sales_per_month": 1042,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g090",
+        "title": "Подставка под монитор",
+        "sales_per_month": 268,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20091",
+        "title": "Кабель-органайзер на стол",
+        "sales_per_month": 292,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300091",
+        "title": "Кабель-органайзер на стол",
+        "sales_per_month": 880,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g091",
+        "title": "Кабель-органайзер на стол",
+        "sales_per_month": 130,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20092",
+        "title": "Мышь беспроводная тихая",
+        "sales_per_month": 306,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300092",
+        "title": "Мышь беспроводная тихая",
+        "sales_per_month": 310,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g092",
+        "title": "Мышь беспроводная тихая",
+        "sales_per_month": 140,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20093",
+        "title": "Подставка-охлаждение для ноутбука",
+        "sales_per_month": 185,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300093",
+        "title": "Подставка-охлаждение для ноутбука",
+        "sales_per_month": 238,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20094",
+        "title": "Клавиатура беспроводная мини",
+        "sales_per_month": 340,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300094",
+        "title": "Клавиатура беспроводная мини",
+        "sales_per_month": 517,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g094",
+        "title": "Клавиатура беспроводная мини",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300095",
+        "title": "Веб-камера 1080p",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g095",
+        "title": "Веб-камера 1080p",
+        "sales_per_month": 176,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20096",
+        "title": "Разветвитель HDMI",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300096",
+        "title": "Разветвитель HDMI",
+        "sales_per_month": 584,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g096",
+        "title": "Разветвитель HDMI",
+        "sales_per_month": 109,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300097",
+        "title": "Сумка-шопер холщовая",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g097",
+        "title": "Сумка-шопер холщовая",
+        "sales_per_month": 79,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20098",
+        "title": "Поясная сумка спортивная",
+        "sales_per_month": 427,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300098",
+        "title": "Поясная сумка спортивная",
+        "sales_per_month": 378,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g098",
+        "title": "Поясная сумка спортивная",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20099",
+        "title": "Кошелёк с RFID-защитой",
+        "sales_per_month": 64,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g099",
+        "title": "Кошелёк с RFID-защитой",
+        "sales_per_month": 61,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20100",
+        "title": "Органайзер для сумки",
+        "sales_per_month": 396,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g100",
+        "title": "Органайзер для сумки",
+        "sales_per_month": 208,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20101",
+        "title": "Косметичка дорожная",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300101",
+        "title": "Косметичка дорожная",
+        "sales_per_month": 667,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g101",
+        "title": "Косметичка дорожная",
+        "sales_per_month": 236,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20102",
+        "title": "Рюкзак складной",
+        "sales_per_month": 68,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300102",
+        "title": "Рюкзак складной",
+        "sales_per_month": 91,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g102",
+        "title": "Рюкзак складной",
+        "sales_per_month": 20,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20103",
+        "title": "Чехол для паспорта",
+        "sales_per_month": 63,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300103",
+        "title": "Чехол для паспорта",
+        "sales_per_month": 55,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g103",
+        "title": "Чехол для паспорта",
+        "sales_per_month": 20,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20104",
+        "title": "Сумка-холодильник 10 л",
+        "sales_per_month": 123,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300104",
+        "title": "Сумка-холодильник 10 л",
+        "sales_per_month": 298,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g104",
+        "title": "Сумка-холодильник 10 л",
+        "sales_per_month": 104,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20105",
+        "title": "Массажный мяч, 2 шт.",
+        "sales_per_month": 362,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300105",
+        "title": "Массажный мяч, 2 шт.",
+        "sales_per_month": 918,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300106",
+        "title": "Аппликатор Кузнецова",
+        "sales_per_month": 922,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g106",
+        "title": "Аппликатор Кузнецова",
+        "sales_per_month": 170,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20107",
+        "title": "Таблетница на неделю",
+        "sales_per_month": 21,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g107",
+        "title": "Таблетница на неделю",
+        "sales_per_month": 10,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20108",
+        "title": "Массажёр для шеи",
+        "sales_per_month": 160,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300108",
+        "title": "Массажёр для шеи",
+        "sales_per_month": 584,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g108",
+        "title": "Массажёр для шеи",
+        "sales_per_month": 166,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20109",
+        "title": "Ортопедическая подушка",
+        "sales_per_month": 303,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300109",
+        "title": "Ортопедическая подушка",
+        "sales_per_month": 734,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g109",
+        "title": "Ортопедическая подушка",
+        "sales_per_month": 286,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20110",
+        "title": "Корсет для осанки",
+        "sales_per_month": 344,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300110",
+        "title": "Корсет для осанки",
+        "sales_per_month": 704,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g110",
+        "title": "Корсет для осанки",
+        "sales_per_month": 131,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20111",
+        "title": "Эспандер кистевой",
+        "sales_per_month": 128,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300111",
+        "title": "Эспандер кистевой",
+        "sales_per_month": 236,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300112",
+        "title": "Грелка солевая",
+        "sales_per_month": 699,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g112",
+        "title": "Грелка солевая",
+        "sales_per_month": 184,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20113",
+        "title": "Набор отвёрток прецизионных",
+        "sales_per_month": 73,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300113",
+        "title": "Набор отвёрток прецизионных",
+        "sales_per_month": 126,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g113",
+        "title": "Набор отвёрток прецизионных",
+        "sales_per_month": 35,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20114",
+        "title": "Уровень лазерный",
+        "sales_per_month": 238,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300114",
+        "title": "Уровень лазерный",
+        "sales_per_month": 366,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g114",
+        "title": "Уровень лазерный",
+        "sales_per_month": 106,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20115",
+        "title": "Рулетка 5 м",
+        "sales_per_month": 290,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300116",
+        "title": "Набор бит, 32 шт.",
+        "sales_per_month": 136,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g116",
+        "title": "Набор бит, 32 шт.",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20117",
+        "title": "Клеевой пистолет",
+        "sales_per_month": 56,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300117",
+        "title": "Клеевой пистолет",
+        "sales_per_month": 92,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g117",
+        "title": "Клеевой пистолет",
+        "sales_per_month": 31,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20118",
+        "title": "Нож строительный",
+        "sales_per_month": 271,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20119",
+        "title": "Скотч двусторонний, 3 шт.",
+        "sales_per_month": 81,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300119",
+        "title": "Скотч двусторонний, 3 шт.",
+        "sales_per_month": 189,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g119",
+        "title": "Скотч двусторонний, 3 шт.",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "ozon",
+        "external_id": "20120",
+        "title": "Стяжки кабельные, 200 шт.",
+        "sales_per_month": 259,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "wildberries",
+        "external_id": "300120",
+        "title": "Стяжки кабельные, 200 шт.",
+        "sales_per_month": 226,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
+      },
+      {
+        "marketplace": "kaspi",
+        "external_id": "k-g120",
+        "title": "Стяжки кабельные, 200 шт.",
+        "sales_per_month": null,
+        "period_start": "2026-09-01",
+        "period_end": "2026-09-30"
       }
     ]
   }

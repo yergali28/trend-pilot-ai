@@ -12,7 +12,8 @@ test.describe("сквозной путь мастера подбора", () => {
     await expect(page).toHaveURL(/\/results\?/);
     await expect(page).toHaveURL(/x=3/);
     await expect(page.getByRole("heading", { level: 2, name: "Рейтинг категорий" })).toBeVisible();
-    await page.getByRole("link", { name: "Аксессуары для электроники" }).click();
+    // Точки карты ниш — тоже ссылки; переходим из таблицы.
+    await page.getByRole("table").getByRole("link", { name: "Аксессуары для электроники" }).click();
 
     await expect(page.getByRole("heading", { level: 1, name: "Аксессуары для электроники" })).toBeVisible();
     const firstProduct = page.getByRole("table").getByRole("link").first();
@@ -39,8 +40,8 @@ test.describe("сквозной путь мастера подбора", () => {
 
     await page.getByRole("button", { name: "Подобрать товары" }).click();
     await expect(page).toHaveURL(/sell=all/);
-    // Kaspi, Ozon и Wildberries активны; у Wildberries (живой источник, магазин без товаров) данных нет.
-    await expect(page.getByText("Данные с 2 из 3 площадок")).toBeVisible();
+    // Kaspi, Ozon и Wildberries активны; у всех трёх есть демо-каталог (синтетика, scripts/gen-demo.mjs).
+    await expect(page.getByText("Данные с 3 из 3 площадок")).toBeVisible();
     const unavailable = page.getByRole("region", { name: "Недоступные площадки" });
     await expect(unavailable).toContainText("Alibaba.com");
     await expect(unavailable).toContainText("ожидает регистрации");

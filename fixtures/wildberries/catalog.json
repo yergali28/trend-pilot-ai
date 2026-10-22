@@ -1,0 +1,1901 @@
+{
+  "recordedAt": "2026-10-18T00:00:00Z",
+  "synthetic": true,
+  "note": "Синтетический демо-каталог в формате адаптера WB (scripts/gen-demo.mjs). Не данные магазина и не рынок.",
+  "body": {
+    "cards": [
+      {
+        "nmID": 300001,
+        "title": "Силиконовые лопатки, 5 шт.",
+        "subjectName": "Кухня и посуда",
+        "dimensions": {
+          "weightBrutto": 0.3
+        }
+      },
+      {
+        "nmID": 300002,
+        "title": "Контейнеры для еды, 10 шт.",
+        "subjectName": "Кухня и посуда",
+        "dimensions": {
+          "weightBrutto": 0.76
+        }
+      },
+      {
+        "nmID": 300003,
+        "title": "Тёрка многофункциональная",
+        "subjectName": "Кухня и посуда",
+        "dimensions": {
+          "weightBrutto": 0.34
+        }
+      },
+      {
+        "nmID": 300004,
+        "title": "Органайзер для специй",
+        "subjectName": "Кухня и посуда",
+        "dimensions": {
+          "weightBrutto": 1.12
+        }
+      },
+      {
+        "nmID": 300006,
+        "title": "Формы для льда силиконовые",
+        "subjectName": "Кухня и посуда",
+        "dimensions": {
+          "weightBrutto": 0.7
+        }
+      },
+      {
+        "nmID": 300007,
+        "title": "Нож для овощей спиральный",
+        "subjectName": "Кухня и посуда",
+        "dimensions": {
+          "weightBrutto": 0.82
+        }
+      },
+      {
+        "nmID": 300008,
+        "title": "Мерные ложки, набор",
+        "subjectName": "Кухня и посуда",
+        "dimensions": {
+          "weightBrutto": 1.18
+        }
+      },
+      {
+        "nmID": 300009,
+        "title": "Массажёр для лица роликовый",
+        "subjectName": "Красота и уход",
+        "dimensions": {
+          "weightBrutto": 1.13
+        }
+      },
+      {
+        "nmID": 300010,
+        "title": "Набор кистей для макияжа, 12 шт.",
+        "subjectName": "Красота и уход",
+        "dimensions": {
+          "weightBrutto": 0.86
+        }
+      },
+      {
+        "nmID": 300011,
+        "title": "Зеркало с подсветкой настольное",
+        "subjectName": "Красота и уход",
+        "dimensions": {
+          "weightBrutto": 1.05
+        }
+      },
+      {
+        "nmID": 300012,
+        "title": "Щётка для умывания силиконовая",
+        "subjectName": "Красота и уход",
+        "dimensions": {
+          "weightBrutto": 0.93
+        }
+      },
+      {
+        "nmID": 300013,
+        "title": "Бигуди мягкие, 20 шт.",
+        "subjectName": "Красота и уход",
+        "dimensions": {
+          "weightBrutto": 0.51
+        }
+      },
+      {
+        "nmID": 300014,
+        "title": "Органайзер для косметики",
+        "subjectName": "Красота и уход",
+        "dimensions": {
+          "weightBrutto": 0.98
+        }
+      },
+      {
+        "nmID": 300015,
+        "title": "Пилка электрическая для ногтей",
+        "subjectName": "Красота и уход",
+        "dimensions": {
+          "weightBrutto": 0.53
+        }
+      },
+      {
+        "nmID": 300016,
+        "title": "Повязка на голову для умывания",
+        "subjectName": "Красота и уход",
+        "dimensions": {
+          "weightBrutto": 0.88
+        }
+      },
+      {
+        "nmID": 300017,
+        "title": "Лежанка для кошки круглая",
+        "subjectName": "Товары для животных",
+        "dimensions": {
+          "weightBrutto": 0.41
+        }
+      },
+      {
+        "nmID": 300019,
+        "title": "Миска двойная на подставке",
+        "subjectName": "Товары для животных",
+        "dimensions": {
+          "weightBrutto": 1.13
+        }
+      },
+      {
+        "nmID": 300020,
+        "title": "Игрушка-мышь интерактивная",
+        "subjectName": "Товары для животных",
+        "dimensions": {
+          "weightBrutto": 0.34
+        }
+      },
+      {
+        "nmID": 300021,
+        "title": "Перчатка для вычёсывания шерсти",
+        "subjectName": "Товары для животных",
+        "dimensions": {
+          "weightBrutto": 0.11
+        }
+      },
+      {
+        "nmID": 300022,
+        "title": "Шлейка для собак светоотражающая",
+        "subjectName": "Товары для животных",
+        "dimensions": {
+          "weightBrutto": 0.35
+        }
+      },
+      {
+        "nmID": 300023,
+        "title": "Поилка-фонтан для кошек",
+        "subjectName": "Товары для животных",
+        "dimensions": {
+          "weightBrutto": 0.09
+        }
+      },
+      {
+        "nmID": 300024,
+        "title": "Пакеты для выгула, 300 шт.",
+        "subjectName": "Товары для животных",
+        "dimensions": {
+          "weightBrutto": 0.09
+        }
+      },
+      {
+        "nmID": 300025,
+        "title": "Конструктор магнитный, 64 детали",
+        "subjectName": "Детские игрушки",
+        "dimensions": {
+          "weightBrutto": 0.89
+        }
+      },
+      {
+        "nmID": 300026,
+        "title": "Пазл деревянный для малышей",
+        "subjectName": "Детские игрушки",
+        "dimensions": {
+          "weightBrutto": 0.44
+        }
+      },
+      {
+        "nmID": 300027,
+        "title": "Мыльные пузыри, генератор",
+        "subjectName": "Детские игрушки",
+        "dimensions": {
+          "weightBrutto": 0.62
+        }
+      },
+      {
+        "nmID": 300028,
+        "title": "Кинетический песок, 1 кг",
+        "subjectName": "Детские игрушки",
+        "dimensions": {
+          "weightBrutto": 0.44
+        }
+      },
+      {
+        "nmID": 300029,
+        "title": "Набор для рисования в чемоданчике",
+        "subjectName": "Детские игрушки",
+        "dimensions": {
+          "weightBrutto": 0.85
+        }
+      },
+      {
+        "nmID": 300031,
+        "title": "Машинка инерционная",
+        "subjectName": "Детские игрушки",
+        "dimensions": {
+          "weightBrutto": 0.55
+        }
+      },
+      {
+        "nmID": 300032,
+        "title": "Доска для рисования LCD",
+        "subjectName": "Детские игрушки",
+        "dimensions": {
+          "weightBrutto": 1.04
+        }
+      },
+      {
+        "nmID": 300033,
+        "title": "Держатель телефона в дефлектор",
+        "subjectName": "Автотовары",
+        "dimensions": {
+          "weightBrutto": 0.56
+        }
+      },
+      {
+        "nmID": 300034,
+        "title": "Органайзер в багажник",
+        "subjectName": "Автотовары",
+        "dimensions": {
+          "weightBrutto": 0.51
+        }
+      },
+      {
+        "nmID": 300036,
+        "title": "Щётка для снега телескопическая",
+        "subjectName": "Автотовары",
+        "dimensions": {
+          "weightBrutto": 0.57
+        }
+      },
+      {
+        "nmID": 300037,
+        "title": "Чехол на руль",
+        "subjectName": "Автотовары",
+        "dimensions": {
+          "weightBrutto": 0.36
+        }
+      },
+      {
+        "nmID": 300038,
+        "title": "Ароматизатор в дефлектор",
+        "subjectName": "Автотовары",
+        "dimensions": {
+          "weightBrutto": 1.12
+        }
+      },
+      {
+        "nmID": 300039,
+        "title": "Компрессор автомобильный мини",
+        "subjectName": "Автотовары",
+        "dimensions": {
+          "weightBrutto": 0.17
+        }
+      },
+      {
+        "nmID": 300041,
+        "title": "Перчатки садовые с когтями",
+        "subjectName": "Сад и дача",
+        "dimensions": {
+          "weightBrutto": 0.33
+        }
+      },
+      {
+        "nmID": 300042,
+        "title": "Опрыскиватель ручной 2 л",
+        "subjectName": "Сад и дача",
+        "dimensions": {
+          "weightBrutto": 0.84
+        }
+      },
+      {
+        "nmID": 300043,
+        "title": "Секатор садовый",
+        "subjectName": "Сад и дача",
+        "dimensions": {
+          "weightBrutto": 0.83
+        }
+      },
+      {
+        "nmID": 300044,
+        "title": "Светильник садовый на солнечной батарее",
+        "subjectName": "Сад и дача",
+        "dimensions": {
+          "weightBrutto": 0.86
+        }
+      },
+      {
+        "nmID": 300045,
+        "title": "Капельный полив, набор",
+        "subjectName": "Сад и дача",
+        "dimensions": {
+          "weightBrutto": 0.48
+        }
+      },
+      {
+        "nmID": 300046,
+        "title": "Подвязки для растений, 100 шт.",
+        "subjectName": "Сад и дача",
+        "dimensions": {
+          "weightBrutto": 0.59
+        }
+      },
+      {
+        "nmID": 300047,
+        "title": "Кашпо подвесное",
+        "subjectName": "Сад и дача",
+        "dimensions": {
+          "weightBrutto": 0.91
+        }
+      },
+      {
+        "nmID": 300048,
+        "title": "Семена газона, 1 кг",
+        "subjectName": "Сад и дача",
+        "dimensions": {
+          "weightBrutto": 0.99
+        }
+      },
+      {
+        "nmID": 300049,
+        "title": "Ручки гелевые, 12 цветов",
+        "subjectName": "Канцелярия",
+        "dimensions": {
+          "weightBrutto": 1
+        }
+      },
+      {
+        "nmID": 300050,
+        "title": "Стикеры-закладки, набор",
+        "subjectName": "Канцелярия",
+        "dimensions": {
+          "weightBrutto": 0.45
+        }
+      },
+      {
+        "nmID": 300051,
+        "title": "Органайзер настольный",
+        "subjectName": "Канцелярия",
+        "dimensions": {
+          "weightBrutto": 0.95
+        }
+      },
+      {
+        "nmID": 300052,
+        "title": "Блокнот на кольцах A5",
+        "subjectName": "Канцелярия",
+        "dimensions": {
+          "weightBrutto": 0.13
+        }
+      },
+      {
+        "nmID": 300053,
+        "title": "Маркеры для скетчинга, 24 шт.",
+        "subjectName": "Канцелярия",
+        "dimensions": {
+          "weightBrutto": 0.39
+        }
+      },
+      {
+        "nmID": 300054,
+        "title": "Подставка для ноутбука",
+        "subjectName": "Канцелярия",
+        "dimensions": {
+          "weightBrutto": 1.14
+        }
+      },
+      {
+        "nmID": 300055,
+        "title": "Степлер с скобами",
+        "subjectName": "Канцелярия",
+        "dimensions": {
+          "weightBrutto": 0.24
+        }
+      },
+      {
+        "nmID": 300058,
+        "title": "Ночник с датчиком движения",
+        "subjectName": "Освещение",
+        "dimensions": {
+          "weightBrutto": 0.43
+        }
+      },
+      {
+        "nmID": 300059,
+        "title": "Гирлянда-шторка 3×3 м",
+        "subjectName": "Освещение",
+        "dimensions": {
+          "weightBrutto": 0.23
+        }
+      },
+      {
+        "nmID": 300061,
+        "title": "Светильник-проектор звёздное небо",
+        "subjectName": "Освещение",
+        "dimensions": {
+          "weightBrutto": 0.97
+        }
+      },
+      {
+        "nmID": 300062,
+        "title": "Фонарик налобный",
+        "subjectName": "Освещение",
+        "dimensions": {
+          "weightBrutto": 0.24
+        }
+      },
+      {
+        "nmID": 300064,
+        "title": "Лампа для селфи кольцевая",
+        "subjectName": "Освещение",
+        "dimensions": {
+          "weightBrutto": 0.77
+        }
+      },
+      {
+        "nmID": 300065,
+        "title": "Держатель для зубных щёток",
+        "subjectName": "Ванная",
+        "dimensions": {
+          "weightBrutto": 0.42
+        }
+      },
+      {
+        "nmID": 300066,
+        "title": "Коврик для ванной противоскользящий",
+        "subjectName": "Ванная",
+        "dimensions": {
+          "weightBrutto": 1.03
+        }
+      },
+      {
+        "nmID": 300068,
+        "title": "Полка угловая без сверления",
+        "subjectName": "Ванная",
+        "dimensions": {
+          "weightBrutto": 0.73
+        }
+      },
+      {
+        "nmID": 300069,
+        "title": "Шапочка для душа, 3 шт.",
+        "subjectName": "Ванная",
+        "dimensions": {
+          "weightBrutto": 0.15
+        }
+      },
+      {
+        "nmID": 300070,
+        "title": "Органайзер для душа подвесной",
+        "subjectName": "Ванная",
+        "dimensions": {
+          "weightBrutto": 0.18
+        }
+      },
+      {
+        "nmID": 300071,
+        "title": "Лейка для душа с фильтром",
+        "subjectName": "Ванная",
+        "dimensions": {
+          "weightBrutto": 0.23
+        }
+      },
+      {
+        "nmID": 300072,
+        "title": "Крючки самоклеящиеся, 10 шт.",
+        "subjectName": "Ванная",
+        "dimensions": {
+          "weightBrutto": 0.88
+        }
+      },
+      {
+        "nmID": 300073,
+        "title": "Коврик туристический самонадувающийся",
+        "subjectName": "Туризм и кемпинг",
+        "dimensions": {
+          "weightBrutto": 0.96
+        }
+      },
+      {
+        "nmID": 300074,
+        "title": "Фонарь кемпинговый",
+        "subjectName": "Туризм и кемпинг",
+        "dimensions": {
+          "weightBrutto": 0.16
+        }
+      },
+      {
+        "nmID": 300075,
+        "title": "Термокружка 500 мл",
+        "subjectName": "Туризм и кемпинг",
+        "dimensions": {
+          "weightBrutto": 0.82
+        }
+      },
+      {
+        "nmID": 300076,
+        "title": "Гамак с москитной сеткой",
+        "subjectName": "Туризм и кемпинг",
+        "dimensions": {
+          "weightBrutto": 0.68
+        }
+      },
+      {
+        "nmID": 300077,
+        "title": "Набор посуды походный",
+        "subjectName": "Туризм и кемпинг",
+        "dimensions": {
+          "weightBrutto": 0.97
+        }
+      },
+      {
+        "nmID": 300078,
+        "title": "Компас-брелок",
+        "subjectName": "Туризм и кемпинг",
+        "dimensions": {
+          "weightBrutto": 0.49
+        }
+      },
+      {
+        "nmID": 300079,
+        "title": "Сидушка туристическая",
+        "subjectName": "Туризм и кемпинг",
+        "dimensions": {
+          "weightBrutto": 0.09
+        }
+      },
+      {
+        "nmID": 300080,
+        "title": "Мультитул складной",
+        "subjectName": "Туризм и кемпинг",
+        "dimensions": {
+          "weightBrutto": 0.43
+        }
+      },
+      {
+        "nmID": 300081,
+        "title": "Защитное стекло, 3 шт.",
+        "subjectName": "Мобильные аксессуары",
+        "dimensions": {
+          "weightBrutto": 0.12
+        }
+      },
+      {
+        "nmID": 300082,
+        "title": "Кабель USB-C 2 м плетёный",
+        "subjectName": "Мобильные аксессуары",
+        "dimensions": {
+          "weightBrutto": 0.69
+        }
+      },
+      {
+        "nmID": 300083,
+        "title": "Кольцо-держатель для телефона",
+        "subjectName": "Мобильные аксессуары",
+        "dimensions": {
+          "weightBrutto": 0.71
+        }
+      },
+      {
+        "nmID": 300084,
+        "title": "Подставка для планшета",
+        "subjectName": "Мобильные аксессуары",
+        "dimensions": {
+          "weightBrutto": 0.79
+        }
+      },
+      {
+        "nmID": 300085,
+        "title": "Беспроводная зарядка 15 Вт",
+        "subjectName": "Мобильные аксессуары",
+        "dimensions": {
+          "weightBrutto": 0.19
+        }
+      },
+      {
+        "nmID": 300086,
+        "title": "Чехол-кошелёк для телефона",
+        "subjectName": "Мобильные аксессуары",
+        "dimensions": {
+          "weightBrutto": 0.23
+        }
+      },
+      {
+        "nmID": 300087,
+        "title": "Стилус для экрана",
+        "subjectName": "Мобильные аксессуары",
+        "dimensions": {
+          "weightBrutto": 0.86
+        }
+      },
+      {
+        "nmID": 300088,
+        "title": "Монопод для селфи с пультом",
+        "subjectName": "Мобильные аксессуары",
+        "dimensions": {
+          "weightBrutto": 0.11
+        }
+      },
+      {
+        "nmID": 300089,
+        "title": "Коврик для мыши XXL",
+        "subjectName": "Компьютерные аксессуары",
+        "dimensions": {
+          "weightBrutto": 0.12
+        }
+      },
+      {
+        "nmID": 300090,
+        "title": "Подставка под монитор",
+        "subjectName": "Компьютерные аксессуары",
+        "dimensions": {
+          "weightBrutto": 0.53
+        }
+      },
+      {
+        "nmID": 300091,
+        "title": "Кабель-органайзер на стол",
+        "subjectName": "Компьютерные аксессуары",
+        "dimensions": {
+          "weightBrutto": 0.79
+        }
+      },
+      {
+        "nmID": 300092,
+        "title": "Мышь беспроводная тихая",
+        "subjectName": "Компьютерные аксессуары",
+        "dimensions": {
+          "weightBrutto": 1.05
+        }
+      },
+      {
+        "nmID": 300093,
+        "title": "Подставка-охлаждение для ноутбука",
+        "subjectName": "Компьютерные аксессуары",
+        "dimensions": {
+          "weightBrutto": 0.77
+        }
+      },
+      {
+        "nmID": 300094,
+        "title": "Клавиатура беспроводная мини",
+        "subjectName": "Компьютерные аксессуары",
+        "dimensions": {
+          "weightBrutto": 0.95
+        }
+      },
+      {
+        "nmID": 300095,
+        "title": "Веб-камера 1080p",
+        "subjectName": "Компьютерные аксессуары",
+        "dimensions": {
+          "weightBrutto": 0.63
+        }
+      },
+      {
+        "nmID": 300096,
+        "title": "Разветвитель HDMI",
+        "subjectName": "Компьютерные аксессуары",
+        "dimensions": {
+          "weightBrutto": 0.19
+        }
+      },
+      {
+        "nmID": 300097,
+        "title": "Сумка-шопер холщовая",
+        "subjectName": "Сумки и аксессуары",
+        "dimensions": {
+          "weightBrutto": 0.17
+        }
+      },
+      {
+        "nmID": 300098,
+        "title": "Поясная сумка спортивная",
+        "subjectName": "Сумки и аксессуары",
+        "dimensions": {
+          "weightBrutto": 0.45
+        }
+      },
+      {
+        "nmID": 300101,
+        "title": "Косметичка дорожная",
+        "subjectName": "Сумки и аксессуары",
+        "dimensions": {
+          "weightBrutto": 1.02
+        }
+      },
+      {
+        "nmID": 300102,
+        "title": "Рюкзак складной",
+        "subjectName": "Сумки и аксессуары",
+        "dimensions": {
+          "weightBrutto": 0.81
+        }
+      },
+      {
+        "nmID": 300103,
+        "title": "Чехол для паспорта",
+        "subjectName": "Сумки и аксессуары",
+        "dimensions": {
+          "weightBrutto": 0.61
+        }
+      },
+      {
+        "nmID": 300104,
+        "title": "Сумка-холодильник 10 л",
+        "subjectName": "Сумки и аксессуары",
+        "dimensions": {
+          "weightBrutto": 0.26
+        }
+      },
+      {
+        "nmID": 300105,
+        "title": "Массажный мяч, 2 шт.",
+        "subjectName": "Здоровье и массаж",
+        "dimensions": {
+          "weightBrutto": 1.02
+        }
+      },
+      {
+        "nmID": 300106,
+        "title": "Аппликатор Кузнецова",
+        "subjectName": "Здоровье и массаж",
+        "dimensions": {
+          "weightBrutto": 1.14
+        }
+      },
+      {
+        "nmID": 300108,
+        "title": "Массажёр для шеи",
+        "subjectName": "Здоровье и массаж",
+        "dimensions": {
+          "weightBrutto": 0.16
+        }
+      },
+      {
+        "nmID": 300109,
+        "title": "Ортопедическая подушка",
+        "subjectName": "Здоровье и массаж",
+        "dimensions": {
+          "weightBrutto": 1.15
+        }
+      },
+      {
+        "nmID": 300110,
+        "title": "Корсет для осанки",
+        "subjectName": "Здоровье и массаж",
+        "dimensions": {
+          "weightBrutto": 0.08
+        }
+      },
+      {
+        "nmID": 300111,
+        "title": "Эспандер кистевой",
+        "subjectName": "Здоровье и массаж",
+        "dimensions": {
+          "weightBrutto": 0.97
+        }
+      },
+      {
+        "nmID": 300112,
+        "title": "Грелка солевая",
+        "subjectName": "Здоровье и массаж",
+        "dimensions": {
+          "weightBrutto": 0.66
+        }
+      },
+      {
+        "nmID": 300113,
+        "title": "Набор отвёрток прецизионных",
+        "subjectName": "Инструменты",
+        "dimensions": {
+          "weightBrutto": 0.78
+        }
+      },
+      {
+        "nmID": 300114,
+        "title": "Уровень лазерный",
+        "subjectName": "Инструменты",
+        "dimensions": {
+          "weightBrutto": 0.68
+        }
+      },
+      {
+        "nmID": 300116,
+        "title": "Набор бит, 32 шт.",
+        "subjectName": "Инструменты",
+        "dimensions": {
+          "weightBrutto": 0.12
+        }
+      },
+      {
+        "nmID": 300117,
+        "title": "Клеевой пистолет",
+        "subjectName": "Инструменты",
+        "dimensions": {
+          "weightBrutto": 0.95
+        }
+      },
+      {
+        "nmID": 300119,
+        "title": "Скотч двусторонний, 3 шт.",
+        "subjectName": "Инструменты",
+        "dimensions": {
+          "weightBrutto": 0.99
+        }
+      },
+      {
+        "nmID": 300120,
+        "title": "Стяжки кабельные, 200 шт.",
+        "subjectName": "Инструменты",
+        "dimensions": {
+          "weightBrutto": 0.6
+        }
+      }
+    ],
+    "goods": [
+      {
+        "nmID": 300001,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 4384,
+            "discountedPrice": 2740
+          }
+        ]
+      },
+      {
+        "nmID": 300002,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 1520,
+            "discountedPrice": 950
+          }
+        ]
+      },
+      {
+        "nmID": 300003,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 7440,
+            "discountedPrice": 4650
+          }
+        ]
+      },
+      {
+        "nmID": 300004,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 5456,
+            "discountedPrice": 3410
+          }
+        ]
+      },
+      {
+        "nmID": 300006,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 8080,
+            "discountedPrice": 5050
+          }
+        ]
+      },
+      {
+        "nmID": 300007,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 7072,
+            "discountedPrice": 4420
+          }
+        ]
+      },
+      {
+        "nmID": 300008,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 4128,
+            "discountedPrice": 2580
+          }
+        ]
+      },
+      {
+        "nmID": 300009,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 2528,
+            "discountedPrice": 1580
+          }
+        ]
+      },
+      {
+        "nmID": 300010,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3840,
+            "discountedPrice": 2400
+          }
+        ]
+      },
+      {
+        "nmID": 300011,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3936,
+            "discountedPrice": 2460
+          }
+        ]
+      },
+      {
+        "nmID": 300012,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 4544,
+            "discountedPrice": 2840
+          }
+        ]
+      },
+      {
+        "nmID": 300013,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 2944,
+            "discountedPrice": 1840
+          }
+        ]
+      },
+      {
+        "nmID": 300014,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3520,
+            "discountedPrice": 2200
+          }
+        ]
+      },
+      {
+        "nmID": 300015,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3552,
+            "discountedPrice": 2220
+          }
+        ]
+      },
+      {
+        "nmID": 300016,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 4880,
+            "discountedPrice": 3050
+          }
+        ]
+      },
+      {
+        "nmID": 300017,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 5632,
+            "discountedPrice": 3520
+          }
+        ]
+      },
+      {
+        "nmID": 300019,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 6400,
+            "discountedPrice": 4000
+          }
+        ]
+      },
+      {
+        "nmID": 300020,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3664,
+            "discountedPrice": 2290
+          }
+        ]
+      },
+      {
+        "nmID": 300021,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 1376,
+            "discountedPrice": 860
+          }
+        ]
+      },
+      {
+        "nmID": 300022,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 2352,
+            "discountedPrice": 1470
+          }
+        ]
+      },
+      {
+        "nmID": 300023,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 2976,
+            "discountedPrice": 1860
+          }
+        ]
+      },
+      {
+        "nmID": 300024,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3200,
+            "discountedPrice": 2000
+          }
+        ]
+      },
+      {
+        "nmID": 300025,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 1984,
+            "discountedPrice": 1240
+          }
+        ]
+      },
+      {
+        "nmID": 300026,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3984,
+            "discountedPrice": 2490
+          }
+        ]
+      },
+      {
+        "nmID": 300027,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 2656,
+            "discountedPrice": 1660
+          }
+        ]
+      },
+      {
+        "nmID": 300028,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 9072,
+            "discountedPrice": 5670
+          }
+        ]
+      },
+      {
+        "nmID": 300029,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3104,
+            "discountedPrice": 1940
+          }
+        ]
+      },
+      {
+        "nmID": 300031,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 7904,
+            "discountedPrice": 4940
+          }
+        ]
+      },
+      {
+        "nmID": 300032,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 7984,
+            "discountedPrice": 4990
+          }
+        ]
+      },
+      {
+        "nmID": 300033,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 5856,
+            "discountedPrice": 3660
+          }
+        ]
+      },
+      {
+        "nmID": 300034,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 6336,
+            "discountedPrice": 3960
+          }
+        ]
+      },
+      {
+        "nmID": 300036,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3280,
+            "discountedPrice": 2050
+          }
+        ]
+      },
+      {
+        "nmID": 300037,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 4000,
+            "discountedPrice": 2500
+          }
+        ]
+      },
+      {
+        "nmID": 300038,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 5856,
+            "discountedPrice": 3660
+          }
+        ]
+      },
+      {
+        "nmID": 300039,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 2128,
+            "discountedPrice": 1330
+          }
+        ]
+      },
+      {
+        "nmID": 300041,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 4688,
+            "discountedPrice": 2930
+          }
+        ]
+      },
+      {
+        "nmID": 300042,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 4144,
+            "discountedPrice": 2590
+          }
+        ]
+      },
+      {
+        "nmID": 300043,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 4464,
+            "discountedPrice": 2790
+          }
+        ]
+      },
+      {
+        "nmID": 300044,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 6576,
+            "discountedPrice": 4110
+          }
+        ]
+      },
+      {
+        "nmID": 300045,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3184,
+            "discountedPrice": 1990
+          }
+        ]
+      },
+      {
+        "nmID": 300046,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 5984,
+            "discountedPrice": 3740
+          }
+        ]
+      },
+      {
+        "nmID": 300047,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3792,
+            "discountedPrice": 2370
+          }
+        ]
+      },
+      {
+        "nmID": 300048,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 4480,
+            "discountedPrice": 2800
+          }
+        ]
+      },
+      {
+        "nmID": 300049,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 8352,
+            "discountedPrice": 5220
+          }
+        ]
+      },
+      {
+        "nmID": 300050,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 2160,
+            "discountedPrice": 1350
+          }
+        ]
+      },
+      {
+        "nmID": 300051,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 9632,
+            "discountedPrice": 6020
+          }
+        ]
+      },
+      {
+        "nmID": 300052,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 1280,
+            "discountedPrice": 800
+          }
+        ]
+      },
+      {
+        "nmID": 300053,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3552,
+            "discountedPrice": 2220
+          }
+        ]
+      },
+      {
+        "nmID": 300054,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 13024,
+            "discountedPrice": 8140
+          }
+        ]
+      },
+      {
+        "nmID": 300055,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 2752,
+            "discountedPrice": 1720
+          }
+        ]
+      },
+      {
+        "nmID": 300058,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 4224,
+            "discountedPrice": 2640
+          }
+        ]
+      },
+      {
+        "nmID": 300059,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 4080,
+            "discountedPrice": 2550
+          }
+        ]
+      },
+      {
+        "nmID": 300061,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 2256,
+            "discountedPrice": 1410
+          }
+        ]
+      },
+      {
+        "nmID": 300062,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 1456,
+            "discountedPrice": 910
+          }
+        ]
+      },
+      {
+        "nmID": 300064,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 5568,
+            "discountedPrice": 3480
+          }
+        ]
+      },
+      {
+        "nmID": 300065,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 2640,
+            "discountedPrice": 1650
+          }
+        ]
+      },
+      {
+        "nmID": 300066,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 10128,
+            "discountedPrice": 6330
+          }
+        ]
+      },
+      {
+        "nmID": 300068,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 4768,
+            "discountedPrice": 2980
+          }
+        ]
+      },
+      {
+        "nmID": 300069,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3392,
+            "discountedPrice": 2120
+          }
+        ]
+      },
+      {
+        "nmID": 300070,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3232,
+            "discountedPrice": 2020
+          }
+        ]
+      },
+      {
+        "nmID": 300071,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 5296,
+            "discountedPrice": 3310
+          }
+        ]
+      },
+      {
+        "nmID": 300072,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 2656,
+            "discountedPrice": 1660
+          }
+        ]
+      },
+      {
+        "nmID": 300073,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 11232,
+            "discountedPrice": 7020
+          }
+        ]
+      },
+      {
+        "nmID": 300074,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3824,
+            "discountedPrice": 2390
+          }
+        ]
+      },
+      {
+        "nmID": 300075,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 7216,
+            "discountedPrice": 4510
+          }
+        ]
+      },
+      {
+        "nmID": 300076,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 1824,
+            "discountedPrice": 1140
+          }
+        ]
+      },
+      {
+        "nmID": 300077,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 5072,
+            "discountedPrice": 3170
+          }
+        ]
+      },
+      {
+        "nmID": 300078,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 2096,
+            "discountedPrice": 1310
+          }
+        ]
+      },
+      {
+        "nmID": 300079,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 4384,
+            "discountedPrice": 2740
+          }
+        ]
+      },
+      {
+        "nmID": 300080,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3456,
+            "discountedPrice": 2160
+          }
+        ]
+      },
+      {
+        "nmID": 300081,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 944,
+            "discountedPrice": 590
+          }
+        ]
+      },
+      {
+        "nmID": 300082,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3664,
+            "discountedPrice": 2290
+          }
+        ]
+      },
+      {
+        "nmID": 300083,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 6304,
+            "discountedPrice": 3940
+          }
+        ]
+      },
+      {
+        "nmID": 300084,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 4080,
+            "discountedPrice": 2550
+          }
+        ]
+      },
+      {
+        "nmID": 300085,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3536,
+            "discountedPrice": 2210
+          }
+        ]
+      },
+      {
+        "nmID": 300086,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 2992,
+            "discountedPrice": 1870
+          }
+        ]
+      },
+      {
+        "nmID": 300087,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 2800,
+            "discountedPrice": 1750
+          }
+        ]
+      },
+      {
+        "nmID": 300088,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 8112,
+            "discountedPrice": 5070
+          }
+        ]
+      },
+      {
+        "nmID": 300089,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 2944,
+            "discountedPrice": 1840
+          }
+        ]
+      },
+      {
+        "nmID": 300090,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 7104,
+            "discountedPrice": 4440
+          }
+        ]
+      },
+      {
+        "nmID": 300091,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 5888,
+            "discountedPrice": 3680
+          }
+        ]
+      },
+      {
+        "nmID": 300092,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 11616,
+            "discountedPrice": 7260
+          }
+        ]
+      },
+      {
+        "nmID": 300093,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3248,
+            "discountedPrice": 2030
+          }
+        ]
+      },
+      {
+        "nmID": 300094,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3776,
+            "discountedPrice": 2360
+          }
+        ]
+      },
+      {
+        "nmID": 300095,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 2208,
+            "discountedPrice": 1380
+          }
+        ]
+      },
+      {
+        "nmID": 300096,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 976,
+            "discountedPrice": 610
+          }
+        ]
+      },
+      {
+        "nmID": 300097,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 2704,
+            "discountedPrice": 1690
+          }
+        ]
+      },
+      {
+        "nmID": 300098,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 6368,
+            "discountedPrice": 3980
+          }
+        ]
+      },
+      {
+        "nmID": 300101,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 10800,
+            "discountedPrice": 6750
+          }
+        ]
+      },
+      {
+        "nmID": 300102,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3824,
+            "discountedPrice": 2390
+          }
+        ]
+      },
+      {
+        "nmID": 300103,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 2640,
+            "discountedPrice": 1650
+          }
+        ]
+      },
+      {
+        "nmID": 300104,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 2832,
+            "discountedPrice": 1770
+          }
+        ]
+      },
+      {
+        "nmID": 300105,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3632,
+            "discountedPrice": 2270
+          }
+        ]
+      },
+      {
+        "nmID": 300106,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 6016,
+            "discountedPrice": 3760
+          }
+        ]
+      },
+      {
+        "nmID": 300108,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 4192,
+            "discountedPrice": 2620
+          }
+        ]
+      },
+      {
+        "nmID": 300109,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 8320,
+            "discountedPrice": 5200
+          }
+        ]
+      },
+      {
+        "nmID": 300110,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 1936,
+            "discountedPrice": 1210
+          }
+        ]
+      },
+      {
+        "nmID": 300111,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 6544,
+            "discountedPrice": 4090
+          }
+        ]
+      },
+      {
+        "nmID": 300112,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 10672,
+            "discountedPrice": 6670
+          }
+        ]
+      },
+      {
+        "nmID": 300113,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 3040,
+            "discountedPrice": 1900
+          }
+        ]
+      },
+      {
+        "nmID": 300114,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 10688,
+            "discountedPrice": 6680
+          }
+        ]
+      },
+      {
+        "nmID": 300116,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 6528,
+            "discountedPrice": 4080
+          }
+        ]
+      },
+      {
+        "nmID": 300117,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 9168,
+            "discountedPrice": 5730
+          }
+        ]
+      },
+      {
+        "nmID": 300119,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 5296,
+            "discountedPrice": 3310
+          }
+        ]
+      },
+      {
+        "nmID": 300120,
+        "currencyIsoCode4217": "RUB",
+        "sizes": [
+          {
+            "price": 1376,
+            "discountedPrice": 860
+          }
+        ]
+      }
+    ]
+  }
+}

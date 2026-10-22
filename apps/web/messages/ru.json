@@ -367,5 +367,13 @@
   "ref.field.external_parent_name": "Родительская категория",
   "ref.field.size_rule": "Склад, единица",
   "ref.unit.first_liter": "первый литр",
-  "ref.unit.extra_liter": "доп. литр"
+  "ref.unit.extra_liter": "доп. литр",
+  "map.products.title": "Карта возможностей: спрос и {metric}",
+  "map.categories.title": "Карта ниш: спрос и {metric}",
+  "map.x.products": "Продаж в месяц (лог. шкала)",
+  "map.x.categories": "Продаж в месяц по подходящим товарам (лог. шкала)",
+  "map.hot": "Хорошо продаётся, метрика выше порога",
+  "map.point.product": "{title}: {sales} продаж/мес, {metric}",
+  "map.point.category": "{title}: {sales} продаж/мес, медиана {metric}, товаров {n}",
+  "map.legend": "Пунктир — порог {target} и медиана спроса. Размер точки ниши — число подходящих товаров. Точки — ссылки."
 }

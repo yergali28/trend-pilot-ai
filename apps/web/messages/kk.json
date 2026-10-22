@@ -367,5 +367,13 @@
   "ref.field.external_parent_name": "Ата-ана санат",
   "ref.field.size_rule": "Қойма, бірлік",
   "ref.unit.first_liter": "бірінші литр",
-  "ref.unit.extra_liter": "қосымша литр"
+  "ref.unit.extra_liter": "қосымша литр",
+  "map.products.title": "Мүмкіндіктер картасы: сұраныс және {metric}",
+  "map.categories.title": "Тауашалар картасы: сұраныс және {metric}",
+  "map.x.products": "Айына сатылым (лог. шкала)",
+  "map.x.categories": "Сәйкес тауарлардың айлық сатылымы (лог. шкала)",
+  "map.hot": "Жақсы сатылады, көрсеткіш шектен жоғары",
+  "map.point.product": "{title}: айына {sales} сатылым, {metric}",
+  "map.point.category": "{title}: айына {sales} сатылым, медиана {metric}, тауар {n}",
+  "map.legend": "Үзік сызықтар — {target} шегі және сұраныс медианасы. Тауаша нүктесінің өлшемі — сәйкес тауарлар саны. Нүктелер — сілтемелер."
 }

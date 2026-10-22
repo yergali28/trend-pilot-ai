@@ -3,5 +3,6 @@ export * from "./data";
 export * from "./format";
 export * from "./icons";
 export * from "./MarketplacePicker";
+export * from "./OpportunityMap";
 export * from "./ProductCard";
 export * from "./Waterfall";

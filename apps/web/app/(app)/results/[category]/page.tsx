@@ -1,4 +1,4 @@
-import { ArrowLeftIcon, CoverageBadge, DataTable, EmptyState, StatusTag, type Column } from "@tp/ui";
+import { ArrowLeftIcon, CoverageBadge, DataTable, EmptyState, OpportunityMap, StatusTag, formatNumber, type Column } from "@tp/ui";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { missingLabel, valueKit } from "../../../../components/values";
@@ -63,7 +63,20 @@ export default async function CategoryPage({ params, searchParams }: { params: P
       </div>
 
       {eligible.length > 0 ? (
-        <DataTable columns={columns} rows={eligible} rowKey={(o) => o.id} caption={cat.name} />
+        <>
+          <OpportunityMap
+            points={outcomes.flatMap((o) => (o.best?.salesPerMonth && o.best.evaluation.metric !== null ? [{ id: o.id, label: o.title, x: o.best.salesPerMonth, y: o.best.evaluation.metric, href: `/products/${o.id}?${query}&m=${o.best.marketplace}` }] : []))}
+            target={p.target}
+            title={t("map.products.title", { metric: t(`metric.${p.metric}`).toLowerCase() })}
+            xLabel={t("map.x.products")}
+            yLabel={t(`metric.${p.metric}`)}
+            hotLabel={t("map.hot")}
+            formatY={(n) => `${formatNumber(n, locale)}x`}
+            pointTitle={(pt) => t("map.point.product", { title: pt.label, sales: formatNumber(pt.x, locale, 0), metric: `${formatNumber(pt.y, locale)}x` })}
+            locale={locale}
+          />
+          <DataTable columns={columns} rows={eligible} rowKey={(o) => o.id} caption={cat.name} />
+        </>
       ) : (
         <EmptyState title={t("empty.title")} text={t("empty.text")} />
       )}
