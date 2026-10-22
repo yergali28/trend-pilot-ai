@@ -6,7 +6,8 @@ insert into public.marketplaces (id, name, role) values
   ('wildberries', 'Wildberries', 'sell'),
   ('ozon', 'Ozon', 'sell'),
   ('aliexpress', 'AliExpress', 'buy'),
-  ('alibaba', 'Alibaba.com', 'buy');
+  ('alibaba', 'Alibaba.com', 'buy'),
+  ('1688', '1688.com', 'buy');
 
 insert into public.data_sources (id, marketplace_id, role, layer, method, status, status_reason, mode) values
   ('kaspi', 'kaspi', 'sell', 'B', 'api', 'active', 'Работает на записанных ответах источника', 'replay'),
@@ -16,7 +17,8 @@ insert into public.data_sources (id, marketplace_id, role, layer, method, status
   ('aliexpress', 'aliexpress', 'buy', 'B', 'api', 'active', 'Работает на записанных ответах источника', 'replay'),
   ('alibaba', 'alibaba', 'buy', 'C', 'provider', 'pending_registration', 'Провайдер данных ещё не выбран', 'replay'),
   ('analytics', null, 'analytics', 'C', 'provider', 'active', 'Работает на записанных ответах источника', 'replay'),
-  ('mpstats', 'wildberries', 'analytics', 'C', 'provider', 'active', 'Без токена MPSTATS: демо-запись в формате провайдера', 'replay');
+  ('mpstats', 'wildberries', 'analytics', 'C', 'provider', 'active', 'Без токена MPSTATS: демо-запись в формате провайдера', 'replay'),
+  ('1688', '1688', 'buy', 'C', 'provider', 'active', 'Поиск 1688 через Apify (сбор публичных страниц, решение владельца 22.10.2026)', 'live');
 
 -- Wildberries: данные проверены по официальной документации 19.10.2026 (docs/sources/wildberries.md).
 update public.data_sources set
@@ -45,3 +47,11 @@ update public.data_sources set
   provides = 'Рынок WB: товары категорий с ценой, продажами и выручкой за 30 дней, рейтингом, отзывами, остатками, фото и дневными рядами продаж, цен и остатков.',
   limitations = 'Платный тариф с API; лимиты зависят от тарифа (429 с Retry-After). Пока токена нет, работает демо-запись (synthetic). Закупочной цены провайдер не даёт.'
 where id = 'mpstats';
+
+-- 1688 через Apify (актор automation-lab/1688-scraper): решение владельца по правилу 7 от 22.10.2026 — «разрешаю под свою ответственность».
+update public.data_sources set
+  checked_at = '2026-10-22',
+  docs_url = 'https://apify.com/automation-lab/1688-scraper',
+  provides = 'Предложения 1688 по ключевому слову: цена от (¥, нижняя ступень), поставщик, провинция и город, число заказов, ссылка и фото.',
+  limitations = 'Сбор публичных страниц через Apify, платно за результат. MOQ в поиске не приходит. Совпадение с товаром WB — аналог по запросу, требует проверки.'
+where id = '1688';

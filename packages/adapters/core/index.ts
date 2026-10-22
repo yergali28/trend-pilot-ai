@@ -56,6 +56,10 @@ export const ListingRecord = z.object({
   rating: z.number().min(0).max(5).optional(),
   reviews: z.number().int().nonnegative().optional(),
   stock: z.number().int().nonnegative().optional(),
+  /** Комиссия площадки для этой карточки, %. */
+  commissionPct: z.number().min(0).max(100).optional(),
+  /** Габариты упаковки, см. */
+  dimensionsCm: z.object({ length: z.number().positive(), width: z.number().positive(), height: z.number().positive() }).optional(),
   periodStart: z.iso.date(),
   periodEnd: z.iso.date(),
   daily: z.object({ sales: z.array(z.number().nullable()), price: z.array(z.number().nullable()), stock: z.array(z.number().nullable()) }).partial().optional(),

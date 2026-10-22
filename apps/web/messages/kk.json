@@ -420,5 +420,9 @@
   "market.showAll": "Барлық тауашаларды көрсету ({n})",
   "market.showTop": "Топ-30 көрсету",
   "market.card.sales": "Сатылым",
-  "market.card.revenue": "Түсім"
+  "market.card.revenue": "Түсім",
+  "source.ownerDefaults": "Сатушы баптаулары (иесінің шешімі)",
+  "product.openSource": "{source} ұсынысы",
+  "product.openListing": "{marketplace} карточкасы",
+  "product.analogNote": "Сатып алу тауары — іздеу арқылы табылған аналог, сол тауар емес: сатып алмас бұрын сілтемелер арқылы фото, материал мен жиынтықты тексеріңіз."
 }

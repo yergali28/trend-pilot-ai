@@ -23,3 +23,22 @@ describe("sourcingMargin: маржа закупки в Китае при про�
     expect(() => sourcingMargin(10, 1000, { ...cfg, wbCommissionPct: 101 })).toThrow(RangeError);
   });
 });
+
+describe("volumetricWeightKg", () => {
+  it("Д×Ш×В ÷ 6000 по умолчанию, делитель задаётся; нулевые габариты — ошибка", async () => {
+    const { volumetricWeightKg } = await import("../src");
+    expect(volumetricWeightKg({ length: 30, width: 20, height: 10 })).toBe(1);
+    expect(volumetricWeightKg({ length: 30, width: 20, height: 10 }, 5000)).toBe(1.2);
+    expect(() => volumetricWeightKg({ length: 0, width: 20, height: 10 })).toThrow(RangeError);
+  });
+});
+
+describe("wbBoxLogistics", () => {
+  it("первый литр по базе, каждый следующий неполный литр — по ставке за литр", async () => {
+    const { wbBoxLogistics } = await import("../src");
+    expect(wbBoxLogistics({ length: 10, width: 10, height: 10 }, 46, 14)).toBe(46); // 1 л
+    expect(wbBoxLogistics({ length: 20, width: 10, height: 12 }, 46, 14)).toBe(46 + 2 * 14); // 2,4 л → 2 доп. литра
+    expect(() => wbBoxLogistics({ length: 0, width: 1, height: 1 }, 46, 14)).toThrow(RangeError);
+    expect(() => wbBoxLogistics({ length: 1, width: 1, height: 1 }, -1, 14)).toThrow(RangeError);
+  });
+});

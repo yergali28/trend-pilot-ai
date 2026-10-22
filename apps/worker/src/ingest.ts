@@ -125,8 +125,9 @@ async function saveRecord(db: pg.PoolClient, r: NormalizedRecord, rawResponseId:
     const categoryId = r.category ? await upsertCategory(db, r.listingSourceId, r.category, r.synthetic) : null;
     const productId = await upsertProduct(db, { ...r, sourceId: r.listingSourceId, kind: "listing" });
     await db.query(
-      `update public.products set image_url = coalesce($2, image_url), brand = coalesce($3, brand), category_id = coalesce($4, category_id) where id = $1`,
-      [productId, r.imageUrl ?? null, r.brand ?? null, categoryId],
+      `update public.products set image_url = coalesce($2, image_url), brand = coalesce($3, brand), category_id = coalesce($4, category_id),
+         dimensions_cm = coalesce($5, dimensions_cm) where id = $1`,
+      [productId, r.imageUrl ?? null, r.brand ?? null, categoryId, r.dimensionsCm ? JSON.stringify(r.dimensionsCm) : null],
     );
     if (r.price !== undefined) {
       await db.query(
@@ -146,9 +147,9 @@ async function saveRecord(db: pg.PoolClient, r: NormalizedRecord, rawResponseId:
       );
     }
     await db.query(
-      `insert into public.listing_stats (product_id, source_id, raw_response_id, period_start, period_end, price, currency, sales, revenue, rating, reviews, stock, seller, daily, fetched_at, synthetic)
-       values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16)`,
-      [productId, r.sourceId, rawResponseId, r.periodStart, r.periodEnd, r.price ?? null, r.currency, r.salesPerMonth ?? null, r.revenue ?? null, r.rating ?? null, r.reviews ?? null, r.stock ?? null, r.seller ?? null, r.daily ? JSON.stringify(r.daily) : null, r.fetchedAt, r.synthetic],
+      `insert into public.listing_stats (product_id, source_id, raw_response_id, period_start, period_end, price, currency, sales, revenue, rating, reviews, stock, seller, daily, fetched_at, synthetic, commission_pct)
+       values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17)`,
+      [productId, r.sourceId, rawResponseId, r.periodStart, r.periodEnd, r.price ?? null, r.currency, r.salesPerMonth ?? null, r.revenue ?? null, r.rating ?? null, r.reviews ?? null, r.stock ?? null, r.seller ?? null, r.daily ? JSON.stringify(r.daily) : null, r.fetchedAt, r.synthetic, r.commissionPct ?? null],
     );
   } else {
     // Спрос относится к товару площадки продажи, источник значения — провайдер аналитики.

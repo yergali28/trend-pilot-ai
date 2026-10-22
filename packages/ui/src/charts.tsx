@@ -190,7 +190,7 @@ export function OpportunityChart({ points, target, title, xLabel, yLabel, hotLab
             markArea: {
               silent: true,
               itemStyle: { color: t.zone, opacity: 0.55 },
-              label: { show: true, position: "insideBottomRight", color: t.zoneText, fontWeight: 600, fontSize: 13, distance: 10 },
+              label: { show: true, position: "insideTopRight", color: t.zoneText, fontWeight: 600, fontSize: 13, distance: 10 },
               data: [[{ name: hotLabel, xAxis: split, yAxis: target }, { xAxis: xMax, yAxis: yMax }]],
             },
             markLine: {

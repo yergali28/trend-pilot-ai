@@ -31,6 +31,7 @@ export default async function ProductPage({ params, searchParams }: { params: Pr
     "demo:assumptions": t("source.demoAssumptions"),
     user: t("source.user"),
     "settings:default-tax-off": t("source.defaultTax"),
+    "settings:owner-defaults": t("source.ownerDefaults"),
     ...Object.fromEntries(["fx_rates", "cargo_rates", "fee_rules"].map((tb) => [`reference:${tb}`, t("source.reference", { table: t(`ref.table.${tb}` as "ref.table.fx_rates") })])),
   };
   const category = product.category_id ? catalog.categories.get(product.category_id) : undefined;
@@ -65,8 +66,23 @@ export default async function ProductPage({ params, searchParams }: { params: Pr
               {t("product.back", { category: category.name })}
             </Link>
           ) : null}
-          <h1 className="mt-2 text-2xl font-semibold">{product.title}</h1>
+          <h1 className="mt-2 text-2xl font-semibold">{outcome.title}</h1>
           <p className="mt-1 text-base text-muted">{t("product.lead", { source: sourceNames[product.source_id] ?? product.source_id })}</p>
+          {/* Реальная пара: название и ссылка предложения закупки, ссылка на карточку продажи. */}
+          {outcome.title !== product.title ? <p className="mt-1 text-sm text-subtle">{product.title}</p> : null}
+          <p className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm">
+            {product.url ? (
+              <a href={product.url} target="_blank" rel="noreferrer" className="font-medium text-action-soft-ink underline-offset-2 hover:underline">
+                {t("product.openSource", { source: sourceNames[product.source_id] ?? product.source_id })}
+              </a>
+            ) : null}
+            {pair?.listingId && catalog.products.get(pair.listingId)?.url ? (
+              <a href={catalog.products.get(pair.listingId)!.url!} target="_blank" rel="noreferrer" className="font-medium text-action-soft-ink underline-offset-2 hover:underline">
+                {t("product.openListing", { marketplace: sourceNames[pair.marketplace] ?? pair.marketplace })}
+              </a>
+            ) : null}
+          </p>
+          {!product.synthetic && pair?.listingId ? <p className="mt-2 max-w-[70ch] text-sm text-muted">{t("product.analogNote")}</p> : null}
         </div>
         {/* В демо-режиме пометка в шапке; здесь — только синтетика вне демо-режима (например, mock). */}
         {product.synthetic && !demoEnabled() ? <StatusTag tone="info">{t("demo.badge")}</StatusTag> : null}

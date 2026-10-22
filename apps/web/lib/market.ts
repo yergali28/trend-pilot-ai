@@ -1,4 +1,5 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
+import { selectAll } from "./supabase";
 
 // Рынок площадки продажи по данным провайдера аналитики (listing_stats): ниши, товары, ряды за период.
 // Здесь только сборка и агрегаты для показа (суммы, медианы); формул юнит-экономики нет — они в packages/calc.
@@ -52,16 +53,7 @@ const median = (xs: number[]) => {
 
 // ponytail: читается вся таблица (сотни товаров); на реальных объёмах — представление с последним снимком и пагинация.
 export async function loadMarket(db: SupabaseClient, marketplace = "wildberries") {
-  // PostgREST отдаёт не больше 1000 строк за запрос: читаем страницами.
-  const all = async <R,>(page: (from: number, to: number) => PromiseLike<{ data: R[] | null; error: unknown }>) => {
-    const out: R[] = [];
-    for (let from = 0; ; from += 1000) {
-      const { data, error } = await page(from, from + 999);
-      if (error) throw error;
-      out.push(...(data ?? []));
-      if (!data || data.length < 1000) return out;
-    }
-  };
+  const all = selectAll;
   const [stats, products, categories, matches] = await Promise.all([
     all((a, b) => db.from("listing_stats").select("product_id, source_id, period_start, period_end, price, currency, sales, revenue, rating, reviews, stock, seller, daily, fetched_at, synthetic").order("fetched_at", { ascending: false }).range(a, b)),
     all((a, b) => db.from("products").select("id, external_id, title, url, image_url, brand, category_id, synthetic").eq("source_id", marketplace).eq("kind", "listing").order("id").range(a, b)),
