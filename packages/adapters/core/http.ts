@@ -6,6 +6,8 @@ export interface RateOptions {
   /** Минимальный интервал между запросами по ключу, мс (интервал пополнения token bucket). */
   minIntervalMs: number;
   maxAttempts?: number;
+  /** Таймаут одного запроса, мс; истёкший запрос повторяется как сетевая ошибка. */
+  timeoutMs?: number;
   /** Подменяются в тестах. */
   fetchImpl?: typeof fetch;
   sleep?: (ms: number) => Promise<void>;
@@ -39,7 +41,7 @@ export async function requestJson<T>(url: string, init: RequestInit, o: RateOpti
 
     let res: Response;
     try {
-      res = await fetchImpl(url, init);
+      res = await fetchImpl(url, o.timeoutMs ? { ...init, signal: AbortSignal.timeout(o.timeoutMs) } : init);
     } catch (e) {
       if (attempt >= maxAttempts) throw new AdapterError("http_error", `${where}: сеть недоступна (${(e as Error).message})`);
       await sleep(backoffMs(attempt, random));
@@ -58,7 +60,7 @@ export async function requestJson<T>(url: string, init: RequestInit, o: RateOpti
     }
 
     const body = (await res.json().catch(() => ({}))) as { title?: string; detail?: string; errorText?: string };
-    throw new AdapterError("http_error", `${where}: ${res.status} ${body.title ?? body.errorText ?? ""}`.trim());
+    throw new AdapterError(res.status === 401 || res.status === 403 ? "auth_error" : "http_error", `${where}: ${res.status} ${body.title ?? body.errorText ?? ""}`.trim());
   }
 }
 

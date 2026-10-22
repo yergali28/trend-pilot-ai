@@ -103,7 +103,7 @@ export interface Adapter {
   normalize(raw: RawResponse): NormalizeResult;
 }
 
-export type AdapterErrorCode = "token_not_configured" | "not_implemented" | "fixture_not_found" | "contract_violation" | "http_error" | "rate_limited";
+export type AdapterErrorCode = "token_not_configured" | "not_implemented" | "fixture_not_found" | "contract_violation" | "http_error" | "rate_limited" | "auth_error";
 
 export class AdapterError extends Error {
   constructor(
