@@ -34,7 +34,8 @@ test("админ создаёт организацию и ссылку; поль
 test("реестр источников и справочники", async ({ page }) => {
   await page.goto("/admin/sources");
   await expect(page.getByRole("heading", { name: "Реестр источников" })).toBeVisible();
-  await expect(page.getByText("Wildberries")).toBeVisible();
+  await expect(page.getByText(/^Wildberries ·/)).toBeVisible();
+  await expect(page.getByText("Wildberries (wildberries-sales)")).toBeVisible();
   await page.goto("/admin/references");
   await expect(page.getByRole("heading", { name: "Справочники", level: 2 })).toBeVisible();
   await expect(page.getByRole("button", { name: "Добавить" })).toBeVisible();

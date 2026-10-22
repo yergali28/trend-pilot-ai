@@ -84,12 +84,13 @@ export interface Source {
 export async function loadSources(db: SupabaseClient): Promise<Source[]> {
   const { data, error } = await db
     .from("data_sources")
-    .select("id, role, status, status_reason, mode, last_success_at, checked_at, provides, limitations, marketplaces(name)")
+    .select("id, marketplace_id, role, status, status_reason, mode, last_success_at, checked_at, provides, limitations, marketplaces(name)")
     .order("id");
   if (error) throw error;
   return (data ?? []).map((r) => ({
     id: r.id,
-    name: (r.marketplaces as unknown as { name: string } | null)?.name ?? r.id,
+    // У площадки может быть несколько источников (карточки и продажи WB): второй различаем по id.
+    name: ((m) => (m && r.marketplace_id !== r.id ? `${m} (${r.id})` : (m ?? r.id)))((r.marketplaces as unknown as { name: string } | null)?.name),
     role: r.role,
     status: r.status,
     statusReason: r.status_reason,

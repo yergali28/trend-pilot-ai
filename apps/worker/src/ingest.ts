@@ -81,16 +81,18 @@ interface ProductFields {
   url?: string | undefined;
   weightKg?: number | undefined;
   synthetic: boolean;
+  /** Не перезаписывать название: у записи спроса название условное (предмет и артикул), настоящее — в карточке. */
+  keepTitle?: boolean;
 }
 
 async function upsertProduct(db: pg.PoolClient, p: ProductFields) {
   const { rows } = await db.query<{ id: string }>(
     `insert into public.products (source_id, kind, external_id, title, url, weight_kg, synthetic)
      values ($1, $2, $3, $4, $5, $6, $7)
-     on conflict (source_id, external_id) do update set title = excluded.title,
+     on conflict (source_id, external_id) do update set title = case when $8 then excluded.title else products.title end,
        url = coalesce(excluded.url, products.url), weight_kg = coalesce(excluded.weight_kg, products.weight_kg)
      returning id`,
-    [p.sourceId, p.kind, p.externalId, p.title, p.url ?? null, p.weightKg ?? null, p.synthetic],
+    [p.sourceId, p.kind, p.externalId, p.title, p.url ?? null, p.weightKg ?? null, p.synthetic, !p.keepTitle],
   );
   return rows[0]!.id;
 }
@@ -109,7 +111,7 @@ async function saveRecord(db: pg.PoolClient, r: NormalizedRecord, rawResponseId:
     );
   } else {
     // Спрос относится к товару площадки продажи, источник значения — провайдер аналитики.
-    const productId = await upsertProduct(db, { ...r, sourceId: r.listingSourceId, kind: "listing" });
+    const productId = await upsertProduct(db, { ...r, sourceId: r.listingSourceId, kind: "listing", keepTitle: true });
     await db.query(
       `insert into public.demand_history (product_id, source_id, raw_response_id, sales_per_month, period_start, period_end, fetched_at, synthetic)
        values ($1, $2, $3, $4, $5, $6, $7, $8)`,

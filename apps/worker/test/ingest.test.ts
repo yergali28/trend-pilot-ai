@@ -64,4 +64,17 @@ describe("ingest worker (pg-boss, replay)", () => {
     );
     expect(rows.rows).toEqual([{ source_id: "analytics", sales_per_month: "40", synthetic: true, listing_source: "kaspi", external_id: "syn-k-1" }]);
   });
+
+  it("stores own-shop WB sales as demand of the WB listing for the period", async () => {
+    const out = await runJob("wildberries-sales");
+    expect(out).toMatchObject({ recordsOk: 1, recordsRejected: 1 });
+    const rows = await db.query(
+      `select d.source_id, d.sales_per_month, d.period_start::text, d.period_end::text, p.source_id as listing_source, p.external_id
+       from public.demand_history d join public.products p on p.id = d.product_id where d.raw_response_id = $1`,
+      [out.rawResponseId],
+    );
+    expect(rows.rows).toEqual([
+      { source_id: "wildberries-sales", sales_per_month: "1", period_start: "2026-09-18", period_end: "2026-10-18", listing_source: "wildberries", external_id: "101" },
+    ]);
+  });
 });
