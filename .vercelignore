@@ -1,0 +1,10 @@
+# Локальные секреты и артефакты не уходят на Vercel.
+.env*
+**/.env*
+!.env.example
+**/node_modules
+**/.next
+**/.turbo
+**/test-results
+**/playwright-report
+apps/web/e2e/.state
