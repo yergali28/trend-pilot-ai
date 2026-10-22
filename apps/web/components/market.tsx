@@ -39,8 +39,8 @@ export function ListingGrid({ items, t, locale }: { items: MarketItem[]; t: T; l
             price={k.money(i.price, i.currency ?? "RUB")}
             rating={k.rating(i.rating, i.reviews)}
             facts={[
-              { label: t("market.salesMonth"), value: k.count(i.sales) },
-              { label: t("market.revenueMonth"), value: k.money(i.revenue, i.currency ?? "RUB") },
+              { label: t("market.card.sales"), value: k.count(i.sales) },
+              { label: t("market.card.revenue"), value: k.money(i.revenue, i.currency ?? "RUB") },
             ]}
             {...(i.synthetic && !demoEnabled() ? { badge: <StatusTag tone="info">{t("market.synthetic")}</StatusTag> } : {})}
           />

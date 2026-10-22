@@ -418,5 +418,7 @@
   "market.unit.none": "No supplier found, so no margin: a 1688 or Taobao purchase price is needed. The sourcing provider (Onebound) will supply it once access is enabled.",
   "market.real": "Real data · MPSTATS",
   "market.showAll": "Show all niches ({n})",
-  "market.showTop": "Show top 30"
+  "market.showTop": "Show top 30",
+  "market.card.sales": "Sales",
+  "market.card.revenue": "Revenue"
 }

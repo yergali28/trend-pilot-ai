@@ -66,6 +66,13 @@ export default async function MarketPage({ searchParams }: { searchParams: Promi
         ]}
       />
 
+      <section aria-labelledby="leaders-h" className="flex flex-col gap-4">
+        <h2 id="leaders-h" className="text-xl font-semibold">
+          {t("market.leaders")}
+        </h2>
+        <ListingGrid items={items.slice(0, showAll ? 60 : 20)} t={t} locale={locale} />
+      </section>
+
       <section aria-labelledby="niches-h" className="flex flex-col gap-4">
         <h2 id="niches-h" className="text-xl font-semibold">
           {t("market.niches")}
@@ -96,12 +103,6 @@ export default async function MarketPage({ searchParams }: { searchParams: Promi
         <p className="text-sm text-muted">{t("market.legend")}</p>
       </section>
 
-      <section aria-labelledby="leaders-h" className="flex flex-col gap-4">
-        <h2 id="leaders-h" className="text-xl font-semibold">
-          {t("market.leaders")}
-        </h2>
-        <ListingGrid items={items.slice(0, 15)} t={t} locale={locale} />
-      </section>
     </div>
   );
 }

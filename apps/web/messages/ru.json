@@ -418,5 +418,7 @@
   "market.unit.none": "Поставщик не найден, поэтому маржу не считаем: нужна закупочная цена с 1688 или Taobao. Её даст провайдер закупки (Onebound), когда он подключит доступ.",
   "market.real": "Реальные данные · MPSTATS",
   "market.showAll": "Показать все ниши ({n})",
-  "market.showTop": "Показать топ-30"
+  "market.showTop": "Показать топ-30",
+  "market.card.sales": "Продажи",
+  "market.card.revenue": "Выручка"
 }
