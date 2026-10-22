@@ -1,4 +1,4 @@
-import { COMMISSION_URL, BOX_URL, fetchWbTariffs } from "@tp/adapters";
+import { CBR_DAILY_URL, COMMISSION_URL, BOX_URL, fetchCbrRates, fetchWbTariffs } from "@tp/adapters";
 import { localSupabase } from "@tp/db";
 import pg from "pg";
 
@@ -87,7 +87,35 @@ export async function loadWbReferences(dbUrl: string, live: boolean) {
   }
 }
 
+/** Курсы ЦБ РФ к рублю (USD, CNY, KZT, EUR) на дату публикации; повторная загрузка той же даты не дублирует строки. */
+export async function loadCbrRates(dbUrl: string, live: boolean) {
+  const snap = await fetchCbrRates({ mode: live ? "live" : "replay" });
+  if (snap.synthetic) throw new Error("В справочники попадают только реальные ответы (synthetic: false)");
+  const rateDate = snap.body.Date.slice(0, 10);
+  const db = new pg.Pool({ connectionString: dbUrl });
+  try {
+    let n = 0;
+    for (const v of Object.values(snap.body.Valute)) {
+      if (!["USD", "CNY", "KZT", "EUR"].includes(v.CharCode)) continue;
+      // ЦБ публикует курс за Nominal единиц (100 тенге); в справочнике — за одну единицу.
+      const r = await db.query(
+        `insert into public.fx_rates (base_currency, quote_currency, rate, rate_date, source_url, fetched_at) values ($1, 'RUB', $2, $3, $4, $5)
+         on conflict (base_currency, quote_currency, rate_date) do update set rate = excluded.rate, fetched_at = excluded.fetched_at`,
+        [v.CharCode, v.Value / v.Nominal, rateDate, CBR_DAILY_URL, snap.fetchedAt],
+      );
+      n += r.rowCount ?? 0;
+    }
+    return { rates: n, rateDate };
+  } finally {
+    await db.end();
+  }
+}
+
 if (process.argv[1]?.endsWith("refs-load.ts")) {
-  const r = await loadWbReferences(process.env.INGEST_DB_URL ?? localSupabase().dbUrl, process.argv.includes("--live"));
+  const dbUrl = process.env.INGEST_DB_URL ?? localSupabase().dbUrl;
+  const live = process.argv.includes("--live");
+  const r = await loadWbReferences(dbUrl, live);
   console.log(`fee_rules: ${r.fees} строк (${r.subjects} предметов); logistics_rates: ${r.rates} строк (${r.warehouses} складов); получено ${r.fetchedAt}`);
+  const fx = await loadCbrRates(dbUrl, live);
+  console.log(`fx_rates: ${fx.rates} курсов ЦБ к рублю на ${fx.rateDate}`);
 }

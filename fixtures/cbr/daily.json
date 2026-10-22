@@ -1,0 +1,30 @@
+{
+  "recordedAt": "2026-10-22T10:13:58.000Z",
+  "synthetic": false,
+  "note": "Курсы ЦБ РФ (зеркало cbr-xml-daily.ru), записаны 22.10.2026. Только USD, CNY, KZT, EUR.",
+  "body": {
+    "Date": "2026-10-22T11:30:00+03:00",
+    "Valute": {
+      "USD": {
+        "CharCode": "USD",
+        "Nominal": 1,
+        "Value": 81.9739
+      },
+      "EUR": {
+        "CharCode": "EUR",
+        "Nominal": 1,
+        "Value": 91.9337
+      },
+      "KZT": {
+        "CharCode": "KZT",
+        "Nominal": 100,
+        "Value": 18.1885
+      },
+      "CNY": {
+        "CharCode": "CNY",
+        "Nominal": 1,
+        "Value": 12.2806
+      }
+    }
+  }
+}
