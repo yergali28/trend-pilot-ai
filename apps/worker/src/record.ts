@@ -27,6 +27,8 @@ const sanitizers: Record<string, (body: Json) => Json> = {
       }));
     return { cards, goods };
   },
+  // MPSTATS: публичные карточки рынка (название, бренд, продавец-юрлицо, цены, продажи); первые 100 товаров как есть.
+  mpstats: (body) => body,
   // Личные поля заказов (srid, gNumber, стикер, регион покупателя) отбрасывает уже схема адаптера.
   "wildberries-sales": (body) => ({ ...body, orders: (body.orders as Json[]).slice(0, LIMIT), sales: (body.sales as Json[]).slice(0, LIMIT) }),
 };

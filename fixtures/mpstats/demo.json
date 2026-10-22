@@ -1,0 +1,19 @@
+{
+  "recordedAt": "2026-10-18T00:00:00Z",
+  "synthetic": true,
+  "note": "Синтетическая запись в формате MPSTATS Analytics API WB (POST /category/items), поля по примеру из документации. Не рыночные данные.",
+  "body": {
+    "path": "Синтетика/Органайзеры",
+    "d1": "2026-09-18",
+    "d2": "2026-10-17",
+    "response": {
+      "startRow": 0,
+      "endRow": 100,
+      "total": 2,
+      "data": [
+        { "id": 101, "name": "Синтетический органайзер", "subject_id": 1, "subject": "Дом / Органайзеры", "brand": "Синтетика", "seller": "Синтетический продавец", "final_price": 568, "sales": 300, "revenue": 170400, "rating": 4.8, "comments": 120, "balance": 900, "graph": [10, 10, 10], "price_graph": [568, 568, 568], "stocks_graph": [950, 920, 900] },
+        { "id": 102, "name": "Синтетический товар без цены", "subject_id": 1, "subject": "Дом / Органайзеры", "final_price": null, "sales": 5 }
+      ]
+    }
+  }
+}

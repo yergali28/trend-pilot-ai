@@ -126,4 +126,37 @@ edit("demo/catalog.json", (j) => {
   }
 });
 
+// MPSTATS: синтетический ответ «товары категории» в формате провайдера для раздела «Рынок WB» до подключения токена.
+// Ряды за 30 дней складываются в продажи периода. Ссылок и фото нет: выдуманные URL не подставляем.
+const catIndex = Object.fromEntries(Object.keys(CATEGORIES).map((c, i) => [c, 9000 + i]));
+const mpItems = wbProducts.map((p) => {
+  const sales = p.demand.wildberries ?? 0;
+  const weights = Array.from({ length: 30 }, (_, i) => between(0.6, 1.4) * (1 + 0.012 * i * (rnd() < 0.5 ? 1 : -0.5)));
+  const total = weights.reduce((a, b) => a + b, 0);
+  const graph = weights.map((w) => Math.round((w / total) * sales));
+  const price_graph = Array.from({ length: 30 }, () => roundTo(p.wb * between(0.92, 1.08), 10));
+  const balance = Math.round(between(20, 2000));
+  return {
+    id: wbId(p),
+    name: p.title,
+    subject_id: catIndex[p.cat],
+    subject: `${CATEGORIES[p.cat][0]} / ${CATEGORIES[p.cat][0]}`,
+    brand: `Бренд ${String.fromCharCode(65 + Math.floor(rnd() * 26))}`,
+    seller: `Продавец ${Math.ceil(rnd() * 40)}`,
+    final_price: p.wb,
+    sales: graph.reduce((a, b) => a + b, 0),
+    revenue: graph.reduce((a, b, i) => a + b * price_graph[i], 0),
+    rating: Number(between(4.1, 4.95).toFixed(1)),
+    comments: Math.round(between(5, 3000) * (0.2 + rnd())),
+    balance,
+    graph,
+    price_graph,
+    stocks_graph: Array.from({ length: 30 }, (_, i) => Math.max(0, Math.round(balance * (1.3 - i / 60) * between(0.9, 1.1)))),
+  };
+});
+writeFileSync(
+  file("mpstats/catalog.json"),
+  `${JSON.stringify({ recordedAt: "2026-10-18T00:00:00Z", synthetic: true, note: "Синтетический ответ в формате MPSTATS «товары категории» (scripts/gen-demo.mjs). Не рыночные данные.", body: { path: "Демо/Все категории", d1: "2026-09-18", d2: "2026-10-17", response: { total: mpItems.length, data: mpItems } } }, null, 2)}\n`,
+);
+
 console.log(`товаров ${products.length}, категорий ${Object.keys(CATEGORIES).length}; WB ${wbProducts.length}, Ozon ${products.filter((p) => p.ozon).length}, Kaspi ${products.filter((p) => p.kaspi).length}`);

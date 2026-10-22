@@ -15,7 +15,7 @@ const patterns = {
 const tokens = ["apps/worker/.env.local", "apps/web/.env.local"]
   .filter(existsSync)
   .flatMap((f) => readFileSync(f, "utf8").split(/\r?\n/))
-  .filter((l) => /^(WB_API_TOKEN|KASPI_API_TOKEN|OZON_API_KEY|ALIEXPRESS_APP_KEY|ANALYTICS_API_KEY)=.{8,}/.test(l))
+  .filter((l) => /^(WB_API_TOKEN|KASPI_API_TOKEN|OZON_API_KEY|ALIEXPRESS_APP_KEY|ANALYTICS_API_KEY|MPSTATS_TOKEN)=.{8,}/.test(l))
   .map((l) => l.slice(l.indexOf("=") + 1).trim());
 
 let found = 0;

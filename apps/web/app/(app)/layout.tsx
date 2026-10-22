@@ -29,13 +29,13 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
           <Link href="/" className="text-md font-semibold text-ink outline-none focus-visible:outline-2 focus-visible:outline-focus">
             {t("app.title")}
           </Link>
-          <NavLinks label={t("nav.main")} exactRoot={false} links={[{ href: "/", text: t("nav.wizard") }, ...(admin ? [{ href: "/admin", text: t("nav.admin") }] : [])]} />
+          <NavLinks label={t("nav.main")} exactRoot={false} links={[{ href: "/", text: t("nav.wizard") }, { href: "/market", text: t("nav.market") }, ...(admin ? [{ href: "/admin", text: t("nav.admin") }] : [])]} />
           <div className="ml-auto flex flex-wrap items-center gap-3">
             {demoEnabled() ? <StatusTag tone="info">{t("demo.badge")}</StatusTag> : null}
             <Suspense>
               <PrefsSwitch locale={locale} theme={theme} labels={{ language: t("prefs.language"), theme: t("prefs.theme"), light: t("prefs.light"), dark: t("prefs.dark") }} />
             </Suspense>
-            <span className="hidden text-sm text-muted md:inline">{user.email}</span>
+            <span className="hidden text-sm text-muted 2xl:inline">{user.email}</span>
             <form action={signOut}>
               <button type="submit" className="rounded-control px-2 py-1 text-sm text-action-soft-ink outline-none hover:bg-action-soft pointer-coarse:py-2.5 focus-visible:outline-2 focus-visible:outline-focus">
                 {t("nav.signOut")}

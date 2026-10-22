@@ -15,7 +15,8 @@ insert into public.data_sources (id, marketplace_id, role, layer, method, status
   ('wildberries-sales', 'wildberries', 'analytics', 'B', 'api', 'active', 'Продажи своего магазина по токену продавца (категория «Статистика»), не рынок', 'replay'),
   ('aliexpress', 'aliexpress', 'buy', 'B', 'api', 'active', 'Работает на записанных ответах источника', 'replay'),
   ('alibaba', 'alibaba', 'buy', 'C', 'provider', 'pending_registration', 'Провайдер данных ещё не выбран', 'replay'),
-  ('analytics', null, 'analytics', 'C', 'provider', 'active', 'Работает на записанных ответах источника', 'replay');
+  ('analytics', null, 'analytics', 'C', 'provider', 'active', 'Работает на записанных ответах источника', 'replay'),
+  ('mpstats', 'wildberries', 'analytics', 'C', 'provider', 'active', 'Без токена MPSTATS: демо-запись в формате провайдера', 'replay');
 
 -- Wildberries: данные проверены по официальной документации 19.10.2026 (docs/sources/wildberries.md).
 update public.data_sources set
@@ -36,3 +37,11 @@ update public.data_sources set
   provides = 'Свой магазин продавца: заказы и продажи/возвраты по товарам (nmId) за 30 дней — предмет, артикул, страна, склад, цены. Спрос товара = выкупы минус возвраты за период.',
   limitations = 'Только свой магазин, не рынок. Данные обновляются раз в 30 минут, хранятся 90 дней; поля цен предварительные (не отчёт реализации). Номера заказов, стикеры и регион покупателя не сохраняются.'
 where id = 'wildberries-sales';
+
+-- MPSTATS: рыночные данные WB (товары категории с продажами, выручкой, рейтингом и дневными рядами), проверено по документации 22.10.2026.
+update public.data_sources set
+  checked_at = '2026-10-22',
+  docs_url = 'https://mpstats.io/integrations/analytics-wb/',
+  provides = 'Рынок WB: товары категорий с ценой, продажами и выручкой за 30 дней, рейтингом, отзывами, остатками, фото и дневными рядами продаж, цен и остатков.',
+  limitations = 'Платный тариф с API; лимиты зависят от тарифа (429 с Retry-After). Пока токена нет, работает демо-запись (synthetic). Закупочной цены провайдер не даёт.'
+where id = 'mpstats';

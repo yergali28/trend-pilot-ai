@@ -1,4 +1,4 @@
-import { ArrowLeftIcon, CoverageBadge, DataTable, EmptyState, OpportunityMap, StatusTag, formatNumber, type Column } from "@tp/ui";
+import { ArrowLeftIcon, CoverageBadge, DataTable, EmptyState, OpportunityChart, StatusTag, type Column } from "@tp/ui";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { missingLabel, valueKit } from "../../../../components/values";
@@ -64,15 +64,33 @@ export default async function CategoryPage({ params, searchParams }: { params: P
 
       {eligible.length > 0 ? (
         <>
-          <OpportunityMap
-            points={outcomes.flatMap((o) => (o.best?.salesPerMonth && o.best.evaluation.metric !== null ? [{ id: o.id, label: o.title, x: o.best.salesPerMonth, y: o.best.evaluation.metric, href: `/products/${o.id}?${query}&m=${o.best.marketplace}` }] : []))}
+          <OpportunityChart
+            points={outcomes.flatMap((o) =>
+              o.best?.salesPerMonth && o.best.evaluation.metric !== null
+                ? [
+                    {
+                      id: o.id,
+                      label: o.title,
+                      x: o.best.salesPerMonth,
+                      y: o.best.evaluation.metric,
+                      href: `/products/${o.id}?${query}&m=${o.best.marketplace}`,
+                      details: [
+                        [t("col.marketplace"), nameOf(o.best.marketplace)],
+                        [t("col.price"), v.text(o.best.result.salePrice)],
+                        [t("col.landed"), v.text(o.best.result.landed.total)],
+                        [t("col.profit"), v.text(o.best.result.netProfit)],
+                      ] as [string, string][],
+                    },
+                  ]
+                : [],
+            )}
             target={p.target}
             title={t("map.products.title", { metric: t(`metric.${p.metric}`).toLowerCase() })}
             xLabel={t("map.x.products")}
             yLabel={t(`metric.${p.metric}`)}
             hotLabel={t("map.hot")}
-            formatY={(n) => `${formatNumber(n, locale)}x`}
-            pointTitle={(pt) => t("map.point.product", { title: pt.label, sales: formatNumber(pt.x, locale, 0), metric: `${formatNumber(pt.y, locale)}x` })}
+            salesLabel={t("map.sales")}
+            metricLabel={t(`metric.${p.metric}`)}
             locale={locale}
           />
           <DataTable columns={columns} rows={eligible} rowKey={(o) => o.id} caption={cat.name} />

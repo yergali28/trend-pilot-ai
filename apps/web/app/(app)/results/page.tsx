@@ -1,4 +1,4 @@
-import { CoverageBadge, DataTable, EmptyState, OpportunityMap, SourceStatus, StatusTag, formatNumber, type Column } from "@tp/ui";
+import { CoverageBadge, DataTable, EmptyState, OpportunityChart, SourceStatus, StatusTag, formatNumber, type Column } from "@tp/ui";
 import Link from "next/link";
 import { missingLabel } from "../../../components/values";
 import { demoEnabled, evaluateCatalog, loadCatalog, loadSources, parseParams, selectedSources, summarizeCategories, toQuery, type CategorySummary, type ProductOutcome } from "../../../lib/catalog";
@@ -86,15 +86,19 @@ export default async function ResultsPage({ searchParams }: { searchParams: Prom
           <EmptyState title={t("results.noSources.title")} text={t("results.noSources.text")} />
         ) : categories.some((c) => c.eligible > 0) ? (
           <>
-            <OpportunityMap
-              points={categories.flatMap((c) => (c.eligible > 0 && c.demand && c.median !== null ? [{ id: c.id, label: c.name, x: c.demand, y: c.median, weight: c.eligible, href: `/results/${c.id}?${query}` }] : []))}
+            <OpportunityChart
+              points={categories.flatMap((c) =>
+                c.eligible > 0 && c.demand && c.median !== null
+                  ? [{ id: c.id, label: c.name, x: c.demand, y: c.median, weight: c.eligible, href: `/results/${c.id}?${query}`, details: [[t("results.col.eligible"), String(c.eligible)] as [string, string], [t(`results.col.mean.${p.metric}`), num(c.mean)] as [string, string]] }]
+                  : [],
+              )}
               target={p.target}
               title={t("map.categories.title", { metric: t(`metric.${p.metric}`).toLowerCase() })}
               xLabel={t("map.x.categories")}
               yLabel={t(`results.col.median.${p.metric}`)}
               hotLabel={t("map.hot")}
-              formatY={(v) => `${formatNumber(v, locale)}x`}
-              pointTitle={(pt) => t("map.point.category", { title: pt.label, sales: formatNumber(pt.x, locale, 0), metric: `${formatNumber(pt.y, locale)}x`, n: pt.weight ?? 0 })}
+              salesLabel={t("map.sales")}
+              metricLabel={t(`results.col.median.${p.metric}`)}
               locale={locale}
             />
             <p className="text-sm text-muted">{t("map.legend", { target: `${formatNumber(p.target, locale)}x` })}</p>

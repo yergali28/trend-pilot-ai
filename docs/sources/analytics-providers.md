@@ -23,3 +23,12 @@
 3. Решение по правилу 7 CLAUDE.md не нужно: провайдер отдаёт данные по своему API, сбор страниц мы не делаем.
 
 Источники: https://mpstats.io/integrations/docs/description/, https://mpstats.io/tariffs, https://salesfinder-docs.vercel.app/mpstats/api/examples, https://practicum.yandex.ru/blog/moneyplace-servis-analitiki-marketpleysov/, https://kontur.ru/Files/Modules/LandingPage/6489/price_moneyplace.pdf, https://skillbox.ru/media/marketing/servisy-analitiki-marketpleysov-izuchaem-i-sravnivaem-pyat-populyarnykh-platform/, https://sellerblog.ru/alternativy-mpstats/
+
+## Адаптер MPSTATS (готов, ждёт токена)
+
+`packages/adapters/mpstats`: `POST https://mpstats.io/api/analytics/v1/wb/category/items?path=<категория>&d1&d2`, топ-100 по выручке за 30 дней, заголовок `X-Mpstats-TOKEN`. Каждая карточка даёт запись `listing`: товар WB (фото, бренд, ниша по предмету WB), цену, спрос, выручку, рейтинг, отзывы, остаток и дневные ряды продаж, цен и остатков (`listing_stats`). Раздел «Рынок WB» (`/market`) показывает ниши, карточки и динамику.
+
+Как включить реальные данные:
+1. `MPSTATS_TOKEN=…` в `apps/worker/.env.local`.
+2. Загрузить категорию живьём: `pnpm --filter @tp/worker ingest:once mpstats "<Категория/Подкатегория>" --live` (одна категория = один запрос; сырой ответ сохраняется в `raw_responses`). Первый ответ сверить со схемой адаптера.
+3. Пока токена нет, раздел работает на демо-записи `fixtures/mpstats/catalog.json` (synthetic). Поля схемы взяты из примера ответа в документации — `TODO(mpstats)`: сузить по первому реальному ответу.
