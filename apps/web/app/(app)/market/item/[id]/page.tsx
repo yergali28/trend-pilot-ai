@@ -2,7 +2,7 @@ import { ArrowLeftIcon, StatusTag, TrendChart } from "@tp/ui";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Kpis, marketKit } from "../../../../../components/market";
-import { loadMarket, periodDays } from "../../../../../lib/market";
+import { MARKET_NAMES, loadMarket, periodDays, sourceLabel } from "../../../../../lib/market";
 import { prefs } from "../../../../../lib/prefs";
 import { requireUser } from "../../../../../lib/session";
 
@@ -19,13 +19,15 @@ export default async function MarketItemPage({ params }: { params: Promise<{ id:
   const date = (d: string) => new Date(d).toLocaleDateString(locale === "en" ? "en-US" : "ru-RU");
   const daily = item.daily ?? {};
   const days = Math.max(daily.sales?.length ?? 0, daily.price?.length ?? 0);
-  const unitQuery = "sell=wildberries&buy=all&country=RU&cur=RUB&x=3&metric=priceToCost&m=wildberries";
+  const market = MARKET_NAMES[item.marketplace as keyof typeof MARKET_NAMES] ?? item.marketplace;
+  const kz = item.marketplace === "kaspi";
+  const unitQuery = `sell=${item.marketplace}&buy=all&country=${kz ? "KZ" : "RU"}&cur=${kz ? "KZT" : "RUB"}&x=3&metric=priceToCost&m=${item.marketplace}`;
 
   return (
     <div className="flex flex-col gap-8">
-      <Link href={niche ? `/market/${niche.id}` : "/market"} className="inline-flex items-center gap-1 text-sm font-medium text-action-soft-ink underline-offset-2 hover:underline">
+      <Link href={niche ? `/market/${niche.id}` : `/market?mp=${item.marketplace}`} className="inline-flex items-center gap-1 text-sm font-medium text-action-soft-ink underline-offset-2 hover:underline">
         <ArrowLeftIcon className="size-3.5" />
-        {niche ? niche.name : t("market.back")}
+        {niche ? niche.name : t("market.back", { market })}
       </Link>
 
       <div className="grid gap-6 md:grid-cols-[minmax(0,280px)_1fr]">
@@ -57,11 +59,11 @@ export default async function MarketItemPage({ params }: { params: Promise<{ id:
             ]}
           />
           <p className="text-sm text-muted">
-            {t("market.provenance", { source: t(`market.source.${item.sourceId === "mpstats" ? "mpstats" : "other"}`), from: date(item.periodStart), to: date(item.periodEnd), fetched: date(item.fetchedAt) })}
+            {t("market.provenance", { source: sourceLabel(item.sourceId, t), from: date(item.periodStart), to: date(item.periodEnd), fetched: date(item.fetchedAt) })}
           </p>
           {item.url ? (
             <a href={item.url} target="_blank" rel="noreferrer" className="text-base font-medium text-action-soft-ink underline-offset-2 hover:underline">
-              {t("market.openWb")}
+              {t("market.open", { market })}
             </a>
           ) : null}
         </div>

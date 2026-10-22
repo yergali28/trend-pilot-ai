@@ -32,3 +32,17 @@
 1. `MPSTATS_TOKEN=…` в `apps/worker/.env.local`.
 2. Загрузить категорию живьём: `pnpm --filter @tp/worker ingest:once mpstats "<Категория/Подкатегория>" --live` (одна категория = один запрос; сырой ответ сохраняется в `raw_responses`). Первый ответ сверить со схемой адаптера.
 3. Пока токена нет, раздел работает на демо-записи `fixtures/mpstats/catalog.json` (synthetic). Поля схемы взяты из примера ответа в документации — `TODO(mpstats)`: сузить по первому реальному ответу.
+
+## Ozon через MPSTATS (22.10.2026)
+
+Тот же токен и метод с сегментом `oz`: `POST https://mpstats.io/api/analytics/v1/oz/category/items?path=<категория Ozon>&d1&d2`, источник `mpstats-ozon`. Пути категорий — из `GET https://mpstats.io/api/oz/get/categories` (например «Дом и сад/Текстиль»). Сверено с реальным ответом: ниша — `niche`/`niche_id`, продажи по дням — `graph`, есть цена по карте Ozon (`ozon_card_price`). Комиссий Ozon и габаритов упаковки в ответе нет. Период — не больше последних 30 дней, иначе 403 «В бесплатной версии период отчёта ограничен».
+
+Загрузка: `pnpm --filter @tp/worker ingest:once mpstats-ozon "<Категория/Подкатегория>" --live`.
+
+## Kaspi через Apify (22.10.2026)
+
+В MPSTATS Kaspi нет (запрос `…/v1/kaspi/category/items` отвечает пустым телом, как для несуществующей площадки). Рынок Kaspi собирается актором Apify `piotrv1001/kaspi-listings-scraper` (источник `apify-kaspi`, токен `APIFY_TOKEN`), сбор публичных страниц — решение владельца по правилу 7 от 22.10.2026. Цена актора: 0,001 $ за товар в выдаче.
+
+Поля (сверены с реальным ответом): `id`, `title`, `url`, `image`, `brand`, `price` (KZT, город Алматы), `rating`, `reviewsCount`, `inStock`, `category` (путь массивом), `categoryId`. Kaspi не показывает продажи, поэтому продаж и выручки нет (no_data); в разделе «Рынок» ниши и лидеры Kaspi упорядочены по числу отзывов.
+
+Загрузка: `pnpm --filter @tp/worker ingest:once apify-kaspi "<поисковая фраза или https://kaspi.kz/shop/c/…>" --live` (до 100 товаров за запуск).

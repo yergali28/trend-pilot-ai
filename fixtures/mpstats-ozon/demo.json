@@ -1,0 +1,19 @@
+{
+  "recordedAt": "2026-10-22T00:00:00Z",
+  "synthetic": true,
+  "note": "Синтетическая запись в формате MPSTATS Analytics API Ozon (POST /oz/category/items), поля сверены с реальным ответом 22.10.2026. Не рыночные данные.",
+  "body": {
+    "path": "Синтетика/Органайзеры",
+    "d1": "2026-09-22",
+    "d2": "2026-10-21",
+    "response": {
+      "startRow": 0,
+      "endRow": 100,
+      "total": 2,
+      "data": [
+        { "id": 201, "name": "Синтетический органайзер Ozon", "niche_id": 1, "niche": "Синтетика/Органайзеры", "brand": "Синтетика", "seller": "Синтетический продавец", "final_price": 610, "sales": 280, "revenue": 170800, "rating": 4.7, "comments": 90, "balance": 400, "graph": [9, 10, 9], "price_graph": [610, 610, 610], "stocks_graph": [420, 410, 400] },
+        { "id": 202, "name": "Синтетический товар без цены", "niche_id": 1, "niche": "Синтетика/Органайзеры", "final_price": null, "sales": 3 }
+      ]
+    }
+  }
+}

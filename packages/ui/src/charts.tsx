@@ -285,7 +285,8 @@ export interface RankChartProps {
   title: string;
   items: RankItem[];
   valueLabel: string;
-  currency: string;
+  /** Валюта суммы; без неё значение — количество (например, число отзывов). */
+  currency?: string;
   locale: Locale;
 }
 
@@ -298,7 +299,8 @@ export function RankChart({ title, items, valueLabel, currency, locale }: RankCh
         const href = (e.data as { href?: string } | undefined)?.href;
         if (href) window.location.assign(href);
       });
-      const money = (v: number) => formatMoney(v, currency, locale);
+      const money = (v: number) => (currency ? formatMoney(v, currency, locale) : formatNumber(v, locale, 0));
+      const unit = currency ? ` ${({ RUB: "₽", KZT: "₸" } as Record<string, string>)[currency] ?? currency}` : "";
       const compact = (v: number) => new Intl.NumberFormat(locale === "en" ? "en-US" : "ru-RU", { notation: "compact", maximumFractionDigits: 1 }).format(v);
       return {
         textStyle: { fontFamily: t.font },
@@ -320,7 +322,7 @@ export function RankChart({ title, items, valueLabel, currency, locale }: RankCh
             cursor: "pointer",
             barMaxWidth: 22,
             data: rows.map((r, i) => ({ ...r, value: r.value, itemStyle: { color: i >= rows.length - 3 ? t.hot : t.ok, borderRadius: [0, 4, 4, 0] } })),
-            label: { show: true, position: "right", color: t.muted, fontSize: 12, formatter: (e: { value: number }) => `${compact(e.value)} ${currency === "RUB" ? "₽" : currency}` },
+            label: { show: true, position: "right", color: t.muted, fontSize: 12, formatter: (e: { value: number }) => `${compact(e.value)}${unit}` },
             emphasis: { itemStyle: { color: t.action } },
           },
         ],
