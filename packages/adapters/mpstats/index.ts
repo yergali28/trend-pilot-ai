@@ -5,7 +5,7 @@ import { requestJson } from "../core/http";
 // MPSTATS Analytics API, Wildberries (https://mpstats.io/integrations/analytics-wb/, проверено 22.10.2026):
 // POST https://mpstats.io/api/analytics/v1/wb/category/items — товары категории за период, заголовок X-Mpstats-TOKEN.
 // Коды: 202 — отчёт готовится (повторить), 401 — токен, 429 — лимит тарифа (Retry-After). Поля — по примеру ответа
-// из документации. TODO(mpstats): сверить с реальным ответом при первой записи (pnpm record mpstats …) и сузить схему.
+// из документации, сверены с реальным ответом 22.10.2026: дневные продажи приходят в sales_graph (в примере документации — graph).
 
 const nums = z.array(z.number().nullable()).optional();
 const Item = z.looseObject({
@@ -25,6 +25,7 @@ const Item = z.looseObject({
   comments: z.number().nullable().optional(),
   balance: z.number().nullable().optional(),
   graph: nums,
+  sales_graph: nums,
   price_graph: nums,
   stocks_graph: nums,
 });
@@ -105,7 +106,7 @@ export const mpstats = defineAdapter({
         stock: n(it.balance),
         periodStart: body.d1,
         periodEnd: body.d2,
-        daily: { sales: it.graph ?? [], price: it.price_graph ?? [], stock: it.stocks_graph ?? [] },
+        daily: { sales: it.sales_graph ?? it.graph ?? [], price: it.price_graph ?? [], stock: it.stocks_graph ?? [] },
         method: "provider" as const,
         ...ctx,
       };

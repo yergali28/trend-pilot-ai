@@ -57,7 +57,7 @@ export function Kpis({ items }: { items: { label: string; value: React.ReactNode
       {items.map((i) => (
         <div key={i.label} className="flex flex-col gap-1 rounded-panel border border-line bg-surface px-4 py-3">
           <dt className="text-sm text-subtle">{i.label}</dt>
-          <dd className="text-md font-semibold tabular-nums text-ink [overflow-wrap:anywhere] sm:text-xl">{i.value}</dd>
+          <dd className="text-md font-semibold tabular-nums text-ink [overflow-wrap:anywhere] sm:text-lg">{i.value}</dd>
         </div>
       ))}
     </dl>

@@ -52,20 +52,29 @@ const median = (xs: number[]) => {
 
 // ponytail: читается вся таблица (сотни товаров); на реальных объёмах — представление с последним снимком и пагинация.
 export async function loadMarket(db: SupabaseClient, marketplace = "wildberries") {
+  // PostgREST отдаёт не больше 1000 строк за запрос: читаем страницами.
+  const all = async <R,>(page: (from: number, to: number) => PromiseLike<{ data: R[] | null; error: unknown }>) => {
+    const out: R[] = [];
+    for (let from = 0; ; from += 1000) {
+      const { data, error } = await page(from, from + 999);
+      if (error) throw error;
+      out.push(...(data ?? []));
+      if (!data || data.length < 1000) return out;
+    }
+  };
   const [stats, products, categories, matches] = await Promise.all([
-    db.from("listing_stats").select("product_id, source_id, period_start, period_end, price, currency, sales, revenue, rating, reviews, stock, seller, daily, fetched_at, synthetic").order("fetched_at", { ascending: false }),
-    db.from("products").select("id, external_id, title, url, image_url, brand, category_id, synthetic").eq("source_id", marketplace).eq("kind", "listing"),
-    db.from("categories").select("id, name, synthetic").eq("marketplace_id", marketplace),
-    db.from("matches").select("source_product_id, listing_product_id"),
+    all((a, b) => db.from("listing_stats").select("product_id, source_id, period_start, period_end, price, currency, sales, revenue, rating, reviews, stock, seller, daily, fetched_at, synthetic").order("fetched_at", { ascending: false }).range(a, b)),
+    all((a, b) => db.from("products").select("id, external_id, title, url, image_url, brand, category_id, synthetic").eq("source_id", marketplace).eq("kind", "listing").order("id").range(a, b)),
+    all((a, b) => db.from("categories").select("id, name, synthetic").eq("marketplace_id", marketplace).order("id").range(a, b)),
+    all((a, b) => db.from("matches").select("source_product_id, listing_product_id").order("listing_product_id").range(a, b)),
   ]);
-  for (const r of [stats, products, categories, matches]) if (r.error) throw r.error;
 
-  const latest = new Map<string, NonNullable<typeof stats.data>[number]>();
-  for (const s of stats.data ?? []) if (!latest.has(s.product_id)) latest.set(s.product_id, s);
-  const sourceOf = new Map((matches.data ?? []).map((m) => [m.listing_product_id, m.source_product_id]));
+  const latest = new Map<string, (typeof stats)[number]>();
+  for (const s of stats) if (!latest.has(s.product_id)) latest.set(s.product_id, s);
+  const sourceOf = new Map(matches.map((m) => [m.listing_product_id, m.source_product_id]));
 
   const items: MarketItem[] = [];
-  for (const p of products.data ?? []) {
+  for (const p of products) {
     const s = latest.get(p.id);
     if (!s) continue;
     items.push({
@@ -94,8 +103,11 @@ export async function loadMarket(db: SupabaseClient, marketplace = "wildberries"
     });
   }
   items.sort((a, b) => (b.revenue ?? -1) - (a.revenue ?? -1));
+  // Реальные данные провайдера и демо-синтетика не смешиваются: при наличии реальных синтетика скрыта.
+  const real = items.filter((i) => !i.synthetic);
+  if (real.length > 0) items.splice(0, items.length, ...real);
 
-  const niches: Niche[] = (categories.data ?? [])
+  const niches: Niche[] = categories
     .map((c) => {
       const its = items.filter((i) => i.categoryId === c.id);
       const revenue = its.reduce((s, i) => s + (i.revenue ?? 0), 0);

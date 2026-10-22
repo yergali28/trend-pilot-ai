@@ -396,7 +396,7 @@
   "market.col.medianPrice": "Median price",
   "market.col.rating": "Average rating",
   "market.col.top3": "Top-3 share",
-  "market.legend": "Top-3 share is the niche revenue held by its three largest products: the higher, the harder to enter.",
+  "market.legend": "Niche revenue and sales are totals over the loaded products (top 100 by revenue in each loaded WB category), not the whole niche market. Top-3 share is how much of that revenue the three largest products hold: the higher, the harder to enter.",
   "market.leaders": "Revenue leaders",
   "market.items": "Niche products: {n}",
   "market.back": "WB market",
@@ -415,5 +415,8 @@
   "market.unit.title": "Unit economics",
   "market.unit.matched": "A supplier is matched: purchase, delivery, fees and margin are calculated in the wizard card.",
   "market.unit.open": "Open margin calculation",
-  "market.unit.none": "No supplier found, so no margin: a 1688 or Taobao purchase price is needed. The sourcing provider (Onebound) will supply it once access is enabled."
+  "market.unit.none": "No supplier found, so no margin: a 1688 or Taobao purchase price is needed. The sourcing provider (Onebound) will supply it once access is enabled.",
+  "market.real": "Real data · MPSTATS",
+  "market.showAll": "Show all niches ({n})",
+  "market.showTop": "Show top 30"
 }

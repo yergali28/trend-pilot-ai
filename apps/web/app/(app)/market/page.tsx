@@ -6,7 +6,8 @@ import { loadMarket, type Niche } from "../../../lib/market";
 import { prefs } from "../../../lib/prefs";
 import { requireUser } from "../../../lib/session";
 
-export default async function MarketPage() {
+export default async function MarketPage({ searchParams }: { searchParams: Promise<{ all?: string }> }) {
+  const showAll = (await searchParams).all === "1";
   const { db } = await requireUser("/market");
   const { t, locale } = await prefs();
   const { items, niches } = await loadMarket(db);
@@ -53,7 +54,7 @@ export default async function MarketPage() {
             {t("market.lead", { source: t(`market.source.${latest.sourceId === "mpstats" ? "mpstats" : "other"}`), from: date(latest.periodStart), to: date(latest.periodEnd), fetched: date(latest.fetchedAt) })}
           </p>
         </div>
-        {synthetic && !demoEnabled() ? <StatusTag tone="info">{t("demo.badge")}</StatusTag> : null}
+        {synthetic ? (!demoEnabled() ? <StatusTag tone="info">{t("demo.badge")}</StatusTag> : null) : <span className="text-sm font-medium text-[var(--tp-ok)]">{t("market.real")}</span>}
       </div>
 
       <Kpis
@@ -86,7 +87,12 @@ export default async function MarketPage() {
             ],
           }))}
         />
-        <DataTable columns={columns} rows={niches} rowKey={(n) => n.id} caption={t("market.niches")} />
+        <DataTable columns={columns} rows={showAll ? niches : niches.slice(0, 30)} rowKey={(n) => n.id} caption={t("market.niches")} />
+        {niches.length > 30 ? (
+          <Link href={showAll ? "/market" : "/market?all=1"} className="text-base font-medium text-action-soft-ink underline-offset-2 hover:underline">
+            {showAll ? t("market.showTop") : t("market.showAll", { n: niches.length })}
+          </Link>
+        ) : null}
         <p className="text-sm text-muted">{t("market.legend")}</p>
       </section>
 
