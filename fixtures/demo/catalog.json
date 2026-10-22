@@ -13,6 +13,66 @@
     {
       "id": "sport",
       "name": "Спорт и фитнес"
+    },
+    {
+      "id": "kitchen",
+      "name": "Кухня и посуда"
+    },
+    {
+      "id": "beauty",
+      "name": "Красота и уход"
+    },
+    {
+      "id": "pets",
+      "name": "Товары для животных"
+    },
+    {
+      "id": "toys",
+      "name": "Детские игрушки"
+    },
+    {
+      "id": "auto",
+      "name": "Автотовары"
+    },
+    {
+      "id": "garden",
+      "name": "Сад и дача"
+    },
+    {
+      "id": "office",
+      "name": "Канцелярия"
+    },
+    {
+      "id": "light",
+      "name": "Освещение"
+    },
+    {
+      "id": "bath",
+      "name": "Ванная"
+    },
+    {
+      "id": "outdoor",
+      "name": "Туризм и кемпинг"
+    },
+    {
+      "id": "mobile",
+      "name": "Мобильные аксессуары"
+    },
+    {
+      "id": "computer",
+      "name": "Компьютерные аксессуары"
+    },
+    {
+      "id": "bags",
+      "name": "Сумки и аксессуары"
+    },
+    {
+      "id": "health",
+      "name": "Здоровье и массаж"
+    },
+    {
+      "id": "tools",
+      "name": "Инструменты"
     }
   ],
   "productCategories": [
@@ -99,6 +159,846 @@
         "mock-2"
       ],
       "category": "home"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g001"
+      ],
+      "category": "kitchen"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g002"
+      ],
+      "category": "kitchen"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g003"
+      ],
+      "category": "kitchen"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g004"
+      ],
+      "category": "kitchen"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g005"
+      ],
+      "category": "kitchen"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g006"
+      ],
+      "category": "kitchen"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g007"
+      ],
+      "category": "kitchen"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g008"
+      ],
+      "category": "kitchen"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g009"
+      ],
+      "category": "beauty"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g010"
+      ],
+      "category": "beauty"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g011"
+      ],
+      "category": "beauty"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g012"
+      ],
+      "category": "beauty"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g013"
+      ],
+      "category": "beauty"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g014"
+      ],
+      "category": "beauty"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g015"
+      ],
+      "category": "beauty"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g016"
+      ],
+      "category": "beauty"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g017"
+      ],
+      "category": "pets"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g018"
+      ],
+      "category": "pets"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g019"
+      ],
+      "category": "pets"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g020"
+      ],
+      "category": "pets"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g021"
+      ],
+      "category": "pets"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g022"
+      ],
+      "category": "pets"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g023"
+      ],
+      "category": "pets"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g024"
+      ],
+      "category": "pets"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g025"
+      ],
+      "category": "toys"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g026"
+      ],
+      "category": "toys"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g027"
+      ],
+      "category": "toys"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g028"
+      ],
+      "category": "toys"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g029"
+      ],
+      "category": "toys"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g030"
+      ],
+      "category": "toys"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g031"
+      ],
+      "category": "toys"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g032"
+      ],
+      "category": "toys"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g033"
+      ],
+      "category": "auto"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g034"
+      ],
+      "category": "auto"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g035"
+      ],
+      "category": "auto"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g036"
+      ],
+      "category": "auto"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g037"
+      ],
+      "category": "auto"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g038"
+      ],
+      "category": "auto"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g039"
+      ],
+      "category": "auto"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g040"
+      ],
+      "category": "auto"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g041"
+      ],
+      "category": "garden"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g042"
+      ],
+      "category": "garden"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g043"
+      ],
+      "category": "garden"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g044"
+      ],
+      "category": "garden"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g045"
+      ],
+      "category": "garden"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g046"
+      ],
+      "category": "garden"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g047"
+      ],
+      "category": "garden"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g048"
+      ],
+      "category": "garden"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g049"
+      ],
+      "category": "office"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g050"
+      ],
+      "category": "office"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g051"
+      ],
+      "category": "office"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g052"
+      ],
+      "category": "office"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g053"
+      ],
+      "category": "office"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g054"
+      ],
+      "category": "office"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g055"
+      ],
+      "category": "office"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g056"
+      ],
+      "category": "office"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g057"
+      ],
+      "category": "light"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g058"
+      ],
+      "category": "light"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g059"
+      ],
+      "category": "light"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g060"
+      ],
+      "category": "light"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g061"
+      ],
+      "category": "light"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g062"
+      ],
+      "category": "light"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g063"
+      ],
+      "category": "light"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g064"
+      ],
+      "category": "light"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g065"
+      ],
+      "category": "bath"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g066"
+      ],
+      "category": "bath"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g067"
+      ],
+      "category": "bath"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g068"
+      ],
+      "category": "bath"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g069"
+      ],
+      "category": "bath"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g070"
+      ],
+      "category": "bath"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g071"
+      ],
+      "category": "bath"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g072"
+      ],
+      "category": "bath"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g073"
+      ],
+      "category": "outdoor"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g074"
+      ],
+      "category": "outdoor"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g075"
+      ],
+      "category": "outdoor"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g076"
+      ],
+      "category": "outdoor"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g077"
+      ],
+      "category": "outdoor"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g078"
+      ],
+      "category": "outdoor"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g079"
+      ],
+      "category": "outdoor"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g080"
+      ],
+      "category": "outdoor"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g081"
+      ],
+      "category": "mobile"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g082"
+      ],
+      "category": "mobile"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g083"
+      ],
+      "category": "mobile"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g084"
+      ],
+      "category": "mobile"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g085"
+      ],
+      "category": "mobile"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g086"
+      ],
+      "category": "mobile"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g087"
+      ],
+      "category": "mobile"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g088"
+      ],
+      "category": "mobile"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g089"
+      ],
+      "category": "computer"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g090"
+      ],
+      "category": "computer"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g091"
+      ],
+      "category": "computer"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g092"
+      ],
+      "category": "computer"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g093"
+      ],
+      "category": "computer"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g094"
+      ],
+      "category": "computer"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g095"
+      ],
+      "category": "computer"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g096"
+      ],
+      "category": "computer"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g097"
+      ],
+      "category": "bags"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g098"
+      ],
+      "category": "bags"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g099"
+      ],
+      "category": "bags"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g100"
+      ],
+      "category": "bags"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g101"
+      ],
+      "category": "bags"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g102"
+      ],
+      "category": "bags"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g103"
+      ],
+      "category": "bags"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g104"
+      ],
+      "category": "bags"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g105"
+      ],
+      "category": "health"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g106"
+      ],
+      "category": "health"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g107"
+      ],
+      "category": "health"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g108"
+      ],
+      "category": "health"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g109"
+      ],
+      "category": "health"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g110"
+      ],
+      "category": "health"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g111"
+      ],
+      "category": "health"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g112"
+      ],
+      "category": "health"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g113"
+      ],
+      "category": "tools"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g114"
+      ],
+      "category": "tools"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g115"
+      ],
+      "category": "tools"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g116"
+      ],
+      "category": "tools"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g117"
+      ],
+      "category": "tools"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g118"
+      ],
+      "category": "tools"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g119"
+      ],
+      "category": "tools"
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g120"
+      ],
+      "category": "tools"
     }
   ],
   "matches": [
@@ -319,6 +1219,3504 @@
       "listing": [
         "ozon",
         "2"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g001"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g001"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g001"
+      ],
+      "listing": [
+        "ozon",
+        "20001"
+      ],
+      "confidence": 0.81
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g001"
+      ],
+      "listing": [
+        "wildberries",
+        "300001"
+      ],
+      "confidence": 0.77
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g002"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g002"
+      ],
+      "confidence": 0.82
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g002"
+      ],
+      "listing": [
+        "wildberries",
+        "300002"
+      ],
+      "confidence": 0.84
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g003"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g003"
+      ],
+      "confidence": 0.89
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g003"
+      ],
+      "listing": [
+        "ozon",
+        "20003"
+      ],
+      "confidence": 0.76
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g003"
+      ],
+      "listing": [
+        "wildberries",
+        "300003"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g004"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g004"
+      ],
+      "confidence": 0.77
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g004"
+      ],
+      "listing": [
+        "ozon",
+        "20004"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g004"
+      ],
+      "listing": [
+        "wildberries",
+        "300004"
+      ],
+      "confidence": 0.81
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g005"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g005"
+      ],
+      "confidence": 0.81
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g006"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g006"
+      ],
+      "confidence": 0.83
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g006"
+      ],
+      "listing": [
+        "ozon",
+        "20006"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g006"
+      ],
+      "listing": [
+        "wildberries",
+        "300006"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g007"
+      ],
+      "listing": [
+        "ozon",
+        "20007"
+      ],
+      "confidence": 0.81
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g007"
+      ],
+      "listing": [
+        "wildberries",
+        "300007"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g008"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g008"
+      ],
+      "confidence": 0.73
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g008"
+      ],
+      "listing": [
+        "ozon",
+        "20008"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g008"
+      ],
+      "listing": [
+        "wildberries",
+        "300008"
+      ],
+      "confidence": 0.72
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g009"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g009"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g009"
+      ],
+      "listing": [
+        "ozon",
+        "20009"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g009"
+      ],
+      "listing": [
+        "wildberries",
+        "300009"
+      ],
+      "confidence": 0.91
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g010"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g010"
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g010"
+      ],
+      "listing": [
+        "ozon",
+        "20010"
+      ],
+      "confidence": 0.91
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g010"
+      ],
+      "listing": [
+        "wildberries",
+        "300010"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g011"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g011"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g011"
+      ],
+      "listing": [
+        "ozon",
+        "20011"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g011"
+      ],
+      "listing": [
+        "wildberries",
+        "300011"
+      ],
+      "confidence": 0.79
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g012"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g012"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g012"
+      ],
+      "listing": [
+        "ozon",
+        "20012"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g012"
+      ],
+      "listing": [
+        "wildberries",
+        "300012"
+      ],
+      "confidence": 0.76
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g013"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g013"
+      ],
+      "confidence": 0.83
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g013"
+      ],
+      "listing": [
+        "ozon",
+        "20013"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g013"
+      ],
+      "listing": [
+        "wildberries",
+        "300013"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g014"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g014"
+      ],
+      "confidence": 0.72
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g014"
+      ],
+      "listing": [
+        "ozon",
+        "20014"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g014"
+      ],
+      "listing": [
+        "wildberries",
+        "300014"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g015"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g015"
+      ],
+      "confidence": 0.81
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g015"
+      ],
+      "listing": [
+        "ozon",
+        "20015"
+      ],
+      "confidence": 0.83
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g015"
+      ],
+      "listing": [
+        "wildberries",
+        "300015"
+      ],
+      "confidence": 0.77
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g016"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g016"
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g016"
+      ],
+      "listing": [
+        "ozon",
+        "20016"
+      ],
+      "confidence": 0.73
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g016"
+      ],
+      "listing": [
+        "wildberries",
+        "300016"
+      ],
+      "confidence": 0.74
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g017"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g017"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g017"
+      ],
+      "listing": [
+        "ozon",
+        "20017"
+      ],
+      "confidence": 0.74
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g017"
+      ],
+      "listing": [
+        "wildberries",
+        "300017"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g018"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g018"
+      ],
+      "confidence": 0.77
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g018"
+      ],
+      "listing": [
+        "ozon",
+        "20018"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g019"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g019"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g019"
+      ],
+      "listing": [
+        "wildberries",
+        "300019"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g020"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g020"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g020"
+      ],
+      "listing": [
+        "ozon",
+        "20020"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g020"
+      ],
+      "listing": [
+        "wildberries",
+        "300020"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g021"
+      ],
+      "listing": [
+        "ozon",
+        "20021"
+      ],
+      "confidence": 0.81
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g021"
+      ],
+      "listing": [
+        "wildberries",
+        "300021"
+      ],
+      "confidence": 0.78
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g022"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g022"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g022"
+      ],
+      "listing": [
+        "ozon",
+        "20022"
+      ],
+      "confidence": 0.91
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g022"
+      ],
+      "listing": [
+        "wildberries",
+        "300022"
+      ],
+      "confidence": 0.78
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g023"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g023"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g023"
+      ],
+      "listing": [
+        "ozon",
+        "20023"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g023"
+      ],
+      "listing": [
+        "wildberries",
+        "300023"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g024"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g024"
+      ],
+      "confidence": 0.84
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g024"
+      ],
+      "listing": [
+        "ozon",
+        "20024"
+      ],
+      "confidence": 0.74
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g024"
+      ],
+      "listing": [
+        "wildberries",
+        "300024"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g025"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g025"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g025"
+      ],
+      "listing": [
+        "ozon",
+        "20025"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g025"
+      ],
+      "listing": [
+        "wildberries",
+        "300025"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g026"
+      ],
+      "listing": [
+        "ozon",
+        "20026"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g026"
+      ],
+      "listing": [
+        "wildberries",
+        "300026"
+      ],
+      "confidence": 0.91
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g027"
+      ],
+      "listing": [
+        "ozon",
+        "20027"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g027"
+      ],
+      "listing": [
+        "wildberries",
+        "300027"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g028"
+      ],
+      "listing": [
+        "ozon",
+        "20028"
+      ],
+      "confidence": 0.79
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g028"
+      ],
+      "listing": [
+        "wildberries",
+        "300028"
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g029"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g029"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g029"
+      ],
+      "listing": [
+        "ozon",
+        "20029"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g029"
+      ],
+      "listing": [
+        "wildberries",
+        "300029"
+      ],
+      "confidence": 0.82
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g030"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g030"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g030"
+      ],
+      "listing": [
+        "ozon",
+        "20030"
+      ],
+      "confidence": 0.77
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g031"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g031"
+      ],
+      "confidence": 0.81
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g031"
+      ],
+      "listing": [
+        "ozon",
+        "20031"
+      ],
+      "confidence": 0.83
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g031"
+      ],
+      "listing": [
+        "wildberries",
+        "300031"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g032"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g032"
+      ],
+      "confidence": 0.77
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g032"
+      ],
+      "listing": [
+        "ozon",
+        "20032"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g032"
+      ],
+      "listing": [
+        "wildberries",
+        "300032"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g033"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g033"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g033"
+      ],
+      "listing": [
+        "ozon",
+        "20033"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g033"
+      ],
+      "listing": [
+        "wildberries",
+        "300033"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g034"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g034"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g034"
+      ],
+      "listing": [
+        "ozon",
+        "20034"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g034"
+      ],
+      "listing": [
+        "wildberries",
+        "300034"
+      ],
+      "confidence": 0.83
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g035"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g035"
+      ],
+      "confidence": 0.77
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g035"
+      ],
+      "listing": [
+        "ozon",
+        "20035"
+      ],
+      "confidence": 0.82
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g036"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g036"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g036"
+      ],
+      "listing": [
+        "ozon",
+        "20036"
+      ],
+      "confidence": 0.87
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g036"
+      ],
+      "listing": [
+        "wildberries",
+        "300036"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g037"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g037"
+      ],
+      "confidence": 0.76
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g037"
+      ],
+      "listing": [
+        "ozon",
+        "20037"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g037"
+      ],
+      "listing": [
+        "wildberries",
+        "300037"
+      ],
+      "confidence": 0.78
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g038"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g038"
+      ],
+      "confidence": 0.76
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g038"
+      ],
+      "listing": [
+        "ozon",
+        "20038"
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g038"
+      ],
+      "listing": [
+        "wildberries",
+        "300038"
+      ],
+      "confidence": 0.83
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g039"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g039"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g039"
+      ],
+      "listing": [
+        "ozon",
+        "20039"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g039"
+      ],
+      "listing": [
+        "wildberries",
+        "300039"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g040"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g040"
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g041"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g041"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g041"
+      ],
+      "listing": [
+        "ozon",
+        "20041"
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g041"
+      ],
+      "listing": [
+        "wildberries",
+        "300041"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g042"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g042"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g042"
+      ],
+      "listing": [
+        "ozon",
+        "20042"
+      ],
+      "confidence": 0.74
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g042"
+      ],
+      "listing": [
+        "wildberries",
+        "300042"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g043"
+      ],
+      "listing": [
+        "ozon",
+        "20043"
+      ],
+      "confidence": 0.74
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g043"
+      ],
+      "listing": [
+        "wildberries",
+        "300043"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g044"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g044"
+      ],
+      "confidence": 0.81
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g044"
+      ],
+      "listing": [
+        "ozon",
+        "20044"
+      ],
+      "confidence": 0.89
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g044"
+      ],
+      "listing": [
+        "wildberries",
+        "300044"
+      ],
+      "confidence": 0.78
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g045"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g045"
+      ],
+      "confidence": 0.82
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g045"
+      ],
+      "listing": [
+        "ozon",
+        "20045"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g045"
+      ],
+      "listing": [
+        "wildberries",
+        "300045"
+      ],
+      "confidence": 0.79
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g046"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g046"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g046"
+      ],
+      "listing": [
+        "ozon",
+        "20046"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g046"
+      ],
+      "listing": [
+        "wildberries",
+        "300046"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g047"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g047"
+      ],
+      "confidence": 0.76
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g047"
+      ],
+      "listing": [
+        "ozon",
+        "20047"
+      ],
+      "confidence": 0.82
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g047"
+      ],
+      "listing": [
+        "wildberries",
+        "300047"
+      ],
+      "confidence": 0.73
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g048"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g048"
+      ],
+      "confidence": 0.82
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g048"
+      ],
+      "listing": [
+        "ozon",
+        "20048"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g048"
+      ],
+      "listing": [
+        "wildberries",
+        "300048"
+      ],
+      "confidence": 0.91
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g049"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g049"
+      ],
+      "confidence": 0.81
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g049"
+      ],
+      "listing": [
+        "ozon",
+        "20049"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g049"
+      ],
+      "listing": [
+        "wildberries",
+        "300049"
+      ],
+      "confidence": 0.81
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g050"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g050"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g050"
+      ],
+      "listing": [
+        "ozon",
+        "20050"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g050"
+      ],
+      "listing": [
+        "wildberries",
+        "300050"
+      ],
+      "confidence": 0.72
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g051"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g051"
+      ],
+      "confidence": 0.74
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g051"
+      ],
+      "listing": [
+        "ozon",
+        "20051"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g051"
+      ],
+      "listing": [
+        "wildberries",
+        "300051"
+      ],
+      "confidence": 0.77
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g052"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g052"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g052"
+      ],
+      "listing": [
+        "ozon",
+        "20052"
+      ],
+      "confidence": 0.76
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g052"
+      ],
+      "listing": [
+        "wildberries",
+        "300052"
+      ],
+      "confidence": 0.84
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g053"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g053"
+      ],
+      "confidence": 0.89
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g053"
+      ],
+      "listing": [
+        "ozon",
+        "20053"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g053"
+      ],
+      "listing": [
+        "wildberries",
+        "300053"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g054"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g054"
+      ],
+      "confidence": 0.84
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g054"
+      ],
+      "listing": [
+        "wildberries",
+        "300054"
+      ],
+      "confidence": 0.84
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g055"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g055"
+      ],
+      "confidence": 0.76
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g055"
+      ],
+      "listing": [
+        "ozon",
+        "20055"
+      ],
+      "confidence": 0.73
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g055"
+      ],
+      "listing": [
+        "wildberries",
+        "300055"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g056"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g056"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g057"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g057"
+      ],
+      "confidence": 0.77
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g057"
+      ],
+      "listing": [
+        "ozon",
+        "20057"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g058"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g058"
+      ],
+      "confidence": 0.78
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g058"
+      ],
+      "listing": [
+        "ozon",
+        "20058"
+      ],
+      "confidence": 0.84
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g058"
+      ],
+      "listing": [
+        "wildberries",
+        "300058"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g059"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g059"
+      ],
+      "confidence": 0.81
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g059"
+      ],
+      "listing": [
+        "ozon",
+        "20059"
+      ],
+      "confidence": 0.89
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g059"
+      ],
+      "listing": [
+        "wildberries",
+        "300059"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g060"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g060"
+      ],
+      "confidence": 0.79
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g060"
+      ],
+      "listing": [
+        "ozon",
+        "20060"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g061"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g061"
+      ],
+      "confidence": 0.83
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g061"
+      ],
+      "listing": [
+        "ozon",
+        "20061"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g061"
+      ],
+      "listing": [
+        "wildberries",
+        "300061"
+      ],
+      "confidence": 0.74
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g062"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g062"
+      ],
+      "confidence": 0.73
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g062"
+      ],
+      "listing": [
+        "ozon",
+        "20062"
+      ],
+      "confidence": 0.72
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g062"
+      ],
+      "listing": [
+        "wildberries",
+        "300062"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g063"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g063"
+      ],
+      "confidence": 0.83
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g064"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g064"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g064"
+      ],
+      "listing": [
+        "ozon",
+        "20064"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g064"
+      ],
+      "listing": [
+        "wildberries",
+        "300064"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g065"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g065"
+      ],
+      "confidence": 0.84
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g065"
+      ],
+      "listing": [
+        "ozon",
+        "20065"
+      ],
+      "confidence": 0.84
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g065"
+      ],
+      "listing": [
+        "wildberries",
+        "300065"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g066"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g066"
+      ],
+      "confidence": 0.76
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g066"
+      ],
+      "listing": [
+        "ozon",
+        "20066"
+      ],
+      "confidence": 0.76
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g066"
+      ],
+      "listing": [
+        "wildberries",
+        "300066"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g067"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g067"
+      ],
+      "confidence": 0.91
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g067"
+      ],
+      "listing": [
+        "ozon",
+        "20067"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g068"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g068"
+      ],
+      "confidence": 0.81
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g068"
+      ],
+      "listing": [
+        "ozon",
+        "20068"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g068"
+      ],
+      "listing": [
+        "wildberries",
+        "300068"
+      ],
+      "confidence": 0.78
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g069"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g069"
+      ],
+      "confidence": 0.73
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g069"
+      ],
+      "listing": [
+        "ozon",
+        "20069"
+      ],
+      "confidence": 0.81
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g069"
+      ],
+      "listing": [
+        "wildberries",
+        "300069"
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g070"
+      ],
+      "listing": [
+        "ozon",
+        "20070"
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g070"
+      ],
+      "listing": [
+        "wildberries",
+        "300070"
+      ],
+      "confidence": 0.83
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g071"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g071"
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g071"
+      ],
+      "listing": [
+        "ozon",
+        "20071"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g071"
+      ],
+      "listing": [
+        "wildberries",
+        "300071"
+      ],
+      "confidence": 0.87
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g072"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g072"
+      ],
+      "confidence": 0.81
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g072"
+      ],
+      "listing": [
+        "ozon",
+        "20072"
+      ],
+      "confidence": 0.87
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g072"
+      ],
+      "listing": [
+        "wildberries",
+        "300072"
+      ],
+      "confidence": 0.79
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g073"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g073"
+      ],
+      "confidence": 0.87
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g073"
+      ],
+      "listing": [
+        "ozon",
+        "20073"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g073"
+      ],
+      "listing": [
+        "wildberries",
+        "300073"
+      ],
+      "confidence": 0.81
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g074"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g074"
+      ],
+      "confidence": 0.89
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g074"
+      ],
+      "listing": [
+        "ozon",
+        "20074"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g074"
+      ],
+      "listing": [
+        "wildberries",
+        "300074"
+      ],
+      "confidence": 0.73
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g075"
+      ],
+      "listing": [
+        "ozon",
+        "20075"
+      ],
+      "confidence": 0.77
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g075"
+      ],
+      "listing": [
+        "wildberries",
+        "300075"
+      ],
+      "confidence": 0.76
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g076"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g076"
+      ],
+      "confidence": 0.87
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g076"
+      ],
+      "listing": [
+        "ozon",
+        "20076"
+      ],
+      "confidence": 0.77
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g076"
+      ],
+      "listing": [
+        "wildberries",
+        "300076"
+      ],
+      "confidence": 0.87
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g077"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g077"
+      ],
+      "confidence": 0.72
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g077"
+      ],
+      "listing": [
+        "ozon",
+        "20077"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g077"
+      ],
+      "listing": [
+        "wildberries",
+        "300077"
+      ],
+      "confidence": 0.81
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g078"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g078"
+      ],
+      "confidence": 0.73
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g078"
+      ],
+      "listing": [
+        "ozon",
+        "20078"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g078"
+      ],
+      "listing": [
+        "wildberries",
+        "300078"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g079"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g079"
+      ],
+      "confidence": 0.89
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g079"
+      ],
+      "listing": [
+        "ozon",
+        "20079"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g079"
+      ],
+      "listing": [
+        "wildberries",
+        "300079"
+      ],
+      "confidence": 0.79
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g080"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g080"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g080"
+      ],
+      "listing": [
+        "ozon",
+        "20080"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g080"
+      ],
+      "listing": [
+        "wildberries",
+        "300080"
+      ],
+      "confidence": 0.84
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g081"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g081"
+      ],
+      "confidence": 0.77
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g081"
+      ],
+      "listing": [
+        "ozon",
+        "20081"
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g081"
+      ],
+      "listing": [
+        "wildberries",
+        "300081"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g082"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g082"
+      ],
+      "confidence": 0.79
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g082"
+      ],
+      "listing": [
+        "ozon",
+        "20082"
+      ],
+      "confidence": 0.89
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g082"
+      ],
+      "listing": [
+        "wildberries",
+        "300082"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g083"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g083"
+      ],
+      "confidence": 0.91
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g083"
+      ],
+      "listing": [
+        "wildberries",
+        "300083"
+      ],
+      "confidence": 0.77
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g084"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g084"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g084"
+      ],
+      "listing": [
+        "ozon",
+        "20084"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g084"
+      ],
+      "listing": [
+        "wildberries",
+        "300084"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g085"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g085"
+      ],
+      "confidence": 0.73
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g085"
+      ],
+      "listing": [
+        "ozon",
+        "20085"
+      ],
+      "confidence": 0.82
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g085"
+      ],
+      "listing": [
+        "wildberries",
+        "300085"
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g086"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g086"
+      ],
+      "confidence": 0.83
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g086"
+      ],
+      "listing": [
+        "ozon",
+        "20086"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g086"
+      ],
+      "listing": [
+        "wildberries",
+        "300086"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g087"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g087"
+      ],
+      "confidence": 0.79
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g087"
+      ],
+      "listing": [
+        "ozon",
+        "20087"
+      ],
+      "confidence": 0.82
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g087"
+      ],
+      "listing": [
+        "wildberries",
+        "300087"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g088"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g088"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g088"
+      ],
+      "listing": [
+        "ozon",
+        "20088"
+      ],
+      "confidence": 0.79
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g088"
+      ],
+      "listing": [
+        "wildberries",
+        "300088"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g089"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g089"
+      ],
+      "confidence": 0.89
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g089"
+      ],
+      "listing": [
+        "wildberries",
+        "300089"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g090"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g090"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g090"
+      ],
+      "listing": [
+        "ozon",
+        "20090"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g090"
+      ],
+      "listing": [
+        "wildberries",
+        "300090"
+      ],
+      "confidence": 0.91
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g091"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g091"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g091"
+      ],
+      "listing": [
+        "ozon",
+        "20091"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g091"
+      ],
+      "listing": [
+        "wildberries",
+        "300091"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g092"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g092"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g092"
+      ],
+      "listing": [
+        "ozon",
+        "20092"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g092"
+      ],
+      "listing": [
+        "wildberries",
+        "300092"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g093"
+      ],
+      "listing": [
+        "ozon",
+        "20093"
+      ],
+      "confidence": 0.81
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g093"
+      ],
+      "listing": [
+        "wildberries",
+        "300093"
+      ],
+      "confidence": 0.83
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g094"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g094"
+      ],
+      "confidence": 0.91
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g094"
+      ],
+      "listing": [
+        "ozon",
+        "20094"
+      ],
+      "confidence": 0.77
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g094"
+      ],
+      "listing": [
+        "wildberries",
+        "300094"
+      ],
+      "confidence": 0.73
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g095"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g095"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g095"
+      ],
+      "listing": [
+        "wildberries",
+        "300095"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g096"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g096"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g096"
+      ],
+      "listing": [
+        "ozon",
+        "20096"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g096"
+      ],
+      "listing": [
+        "wildberries",
+        "300096"
+      ],
+      "confidence": 0.74
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g097"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g097"
+      ],
+      "confidence": 0.83
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g097"
+      ],
+      "listing": [
+        "wildberries",
+        "300097"
+      ],
+      "confidence": 0.72
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g098"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g098"
+      ],
+      "confidence": 0.84
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g098"
+      ],
+      "listing": [
+        "ozon",
+        "20098"
+      ],
+      "confidence": 0.78
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g098"
+      ],
+      "listing": [
+        "wildberries",
+        "300098"
+      ],
+      "confidence": 0.79
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g099"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g099"
+      ],
+      "confidence": 0.83
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g099"
+      ],
+      "listing": [
+        "ozon",
+        "20099"
+      ],
+      "confidence": 0.72
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g100"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g100"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g100"
+      ],
+      "listing": [
+        "ozon",
+        "20100"
+      ],
+      "confidence": 0.73
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g101"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g101"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g101"
+      ],
+      "listing": [
+        "ozon",
+        "20101"
+      ],
+      "confidence": 0.83
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g101"
+      ],
+      "listing": [
+        "wildberries",
+        "300101"
+      ],
+      "confidence": 0.97
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g102"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g102"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g102"
+      ],
+      "listing": [
+        "ozon",
+        "20102"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g102"
+      ],
+      "listing": [
+        "wildberries",
+        "300102"
+      ],
+      "confidence": 0.74
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g103"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g103"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g103"
+      ],
+      "listing": [
+        "ozon",
+        "20103"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g103"
+      ],
+      "listing": [
+        "wildberries",
+        "300103"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g104"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g104"
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g104"
+      ],
+      "listing": [
+        "ozon",
+        "20104"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g104"
+      ],
+      "listing": [
+        "wildberries",
+        "300104"
+      ],
+      "confidence": 0.87
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g105"
+      ],
+      "listing": [
+        "ozon",
+        "20105"
+      ],
+      "confidence": 0.74
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g105"
+      ],
+      "listing": [
+        "wildberries",
+        "300105"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g106"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g106"
+      ],
+      "confidence": 0.79
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g106"
+      ],
+      "listing": [
+        "wildberries",
+        "300106"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g107"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g107"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g107"
+      ],
+      "listing": [
+        "ozon",
+        "20107"
+      ],
+      "confidence": 0.83
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g108"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g108"
+      ],
+      "confidence": 0.86
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g108"
+      ],
+      "listing": [
+        "ozon",
+        "20108"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g108"
+      ],
+      "listing": [
+        "wildberries",
+        "300108"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g109"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g109"
+      ],
+      "confidence": 0.82
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g109"
+      ],
+      "listing": [
+        "ozon",
+        "20109"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g109"
+      ],
+      "listing": [
+        "wildberries",
+        "300109"
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g110"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g110"
+      ],
+      "confidence": 0.82
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g110"
+      ],
+      "listing": [
+        "ozon",
+        "20110"
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g110"
+      ],
+      "listing": [
+        "wildberries",
+        "300110"
+      ],
+      "confidence": 0.73
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g111"
+      ],
+      "listing": [
+        "ozon",
+        "20111"
+      ],
+      "confidence": 0.79
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g111"
+      ],
+      "listing": [
+        "wildberries",
+        "300111"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g112"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g112"
+      ],
+      "confidence": 0.85
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g112"
+      ],
+      "listing": [
+        "wildberries",
+        "300112"
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g113"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g113"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g113"
+      ],
+      "listing": [
+        "ozon",
+        "20113"
+      ],
+      "confidence": 0.82
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g113"
+      ],
+      "listing": [
+        "wildberries",
+        "300113"
+      ],
+      "confidence": 0.76
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g114"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g114"
+      ],
+      "confidence": 0.94
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g114"
+      ],
+      "listing": [
+        "ozon",
+        "20114"
+      ],
+      "confidence": 0.8
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g114"
+      ],
+      "listing": [
+        "wildberries",
+        "300114"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g115"
+      ],
+      "listing": [
+        "ozon",
+        "20115"
+      ],
+      "confidence": 0.87
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g116"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g116"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g116"
+      ],
+      "listing": [
+        "wildberries",
+        "300116"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g117"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g117"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g117"
+      ],
+      "listing": [
+        "ozon",
+        "20117"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g117"
+      ],
+      "listing": [
+        "wildberries",
+        "300117"
+      ],
+      "confidence": 0.87
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g118"
+      ],
+      "listing": [
+        "ozon",
+        "20118"
+      ],
+      "confidence": 0.79
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g119"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g119"
+      ],
+      "confidence": 0.89
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g119"
+      ],
+      "listing": [
+        "ozon",
+        "20119"
+      ],
+      "confidence": 0.96
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g119"
+      ],
+      "listing": [
+        "wildberries",
+        "300119"
+      ],
+      "confidence": 0.87
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g120"
+      ],
+      "listing": [
+        "kaspi",
+        "k-g120"
+      ],
+      "confidence": 0.77
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g120"
+      ],
+      "listing": [
+        "ozon",
+        "20120"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "source": [
+        "aliexpress",
+        "a-g120"
+      ],
+      "listing": [
+        "wildberries",
+        "300120"
       ],
       "confidence": 0.8
     }

@@ -32,9 +32,11 @@ export function valueKit(t: T, locale: Locale, currency: string) {
         {formatPercent(v.realistic, locale)}
       </Value>
     );
+  /** Строка для подсказок графика: «≈» у оценки, «нет данных» без значения. */
+  const text = (v: V) => (v.realistic === null ? nd : `${v.status === "estimated" ? "≈ " : ""}${formatMoney(v.realistic, currency, locale)}`);
   const multiple = (value: number | null) => <MultipleBadge value={value} locale={locale} noDataLabel={nd} />;
   const sales = (n: number | null) => (n === null ? <NoData label={nd} /> : <span className="tabular-nums">{t("value.salesPerMonth", { n: formatNumber(n, locale, 0) })}</span>);
-  return { money, profit, percent, multiple, sales, nd, est };
+  return { money, profit, percent, multiple, sales, text, nd, est };
 }
 
 /** Подпись недостающего поля для «Недостаточно данных». */

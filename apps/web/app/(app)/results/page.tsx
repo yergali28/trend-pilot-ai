@@ -1,4 +1,4 @@
-import { CoverageBadge, DataTable, EmptyState, SourceStatus, StatusTag, formatNumber, type Column } from "@tp/ui";
+import { CoverageBadge, DataTable, EmptyState, OpportunityChart, SourceStatus, StatusTag, formatNumber, type Column } from "@tp/ui";
 import Link from "next/link";
 import { missingLabel } from "../../../components/values";
 import { demoEnabled, evaluateCatalog, loadCatalog, loadSources, parseParams, selectedSources, summarizeCategories, toQuery, type CategorySummary, type ProductOutcome } from "../../../lib/catalog";
@@ -85,7 +85,25 @@ export default async function ResultsPage({ searchParams }: { searchParams: Prom
         {sell.selected.length === 0 || buy.selected.length === 0 ? (
           <EmptyState title={t("results.noSources.title")} text={t("results.noSources.text")} />
         ) : categories.some((c) => c.eligible > 0) ? (
-          <DataTable columns={columns} rows={categories.filter((c) => c.eligible > 0)} rowKey={(c) => c.id} caption={t("results.categories")} />
+          <>
+            <OpportunityChart
+              points={categories.flatMap((c) =>
+                c.eligible > 0 && c.demand && c.median !== null
+                  ? [{ id: c.id, label: c.name, x: c.demand, y: c.median, weight: c.eligible, href: `/results/${c.id}?${query}`, details: [[t("results.col.eligible"), String(c.eligible)] as [string, string], [t(`results.col.mean.${p.metric}`), num(c.mean)] as [string, string]] }]
+                  : [],
+              )}
+              target={p.target}
+              title={t("map.categories.title", { metric: t(`metric.${p.metric}`).toLowerCase() })}
+              xLabel={t("map.x.categories")}
+              yLabel={t(`results.col.median.${p.metric}`)}
+              hotLabel={t("map.hot")}
+              salesLabel={t("map.sales")}
+              metricLabel={t(`results.col.median.${p.metric}`)}
+              locale={locale}
+            />
+            <p className="text-sm text-muted">{t("map.legend", { target: `${formatNumber(p.target, locale)}x` })}</p>
+            <DataTable columns={columns} rows={categories.filter((c) => c.eligible > 0)} rowKey={(c) => c.id} caption={t("results.categories")} />
+          </>
         ) : (
           <EmptyState title={t("empty.title")} text={t("empty.text")} />
         )}

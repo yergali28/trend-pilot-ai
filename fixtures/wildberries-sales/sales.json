@@ -1,0 +1,47 @@
+{
+  "recordedAt": "2026-10-22T06:30:48.199Z",
+  "synthetic": false,
+  "note": "Живой ответ источника (только чтение), записан командой record. Оставлены только поля из белого списка, не больше 20 позиций.",
+  "body": {
+    "periodStart": "2026-09-22",
+    "periodEnd": "2026-10-22",
+    "orders": [
+      {
+        "date": "2026-10-19T18:30:42",
+        "nmId": 1933323273,
+        "supplierArticle": "бачок",
+        "subject": "Браслеты",
+        "countryName": "Казахстан",
+        "warehouseName": "Шымкент Асар",
+        "priceWithDisc": 909.57,
+        "finishedPrice": 579.99,
+        "isCancel": false
+      },
+      {
+        "date": "2026-10-20T11:02:30",
+        "nmId": 1933247840,
+        "supplierArticle": "сердечка",
+        "subject": "Браслеты",
+        "countryName": "Казахстан",
+        "warehouseName": "Шымкент Асар",
+        "priceWithDisc": 1050.02,
+        "finishedPrice": 670.69,
+        "isCancel": false
+      }
+    ],
+    "sales": [
+      {
+        "date": "2026-10-21T15:15:51",
+        "nmId": 1933323273,
+        "supplierArticle": "бачок",
+        "subject": "Браслеты",
+        "countryName": "Казахстан",
+        "warehouseName": "Шымкент Асар",
+        "priceWithDisc": 909.57,
+        "finishedPrice": 579.99,
+        "saleID": "S25730951306",
+        "forPay": 709.46
+      }
+    ]
+  }
+}

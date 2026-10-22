@@ -84,12 +84,13 @@ export interface Source {
 export async function loadSources(db: SupabaseClient): Promise<Source[]> {
   const { data, error } = await db
     .from("data_sources")
-    .select("id, role, status, status_reason, mode, last_success_at, checked_at, provides, limitations, marketplaces(name)")
+    .select("id, marketplace_id, role, status, status_reason, mode, last_success_at, checked_at, provides, limitations, marketplaces(name)")
     .order("id");
   if (error) throw error;
   return (data ?? []).map((r) => ({
     id: r.id,
-    name: (r.marketplaces as unknown as { name: string } | null)?.name ?? r.id,
+    // У площадки может быть несколько источников (карточки и продажи WB): второй различаем по id.
+    name: ((m) => (m && r.marketplace_id !== r.id ? `${m} (${r.id})` : (m ?? r.id)))((r.marketplaces as unknown as { name: string } | null)?.name),
     role: r.role,
     status: r.status,
     statusReason: r.status_reason,
@@ -357,6 +358,8 @@ export interface CategorySummary {
   mean: number | null;
   median: number | null;
   covered: number;
+  /** Продаж в месяц по подходящим товарам (на лучшей площадке каждого); null — ни у одного нет спроса. */
+  demand: number | null;
 }
 
 export function summarizeCategories(c: Catalog, outcomes: ProductOutcome[], sellCount: number): CategorySummary[] {
@@ -377,6 +380,7 @@ export function summarizeCategories(c: Catalog, outcomes: ProductOutcome[], sell
         mean: s.mean,
         median: s.median,
         covered: Math.min(coveredMarkets.size, sellCount),
+        demand: eligible.some((o) => o.best!.salesPerMonth !== null) ? eligible.reduce((sum, o) => sum + (o.best!.salesPerMonth ?? 0), 0) : null,
       };
     })
     .sort((a, b) => b.eligible - a.eligible || (b.median ?? 0) - (a.median ?? 0));

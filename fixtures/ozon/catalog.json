@@ -52,6 +52,642 @@
           "name": "Бутылка для воды 750 мл",
           "price": "650",
           "currency_code": "RUB"
+        },
+        {
+          "product_id": 20001,
+          "name": "Силиконовые лопатки, 5 шт.",
+          "price": "3050",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20003,
+          "name": "Тёрка многофункциональная",
+          "price": "4530",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20004,
+          "name": "Органайзер для специй",
+          "price": "3330",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20006,
+          "name": "Формы для льда силиконовые",
+          "price": "5840",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20007,
+          "name": "Нож для овощей спиральный",
+          "price": "4230",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20008,
+          "name": "Мерные ложки, набор",
+          "price": "2480",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20009,
+          "name": "Массажёр для лица роликовый",
+          "price": "1530",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20010,
+          "name": "Набор кистей для макияжа, 12 шт.",
+          "price": "2730",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20011,
+          "name": "Зеркало с подсветкой настольное",
+          "price": "2490",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20012,
+          "name": "Щётка для умывания силиконовая",
+          "price": "3250",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20013,
+          "name": "Бигуди мягкие, 20 шт.",
+          "price": "1980",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20014,
+          "name": "Органайзер для косметики",
+          "price": "2220",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20015,
+          "name": "Пилка электрическая для ногтей",
+          "price": "2450",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20016,
+          "name": "Повязка на голову для умывания",
+          "price": "3410",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20017,
+          "name": "Лежанка для кошки круглая",
+          "price": "3460",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20018,
+          "name": "Когтеточка-столбик",
+          "price": "7110",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20020,
+          "name": "Игрушка-мышь интерактивная",
+          "price": "2630",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20021,
+          "name": "Перчатка для вычёсывания шерсти",
+          "price": "950",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20022,
+          "name": "Шлейка для собак светоотражающая",
+          "price": "1570",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20023,
+          "name": "Поилка-фонтан для кошек",
+          "price": "1970",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20024,
+          "name": "Пакеты для выгула, 300 шт.",
+          "price": "1950",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20025,
+          "name": "Конструктор магнитный, 64 детали",
+          "price": "1290",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20026,
+          "name": "Пазл деревянный для малышей",
+          "price": "2700",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20027,
+          "name": "Мыльные пузыри, генератор",
+          "price": "1680",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20028,
+          "name": "Кинетический песок, 1 кг",
+          "price": "6570",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20029,
+          "name": "Набор для рисования в чемоданчике",
+          "price": "1970",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20030,
+          "name": "Игрушка-антистресс поп-ит",
+          "price": "6970",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20031,
+          "name": "Машинка инерционная",
+          "price": "5580",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20032,
+          "name": "Доска для рисования LCD",
+          "price": "4880",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20033,
+          "name": "Держатель телефона в дефлектор",
+          "price": "3860",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20034,
+          "name": "Органайзер в багажник",
+          "price": "4040",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20035,
+          "name": "Зарядка в прикуриватель 2 USB",
+          "price": "4400",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20036,
+          "name": "Щётка для снега телескопическая",
+          "price": "2270",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20037,
+          "name": "Чехол на руль",
+          "price": "2430",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20038,
+          "name": "Ароматизатор в дефлектор",
+          "price": "3520",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20039,
+          "name": "Компрессор автомобильный мини",
+          "price": "1320",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20041,
+          "name": "Перчатки садовые с когтями",
+          "price": "3430",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20042,
+          "name": "Опрыскиватель ручной 2 л",
+          "price": "2650",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20043,
+          "name": "Секатор садовый",
+          "price": "2750",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20044,
+          "name": "Светильник садовый на солнечной батарее",
+          "price": "4710",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20045,
+          "name": "Капельный полив, набор",
+          "price": "2250",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20046,
+          "name": "Подвязки для растений, 100 шт.",
+          "price": "3800",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20047,
+          "name": "Кашпо подвесное",
+          "price": "2450",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20048,
+          "name": "Семена газона, 1 кг",
+          "price": "3180",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20049,
+          "name": "Ручки гелевые, 12 цветов",
+          "price": "5420",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20050,
+          "name": "Стикеры-закладки, набор",
+          "price": "1310",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20051,
+          "name": "Органайзер настольный",
+          "price": "6430",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20052,
+          "name": "Блокнот на кольцах A5",
+          "price": "820",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20053,
+          "name": "Маркеры для скетчинга, 24 шт.",
+          "price": "2600",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20055,
+          "name": "Степлер с скобами",
+          "price": "1850",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20057,
+          "name": "Лента светодиодная 5 м",
+          "price": "2080",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20058,
+          "name": "Ночник с датчиком движения",
+          "price": "2570",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20059,
+          "name": "Гирлянда-шторка 3×3 м",
+          "price": "2530",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20060,
+          "name": "Лампа-прищепка для чтения",
+          "price": "4330",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20061,
+          "name": "Светильник-проектор звёздное небо",
+          "price": "1480",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20062,
+          "name": "Фонарик налобный",
+          "price": "1050",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20064,
+          "name": "Лампа для селфи кольцевая",
+          "price": "3460",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20065,
+          "name": "Держатель для зубных щёток",
+          "price": "1590",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20066,
+          "name": "Коврик для ванной противоскользящий",
+          "price": "6380",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20067,
+          "name": "Дозатор для мыла сенсорный",
+          "price": "1250",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20068,
+          "name": "Полка угловая без сверления",
+          "price": "3260",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20069,
+          "name": "Шапочка для душа, 3 шт.",
+          "price": "2450",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20070,
+          "name": "Органайзер для душа подвесной",
+          "price": "2100",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20071,
+          "name": "Лейка для душа с фильтром",
+          "price": "3520",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20072,
+          "name": "Крючки самоклеящиеся, 10 шт.",
+          "price": "1830",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20073,
+          "name": "Коврик туристический самонадувающийся",
+          "price": "8110",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20074,
+          "name": "Фонарь кемпинговый",
+          "price": "2400",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20075,
+          "name": "Термокружка 500 мл",
+          "price": "4690",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20076,
+          "name": "Гамак с москитной сеткой",
+          "price": "1120",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20077,
+          "name": "Набор посуды походный",
+          "price": "3660",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20078,
+          "name": "Компас-брелок",
+          "price": "1350",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20079,
+          "name": "Сидушка туристическая",
+          "price": "2660",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20080,
+          "name": "Мультитул складной",
+          "price": "2300",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20081,
+          "name": "Защитное стекло, 3 шт.",
+          "price": "690",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20082,
+          "name": "Кабель USB-C 2 м плетёный",
+          "price": "2560",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20084,
+          "name": "Подставка для планшета",
+          "price": "2640",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20085,
+          "name": "Беспроводная зарядка 15 Вт",
+          "price": "2210",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20086,
+          "name": "Чехол-кошелёк для телефона",
+          "price": "1990",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20087,
+          "name": "Стилус для экрана",
+          "price": "1710",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20088,
+          "name": "Монопод для селфи с пультом",
+          "price": "5410",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20090,
+          "name": "Подставка под монитор",
+          "price": "4630",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20091,
+          "name": "Кабель-органайзер на стол",
+          "price": "4210",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20092,
+          "name": "Мышь беспроводная тихая",
+          "price": "7110",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20093,
+          "name": "Подставка-охлаждение для ноутбука",
+          "price": "2120",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20094,
+          "name": "Клавиатура беспроводная мини",
+          "price": "2630",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20096,
+          "name": "Разветвитель HDMI",
+          "price": "690",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20098,
+          "name": "Поясная сумка спортивная",
+          "price": "3870",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20099,
+          "name": "Кошелёк с RFID-защитой",
+          "price": "4570",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20100,
+          "name": "Органайзер для сумки",
+          "price": "8910",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20101,
+          "name": "Косметичка дорожная",
+          "price": "7130",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20102,
+          "name": "Рюкзак складной",
+          "price": "2660",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20103,
+          "name": "Чехол для паспорта",
+          "price": "1840",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20104,
+          "name": "Сумка-холодильник 10 л",
+          "price": "1710",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20105,
+          "name": "Массажный мяч, 2 шт.",
+          "price": "2400",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20107,
+          "name": "Таблетница на неделю",
+          "price": "4210",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20108,
+          "name": "Массажёр для шеи",
+          "price": "2920",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20109,
+          "name": "Ортопедическая подушка",
+          "price": "5010",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20110,
+          "name": "Корсет для осанки",
+          "price": "1260",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20111,
+          "name": "Эспандер кистевой",
+          "price": "4650",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20113,
+          "name": "Набор отвёрток прецизионных",
+          "price": "1820",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20114,
+          "name": "Уровень лазерный",
+          "price": "6640",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20115,
+          "name": "Рулетка 5 м",
+          "price": "1950",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20117,
+          "name": "Клеевой пистолет",
+          "price": "5780",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20118,
+          "name": "Нож строительный",
+          "price": "4130",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20119,
+          "name": "Скотч двусторонний, 3 шт.",
+          "price": "3480",
+          "currency_code": "RUB"
+        },
+        {
+          "product_id": 20120,
+          "name": "Стяжки кабельные, 200 шт.",
+          "price": "830",
+          "currency_code": "RUB"
         }
       ]
     }

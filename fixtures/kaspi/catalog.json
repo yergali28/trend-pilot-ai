@@ -67,6 +67,862 @@
           "price": 4500,
           "currency": "KZT"
         }
+      },
+      {
+        "id": "k-g001",
+        "attributes": {
+          "name": "Силиконовые лопатки, 5 шт.",
+          "price": 16900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g002",
+        "attributes": {
+          "name": "Контейнеры для еды, 10 шт.",
+          "price": 5700,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g003",
+        "attributes": {
+          "name": "Тёрка многофункциональная",
+          "price": 25200,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g004",
+        "attributes": {
+          "name": "Органайзер для специй",
+          "price": 17300,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g005",
+        "attributes": {
+          "name": "Коврик для сушки посуды",
+          "price": 12200,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g006",
+        "attributes": {
+          "name": "Формы для льда силиконовые",
+          "price": 30800,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g008",
+        "attributes": {
+          "name": "Мерные ложки, набор",
+          "price": 15500,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g009",
+        "attributes": {
+          "name": "Массажёр для лица роликовый",
+          "price": 7900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g010",
+        "attributes": {
+          "name": "Набор кистей для макияжа, 12 шт.",
+          "price": 14400,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g011",
+        "attributes": {
+          "name": "Зеркало с подсветкой настольное",
+          "price": 12900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g012",
+        "attributes": {
+          "name": "Щётка для умывания силиконовая",
+          "price": 19300,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g013",
+        "attributes": {
+          "name": "Бигуди мягкие, 20 шт.",
+          "price": 10700,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g014",
+        "attributes": {
+          "name": "Органайзер для косметики",
+          "price": 13900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g015",
+        "attributes": {
+          "name": "Пилка электрическая для ногтей",
+          "price": 15200,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g016",
+        "attributes": {
+          "name": "Повязка на голову для умывания",
+          "price": 18900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g017",
+        "attributes": {
+          "name": "Лежанка для кошки круглая",
+          "price": 19400,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g018",
+        "attributes": {
+          "name": "Когтеточка-столбик",
+          "price": 41900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g019",
+        "attributes": {
+          "name": "Миска двойная на подставке",
+          "price": 24700,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g020",
+        "attributes": {
+          "name": "Игрушка-мышь интерактивная",
+          "price": 14800,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g022",
+        "attributes": {
+          "name": "Шлейка для собак светоотражающая",
+          "price": 9500,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g023",
+        "attributes": {
+          "name": "Поилка-фонтан для кошек",
+          "price": 10600,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g024",
+        "attributes": {
+          "name": "Пакеты для выгула, 300 шт.",
+          "price": 12400,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g025",
+        "attributes": {
+          "name": "Конструктор магнитный, 64 детали",
+          "price": 7600,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g029",
+        "attributes": {
+          "name": "Набор для рисования в чемоданчике",
+          "price": 11300,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g030",
+        "attributes": {
+          "name": "Игрушка-антистресс поп-ит",
+          "price": 36600,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g031",
+        "attributes": {
+          "name": "Машинка инерционная",
+          "price": 33800,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g032",
+        "attributes": {
+          "name": "Доска для рисования LCD",
+          "price": 26200,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g033",
+        "attributes": {
+          "name": "Держатель телефона в дефлектор",
+          "price": 21700,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g034",
+        "attributes": {
+          "name": "Органайзер в багажник",
+          "price": 21200,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g035",
+        "attributes": {
+          "name": "Зарядка в прикуриватель 2 USB",
+          "price": 24800,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g036",
+        "attributes": {
+          "name": "Щётка для снега телескопическая",
+          "price": 13200,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g037",
+        "attributes": {
+          "name": "Чехол на руль",
+          "price": 13900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g038",
+        "attributes": {
+          "name": "Ароматизатор в дефлектор",
+          "price": 21300,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g039",
+        "attributes": {
+          "name": "Компрессор автомобильный мини",
+          "price": 7800,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g040",
+        "attributes": {
+          "name": "Коврик противоскользящий на панель",
+          "price": 25100,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g041",
+        "attributes": {
+          "name": "Перчатки садовые с когтями",
+          "price": 21500,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g042",
+        "attributes": {
+          "name": "Опрыскиватель ручной 2 л",
+          "price": 16000,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g044",
+        "attributes": {
+          "name": "Светильник садовый на солнечной батарее",
+          "price": 26600,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g045",
+        "attributes": {
+          "name": "Капельный полив, набор",
+          "price": 12700,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g046",
+        "attributes": {
+          "name": "Подвязки для растений, 100 шт.",
+          "price": 19800,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g047",
+        "attributes": {
+          "name": "Кашпо подвесное",
+          "price": 12700,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g048",
+        "attributes": {
+          "name": "Семена газона, 1 кг",
+          "price": 18000,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g049",
+        "attributes": {
+          "name": "Ручки гелевые, 12 цветов",
+          "price": 30500,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g050",
+        "attributes": {
+          "name": "Стикеры-закладки, набор",
+          "price": 6900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g051",
+        "attributes": {
+          "name": "Органайзер настольный",
+          "price": 33800,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g052",
+        "attributes": {
+          "name": "Блокнот на кольцах A5",
+          "price": 4600,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g053",
+        "attributes": {
+          "name": "Маркеры для скетчинга, 24 шт.",
+          "price": 13800,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g054",
+        "attributes": {
+          "name": "Подставка для ноутбука",
+          "price": 49800,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g055",
+        "attributes": {
+          "name": "Степлер с скобами",
+          "price": 9500,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g056",
+        "attributes": {
+          "name": "Папка-конверт, 10 шт.",
+          "price": 25200,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g057",
+        "attributes": {
+          "name": "Лента светодиодная 5 м",
+          "price": 11900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g058",
+        "attributes": {
+          "name": "Ночник с датчиком движения",
+          "price": 15100,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g059",
+        "attributes": {
+          "name": "Гирлянда-шторка 3×3 м",
+          "price": 14000,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g060",
+        "attributes": {
+          "name": "Лампа-прищепка для чтения",
+          "price": 23100,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g061",
+        "attributes": {
+          "name": "Светильник-проектор звёздное небо",
+          "price": 8900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g062",
+        "attributes": {
+          "name": "Фонарик налобный",
+          "price": 6300,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g063",
+        "attributes": {
+          "name": "Свечи светодиодные, 6 шт.",
+          "price": 16400,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g064",
+        "attributes": {
+          "name": "Лампа для селфи кольцевая",
+          "price": 17600,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g065",
+        "attributes": {
+          "name": "Держатель для зубных щёток",
+          "price": 9600,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g066",
+        "attributes": {
+          "name": "Коврик для ванной противоскользящий",
+          "price": 35200,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g067",
+        "attributes": {
+          "name": "Дозатор для мыла сенсорный",
+          "price": 6800,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g068",
+        "attributes": {
+          "name": "Полка угловая без сверления",
+          "price": 16700,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g069",
+        "attributes": {
+          "name": "Шапочка для душа, 3 шт.",
+          "price": 13500,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g071",
+        "attributes": {
+          "name": "Лейка для душа с фильтром",
+          "price": 18900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g072",
+        "attributes": {
+          "name": "Крючки самоклеящиеся, 10 шт.",
+          "price": 9300,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g073",
+        "attributes": {
+          "name": "Коврик туристический самонадувающийся",
+          "price": 44300,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g074",
+        "attributes": {
+          "name": "Фонарь кемпинговый",
+          "price": 12600,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g076",
+        "attributes": {
+          "name": "Гамак с москитной сеткой",
+          "price": 5800,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g077",
+        "attributes": {
+          "name": "Набор посуды походный",
+          "price": 21800,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g078",
+        "attributes": {
+          "name": "Компас-брелок",
+          "price": 7500,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g079",
+        "attributes": {
+          "name": "Сидушка туристическая",
+          "price": 14900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g080",
+        "attributes": {
+          "name": "Мультитул складной",
+          "price": 12300,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g081",
+        "attributes": {
+          "name": "Защитное стекло, 3 шт.",
+          "price": 3900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g082",
+        "attributes": {
+          "name": "Кабель USB-C 2 м плетёный",
+          "price": 14200,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g083",
+        "attributes": {
+          "name": "Кольцо-держатель для телефона",
+          "price": 21100,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g084",
+        "attributes": {
+          "name": "Подставка для планшета",
+          "price": 15200,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g085",
+        "attributes": {
+          "name": "Беспроводная зарядка 15 Вт",
+          "price": 12500,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g086",
+        "attributes": {
+          "name": "Чехол-кошелёк для телефона",
+          "price": 11900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g087",
+        "attributes": {
+          "name": "Стилус для экрана",
+          "price": 10700,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g088",
+        "attributes": {
+          "name": "Монопод для селфи с пультом",
+          "price": 34000,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g089",
+        "attributes": {
+          "name": "Коврик для мыши XXL",
+          "price": 12300,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g090",
+        "attributes": {
+          "name": "Подставка под монитор",
+          "price": 23900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g091",
+        "attributes": {
+          "name": "Кабель-органайзер на стол",
+          "price": 21800,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g092",
+        "attributes": {
+          "name": "Мышь беспроводная тихая",
+          "price": 42500,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g094",
+        "attributes": {
+          "name": "Клавиатура беспроводная мини",
+          "price": 16400,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g095",
+        "attributes": {
+          "name": "Веб-камера 1080p",
+          "price": 8000,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g096",
+        "attributes": {
+          "name": "Разветвитель HDMI",
+          "price": 3900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g097",
+        "attributes": {
+          "name": "Сумка-шопер холщовая",
+          "price": 11700,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g098",
+        "attributes": {
+          "name": "Поясная сумка спортивная",
+          "price": 20100,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g099",
+        "attributes": {
+          "name": "Кошелёк с RFID-защитой",
+          "price": 26900,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g100",
+        "attributes": {
+          "name": "Органайзер для сумки",
+          "price": 47100,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g101",
+        "attributes": {
+          "name": "Косметичка дорожная",
+          "price": 44600,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g102",
+        "attributes": {
+          "name": "Рюкзак складной",
+          "price": 16000,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g103",
+        "attributes": {
+          "name": "Чехол для паспорта",
+          "price": 11700,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g104",
+        "attributes": {
+          "name": "Сумка-холодильник 10 л",
+          "price": 8600,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g106",
+        "attributes": {
+          "name": "Аппликатор Кузнецова",
+          "price": 24600,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g107",
+        "attributes": {
+          "name": "Таблетница на неделю",
+          "price": 22500,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g108",
+        "attributes": {
+          "name": "Массажёр для шеи",
+          "price": 16000,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g109",
+        "attributes": {
+          "name": "Ортопедическая подушка",
+          "price": 30200,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g110",
+        "attributes": {
+          "name": "Корсет для осанки",
+          "price": 8000,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g112",
+        "attributes": {
+          "name": "Грелка солевая",
+          "price": 35200,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g113",
+        "attributes": {
+          "name": "Набор отвёрток прецизионных",
+          "price": 9600,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g114",
+        "attributes": {
+          "name": "Уровень лазерный",
+          "price": 41600,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g116",
+        "attributes": {
+          "name": "Набор бит, 32 шт.",
+          "price": 26300,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g117",
+        "attributes": {
+          "name": "Клеевой пистолет",
+          "price": 29300,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g119",
+        "attributes": {
+          "name": "Скотч двусторонний, 3 шт.",
+          "price": 19100,
+          "currency": "KZT"
+        }
+      },
+      {
+        "id": "k-g120",
+        "attributes": {
+          "name": "Стяжки кабельные, 200 шт.",
+          "price": 4900,
+          "currency": "KZT"
+        }
       }
     ]
   }

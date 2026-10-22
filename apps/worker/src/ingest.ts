@@ -81,18 +81,31 @@ interface ProductFields {
   url?: string | undefined;
   weightKg?: number | undefined;
   synthetic: boolean;
+  /** Не перезаписывать название: у записи спроса название условное (предмет и артикул), настоящее — в карточке. */
+  keepTitle?: boolean;
 }
 
 async function upsertProduct(db: pg.PoolClient, p: ProductFields) {
   const { rows } = await db.query<{ id: string }>(
     `insert into public.products (source_id, kind, external_id, title, url, weight_kg, synthetic)
      values ($1, $2, $3, $4, $5, $6, $7)
-     on conflict (source_id, external_id) do update set title = excluded.title,
+     on conflict (source_id, external_id) do update set title = case when $8 then excluded.title else products.title end,
        url = coalesce(excluded.url, products.url), weight_kg = coalesce(excluded.weight_kg, products.weight_kg)
      returning id`,
-    [p.sourceId, p.kind, p.externalId, p.title, p.url ?? null, p.weightKg ?? null, p.synthetic],
+    [p.sourceId, p.kind, p.externalId, p.title, p.url ?? null, p.weightKg ?? null, p.synthetic, !p.keepTitle],
   );
   return rows[0]!.id;
+}
+
+/** Ниша площадки (предмет WB) как категория с внешним id; повторная загрузка находит ту же строку. */
+async function upsertCategory(db: pg.PoolClient, marketplaceId: string, c: { externalId: string; name: string }, synthetic: boolean) {
+  const found = await db.query<{ id: string }>("select id from public.categories where marketplace_id = $1 and external_id = $2", [marketplaceId, c.externalId]);
+  if (found.rows[0]) return found.rows[0].id;
+  const created = await db.query<{ id: string }>(
+    "insert into public.categories (name, marketplace_id, external_id, synthetic) values ($1, $2, $3, $4) returning id",
+    [c.name, marketplaceId, c.externalId, synthetic],
+  );
+  return created.rows[0]!.id;
 }
 
 async function saveRecord(db: pg.PoolClient, r: NormalizedRecord, rawResponseId: string) {
@@ -107,9 +120,39 @@ async function saveRecord(db: pg.PoolClient, r: NormalizedRecord, rawResponseId:
       "insert into public.price_history (product_id, source_id, raw_response_id, price, currency, fetched_at, synthetic) values ($1, $2, $3, $4, $5, $6, $7)",
       [productId, r.sourceId, rawResponseId, r.price, r.currency, r.fetchedAt, r.synthetic],
     );
+  } else if (r.type === "listing") {
+    // Рыночная карточка от провайдера аналитики: товар площадки продажи, его ниша, цена, спрос и показатели периода.
+    const categoryId = r.category ? await upsertCategory(db, r.listingSourceId, r.category, r.synthetic) : null;
+    const productId = await upsertProduct(db, { ...r, sourceId: r.listingSourceId, kind: "listing" });
+    await db.query(
+      `update public.products set image_url = coalesce($2, image_url), brand = coalesce($3, brand), category_id = coalesce($4, category_id) where id = $1`,
+      [productId, r.imageUrl ?? null, r.brand ?? null, categoryId],
+    );
+    if (r.price !== undefined) {
+      await db.query(
+        `insert into public.offers (product_id, source_id, raw_response_id, method, price, currency, fetched_at, synthetic) values ($1, $2, $3, $4, $5, $6, $7, $8)`,
+        [productId, r.sourceId, rawResponseId, r.method, r.price, r.currency, r.fetchedAt, r.synthetic],
+      );
+      await db.query(
+        "insert into public.price_history (product_id, source_id, raw_response_id, price, currency, fetched_at, synthetic) values ($1, $2, $3, $4, $5, $6, $7)",
+        [productId, r.sourceId, rawResponseId, r.price, r.currency, r.fetchedAt, r.synthetic],
+      );
+    }
+    if (r.salesPerMonth !== undefined) {
+      await db.query(
+        `insert into public.demand_history (product_id, source_id, raw_response_id, sales_per_month, period_start, period_end, fetched_at, synthetic)
+         values ($1, $2, $3, $4, $5, $6, $7, $8)`,
+        [productId, r.sourceId, rawResponseId, r.salesPerMonth, r.periodStart, r.periodEnd, r.fetchedAt, r.synthetic],
+      );
+    }
+    await db.query(
+      `insert into public.listing_stats (product_id, source_id, raw_response_id, period_start, period_end, price, currency, sales, revenue, rating, reviews, stock, seller, daily, fetched_at, synthetic)
+       values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16)`,
+      [productId, r.sourceId, rawResponseId, r.periodStart, r.periodEnd, r.price ?? null, r.currency, r.salesPerMonth ?? null, r.revenue ?? null, r.rating ?? null, r.reviews ?? null, r.stock ?? null, r.seller ?? null, r.daily ? JSON.stringify(r.daily) : null, r.fetchedAt, r.synthetic],
+    );
   } else {
     // Спрос относится к товару площадки продажи, источник значения — провайдер аналитики.
-    const productId = await upsertProduct(db, { ...r, sourceId: r.listingSourceId, kind: "listing" });
+    const productId = await upsertProduct(db, { ...r, sourceId: r.listingSourceId, kind: "listing", keepTitle: true });
     await db.query(
       `insert into public.demand_history (product_id, source_id, raw_response_id, sales_per_month, period_start, period_end, fetched_at, synthetic)
        values ($1, $2, $3, $4, $5, $6, $7, $8)`,

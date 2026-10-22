@@ -1,0 +1,20 @@
+{
+  "recordedAt": "2026-10-18T00:00:00Z",
+  "synthetic": true,
+  "note": "Синтетическая запись в формате statistics-api WB (поля из белого списка адаптера). Не данные магазина.",
+  "body": {
+    "periodStart": "2026-09-18",
+    "periodEnd": "2026-10-18",
+    "orders": [
+      { "date": "2026-10-01T10:00:00", "nmId": 101, "subject": "Органайзеры", "supplierArticle": "syn-101", "isCancel": false },
+      { "date": "2026-10-02T11:00:00", "nmId": 101, "subject": "Органайзеры", "supplierArticle": "syn-101", "isCancel": true }
+    ],
+    "sales": [
+      { "date": "2026-09-10T09:00:00", "nmId": 101, "subject": "Органайзеры", "supplierArticle": "syn-101", "saleID": "S100" },
+      { "date": "2026-10-03T10:00:00", "nmId": 101, "subject": "Органайзеры", "supplierArticle": "syn-101", "saleID": "S101" },
+      { "date": "2026-10-04T10:00:00", "nmId": 101, "subject": "Органайзеры", "supplierArticle": "syn-101", "saleID": "S102" },
+      { "date": "2026-10-05T10:00:00", "nmId": 101, "subject": "Органайзеры", "supplierArticle": "syn-101", "saleID": "R103" },
+      { "date": "2026-10-06T10:00:00", "nmId": 102, "saleID": "S104" }
+    ]
+  }
+}

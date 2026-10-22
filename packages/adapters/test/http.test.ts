@@ -50,7 +50,7 @@ describe("requestJson: лимиты, 429 и повторы", () => {
     const secret = "SECRET-TOKEN-VALUE";
     const unauthorized = vi.fn().mockResolvedValue(res(401, { title: "unauthorized" }));
     const err = await requestJson("https://api.test/x", { headers: { Authorization: secret } }, { key: "k", minIntervalMs: 0, fetchImpl: unauthorized, ...c }).catch((e: Error) => e);
-    expect(err).toMatchObject({ code: "http_error" });
+    expect(err).toMatchObject({ code: "auth_error" });
     expect((err as Error).message).toContain("401");
     expect((err as Error).message).not.toContain(secret);
     expect(unauthorized).toHaveBeenCalledTimes(1);

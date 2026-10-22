@@ -111,14 +111,14 @@ isOneToOne: false
                   ]
                 },"categories": {
                   Row: {
-                    "external_id": string | null,"id": string,"marketplace_id": string | null,"name": string,"parent_id": string | null
+                    "external_id": string | null,"id": string,"marketplace_id": string | null,"name": string,"parent_id": string | null,"synthetic": boolean
                   }
                   ComputedFields: never
                   Insert: {
-                    "external_id"?: string | null,"id"?: string,"marketplace_id"?: string | null,"name": string,"parent_id"?: string | null
+                    "external_id"?: string | null,"id"?: string,"marketplace_id"?: string | null,"name": string,"parent_id"?: string | null,"synthetic"?: boolean
                   }
                   Update: {
-                    "external_id"?: string | null,"id"?: string,"marketplace_id"?: string | null,"name"?: string,"parent_id"?: string | null
+                    "external_id"?: string | null,"id"?: string,"marketplace_id"?: string | null,"name"?: string,"parent_id"?: string | null,"synthetic"?: boolean
                   }
                   Relationships: [
                     {
@@ -151,14 +151,14 @@ isOneToOne: false
                   ]
                 },"data_sources": {
                   Row: {
-                    "id": string,"last_success_at": string | null,"layer": string,"marketplace_id": string | null,"method": string,"mode": string,"rate_limit_per_day": number | null,"rate_limit_per_minute": number | null,"request_cost": number | null,"request_cost_currency": string | null,"role": string,"status": string,"status_reason": string | null,"success_rate": number | null,"token_expires_at": string | null,"updated_at": string
+                    "checked_at": string | null,"docs_url": string | null,"id": string,"last_success_at": string | null,"layer": string,"limitations": string | null,"marketplace_id": string | null,"method": string,"mode": string,"provides": string | null,"rate_limit_per_day": number | null,"rate_limit_per_minute": number | null,"rate_limits": Json | null,"request_cost": number | null,"request_cost_currency": string | null,"role": string,"status": string,"status_reason": string | null,"success_rate": number | null,"token_expires_at": string | null,"updated_at": string
                   }
                   ComputedFields: never
                   Insert: {
-                    "id": string,"last_success_at"?: string | null,"layer": string,"marketplace_id"?: string | null,"method": string,"mode"?: string,"rate_limit_per_day"?: number | null,"rate_limit_per_minute"?: number | null,"request_cost"?: number | null,"request_cost_currency"?: string | null,"role": string,"status"?: string,"status_reason"?: string | null,"success_rate"?: number | null,"token_expires_at"?: string | null,"updated_at"?: string
+                    "checked_at"?: string | null,"docs_url"?: string | null,"id": string,"last_success_at"?: string | null,"layer": string,"limitations"?: string | null,"marketplace_id"?: string | null,"method": string,"mode"?: string,"provides"?: string | null,"rate_limit_per_day"?: number | null,"rate_limit_per_minute"?: number | null,"rate_limits"?: Json | null,"request_cost"?: number | null,"request_cost_currency"?: string | null,"role": string,"status"?: string,"status_reason"?: string | null,"success_rate"?: number | null,"token_expires_at"?: string | null,"updated_at"?: string
                   }
                   Update: {
-                    "id"?: string,"last_success_at"?: string | null,"layer"?: string,"marketplace_id"?: string | null,"method"?: string,"mode"?: string,"rate_limit_per_day"?: number | null,"rate_limit_per_minute"?: number | null,"request_cost"?: number | null,"request_cost_currency"?: string | null,"role"?: string,"status"?: string,"status_reason"?: string | null,"success_rate"?: number | null,"token_expires_at"?: string | null,"updated_at"?: string
+                    "checked_at"?: string | null,"docs_url"?: string | null,"id"?: string,"last_success_at"?: string | null,"layer"?: string,"limitations"?: string | null,"marketplace_id"?: string | null,"method"?: string,"mode"?: string,"provides"?: string | null,"rate_limit_per_day"?: number | null,"rate_limit_per_minute"?: number | null,"rate_limits"?: Json | null,"request_cost"?: number | null,"request_cost_currency"?: string | null,"role"?: string,"status"?: string,"status_reason"?: string | null,"success_rate"?: number | null,"token_expires_at"?: string | null,"updated_at"?: string
                   }
                   Relationships: [
                     {
@@ -211,14 +211,14 @@ isOneToOne: false
                   ]
                 },"fee_rules": {
                   Row: {
-                    "category_id": string | null,"country": string,"currency": string | null,"fee_type": string,"fetched_at": string,"fixed_amount": number | null,"id": string,"marketplace_id": string,"rate": number | null,"source_url": string,"status": string,"valid_from": string,"valid_to": string | null
+                    "category_id": string | null,"country": string | null,"currency": string | null,"external_category_id": string | null,"external_category_name": string | null,"external_parent_name": string | null,"fee_type": string,"fetched_at": string,"fixed_amount": number | null,"id": string,"marketplace_id": string,"rate": number | null,"scheme": string | null,"source_url": string,"status": string,"valid_from": string,"valid_to": string | null
                   }
                   ComputedFields: never
                   Insert: {
-                    "category_id"?: string | null,"country": string,"currency"?: string | null,"fee_type": string,"fetched_at": string,"fixed_amount"?: number | null,"id"?: string,"marketplace_id": string,"rate"?: number | null,"source_url": string,"status": string,"valid_from": string,"valid_to"?: string | null
+                    "category_id"?: string | null,"country"?: string | null,"currency"?: string | null,"external_category_id"?: string | null,"external_category_name"?: string | null,"external_parent_name"?: string | null,"fee_type": string,"fetched_at": string,"fixed_amount"?: number | null,"id"?: string,"marketplace_id": string,"rate"?: number | null,"scheme"?: string | null,"source_url": string,"status": string,"valid_from": string,"valid_to"?: string | null
                   }
                   Update: {
-                    "category_id"?: string | null,"country"?: string,"currency"?: string | null,"fee_type"?: string,"fetched_at"?: string,"fixed_amount"?: number | null,"id"?: string,"marketplace_id"?: string,"rate"?: number | null,"source_url"?: string,"status"?: string,"valid_from"?: string,"valid_to"?: string | null
+                    "category_id"?: string | null,"country"?: string | null,"currency"?: string | null,"external_category_id"?: string | null,"external_category_name"?: string | null,"external_parent_name"?: string | null,"fee_type"?: string,"fetched_at"?: string,"fixed_amount"?: number | null,"id"?: string,"marketplace_id"?: string,"rate"?: number | null,"scheme"?: string | null,"source_url"?: string,"status"?: string,"valid_from"?: string,"valid_to"?: string | null
                   }
                   Relationships: [
                     {
@@ -269,16 +269,48 @@ isOneToOne: false
       referencedColumns: ["id"]
     }
                   ]
-                },"logistics_rates": {
+                },"listing_stats": {
                   Row: {
-                    "amount": number,"country": string,"currency": string,"fetched_at": string,"id": string,"marketplace_id": string,"rate_type": string,"scheme": string,"size_rule": Json | null,"source_url": string,"status": string,"valid_from": string,"valid_to": string | null
+                    "currency": string | null,"daily": Json | null,"fetched_at": string,"period_end": string,"period_start": string,"price": number | null,"product_id": string,"rating": number | null,"raw_response_id": string,"revenue": number | null,"reviews": number | null,"sales": number | null,"seller": string | null,"source_id": string,"stock": number | null,"synthetic": boolean
                   }
                   ComputedFields: never
                   Insert: {
-                    "amount": number,"country": string,"currency": string,"fetched_at": string,"id"?: string,"marketplace_id": string,"rate_type": string,"scheme": string,"size_rule"?: Json | null,"source_url": string,"status": string,"valid_from": string,"valid_to"?: string | null
+                    "currency"?: string | null,"daily"?: Json | null,"fetched_at": string,"period_end": string,"period_start": string,"price"?: number | null,"product_id": string,"rating"?: number | null,"raw_response_id": string,"revenue"?: number | null,"reviews"?: number | null,"sales"?: number | null,"seller"?: string | null,"source_id": string,"stock"?: number | null,"synthetic": boolean
                   }
                   Update: {
-                    "amount"?: number,"country"?: string,"currency"?: string,"fetched_at"?: string,"id"?: string,"marketplace_id"?: string,"rate_type"?: string,"scheme"?: string,"size_rule"?: Json | null,"source_url"?: string,"status"?: string,"valid_from"?: string,"valid_to"?: string | null
+                    "currency"?: string | null,"daily"?: Json | null,"fetched_at"?: string,"period_end"?: string,"period_start"?: string,"price"?: number | null,"product_id"?: string,"rating"?: number | null,"raw_response_id"?: string,"revenue"?: number | null,"reviews"?: number | null,"sales"?: number | null,"seller"?: string | null,"source_id"?: string,"stock"?: number | null,"synthetic"?: boolean
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "listing_stats_product_id_fkey"
+      columns: ["product_id"]
+isOneToOne: false
+      referencedRelation: "products"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "listing_stats_raw_response_id_fkey"
+      columns: ["raw_response_id"]
+isOneToOne: false
+      referencedRelation: "raw_responses"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "listing_stats_source_id_fkey"
+      columns: ["source_id"]
+isOneToOne: false
+      referencedRelation: "data_sources"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"logistics_rates": {
+                  Row: {
+                    "amount": number,"country": string | null,"currency": string,"fetched_at": string,"id": string,"marketplace_id": string,"rate_type": string,"scheme": string,"size_rule": Json | null,"source_url": string,"status": string,"valid_from": string,"valid_to": string | null
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "amount": number,"country"?: string | null,"currency": string,"fetched_at": string,"id"?: string,"marketplace_id": string,"rate_type": string,"scheme": string,"size_rule"?: Json | null,"source_url": string,"status": string,"valid_from": string,"valid_to"?: string | null
+                  }
+                  Update: {
+                    "amount"?: number,"country"?: string | null,"currency"?: string,"fetched_at"?: string,"id"?: string,"marketplace_id"?: string,"rate_type"?: string,"scheme"?: string,"size_rule"?: Json | null,"source_url"?: string,"status"?: string,"valid_from"?: string,"valid_to"?: string | null
                   }
                   Relationships: [
                     {
@@ -305,14 +337,14 @@ isOneToOne: false
                   ]
                 },"matches": {
                   Row: {
-                    "confidence": number,"created_at": string,"id": string,"listing_product_id": string,"source_product_id": string,"status": string
+                    "confidence": number,"created_at": string,"id": string,"listing_product_id": string,"source_product_id": string,"status": string,"synthetic": boolean
                   }
                   ComputedFields: never
                   Insert: {
-                    "confidence": number,"created_at"?: string,"id"?: string,"listing_product_id": string,"source_product_id": string,"status"?: string
+                    "confidence": number,"created_at"?: string,"id"?: string,"listing_product_id": string,"source_product_id": string,"status"?: string,"synthetic"?: boolean
                   }
                   Update: {
-                    "confidence"?: number,"created_at"?: string,"id"?: string,"listing_product_id"?: string,"source_product_id"?: string,"status"?: string
+                    "confidence"?: number,"created_at"?: string,"id"?: string,"listing_product_id"?: string,"source_product_id"?: string,"status"?: string,"synthetic"?: boolean
                   }
                   Relationships: [
                     {
@@ -465,14 +497,14 @@ isOneToOne: false
                   ]
                 },"products": {
                   Row: {
-                    "category_id": string | null,"dimensions_cm": Json | null,"external_id": string,"first_seen_at": string,"id": string,"kind": string,"source_id": string,"supplier_id": string | null,"synthetic": boolean,"title": string,"url": string | null,"weight_kg": number | null
+                    "brand": string | null,"category_id": string | null,"dimensions_cm": Json | null,"external_id": string,"first_seen_at": string,"id": string,"image_url": string | null,"kind": string,"source_id": string,"supplier_id": string | null,"synthetic": boolean,"title": string,"url": string | null,"weight_kg": number | null
                   }
                   ComputedFields: never
                   Insert: {
-                    "category_id"?: string | null,"dimensions_cm"?: Json | null,"external_id": string,"first_seen_at"?: string,"id"?: string,"kind": string,"source_id": string,"supplier_id"?: string | null,"synthetic": boolean,"title": string,"url"?: string | null,"weight_kg"?: number | null
+                    "brand"?: string | null,"category_id"?: string | null,"dimensions_cm"?: Json | null,"external_id": string,"first_seen_at"?: string,"id"?: string,"image_url"?: string | null,"kind": string,"source_id": string,"supplier_id"?: string | null,"synthetic": boolean,"title": string,"url"?: string | null,"weight_kg"?: number | null
                   }
                   Update: {
-                    "category_id"?: string | null,"dimensions_cm"?: Json | null,"external_id"?: string,"first_seen_at"?: string,"id"?: string,"kind"?: string,"source_id"?: string,"supplier_id"?: string | null,"synthetic"?: boolean,"title"?: string,"url"?: string | null,"weight_kg"?: number | null
+                    "brand"?: string | null,"category_id"?: string | null,"dimensions_cm"?: Json | null,"external_id"?: string,"first_seen_at"?: string,"id"?: string,"image_url"?: string | null,"kind"?: string,"source_id"?: string,"supplier_id"?: string | null,"synthetic"?: boolean,"title"?: string,"url"?: string | null,"weight_kg"?: number | null
                   }
                   Relationships: [
                     {

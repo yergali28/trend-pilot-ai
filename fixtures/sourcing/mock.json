@@ -1,0 +1,236 @@
+{
+  "_note": "Синтетические данные для PROVIDER=mock: цены, продажи и поставщики выдуманы, ссылок нет. Не реальные предложения.",
+  "synthetic": true,
+  "products": [
+    {
+      "marketplace": "1688",
+      "itemId": "mock-1688-001",
+      "titleCn": "硅胶手机壳 防摔",
+      "titleEn": "Silicone phone case, shockproof",
+      "priceCny": 3.2,
+      "minOrderQty": 50,
+      "salesCount": 12000,
+      "supplierId": "mock-supplier-mock-1688-001",
+      "supplierName": "深圳市示例电子有限公司",
+      "city": "深圳市",
+      "province": "广东",
+      "imageUrl": null,
+      "url": null,
+      "raw": {
+        "synthetic": true,
+        "keywords": [
+          "手机壳",
+          "phone case",
+          "чехол"
+        ]
+      }
+    },
+    {
+      "marketplace": "1688",
+      "itemId": "mock-1688-002",
+      "titleCn": "透明手机壳 气囊",
+      "titleEn": "Clear phone case with air cushion",
+      "priceCny": 2.8,
+      "minOrderQty": 100,
+      "salesCount": 8500,
+      "supplierId": "mock-supplier-mock-1688-002",
+      "supplierName": "东莞市示例塑胶制品厂",
+      "city": "东莞市",
+      "province": "广东",
+      "imageUrl": null,
+      "url": null,
+      "raw": {
+        "synthetic": true,
+        "keywords": [
+          "手机壳",
+          "phone case",
+          "чехол"
+        ]
+      }
+    },
+    {
+      "marketplace": "1688",
+      "itemId": "mock-1688-003",
+      "titleCn": "磁吸手机壳",
+      "titleEn": "Magnetic phone case",
+      "priceCny": 6.5,
+      "minOrderQty": 20,
+      "salesCount": 3100,
+      "supplierId": "mock-supplier-mock-1688-003",
+      "supplierName": "义乌市示例贸易商行",
+      "city": "义乌市",
+      "province": "浙江",
+      "imageUrl": null,
+      "url": null,
+      "raw": {
+        "synthetic": true,
+        "keywords": [
+          "手机壳",
+          "phone case",
+          "чехол"
+        ]
+      }
+    },
+    {
+      "marketplace": "1688",
+      "itemId": "mock-1688-004",
+      "titleCn": "桌面收纳盒 多格",
+      "titleEn": "Desktop organizer box, multi-compartment",
+      "priceCny": 8.9,
+      "minOrderQty": 30,
+      "salesCount": 5400,
+      "supplierId": "mock-supplier-mock-1688-004",
+      "supplierName": "台州市示例日用品厂",
+      "city": "台州市",
+      "province": "浙江",
+      "imageUrl": null,
+      "url": null,
+      "raw": {
+        "synthetic": true,
+        "keywords": [
+          "收纳盒",
+          "organizer",
+          "органайзер"
+        ]
+      }
+    },
+    {
+      "marketplace": "1688",
+      "itemId": "mock-1688-005",
+      "titleCn": "抽屉收纳盒 可叠加",
+      "titleEn": "Stackable drawer organizer",
+      "priceCny": 5.4,
+      "minOrderQty": 60,
+      "salesCount": 9800,
+      "supplierId": "mock-supplier-mock-1688-005",
+      "supplierName": "宁波市示例家居有限公司",
+      "city": "宁波市",
+      "province": "浙江",
+      "imageUrl": null,
+      "url": null,
+      "raw": {
+        "synthetic": true,
+        "keywords": [
+          "收纳盒",
+          "organizer",
+          "органайзер"
+        ]
+      }
+    },
+    {
+      "marketplace": "1688",
+      "itemId": "mock-1688-006",
+      "titleCn": "蓝牙耳机 TWS 降噪",
+      "titleEn": "TWS Bluetooth earbuds, noise cancelling",
+      "priceCny": 24.0,
+      "minOrderQty": 10,
+      "salesCount": 2547,
+      "supplierId": "mock-supplier-mock-1688-006",
+      "supplierName": "深圳市示例声学科技有限公司",
+      "city": "深圳市",
+      "province": "广东",
+      "imageUrl": null,
+      "url": null,
+      "raw": {
+        "synthetic": true,
+        "keywords": [
+          "蓝牙耳机",
+          "earbuds",
+          "наушники"
+        ]
+      }
+    },
+    {
+      "marketplace": "taobao",
+      "itemId": "mock-tb-001",
+      "titleCn": "手机壳 卡通 女款",
+      "titleEn": "Cartoon phone case",
+      "priceCny": 9.9,
+      "minOrderQty": null,
+      "salesCount": 15600,
+      "supplierId": null,
+      "supplierName": null,
+      "city": null,
+      "province": null,
+      "imageUrl": null,
+      "url": null,
+      "raw": {
+        "synthetic": true,
+        "keywords": [
+          "手机壳",
+          "phone case",
+          "чехол"
+        ]
+      }
+    },
+    {
+      "marketplace": "taobao",
+      "itemId": "mock-tb-002",
+      "titleCn": "防摔手机壳 全包",
+      "titleEn": "Full-cover shockproof phone case",
+      "priceCny": 6.8,
+      "minOrderQty": null,
+      "salesCount": 23000,
+      "supplierId": null,
+      "supplierName": null,
+      "city": null,
+      "province": null,
+      "imageUrl": null,
+      "url": null,
+      "raw": {
+        "synthetic": true,
+        "keywords": [
+          "手机壳",
+          "phone case",
+          "чехол"
+        ]
+      }
+    },
+    {
+      "marketplace": "taobao",
+      "itemId": "mock-tb-003",
+      "titleCn": "化妆品收纳盒 桌面",
+      "titleEn": "Cosmetics organizer box",
+      "priceCny": 19.9,
+      "minOrderQty": null,
+      "salesCount": 4200,
+      "supplierId": null,
+      "supplierName": null,
+      "city": null,
+      "province": null,
+      "imageUrl": null,
+      "url": null,
+      "raw": {
+        "synthetic": true,
+        "keywords": [
+          "收纳盒",
+          "organizer",
+          "органайзер"
+        ]
+      }
+    },
+    {
+      "marketplace": "taobao",
+      "itemId": "mock-tb-004",
+      "titleCn": "无线蓝牙耳机 长续航",
+      "titleEn": "Wireless earbuds, long battery",
+      "priceCny": 59.0,
+      "minOrderQty": null,
+      "salesCount": 1800,
+      "supplierId": null,
+      "supplierName": null,
+      "city": null,
+      "province": null,
+      "imageUrl": null,
+      "url": null,
+      "raw": {
+        "synthetic": true,
+        "keywords": [
+          "蓝牙耳机",
+          "earbuds",
+          "наушники"
+        ]
+      }
+    }
+  ]
+}

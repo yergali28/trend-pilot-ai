@@ -38,7 +38,30 @@ export const DemandRecord = z.object({
   periodEnd: z.iso.date().optional(),
 });
 
-export const NormalizedRecord = z.discriminatedUnion("type", [OfferRecord, DemandRecord]);
+/** Рыночная карточка товара площадки продажи от провайдера аналитики: цена, продажи, выручка и ряды за период. */
+export const ListingRecord = z.object({
+  type: z.literal("listing"),
+  ...base,
+  listingSourceId: z.string().min(1),
+  url: z.url().optional(),
+  imageUrl: z.url().optional(),
+  brand: z.string().optional(),
+  seller: z.string().optional(),
+  /** Предмет площадки: из него строится ниша. */
+  category: z.object({ externalId: z.string().min(1), name: z.string().min(1) }).optional(),
+  price: z.number().nonnegative().optional(),
+  currency: z.string().length(3),
+  salesPerMonth: z.number().nonnegative().optional(),
+  revenue: z.number().nonnegative().optional(),
+  rating: z.number().min(0).max(5).optional(),
+  reviews: z.number().int().nonnegative().optional(),
+  stock: z.number().int().nonnegative().optional(),
+  periodStart: z.iso.date(),
+  periodEnd: z.iso.date(),
+  daily: z.object({ sales: z.array(z.number().nullable()), price: z.array(z.number().nullable()), stock: z.array(z.number().nullable()) }).partial().optional(),
+});
+
+export const NormalizedRecord = z.discriminatedUnion("type", [OfferRecord, DemandRecord, ListingRecord]);
 export type NormalizedRecord = z.infer<typeof NormalizedRecord>;
 
 export interface FetchRequest {
@@ -80,7 +103,7 @@ export interface Adapter {
   normalize(raw: RawResponse): NormalizeResult;
 }
 
-export type AdapterErrorCode = "token_not_configured" | "not_implemented" | "fixture_not_found" | "contract_violation" | "http_error" | "rate_limited";
+export type AdapterErrorCode = "token_not_configured" | "not_implemented" | "fixture_not_found" | "contract_violation" | "http_error" | "rate_limited" | "auth_error";
 
 export class AdapterError extends Error {
   constructor(

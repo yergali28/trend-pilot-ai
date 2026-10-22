@@ -27,6 +27,10 @@ const sanitizers: Record<string, (body: Json) => Json> = {
       }));
     return { cards, goods };
   },
+  // MPSTATS: публичные карточки рынка (название, бренд, продавец-юрлицо, цены, продажи); первые 100 товаров как есть.
+  mpstats: (body) => body,
+  // Личные поля заказов (srid, gNumber, стикер, регион покупателя) отбрасывает уже схема адаптера.
+  "wildberries-sales": (body) => ({ ...body, orders: (body.orders as Json[]).slice(0, LIMIT), sales: (body.sales as Json[]).slice(0, LIMIT) }),
 };
 
 const [sourceId = "", name = "seller"] = process.argv.slice(2);
@@ -57,4 +61,4 @@ const fixture = {
 const file = `${defaultFixturesDir}/${sourceId}/${name}.json`;
 await writeFile(file, `${JSON.stringify(fixture, null, 2)}\n`);
 const { records, rejected } = adapter.normalize({ ...raw, body });
-console.log(`записано: ${file.replace(/^.*\/fixtures\//, "fixtures/")}; позиций ${(body.goods as unknown[] | undefined)?.length ?? 0}, записей ${records.length}, отклонено ${rejected.length}`);
+console.log(`записано: ${file.replace(/^.*\/fixtures\//, "fixtures/")}; позиций ${((body.goods ?? body.sales) as unknown[] | undefined)?.length ?? 0}, записей ${records.length}, отклонено ${rejected.length}`);

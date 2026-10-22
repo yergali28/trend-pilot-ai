@@ -15,14 +15,19 @@ const patterns = {
 const tokens = ["apps/worker/.env.local", "apps/web/.env.local"]
   .filter(existsSync)
   .flatMap((f) => readFileSync(f, "utf8").split(/\r?\n/))
-  .filter((l) => /^(WB_API_TOKEN|KASPI_API_TOKEN|OZON_API_KEY|ALIEXPRESS_APP_KEY|ANALYTICS_API_KEY)=.{8,}/.test(l))
+  .filter((l) => /^(WB_API_TOKEN|KASPI_API_TOKEN|OZON_API_KEY|ALIEXPRESS_APP_KEY|ANALYTICS_API_KEY|MPSTATS_TOKEN|ONEBOUND_API_KEY|ONEBOUND_API_SECRET|APIFY_TOKEN)=.{8,}/.test(l))
   .map((l) => l.slice(l.indexOf("=") + 1).trim());
 
 let found = 0;
 const list = files("fixtures");
 for (const f of list) {
   const text = readFileSync(f, "utf8");
-  for (const [name, re] of Object.entries(patterns)) if (re.test(text)) (found++, console.log(`  ${f}: ${name}`));
+  // Названия поставщиков в синтетических фикстурах выдуманы; остальные шаблоны действуют и для них.
+  const synthetic = /^\s*\{[^]*?"synthetic"\s*:\s*true/.test(text.slice(0, 400));
+  for (const [name, re] of Object.entries(patterns)) {
+    if (synthetic && name.startsWith("ИНН")) continue;
+    if (re.test(text)) (found++, console.log(`  ${f}: ${name}`));
+  }
   if (tokens.some((t) => text.includes(t))) (found++, console.log(`  ${f}: значение токена из .env.local`));
 }
 console.log(`проверено файлов: ${list.length}, шаблонов: ${Object.keys(patterns).length} + значения токенов из .env (${tokens.length}), совпадений: ${found}`);
